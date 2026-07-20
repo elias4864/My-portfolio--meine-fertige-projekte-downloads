@@ -101,8 +101,8 @@ export default async function RootLayout({
               name: "Mehedi Hasan",
               url: "https://m-hasan.vercel.app",
               sameAs: [
-                "https://www.linkedin.com/in/mehedi-hasan1102",
-                "https://github.com/mehedi-hasan1102",
+                "https://www.linkedin.com/in/themehedihq",
+                "https://github.com/themehedihq",
               ],
               jobTitle: "Full-Stack Developer",
               worksFor: {

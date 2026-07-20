@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const WhatsAppButton: React.FC = () => {
-  const whatsappNumber: string = "+8801747874773"; // Replace with your number
+  const whatsappNumber: string = "+88016017128338"; // Replace with your number
   const message: string =
     "Hi, Mehedi Hasan! I’m reaching out to connect and discuss possible professional opportunities."; // Default message
   const whatsappLink: string = `https://wa.me/${whatsappNumber.replace(

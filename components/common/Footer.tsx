@@ -21,16 +21,16 @@ interface NavLink {
 }
 
 
-const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL!;
+const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL || "https://cal.com/TheMehediHQ/15min";
 
 /* ---------------- Component ---------------- */
 
 
 const Footer = () => {
   const socialLinks: SocialLink[] = [
-    { icon: Github, href: "https://github.com/mehedi-hasan1102", label: "GitHub" },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/mehedi-hasan1102/", label: "LinkedIn" },
-    { icon: FaEnvelope, href: "mailto:mehedi.hasan16777@gmail.com", label: "Email" },
+    { icon: Github, href: "https://github.com/themehedihq", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/themehedihq/", label: "LinkedIn" },
+    { icon: FaEnvelope, href: "mailto:mehedi.hasan16111@gmail.com", label: "Email" },
     { icon: FaXTwitter, href: "https://x.com/mehedihasan1102", label: "Twitter" },
   ];
 

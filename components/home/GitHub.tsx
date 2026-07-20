@@ -35,7 +35,7 @@ const GitHubActivitySection: React.FC = () => {
         {/* Calendar Image */}
         <div className="bg-base-200 rounded-lg overflow-hidden px-4">
           <img
-            src="https://ghchart.rshah.org/mehedi-hasan1102"
+            src="https://ghchart.rshah.org/themehedihq"
             alt="Mehedi Hasan's GitHub Contribution Graph"
             className="w-full h-auto"
             loading="lazy"
@@ -53,7 +53,7 @@ const GitHubActivitySection: React.FC = () => {
     <span>Explore </span>
 
     <Link
-      href="https://github.com/mehedi-hasan1102"
+      href="https://github.com/themehedihq"
       target="_blank"
       rel="noopener noreferrer"
       className="
@@ -68,7 +68,7 @@ const GitHubActivitySection: React.FC = () => {
    
   </p> */}
   <Link
-  href="https://github.com/mehedi-hasan1102"
+  href="https://github.com/themehedihq"
   target="_blank"
   rel="noopener noreferrer"
   className="

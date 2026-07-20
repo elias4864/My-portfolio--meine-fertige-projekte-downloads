@@ -31,7 +31,7 @@ const GitHubAboutSection: React.FC = () => {
         {/* Calendar Image */}
         <div className=" rounded-lg overflow-hidden p-4 ">
           <img
-            src="https://ghchart.rshah.org/mehedi-hasan1102"
+            src="https://ghchart.rshah.org/themehedihq"
             alt="Mehedi Hasan's GitHub Contribution Graph"
             className="w-full h-auto"
             loading="lazy"
@@ -51,7 +51,7 @@ const GitHubAboutSection: React.FC = () => {
     <span>My coding journey, day by day, in open-source. Check out my </span>
 
     <a
-      href="https://github.com/mehedi-hasan1102"
+      href="https://github.com/themehedihq"
       target="_blank"
       rel="noopener noreferrer"
       className="

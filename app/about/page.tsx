@@ -60,7 +60,7 @@ export default function AboutPage() {
             <p className="text-sm sm:text-base text-base-content/80 leading-relaxed">
               Connect with me on{" "}
               <a
-                href="https://www.linkedin.com/in/mehedi-hasan1102/"
+                href="https://www.linkedin.com/in/themehedihq/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium hover:text-primary underline underline-offset-6 decoration-dashed transition-colors"

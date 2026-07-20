@@ -61,7 +61,7 @@ Vercel for deployment
 **📦 Installation & Setup**
 
 ```
-git clone https://github.com/mehedi-hasan1102/Open-Source-Modern-Developer-Portfolio
+git clone https://github.com/themehedihq/Open-Source-Modern-Developer-Portfolio
 cd Open-Source-Modern-Developer-Portfolio
 pnpm install
 pnpm run dev
@@ -81,13 +81,13 @@ Mehedi Hasan
 
 Full Stack Web Developer (MERN)
 
-Email: mehedi.hasan16777@gmail.com
+Email: mehedi.hasan16111@gmail.com
 
-LinkedIn: https://www.linkedin.com/in/mehedi-hasan1102
+LinkedIn: https://www.linkedin.com/in/themehedihq
 
 Portfolio: https://m-hasan.vercel.app
 
-GitHub: https://github.com/mehedi-hasan1102
+GitHub: https://github.com/themehedihq
 
 
 ## License

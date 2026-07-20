@@ -40,9 +40,9 @@ const socialCategories: SocialCategory[] = [
   {
     title: "Developer",
     links: [
-      { icon: Github, href: "https://github.com/mehedi-hasan1102", label: "GitHub" },
+      { icon: Github, href: "https://github.com/themehedihq", label: "GitHub" },
       { icon: FaDev, href: "https://dev.to/mehedihasan1102", label: "Dev.to" },
-      { icon: FaHashnode, href: "https://hashnode.com/@mehedi-hasan1102", label: "Hashnode" },
+      { icon: FaHashnode, href: "https://hashnode.com/@themehedihq", label: "Hashnode" },
       { icon: FaStackOverflow, href: "https://stackoverflow.com/users/31918992/mehedi-hasan", label: "Stack Overflow" },
       { icon: FaHackerrank, href: "https://www.hackerrank.com/profile/mehedi_hasan1102", label: "HackerRank" },
       { icon: FaCodepen, href: "https://codepen.io/mehedihasan1102", label: "CodePen" },
@@ -51,18 +51,18 @@ const socialCategories: SocialCategory[] = [
   {
     title: "Professional",
     links: [
-      { icon: Linkedin, href: "https://www.linkedin.com/in/mehedi-hasan1102/", label: "LinkedIn" },
+      { icon: Linkedin, href: "https://www.linkedin.com/in/themehedihq/", label: "LinkedIn" },
       { icon: SiPeerlist, href: "https://peerlist.io/mehedihasan", label: "Peerlist" },
       { icon: FiGlobe, href: "https://mehedi-h.vercel.app", label: "Portfolio Website" },
       { icon: FiFileText, href: "/Resume_of_Mehedi_Hasan.pdf", label: "Resume" },
-      { icon: FiMail, href: "mailto:mehedi.hasan16777@gmail.com", label: "Email" },
+      { icon: FiMail, href: "mailto:mehedi.hasan16111@gmail.com", label: "Email" },
     ],
   },
   {
     title: "Designer",
     links: [
       { icon: FaBehance, href: "https://www.behance.net/mehedihasan1102", label: "Behance" },
-      { icon: FaDribbble, href: "https://dribbble.com/mehedi-hasan1102", label: "Dribbble" },
+      { icon: FaDribbble, href: "https://dribbble.com/themehedihq", label: "Dribbble" },
       { icon: FaFigma, href: "https://www.figma.com/files/team/1546370570397248215/user/1546370568436002861?fuid=1546370568436002861", label: "Figma" },
       { icon: FaMedium, href: "https://medium.com/@mehedihasan1102", label: "Medium" },
       { icon: FaPinterest, href: "https://www.pinterest.com/mehedihasan11023/", label: "Pinterest" },
@@ -84,7 +84,7 @@ const socialCategories: SocialCategory[] = [
     title: "Messaging",
     links: [
       { icon: FaWhatsapp, href: "https://wa.me/8801747874773", label: "WhatsApp" },
-      { icon: FaTelegramPlane, href: "https://t.me/+8801747874773", label: "Telegram" },
+      { icon: FaTelegramPlane, href: "https://t.me/+88016017128338", label: "Telegram" },
       { icon: FaDiscord, href: "https://discord.gg/QMmdb8nusc", label: "Discord" },
     ],
   },

@@ -17,12 +17,12 @@ import toast, { Toaster } from "react-hot-toast";
 import Image from "next/image";
 
 // ENV VARIABLES
-const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
-const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
-const USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID!;
-const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL!;
-const CONTACT_PHONE = process.env.NEXT_PUBLIC_CONTACT_PHONE!;
-const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL!;
+const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "your_service_id";
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "your_template_id";
+const USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID || "your_user_id";
+const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "mehedi.hasan16111@gmail.com";
+const CONTACT_PHONE = process.env.NEXT_PUBLIC_CONTACT_PHONE || "+88016017128338";
+const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL || "https://cal.com/TheMehediHQ/15min";
 
 // 🔹 Contact Item Type
 interface ContactItem {

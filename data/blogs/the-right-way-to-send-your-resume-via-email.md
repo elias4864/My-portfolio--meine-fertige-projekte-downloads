@@ -55,8 +55,8 @@ team and look forward to hearing from you soon.
 Best regards,  
 Mehedi Hasan  
 📌 Portfolio: https://m-hasan.vercel.app  
-🔗 LinkedIn: https://www.linkedin.com/in/mehedi-hasan1102  
-💻 GitHub: https://github.com/mehedi-hasan1102  
+🔗 LinkedIn: https://www.linkedin.com/in/themehedihq  
+💻 GitHub: https://github.com/themehedihq  
 ```
 
 ##
