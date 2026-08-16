@@ -8,8 +8,6 @@
 
 </div>
 
-![Portfolio Preview](https://mehedi-h.vercel.app/og-image.png)
-
 ---
 
 ## ✨ About
