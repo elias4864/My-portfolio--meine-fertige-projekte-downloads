@@ -24,11 +24,11 @@ import AvailabilityBadge from "@/components/common/AvailabilityBadge";
 // METADATA (SEO / SOCIAL SHARING)
 // ================================================
 export const metadata = {
-  title: "Mehedi Hasan | Full-Stack Developer & Web Engineer",
+  title: "Elias Kaiser| Application Developer ",
   description:
-    "Portfolio of Mehedi Hasan – Full-Stack Developer specializing in Next.js, React, TypeScript, and modern web applications.",
+    "Portfolio of Elias Kaiser – Application Developer specializing in Next.js, React, JavaScript, and modern web applications.",
   keywords: [
-    "Mehedi Hasan",
+    "Elias Kaiser",
     "Full-Stack Developer",
     "Frontend Developer",
     "Backend Developer",
@@ -49,15 +49,15 @@ export const metadata = {
     "Full-Stack Web Developer",
     "Web Application Developer"
   ],
-  authors: [{ name: "Mehedi Hasan" }],
+  authors: [{ name: "Elias Kaiser" }],
   openGraph: {
-    title: "Mehedi Hasan | Full-Stack Developer",
-    description: "Portfolio of Mehedi Hasan – React & Next.js Developer",
+    title: "Elias Kaiser | Applikationsentwicklung",
+    description: "Portfolio of Elias Kaiser– Fullstack Web Developer",
     url: "https://m-hasan.vercel.app",
-    siteName: "Mehedi Hasan Portfolio",
+    siteName: 'Elias Kaiser Portfolio',
     images: [
       {
-        url: "/og-image.png",
+        url: "../assets/images/Initalen.jpg",
         width: 1200,
         height: 630,
         alt: "Mehedi Hasan Portfolio",
@@ -67,12 +67,7 @@ export const metadata = {
     alternateLocales: ["en_BD"],
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Mehedi Hasan | Full-Stack Developer",
-    description: "Portfolio of Mehedi Hasan – React & Next.js Developer",
-    images: ["/og-image.png"],
-  },
+
   robots: "index, follow",
   icons: { icon: "./favicon.ico" },
 };
@@ -98,13 +93,13 @@ export default async function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Mehedi Hasan",
+              name: "Elias Kaiser",
               url: "https://m-hasan.vercel.app",
               sameAs: [
-                "https://www.linkedin.com/in/themehedihq",
-                "https://github.com/themehedihq",
+                "https://www.linkedin.com/in/elias-jorin-ursin-kaiser-646638371/",
+                "https://github.com/elias4864",
               ],
-              jobTitle: "Full-Stack Developer",
+              jobTitle: "Applikationsentwickler",
               worksFor: {
                 "@type": "Organization",
                 name: "Self-employed",

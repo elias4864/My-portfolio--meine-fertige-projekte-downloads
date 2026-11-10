@@ -18,28 +18,28 @@ interface LogoProps {
 }
 
 export default function Logo({
-  href = "/",
-  className,
-  showIcon = true,
-}: LogoProps) {
+                               href = "/assets/Initalen.png",
+                               className,
+                               showIcon = true,
+                             }: LogoProps) {
   return (
-    <Link href={href} className={clsx("inline-flex", className)}>
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        className="flex items-center gap-2 cursor-pointer select-none"
-      >
-        {showIcon && (
-          <Code2 size={22} className="text-primary" />
-        )}
-
-        <span
-          className={`${birthstone.className} text-lg sm:text-2xl leading-none text-primary`}
+      <Link href={href} className={clsx("inline-flex", className)}>
+        <motion.div
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="flex items-center gap-2 cursor-pointer select-none"
         >
-          Mehedi
-          <span className="text-base-content/60"> Hasan</span>
+          {showIcon && (
+              <Code2 size={22} className="text-primary" />
+          )}
+
+          <span
+              className={`${birthstone.className} text-lg sm:text-2xl leading-none text-primary`}
+          >
+          Elias
+          <span className="text-base-content/60"> Kaiser</span>
         </span>
-      </motion.div>
-    </Link>
+        </motion.div>
+      </Link>
   );
 }

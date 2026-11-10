@@ -20,9 +20,8 @@ import Image from "next/image";
 const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "your_service_id";
 const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "your_template_id";
 const USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID || "your_user_id";
-const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "mehedi.hasan16111@gmail.com";
-const CONTACT_PHONE = process.env.NEXT_PUBLIC_CONTACT_PHONE || "+88016017128338";
-const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL || "https://cal.com/TheMehediHQ/15min";
+const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "elias.kaiser@gmx.ch";
+const CONTACT_PHONE = process.env.NEXT_PUBLIC_CONTACT_PHONE || "+41 76 492 83 05";
 
 // 🔹 Contact Item Type
 interface ContactItem {
@@ -121,24 +120,9 @@ const ContactMe: React.FC = () => {
     {
       icon: <MapPin size={20} />,
       label: "Address",
-      value: "Dhaka, Bangladesh",
+      value: "Zurich, Switzerland",
     },
-    {
-      icon: <Calendar size={20} />,
-      label: "Book a Meeting",
-      value: (
-        <motion.a
-          whileHover={{ x: 3 }}
-          href={CALENDLY_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline-offset-6 decoration-dashed hover:underline  rounded-lg group inline-flex items-center gap-1 hover:text-primary font-geist text-sm cursor-pointer transition-all duration-300"
-        >
-          Schedule on Calendly
-          <ArrowUpRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
-        </motion.a>
-      ),
-    },
+
   ];
 
   return (

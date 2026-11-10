@@ -36,7 +36,7 @@ interface LanguageData {
 }
 
 export default function DashboardPage() {
-  const USERNAME = "themehedihq";
+  const USERNAME = "elias4864";
   const TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
   const [repos, setRepos] = useState<Repo[]>([]);

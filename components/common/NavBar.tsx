@@ -24,8 +24,8 @@ const Navbar: React.FC<{ blogs: BlogMetaData[] }> = ({ blogs }) => {
   const pathname = usePathname();
 
   const socialLinks: SocialLink[] = useMemo(() => [
-    { icon: Github, url: "https://github.com/themehedihq", label: "GitHub" },
-    { icon: Linkedin, url: "https://www.linkedin.com/in/themehedihq", label: "LinkedIn" },
+    { icon: Github, url: "https://github.com/elias4864", label: "GitHub" },
+    { icon: Linkedin, url: "https://www.linkedin.com/in/elias-kaiser-646638371/", label: "LinkedIn" },
   ], []);
 
   const isActive = useCallback((route: string) => pathname === route, [pathname]);

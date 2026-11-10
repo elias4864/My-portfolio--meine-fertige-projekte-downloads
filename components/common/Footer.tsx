@@ -3,12 +3,11 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin } from "lucide-react";
 import { FaEnvelope } from "react-icons/fa";
+import { Gitlab } from "lucide-react"; // Oder das entsprechende Icon-Package
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import Logo from "@/components/common/Logo";
-
-/* ---------------- Types ---------------- */
-
+import aboutImg from "@/assets/images/blogs/about.png";
 interface SocialLink {
   icon: React.ComponentType<{ size?: number }>;
   href: string;
@@ -21,17 +20,17 @@ interface NavLink {
 }
 
 
-const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL || "https://cal.com/TheMehediHQ/15min";
 
 /* ---------------- Component ---------------- */
 
 
 const Footer = () => {
   const socialLinks: SocialLink[] = [
-    { icon: Github, href: "https://github.com/themehedihq", label: "GitHub" },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/themehedihq/", label: "LinkedIn" },
-    { icon: FaEnvelope, href: "mailto:mehedi.hasan16111@gmail.com", label: "Email" },
-    { icon: FaXTwitter, href: "https://x.com/mehedihasan1102", label: "Twitter" },
+    { icon: Github, href: "https://github.com/elias4864", label: "GitHub" },
+    { icon: Gitlab, href: "https://gitlab.com/elias4864", label: "Gitlab" },
+
+    { icon: Linkedin, href: "https://www.linkedin.com/in/elias-jorin-ursin-kaiser-646638371/", label: "LinkedIn" },
+    { icon: FaEnvelope, href: "mailto:elias.kaiser@gmx.ch", label: "Email" },
   ];
 
   const mainPages: NavLink[] = [
@@ -49,10 +48,6 @@ const Footer = () => {
    
     // { label: "Resume", href: "/Resume_of_Mehedi_Hasan.pdf" },
      { label: "Dashboard", href: "/dashboard" },
-    {
-  label: "Book a Meeting",
-  href: CALENDLY_URL,
-}
 
   ];
 
@@ -142,7 +137,7 @@ const Footer = () => {
           </div>
 
           <p className="mt-4 text-xs text-base-content/40">
-            © {new Date().getFullYear()} Mehedi Hasan
+            © {new Date().getFullYear()} Elias Kaiser
           </p>
 {/* this div use for available badge  */}
 
@@ -177,7 +172,7 @@ const Footer = () => {
           </div>
 
           <p className="text-xs text-base-content/40 ">
-            © {new Date().getFullYear()} Mehedi Hasan
+            © {new Date().getFullYear()} Elias Kaiser
           </p>
         </div>
 

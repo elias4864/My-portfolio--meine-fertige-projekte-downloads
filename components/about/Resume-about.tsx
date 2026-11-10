@@ -2,9 +2,8 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import {  ArrowUpRight } from "lucide-react";
-import aboutDataJson from "@/data/resume.json";
-
+import { ArrowUpRight } from "lucide-react";
+import aboutDataJson from "@/data/document.json";
 
 /* ---------------- Types ---------------- */
 interface ExperienceItem {
@@ -28,16 +27,23 @@ interface AboutData {
 }
 
 /* ---------------- Helpers ---------------- */
-const initializeAboutData = (data: typeof aboutDataJson): AboutData => {
-  const extractYear = (value?: string | null) =>
-    parseInt(value?.match(/\d{4}/)?.[0] || "0", 10);
+const initializeAboutData = (data: any): AboutData => {
+  // Sicherheits-Check: Falls data oder Arrays undefined/null sind
+  const educationList: EducationItem[] = Array.isArray(data?.education) ? data.education : [];
+  const experienceList: ExperienceItem[] = Array.isArray(data?.experience) ? data.experience : [];
+
+  const extractYear = (value?: string | null) => {
+    if (!value) return 0;
+    const match = value.match(/\d{4}/);
+    return match ? parseInt(match[0], 10) : 0;
+  };
 
   return {
-    education: [...data.education].sort(
-      (a, b) => extractYear(b.details) - extractYear(a.details)
+    education: [...educationList].sort(
+        (a, b) => extractYear(b.details) - extractYear(a.details)
     ),
-    experience: [...data.experience].sort(
-      (a, b) => extractYear(b.time) - extractYear(a.time)
+    experience: [...experienceList].sort(
+        (a, b) => extractYear(b.time) - extractYear(a.time)
     ),
   };
 };
@@ -45,137 +51,117 @@ const initializeAboutData = (data: typeof aboutDataJson): AboutData => {
 /* ---------------- Component ---------------- */
 const ResumeAboutSections: React.FC = () => {
   const [aboutData] = useState<AboutData>(() =>
-    initializeAboutData(aboutDataJson)
+      initializeAboutData(aboutDataJson)
   );
 
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="text-base-content font-geist max-w-3xl mx-auto pt-6 px-0 space-y-8"
-    >
-      {/* ================= Experience ================= */}
-      <motion.div
-        className="relative  rounded-lg p-0 backdrop-blur-sm "
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
+      <motion.section
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="text-base-content font-geist max-w-3xl mx-auto pt-6 px-0 space-y-8"
       >
-        <h3 className="flex items-center gap-3 text-xl mb-4">
-          Experience
-        </h3>
+        {/* ================= Experience ================= */}
+        <motion.div
+            className="relative rounded-lg p-0 backdrop-blur-sm"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+        >
+          <h3 className="flex items-center gap-3 text-xl mb-4 font-semibold">
+            Experience
+          </h3>
 
-        <ul className="space-y-4">
-          {aboutData.experience.map((item, idx) => (
-            <motion.li
-  key={idx}
-  transition={{ type: "spring", stiffness: 300 }}
-  className="
-    group p-4 rounded-lg
-    transition-colors transition-shadow
-    hover:bg-base-100
-  "
->
-  <p className="font-medium transition-colors ">
-    {item.title}
-  </p>
+          <ul className="space-y-4">
+            {aboutData.experience.map((item, idx) => (
+                <motion.li
+                    key={idx}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="group p-4 rounded-lg transition-colors hover:bg-base-100"
+                >
+                  <p className="font-medium transition-colors">
+                    {item.title}
+                  </p>
 
-  {item.organization && (
-    <p className="mt-1 text-base-content/70 transition-colors ">
-      {item.organization}
-      {item.time && ` | ${item.time}`}
-    </p>
-  )}
+                  {item.organization && (
+                      <p className="mt-1 text-base-content/70 transition-colors">
+                        {item.organization}
+                        {item.time && ` | ${item.time}`}
+                      </p>
+                  )}
 
-  {item.description && (
-    <p className="mt-2 text-sm leading-relaxed text-base-content/60 transition-colors ">
-      {item.description}
-    </p>
-  )}
+                  {item.description && (
+                      <p className="mt-2 text-sm leading-relaxed text-base-content/60 transition-colors">
+                        {item.description}
+                      </p>
+                  )}
 
-  {item.profileLink && (
-    <a
-      href={item.profileLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="
-        inline-flex mt-2 items-center gap-1 text-sm
-        text-base-content/70
-        transition-all
-        hover:text-primary
-        underline-offset-6 decoration-dashed
-        hover:underline
-      "
-    >
-      View Profile
-      <ArrowUpRight
-        size={14}
-        className="transition-transform group-hover:translate-x-1"
-      />
-    </a>
-  )}
-</motion.li>
+                  {item.profileLink && (
+                      <a
+                          href={item.profileLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex mt-2 items-center gap-1 text-sm text-base-content/70 transition-all hover:text-primary underline-offset-4 decoration-dashed hover:underline"
+                      >
+                        View Profile
+                        <ArrowUpRight
+                            size={14}
+                            className="transition-transform group-hover:translate-x-1"
+                        />
+                      </a>
+                  )}
+                </motion.li>
+            ))}
+          </ul>
+        </motion.div>
 
-          ))}
-        </ul>
-      </motion.div>
+        {/* ================= Education ================= */}
+        <motion.div
+            className="relative rounded-lg p-0 backdrop-blur-sm"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <h3 className="flex items-center gap-3 text-xl mb-4 font-semibold">
+            Education
+          </h3>
 
-      {/* ================= Education ================= */}
-      <motion.div
-        className="relative  rounded-lg p-0 backdrop-blur-sm "
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
-        <h3 className="flex items-center gap-3 text-xl mb-4">
-           Education
-        </h3>
+          <ul className="space-y-4">
+            {aboutData.education.map((edu, idx) => (
+                <motion.li
+                    key={idx}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="group p-4 rounded-lg hover:bg-base-100 transition-colors"
+                >
+                  <p className="font-medium transition-colors">
+                    {edu.institution}
+                  </p>
 
-        <ul className="space-y-4">
-          {aboutData.education.map((edu, idx) => (
-            <motion.li
-  key={idx}
-  transition={{ type: "spring", stiffness: 300 }}
-  className="group p-4 rounded-lg hover:bg-base-100 transition-colors"
->
-  <p className="font-medium transition-colors ">
-    {edu.institution}
-  </p>
+                  <p className="mt-1 text-base-content/70 transition-colors">
+                    {edu.degree}
+                    {edu.details && ` | ${edu.details}`}
+                  </p>
 
-  <p className="mt-1 text-base-content/70 transition-colors ">
-    {edu.degree}
-    {edu.details && ` | ${edu.details}`}
-  </p>
-
-  {edu.credentialLink && (
-    <a
-      href={edu.credentialLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="
-        inline-flex mt-2 items-center gap-1 text-sm
-        text-base-content/70
-        transition-all
-        hover:text-primary
-        underline-offset-6 decoration-dashed
-        hover:underline
-      "
-    >
-      View Credential
-      <ArrowUpRight
-        size={14}
-        className="transition-transform group-hover:translate-x-1"
-      />
-    </a>
-  )}
-</motion.li>
-
-          ))}
-        </ul>
-      </motion.div>
-    </motion.section>
+                  {edu.credentialLink && (
+                      <a
+                          href={edu.credentialLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex mt-2 items-center gap-1 text-sm text-base-content/70 transition-all hover:text-primary underline-offset-4 decoration-dashed hover:underline"
+                      >
+                        View Credential
+                        <ArrowUpRight
+                            size={14}
+                            className="transition-transform group-hover:translate-x-1"
+                        />
+                      </a>
+                  )}
+                </motion.li>
+            ))}
+          </ul>
+        </motion.div>
+      </motion.section>
   );
 };
 

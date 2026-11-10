@@ -75,7 +75,7 @@ export default function Splash() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="text-xs sm:text-sm font-geist tracking-wide text-base-content/60"
         >
-          Full-Stack Developer
+          Application Developer
         </motion.p>
       </motion.div>
     </div>

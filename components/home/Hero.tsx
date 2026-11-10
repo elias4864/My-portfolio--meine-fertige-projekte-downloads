@@ -149,7 +149,7 @@ const HeroSection: React.FC = () => {
               transition={{ delay: 0.45 }}
               whileHover={{ scale: 1.05, rotate: -0.5 }}
               whileTap={{ scale: 0.97 }}
-              href="/Resume_of_Mehedi_Hasan.pdf"
+              href="/assets/Lebenslauf_Elias Kaiser.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-1 hover:text-primary underline-offset-6 decoration-dashed hover:underline rounded-lg font-geist text-sm transition-all duration-300"

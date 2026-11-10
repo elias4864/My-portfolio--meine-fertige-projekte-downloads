@@ -33,8 +33,8 @@ export default function AboutPage() {
             className="relative w-40 h-56 sm:w-48 sm:h-64 md:w-56 md:h-72 mx-auto md:mx-0 overflow-hidden rounded-2xl shadow-lg flex-shrink-0"
           >
             <Image
-              src="/assets/images/about.png"
-              alt="Mehedi Hasan"
+                src="/assets/Aboutme.JPG"
+              alt="Elias Kaiser"
               fill
               sizes="(max-width: 768px) 200px, 224px"
               className="object-cover"
@@ -50,7 +50,7 @@ export default function AboutPage() {
             className="flex flex-col justify-center space-y-3"
           >
             <p className="text-sm sm:text-base text-base-content/80 leading-relaxed">
-              I’m Mehedi Hasan, a Full-Stack Web Developer specializing in fast, scalable web applications using MERN, Next.js, React, and Tailwind CSS.
+              I’m Elias Kaiser, a  passionate Application Developer specializing in fast, scalable web applications using  React, and Tailwind CSS.
             </p>
 
             <p className="text-sm sm:text-base text-base-content/80 leading-relaxed">
@@ -60,7 +60,7 @@ export default function AboutPage() {
             <p className="text-sm sm:text-base text-base-content/80 leading-relaxed">
               Connect with me on{" "}
               <a
-                href="https://www.linkedin.com/in/themehedihq/"
+                href="https://www.linkedin.com/in/elias-jorin-ursin-kaiser-646638371/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium hover:text-primary underline underline-offset-6 decoration-dashed transition-colors"
