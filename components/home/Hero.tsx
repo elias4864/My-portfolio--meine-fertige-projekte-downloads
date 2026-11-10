@@ -28,9 +28,9 @@ const slideUp = {
 /* ------------------ Static Styles ------------------ */
 
 const signatureMaskStyle = {
-  mask: "url('https://i.ibb.co/pjK7xwK3/mehedi-hasan-signeture.png') center / contain no-repeat",
+  mask: "url('/assets/images/blogs/Signature.png') center / contain no-repeat",
   WebkitMask:
-    "url('https://i.ibb.co/pjK7xwK3/mehedi-hasan-signeture.png') center / contain no-repeat"
+    "url('/assets/images/blogs/Signature.png') center / contain no-repeat"
 };
 
 /* ------------------ Component ------------------ */
@@ -73,8 +73,8 @@ const HeroSection: React.FC = () => {
           >
             <div className="relative w-full aspect-square">
               <Image
-                src="/assets/images/profile.png"
-                alt="Mehedi Hasan"
+                src="/assets/Aboutme.JPG"
+                alt="Elias Kaiser "
                 fill
                 className="object-cover rounded-lg"
                 priority
@@ -101,7 +101,7 @@ const HeroSection: React.FC = () => {
           <span className="text-xl text-base-content font-geist flex flex-wrap items-center">
             {showTypewriter && (
               <Typewriter
-                words={["Hi, I'm Mehedi Hasan"]}
+                words={["Hi, I'm Elias Kaiser"]}
                 loop={1}
                 cursor
                 typeSpeed={100}
@@ -130,15 +130,15 @@ const HeroSection: React.FC = () => {
           >
             I build full-stack web apps using{" "}
             <span className="bg-primary/20 text-primary font-medium px-1 rounded">
-              Next.js & React
+           React.js & Tailwind CSS
             </span>
             ,{" "}
             <span className="bg-primary/20 text-primary font-medium px-1 rounded">
-              TypeScript
+              JavaScript
             </span>
             , and{" "}
             <span className="bg-primary/20 text-primary font-medium px-1 rounded">
-              Node.js
+             HTML5/CSS
             </span>
             , focusing on clean architecture, smooth UX, and high-performance solutions.
           </motion.p>
@@ -149,7 +149,8 @@ const HeroSection: React.FC = () => {
               transition={{ delay: 0.45 }}
               whileHover={{ scale: 1.05, rotate: -0.5 }}
               whileTap={{ scale: 0.97 }}
-              href="/assets/Lebenslauf_Elias Kaiser.pdf"
+
+              href="/Lebenslauf_Elias Kaiser.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-1 hover:text-primary underline-offset-6 decoration-dashed hover:underline rounded-lg font-geist text-sm transition-all duration-300"

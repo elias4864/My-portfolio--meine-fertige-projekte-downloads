@@ -45,7 +45,7 @@ const GitHubActivitySection: React.FC = () => {
         </div>
        
 <div className="my-4 px-4  text-center">
- {/* <p
+  <p
     className="
       text-sm   leading-relaxed
     "
@@ -53,7 +53,7 @@ const GitHubActivitySection: React.FC = () => {
     <span>Explore </span>
 
     <Link
-      href="https://github.com/themehedihq"
+      href="https://github.com/elias4864"
       target="_blank"
       rel="noopener noreferrer"
       className="
@@ -66,9 +66,9 @@ const GitHubActivitySection: React.FC = () => {
       Github ⤴
     </Link> 
    
-  </p> */}
+  </p>
   <Link
-  href="https://github.com/themehedihq"
+  href="https://github.com/elias4864"
   target="_blank"
   rel="noopener noreferrer"
   className="
