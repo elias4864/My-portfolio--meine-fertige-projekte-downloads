@@ -26,13 +26,10 @@ const slideUp = {
 };
 
 /* ------------------ Static Styles ------------------ */
-
 const signatureMaskStyle = {
   mask: "url('/assets/images/blogs/Signature.png') center / contain no-repeat",
-  WebkitMask:
-    "url('/assets/images/blogs/Signature.png') center / contain no-repeat"
+  WebkitMask: "url('/assets/images/blogs/Signature.png') center / contain no-repeat"
 };
-
 /* ------------------ Component ------------------ */
 
 const HeroSection: React.FC = () => {
@@ -82,9 +79,10 @@ const HeroSection: React.FC = () => {
             </div>
 
             <div className="flex justify-center items-center h-12 sm:h-16">
-              <div
-                className="w-4/5 max-w-xs h-full bg-primary"
-                style={signatureMaskStyle}
+              <img
+                  src="/assets/images/blogs/Signature.png"
+                  alt="Signature"
+                  className="w-4/5 max-w-xs h-full object-contain"
               />
             </div>
           </motion.div>
