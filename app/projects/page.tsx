@@ -21,7 +21,7 @@ interface Project {
   futurePlans?: string;
 }
 
-type FilterType = "All" | "Frontend" | "Backend" | "Full Stack";
+type FilterType = "Design" |"Other"| "Frontend" | "Backend" | "Full Stack" |"Microservices Deployment"|"Android Development"|"All";
 
 const AllProjectsPage: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -61,12 +61,16 @@ const AllProjectsPage: React.FC = () => {
             viewport={{ once: true }}
             className="my-4 text-start"
           >
-            <h2 className="text-3xl">Projects</h2>
-             <h3 className="mt-4 text-sm sm:text-base text-base-content/80 leading-relaxed"> I’ve developed commercial projects as well as hobby projects. All projects are included (along with course related projects) here.</h3>
+            <h2 className="text-3xl">My IT-Projects</h2>
+            <h3 className="mt-4 text-sm sm:text-base text-base-content/80 leading-relaxed">
+              A collection of  my IT-projects developed during my studies at WISS,
+              as well as personal hobby projects and independent applications
+              built in my free time.
+            </h3>
           </motion.div>
 
           <div className="flex justify-center gap-2 mb-2 flex-wrap">
-            {["All", "Frontend", "Backend", "Full Stack"].map((type) => (
+            {["Other", "Frontend", "Backend", "Full Stack","Microservices Deployment","Android Development","Design","All"].map((type) => (
               <button
                 key={type}
                 onClick={() => setFilter(type as FilterType)}

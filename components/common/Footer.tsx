@@ -46,7 +46,6 @@ const Footer = () => {
     
     { label: "Links", href: "/links" },
    
-    // { label: "Resume", href: "/Resume_of_Mehedi_Hasan.pdf" },
      { label: "Dashboard", href: "/dashboard" },
 
   ];

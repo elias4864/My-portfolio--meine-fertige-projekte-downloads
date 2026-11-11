@@ -61,7 +61,6 @@ const Navbar: React.FC = () => {
                 { name: "About", route: "/about" },
                 { name: "Projects", route: "/projects" },
                 { name: "Contact", route: "/contact" },
-                {name:"Hobbys",route:"/hobbys"},
               ].map((item) => (
                   <li key={item.route}>
                     <Link
@@ -150,7 +149,6 @@ const Navbar: React.FC = () => {
                         { name: "About", route: "/about" },
                         { name: "Projects", route: "/projects" },
                         { name: "Contact", route: "/contact" },
-                        {name:"Hobbies",route:"/hobbys"},
                       ].map((item) => (
                           <li key={item.route}>
                             <Link

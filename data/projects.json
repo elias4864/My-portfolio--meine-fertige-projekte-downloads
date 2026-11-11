@@ -49,7 +49,7 @@
     "videos": [],
     "challenges": "Integrating complex Swiss canton calculation logic into responsive interactive sliders.",
     "futurePlans": "Add multi-language support and client testimonial management.",
-    "type": "Full Stack"
+    "type": "Frontend"
   },
   {
     "title": "WISS Connect-Plattform for WISS-Trainees",
@@ -99,7 +99,7 @@
     "videos": [],
     "challenges": "Configuring persistent volume claims and Helm chart parameters inside a single-node Minikube environment.",
     "futurePlans": "Automate deployment backups and expand documentation categories.",
-    "type": "DevOps"
+    "type": "Deployment"
   },
   {
     "title": "Master Todo Mobile App",
@@ -121,7 +121,7 @@
     "videos": [],
     "challenges": "Managing asynchronous local database operations and state transitions on Android emulators.",
     "futurePlans": "Add cloud synchronization and widget support.",
-    "type": "Frontend"
+    "type": "Android Development"
   },
   {
     "title": "Football Quiz Application",
@@ -172,7 +172,7 @@
     "videos": [],
     "challenges": "Configuring networking rules and persistent volumes across multiple containerized services.",
     "futurePlans": "Implement automated SSL certificates and centralized log monitoring.",
-    "type": "DevOps"
+    "type": "Microservices Deployment"
   },
   {
     "title": "MangaDB Library",
@@ -224,7 +224,7 @@
     "videos": [],
     "challenges": "Configuring network endpoints and API widgets for smooth real-time telemetry monitoring.",
     "futurePlans": "Add custom alert thresholds and smart home integrations.",
-    "type": "DevOps"
+    "type": "Microservices Deployment"
   },
   {
     "title": "Wissquiz Testing & Enhancement",
@@ -292,6 +292,6 @@
     "videos": [],
     "challenges": "Translating complex banking workflows into intuitive, user-friendly visual prototypes.",
     "futurePlans": "Develop a functional backend implementation for the prototype.",
-    "type": "Frontend"
+    "type": "Design"
   }
 ]

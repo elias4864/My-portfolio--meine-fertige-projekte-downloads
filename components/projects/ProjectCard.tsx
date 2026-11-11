@@ -11,7 +11,7 @@ export interface Project {
   images: string[];
   videos?: string[];
   techStack: string[];
-  type: 'Frontend' | 'Backend' | 'Full Stack' | 'All';
+  type: 'Frontend' | 'Backend' | 'Full Stack' | 'Mobile Development' | 'DevOps' | 'Deployment' | 'Other' |'Design';
   liveLink: string;
   frontendRepo?: string;
   backendRepo?: string;
