@@ -19,7 +19,9 @@
     "images": [
       "/assets/images/projects/Last.png"
     ],
-    "videos": [],
+    "videos": [
+      "/assets/video/Marketingvideo_World of Chewinggum_Elias und Vincent_Release V.1.6.mp4"
+    ],
     "challenges": "Collaborative agile coordination and synchronizing database models between Spring Boot and React.",
     "futurePlans": "Expand product categories and enhance user review filters.",
     "type": "Full Stack"
@@ -224,7 +226,7 @@
     "frontendRepo": null,
     "backendRepo": null,
     "images": [
-      "/assets/images/projects/glance.png"
+      "/assets/images/projects/Glance.svg"
     ],
     "videos": [],
     "challenges": "Configuring network endpoints and API widgets for smooth real-time telemetry monitoring.",
