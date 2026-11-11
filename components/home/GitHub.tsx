@@ -35,7 +35,7 @@ const GitHubActivitySection: React.FC = () => {
         {/* Calendar Image */}
         <div className="bg-base-200 rounded-lg overflow-hidden px-4">
           <img
-            src="/assets/images/Github Activity.png"
+            src="/Github Activity.png"
             alt="Elias Kaisers's GitHub Contribution Graph"
             className="w-full h-auto"
             loading="lazy"
