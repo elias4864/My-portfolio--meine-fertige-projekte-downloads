@@ -169,7 +169,7 @@
     "frontendRepo": null,
     "backendRepo": null,
     "images": [
-      "/assets/images/projects/infrastructure.png"
+      "/assets/images/projects/Nextcloud.png"
     ],
     "videos": [],
     "challenges": "Configuring networking rules and persistent volumes across multiple containerized services.",
@@ -249,7 +249,7 @@
     "frontendRepo": null,
     "backendRepo": null,
     "images": [
-      "/assets/images/projects/wissquiztest.png"
+      "/assets/images/projects/Wissquiz.png"
     ],
     "videos": [],
     "challenges": "Writing mock services and ensuring comprehensive test coverage for backend controllers.",
@@ -273,7 +273,7 @@
     "frontendRepo": null,
     "backendRepo": null,
     "images": [
-      "/assets/images/projects/miniclub.png"
+      "/assets/images/projects/Miniclub.svg"
     ],
     "videos": [],
     "challenges": "Replicating exact high-end corporate styling and animations without external design frameworks.",
@@ -296,7 +296,7 @@
     "frontendRepo": null,
     "backendRepo": null,
     "images": [
-      "/assets/images/projects/maestro.png"
+      "/assets/images/projects/Maestro.png"
     ],
     "videos": [],
     "challenges": "Translating complex banking workflows into intuitive, user-friendly visual prototypes.",
