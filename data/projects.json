@@ -13,9 +13,9 @@
       "MySQL",
       "Docker"
     ],
-    "liveLink": null,
-    "frontendRepo": null,
-    "backendRepo": null,
+    "frontendRepo": "https://github.com/Vinci4600/World-of-Chewing-gum/tree/dev/Frontend",
+
+    "backendRepo": "https://github.com/Vinci4600/World-of-Chewing-gum/tree/dev/Backend",
     "images": [
       "/assets/images/projects/Last.png"
     ],
@@ -37,12 +37,12 @@
     "techStack": [
       "React 19",
       "Vite",
-      "Tailwind CSS",
-      "Docker Compose"
+      "HTML5/CSS",
+      "Docker Compose",
+      "Github Actions"
     ],
-    "liveLink": null,
-    "frontendRepo": "https://github.com/elias4864/TitocciMetalcostruzioni-SAGL-Website",
-    "backendRepo": null,
+    "liveLink": "https://elias4864.github.io/Titocci-Metalcostruzioni-SAGL-Website-/",
+    "frontendRepo": "https://github.com/elias4864/Titocci-Metalcostruzioni-SAGL-Website-",
     "images": [
       "/assets/images/projects/titocci.png"
     ],
@@ -52,7 +52,7 @@
     "type": "Full Stack"
   },
   {
-    "title": "WISS Connectplattform for Trainees",
+    "title": "WISS Connect-Plattform for WISS-Trainees",
     "description": "An agile Scrum-based internship portal designed for WISS students, integrating token-based access controls and role-based security routing.",
     "features": [
       "Token-based access controls",
@@ -63,11 +63,12 @@
       "React",
       "Spring Boot",
       "MySQL",
-      "Docker"
+      "Docker",
+      "HTML5",
+      "CSS"
     ],
-    "liveLink": null,
-    "frontendRepo": null,
-    "backendRepo": null,
+    "frontendRepo": "https://github.com/LeoKuhnZH/WISS-Praktikum-App/tree/dev/frontend",
+    "backendRepo":"https://github.com/LeoKuhnZH/WISS-Praktikum-App/tree/dev/backend",
     "images": [
       "/assets/images/projects/Praktikum.jpg"
     ],
@@ -91,9 +92,7 @@
       "Docker",
       "Helm"
     ],
-    "liveLink": null,
-    "frontendRepo": null,
-    "backendRepo": null,
+    "Repo": "https://github.com/elias4864/My-Wiki",
     "images": [
       "/assets/images/projects/Wiki.jpg"
     ],
@@ -115,9 +114,7 @@
       "Java",
       "Room DAO"
     ],
-    "liveLink": null,
-    "frontendRepo": null,
-    "backendRepo": null,
+    "frontendRepo": "https://github.com/elias4864/Aufgabenplanner-Mobile-App",
     "images": [
       "/assets/images/projects/TodoApp.png"
     ],
@@ -139,11 +136,12 @@
       "Spring Boot",
       "React",
       "Vite",
-      "MySQL"
+      "MySQL",
+      "Docker",
+      "Docker-Compose"
     ],
-    "liveLink": null,
-    "frontendRepo": null,
-    "backendRepo": null,
+    "frontendRepo": "https://github.com/elias4864/Fussballquiz-React-Projekt",
+    "backendRepo": "https://github.com/elias4864/Fussballquizapplikation",
     "images": [
       "/assets/images/projects/Fussballquiz.png"
     ],
@@ -167,9 +165,7 @@
       "MySQL",
       "Nextcloud"
     ],
-    "liveLink": null,
-    "frontendRepo": null,
-    "backendRepo": null,
+    "Repo": "https://gitlab.com/docker1472640/DockerKMU",
     "images": [
       "/assets/images/projects/Nextcloud.png"
     ],
@@ -198,9 +194,8 @@
       "JPA/Hibernate",
       "Tomcat"
     ],
-    "liveLink": null,
-    "frontendRepo": "https://github.com/elias4864/manga-frontend",
-    "backendRepo": "https://github.com/elias4864/manga-backend",
+    "frontendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-frontend",
+    "backendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-backend",
     "images": [
       "/assets/images/projects/MangaDB.png"
     ],
@@ -222,9 +217,7 @@
       "Glance",
       "Linux"
     ],
-    "liveLink": null,
-    "frontendRepo": null,
-    "backendRepo": null,
+    "Repo": "https://github.com/elias4864/Glance-Home-Assistant-Dashboard-",
     "images": [
       "/assets/images/projects/Glance.svg"
     ],
@@ -243,13 +236,14 @@
     ],
     "techStack": [
       "Java",
+      "React.js",
       "JUnit",
       "Mockito",
       "Spring Boot"
     ],
-    "liveLink": null,
-    "frontendRepo": null,
-    "backendRepo": null,
+    "frontendRepo": "https://github.com/elias4864/M450-Apptesting-CodeQuiz/tree/main/frontend",
+    "backendRepo": "https://github.com/elias4864/M450-Apptesting-CodeQuiz/tree/main/backend",
+
     "images": [
       "/assets/images/projects/Wissquiz.png"
     ],
@@ -259,7 +253,7 @@
     "type": "Full Stack"
   },
   {
-    "title": "Miniclub Website",
+    "title": "Miniclub(MINI) Website",
     "description": "A personal web platform implementation inspired by the design and structure of the 'MINI Electric Cars' webshop collection.",
     "features": [
       "Thematic product showcase layout",
@@ -268,12 +262,9 @@
     ],
     "techStack": [
       "HTML5",
-      "CSS3",
-      "JavaScript"
+      "CSS3"
     ],
-    "liveLink": null,
-    "frontendRepo": null,
-    "backendRepo": null,
+    "frontendRepo": "https://gitlab.com/elias4864/miniclub-website",
     "images": [
       "/assets/images/projects/Miniclub.svg"
     ],
@@ -294,9 +285,7 @@
       "Visily",
       "UI/UX Design"
     ],
-    "liveLink": null,
-    "frontendRepo": null,
-    "backendRepo": null,
+    "liveLink": "https://app.visily.ai/projects/5cb68c40-2b03-47d6-bfa1-80e98050b34d/boards/2314570/presenter?play-mode=All+screens",
     "images": [
       "/assets/images/projects/Maestro.png"
     ],

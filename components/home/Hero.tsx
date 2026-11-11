@@ -136,9 +136,10 @@ const HeroSection: React.FC = () => {
             </span>
             , and{" "}
             <span className="bg-primary/20 text-primary font-medium px-1 rounded">
-             HTML5/CSS
+             HTML5/CSS and Tailwind CSS
             </span>
-            , focusing on clean architecture, smooth UX, and high-performance solutions.
+
+            I build modern, scalable web applications using React.js, Next.js, JavaScript, Java, and Tailwind CSS. I focus on clean architecture, intuitive user experiences, and high-performance solutions. Passionate about developing efficient backend systems, modern frontend interfaces, and reliable applications through clean code, continuous testing, and thoughtful problem-solving.
           </motion.p>
 
           <div className="flex flex-wrap gap-4 mt-2">

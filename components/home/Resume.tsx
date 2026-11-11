@@ -205,9 +205,10 @@ const ResumeSections: React.FC = () => {
             <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4 mt-4">
               <div className="text-start m-4">
                 <p className="text-sm text-base-content mb-0">Interests</p>
-                <h2 className="text-2xl">
-                  Leisure <span className="text-base-content/60">Leisure Activities</span>
-                </h2>
+
+                  <h2 className="text-2xl">
+                    Leisure <span className="text-base-content/60">Activities</span>
+                  </h2>
               </div>
 
               <SimpleBar className="max-h-[300px] pr-2">
