@@ -9,67 +9,54 @@ import GitHubActivitySection from '@/components/home/GitHub';
 import SkillsSection from '@/components/home/Skills';
 import ContactHomePage from '@/components/home/ContactHomePage';
 import WhatIDoSection from '@/components/home/WhatIDoSection';
-import { getSortedBlogsData } from '@/lib/blogs';
 
 // ================================================
 // HOME PAGE COMPONENT
 // ================================================
-export default async function Home() {
-  // 🔹 Fetch all blogs
-  const allBlogsData = await getSortedBlogsData();
+export default function Home() {
+    return (
+        <div className="min-h-screen font-geist relative">
 
-  // 🔹 Get latest 3 blogs for homepage
-  const latestBlogs = allBlogsData
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, 3);
-
-  return (
-    <div className="min-h-screen font-geist relative">
-
-      {/* ================================================
+            {/* ================================================
           SCROLL PROGRESS INDICATOR
       ================================================ */}
-      <ScrollProgress />
+            <ScrollProgress />
 
-      {/* ================================================
+            {/* ================================================
           1. Hero Section – Identity & CTA
       ================================================ */}
-      <HeroSection />
+            <HeroSection />
 
-      {/* ================================================
+            {/* ================================================
           2. Skills Section – Quick Technical Validation
       ================================================ */}
-      <SkillsSection />
+            <SkillsSection />
 
-      {/* ================================================
+            {/* ================================================
           3. Featured Projects – Primary Proof
       ================================================ */}
-      <ProjectsHomePage />
+            <ProjectsHomePage />
 
-      {/* ================================================
+            {/* ================================================
           4. What I Do – Services / Offerings
       ================================================ */}
-      <WhatIDoSection />
+            <WhatIDoSection />
 
-      {/* ================================================
+            {/* ================================================
           5. Resume Section – Hiring Support
       ================================================ */}
-      <ResumeSections />
+            <ResumeSections />
 
-      {/* ================================================
-          6. Blog Section – Thought Leadership
+            {/* ================================================
+          6. GitHub Section – Activity Proof
       ================================================ */}
+            <GitHubActivitySection />
 
-      {/* ================================================
-          7. GitHub Section – Activity Proof
+            {/* ================================================
+          7. Contact Section – Conversion
       ================================================ */}
-      <GitHubActivitySection />
+            <ContactHomePage />
 
-      {/* ================================================
-          8. Contact Section – Conversion
-      ================================================ */}
-      <ContactHomePage />
-
-    </div>
-  );
+        </div>
+    );
 }

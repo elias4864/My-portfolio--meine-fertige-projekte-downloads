@@ -28,7 +28,7 @@ const AllProjectsPage: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [filter, setFilter] = useState<FilterType>("All");
 
-  const projects = useMemo(() => projectsData as Project[], []);
+  const projects = useMemo(() => projectsData as unknown as Project[], []);
 
   const openModal = useCallback((project: Project) => {
     setSelectedProject(project);

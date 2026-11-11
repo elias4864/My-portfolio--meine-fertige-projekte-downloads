@@ -16,7 +16,6 @@ import ScrollToTopButton from "@/components/common/ScrollButton";
 import Navbar from "@/components/common/NavBar";
 import Splash from '@/components/ui/Splash';
 // import CustomCursor from "@/components/common/CustomCursor";
-import { getSortedBlogsData } from "@/lib/blogs";
 import { Toaster } from "react-hot-toast";
 import AvailabilityBadge from "@/components/common/AvailabilityBadge";
 
@@ -24,9 +23,9 @@ import AvailabilityBadge from "@/components/common/AvailabilityBadge";
 // METADATA (SEO / SOCIAL SHARING)
 // ================================================
 export const metadata = {
-  title: "Elias Kaiser| Application Developer ",
+  title: "Elias Kaiser | Application Developer",
   description:
-    "Portfolio of Elias Kaiser – Application Developer specializing in Next.js, React, JavaScript, and modern web applications.",
+      "Portfolio of Elias Kaiser – Application Developer specializing in Next.js, React, JavaScript, and modern web applications.",
   keywords: [
     "Elias Kaiser",
     "Full-Stack Developer",
@@ -52,7 +51,7 @@ export const metadata = {
   authors: [{ name: "Elias Kaiser" }],
   openGraph: {
     title: "Elias Kaiser | Applikationsentwicklung",
-    description: "Portfolio of Elias Kaiser– Fullstack Web Developer",
+    description: "Portfolio of Elias Kaiser – Fullstack Web Developer",
     url: "https://m-hasan.vercel.app",
     siteName: 'Elias Kaiser Portfolio',
     images: [
@@ -60,7 +59,7 @@ export const metadata = {
         url: "../assets/images/Initalen.jpg",
         width: 1200,
         height: 630,
-        alt: "Mehedi Hasan Portfolio",
+        alt: "Elias Kaiser Portfolio",
       },
     ],
     locale: "en_US",
@@ -75,61 +74,58 @@ export const metadata = {
 // ================================================
 // ROOT LAYOUT (SERVER COMPONENT)
 // ================================================
-export default async function RootLayout({
-  children,
-}: {
+export default function RootLayout({
+                                     children,
+                                   }: {
   children: ReactNode;
 }) {
-  // 🔹 Fetch sorted blogs data
-  const allBlogsData = await getSortedBlogsData();
-
   return (
-    <html lang="en" suppressHydrationWarning>
+      <html lang="en" suppressHydrationWarning>
       <head>
         {/* Structured data JSON-LD for SEO */}
         <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Elias Kaiser",
-              url: "https://m-hasan.vercel.app",
-              sameAs: [
-                "https://www.linkedin.com/in/elias-jorin-ursin-kaiser-646638371/",
-                "https://github.com/elias4864",
-              ],
-              jobTitle: "Applikationsentwickler",
-              worksFor: {
-                "@type": "Organization",
-                name: "Self-employed",
-              },
-            }),
-          }}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: "Elias Kaiser",
+                url: "https://m-hasan.vercel.app",
+                sameAs: [
+                  "https://www.linkedin.com/in/elias-jorin-ursin-kaiser-646638371/",
+                  "https://github.com/elias4864",
+                ],
+                jobTitle: "Applikationsentwickler",
+                worksFor: {
+                  "@type": "Organization",
+                  name: "Self-employed",
+                },
+              }),
+            }}
         />
         {/* Canonical URL */}
         <link rel="canonical" href="https://m-hasan.vercel.app" />
       </head>
 
       <body suppressHydrationWarning>
-        {/* ================================================
+      {/* ================================================
             CLIENT THEME PROVIDER
         ================================================ */}
-        <ClientThemeProvider>
-          
-          {/* 🔹 Splash Screen */}
-          <Splash />
+      <ClientThemeProvider>
 
-          {/* 🔹 Background Canvas / Animation */}
-          <Background />
+        {/* 🔹 Splash Screen */}
+        <Splash />
 
-          {/* 🔹 Optional Custom Cursor */}
-          {/* <CustomCursor /> */}
+        {/* 🔹 Background Canvas / Animation */}
+        <Background />
 
-          {/* ================================================
+        {/* 🔹 Optional Custom Cursor */}
+        {/* <CustomCursor /> */}
+
+        {/* ================================================
               GLOBAL TOASTER
           ================================================ */}
-          <Toaster
+        <Toaster
             position="top-right"
             reverseOrder={false}
             toastOptions={{
@@ -139,31 +135,31 @@ export default async function RootLayout({
                 boxShadow: "none",
               },
             }}
-          />
+        />
 
-          {/* ================================================
+        {/* ================================================
               PAGE LAYOUT WRAPPER
           ================================================ */}
-          <div className="px-2 lg:px-0">
-            {/* 🔹 Navbar */}
-            <Navbar blogs={allBlogsData} />
+        <div className="px-2 lg:px-0">
+          {/* 🔹 Navbar */}
+          <Navbar />
 
-            {/* 🔹 Main Content */}
-            <main>{children}</main>
+          {/* 🔹 Main Content */}
+          <main>{children}</main>
 
-            {/* 🔹 Footer */}
-            <Footer />
-          </div>
+          {/* 🔹 Footer */}
+          <Footer />
+        </div>
 
-          {/* ================================================
+        {/* ================================================
               CLIENT WIDGETS
           ================================================ */}
-          <ScrollToTopButton />
-          <WhatsAppButton />
-          <AvailabilityBadge status="Full-time" />
+        <ScrollToTopButton />
+        <WhatsAppButton />
+        <AvailabilityBadge status="Full-time" />
 
-        </ClientThemeProvider>
+      </ClientThemeProvider>
       </body>
-    </html>
+      </html>
   );
 }

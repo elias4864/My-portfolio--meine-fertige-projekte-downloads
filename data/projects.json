@@ -17,7 +17,7 @@
     "frontendRepo": null,
     "backendRepo": null,
     "images": [
-      "/assets/images/projects/woc.png"
+      "public/assets/images/projects/Last.png"
     ],
     "videos": [],
     "challenges": "Collaborative agile coordination and synchronizing database models between Spring Boot and React.",

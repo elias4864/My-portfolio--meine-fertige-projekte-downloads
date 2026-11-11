@@ -5,34 +5,51 @@ import React from "react";
 import { motion } from "framer-motion";
 import {
   SiNextdotjs,
-  SiMongodb,
+  SiMongodb,SiMysql,
   SiTailwindcss,
-  SiFirebase,
+  SiFirebase,SiKotlin,SiAndroidstudio,
   SiGithub,
   SiExpress,
 } from "react-icons/si";
 
 const whatIDo = [
   {
-    text: "Build modern, responsive UIs with React & HTML/CSS",
+    text: "Build modern, responsive UIs such as Webapps or Websites with React & HTML/CSS",
     icon: SiNextdotjs,
+  },
+
+  {
+    text: "Develop native Android applications using Android Studio with Java and Kotlin",
+    icon: SiAndroidstudio,
   },
   {
     text: "Develop REST APIs using Spring Boot and React.js",
     icon: SiExpress,
   },
   {
-    text: "Design MongoDB schemas and implement CRUD operations",
-    icon: SiMongodb,
+    text: "Design relational MySQL database schemas and implement robust CRUD operations",
+    icon: SiMysql,
   },
   {
-    text: "Implement authentication & role-based access(JWT tokenbased Authentification)",
+    text: "Implement authentication & role-based access(JWT tokenbased Authentification) with Spring Secruity(IAM)",
     icon: SiFirebase,
   },
   {
-    text: "Optimize performance and user experience",
+    text: "Optimize Accessbility and User Exeperiance",
     icon: SiTailwindcss,
   },
+
+  {
+    text: "Pr",
+    icon: SiTailwindcss,
+  },
+
+  {
+    text: "Design responsive and modern user interfaces optimized for Android emulators and devices",
+    icon: SiKotlin,
+  },
+
+
   {
     text: "Collaborate with Git, GitHub, and version control best practices",
     icon: SiGithub,
