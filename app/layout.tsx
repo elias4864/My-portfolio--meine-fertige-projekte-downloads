@@ -50,8 +50,8 @@ export const metadata = {
   ],
   authors: [{ name: "Elias Kaiser" }],
   openGraph: {
-    title: "Elias Kaiser | Applikationsentwicklung",
-    description: "Portfolio of Elias Kaiser – Fullstack Web Developer",
+    title: "Elias Kaiser | Application Developer",
+    description: "Portfolio of Elias Kaiser – Fullstack Application Developer",
     url: "https://m-hasan.vercel.app",
     siteName: 'Elias Kaiser Portfolio',
     images: [
@@ -68,7 +68,7 @@ export const metadata = {
   },
 
   robots: "index, follow",
-  icons: { icon: "./favicon.ico" },
+  icons: { icon: "./EK.jpg" },
 };
 
 // ================================================

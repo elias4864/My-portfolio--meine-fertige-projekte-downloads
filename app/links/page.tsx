@@ -49,7 +49,6 @@ const socialCategories: SocialCategory[] = [
     title: "Professional",
     links: [
       { icon: Linkedin, href: "https://www.linkedin.com/in/elias-jorin-ursin-kaiser-646638371/", label: "LinkedIn" },
-      { icon: FiGlobe, href: "https://mehedi-h.vercel.app", label: "" },
 
       { icon: FiMail, href: "mailto:elias.kaiser@gmx.ch", label: "Email" },
       { icon: FaUsers, href: "https://teams.microsoft.com/l/chat/0/0?users=Elias.Kaiser@wiss-edu.ch", label: "Microsoft Teams" }

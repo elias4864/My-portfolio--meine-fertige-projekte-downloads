@@ -78,11 +78,12 @@ const HeroSection: React.FC = () => {
               />
             </div>
 
-            <div className="flex justify-center items-center h-12 sm:h-16">
+
+            <div className="flex justify-center items-center h-24 sm:h-32 md:h-40">
               <img
                   src="/Signatur.png"
                   alt="Signature"
-                  className="w-4/5 max-w-xs h-full object-contain"
+                  className="w-full max-w-2xl h-full object-contain"
               />
             </div>
           </motion.div>
@@ -117,7 +118,7 @@ const HeroSection: React.FC = () => {
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
               Full-Stack
             </span>{" "}
-            Web Developer
+            Application  Developer
             <span className="animate-blink">_</span>
           </motion.h1>
 

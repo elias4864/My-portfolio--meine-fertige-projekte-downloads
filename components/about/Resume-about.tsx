@@ -5,7 +5,7 @@ import { motion, Variants } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import SimpleBar from "simplebar-react";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
-import aboutDataJson from "@/data/resume.json"
+import aboutDataJson from "@/data/resume.json";
 
 /* ---------------- Types ---------------- */
 
@@ -27,6 +27,7 @@ interface EducationItem {
 interface LeisureItem {
   activity: string;
   description?: string;
+  image?: string;
 }
 
 interface AboutData {
@@ -46,16 +47,22 @@ const fadeIn: Variants = {
 
 const initializeAboutData = (data: any): AboutData => {
   const educationList: EducationItem[] = Array.isArray(data?.education) ? data.education : [];
-  const experienceList: ExperienceItem[] = Array.isArray(data?.experience) ? data.experience : [];
 
-  // Flexibles Auslesen (sucht exakt nach "Leisure Activities" oder Fallbacks)
+  // Flexibles Auslesen für Experience ("Professional experience" sowie Fallbacks)
+  const rawExperience =
+      data?.["Professional experience"] ||
+      data?.experience ||
+      data?.workExperience ||
+      [];
+  const experienceList: ExperienceItem[] = Array.isArray(rawExperience) ? rawExperience : [];
+
+  // Flexibles Auslesen für Leisure Activities
   const rawLeisure =
       data?.["Leisure Activities"] ||
       data?.leisureActivities ||
+      data?.leisure ||
       data?.hobbies ||
-      data?.extracurricular ||
       [];
-
   const leisureList: LeisureItem[] = Array.isArray(rawLeisure) ? rawLeisure : [];
 
   const extractYear = (value?: string | null) => {
@@ -80,16 +87,26 @@ const initializeAboutData = (data: any): AboutData => {
 const ListItem: React.FC<{
   title: string;
   details?: string;
+  image?: string;
   extra?: React.ReactNode;
-}> = React.memo(({ title, details, extra }) => (
+}> = React.memo(({ title, details, image, extra }) => (
     <motion.li
         whileHover={{ x: 5, boxShadow: "0 8px 20px rgba(0,0,0,0.12)" }}
         transition={{ type: "spring", stiffness: 300 }}
-        className="bg-base-100 p-4 rounded-lg cursor-pointer"
+        className="bg-base-100 p-4 rounded-lg cursor-pointer flex items-start gap-4"
     >
-      <p className="font-medium">{title}</p>
-      {details && <p className="text-base-content/70 mt-1">{details}</p>}
-      {extra}
+      {image && (
+          <img
+              src={image}
+              alt={title}
+              className="w-12 h-12 rounded-md object-cover flex-shrink-0 mt-1"
+          />
+      )}
+      <div className="flex-1">
+        <p className="font-medium">{title}</p>
+        {details && <p className="text-base-content/70 mt-1 text-sm">{details}</p>}
+        {extra}
+      </div>
     </motion.li>
 ));
 
@@ -113,7 +130,7 @@ const ResumeSections: React.FC = () => {
           <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4">
             <div className="text-start m-4">
               <p className="text-sm text-base-content mb-0">Experience</p>
-              <h2 className="text-2xl">
+              <h2 className="text-2xl font-bold">
                 Career <span className="text-base-content/60">Highlights</span>
               </h2>
             </div>
@@ -145,7 +162,7 @@ const ResumeSections: React.FC = () => {
                                         className="inline-flex mt-1"
                                     >
                             <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
-                              View Profile
+                              View Company Website
                               <ArrowUpRight
                                   size={14}
                                   className="transition-transform group-hover:translate-x-1"
@@ -168,7 +185,7 @@ const ResumeSections: React.FC = () => {
           <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4">
             <div className="text-start m-4">
               <p className="text-sm text-base-content mb-0">Education</p>
-              <h2 className="text-2xl">
+              <h2 className="text-2xl font-bold">
                 Academic <span className="text-base-content/60">Background</span>
               </h2>
             </div>
@@ -213,7 +230,7 @@ const ResumeSections: React.FC = () => {
             <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4">
               <div className="text-start m-4">
                 <p className="text-sm text-base-content mb-0">Interests</p>
-                <h2 className="text-2xl">
+                <h2 className="text-2xl font-bold">
                   Leisure <span className="text-base-content/60">Activities</span>
                 </h2>
               </div>
@@ -225,6 +242,7 @@ const ResumeSections: React.FC = () => {
                           key={`leisure-${item.activity}-${idx}`}
                           title={item.activity}
                           details={item.description}
+                          image={item.image}
                       />
                   ))}
                 </ul>
