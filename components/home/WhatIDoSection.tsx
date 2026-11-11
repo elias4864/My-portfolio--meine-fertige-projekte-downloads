@@ -14,11 +14,11 @@ import {
 
 const whatIDo = [
   {
-    text: "Build modern, responsive UIs with React & Next.js",
+    text: "Build modern, responsive UIs with React & HTML/CSS",
     icon: SiNextdotjs,
   },
   {
-    text: "Develop REST APIs using Node.js & Express",
+    text: "Develop REST APIs using Spring Boot and React.js",
     icon: SiExpress,
   },
   {
@@ -26,7 +26,7 @@ const whatIDo = [
     icon: SiMongodb,
   },
   {
-    text: "Implement authentication & role-based access (JWT / Firebase)",
+    text: "Implement authentication & role-based access(JWT tokenbased Authentification)",
     icon: SiFirebase,
   },
   {

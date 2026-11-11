@@ -17,6 +17,7 @@ import {
   FaWhatsapp,
   FaPinterest,
   FaCodepen,
+  FaUsers,
   FaFigma,
   FaYoutube,
   FaStackOverflow,
@@ -48,19 +49,16 @@ const socialCategories: SocialCategory[] = [
     title: "Professional",
     links: [
       { icon: Linkedin, href: "https://www.linkedin.com/in/elias-jorin-ursin-kaiser-646638371/", label: "LinkedIn" },
-      { icon: FiGlobe, href: "https://mehedi-h.vercel.app", label: "Portfolio Website" },
-      { icon: FiFileText, href: "sdf", label: "Resume" },
+      { icon: FiGlobe, href: "https://mehedi-h.vercel.app", label: "" },
+
       { icon: FiMail, href: "mailto:elias.kaiser@gmx.ch", label: "Email" },
+      { icon: FaUsers, href: "https://teams.microsoft.com/l/chat/0/0?users=Elias.Kaiser@wiss-edu.ch", label: "Microsoft Teams" }
     ],
   },
   {
     title: "Designer",
     links: [
-      { icon: FaBehance, href: "https://www.behance.net/mehedihasan1102", label: "Behance" },
-      { icon: FaDribbble, href: "https://dribbble.com/themehedihq", label: "Dribbble" },
       { icon: FaFigma, href: "https://www.figma.com/files/team/1546370570397248215/user/1546370568436002861?fuid=1546370568436002861", label: "Figma" },
-      { icon: FaMedium, href: "https://medium.com/@mehedihasan1102", label: "Medium" },
-      { icon: FaPinterest, href: "https://www.pinterest.com/mehedihasan11023/", label: "Pinterest" },
     ],
   },
 
@@ -68,6 +66,8 @@ const socialCategories: SocialCategory[] = [
     title: "Messaging",
     links: [
       { icon: FaWhatsapp, href: "https://wa.me/+41764928305", label: "WhatsApp" },
+
+
     ],
   },
 ];

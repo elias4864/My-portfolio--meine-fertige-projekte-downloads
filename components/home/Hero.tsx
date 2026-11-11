@@ -70,7 +70,7 @@ const HeroSection: React.FC = () => {
           >
             <div className="relative w-full aspect-square">
               <Image
-                src="/assets/Aboutme.JPG"
+                src="/About.JPG"
                 alt="Elias Kaiser "
                 fill
                 className="object-cover rounded-lg"

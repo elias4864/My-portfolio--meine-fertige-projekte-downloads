@@ -13,13 +13,14 @@ import {
   SiNodedotjs,
   SiNextdotjs,
   SiFirebase,
-  SiTypescript,
+  SiTypescript,SiLinux,
   SiTailwindcss,
   SiExpress,
   SiGit,
   SiHtml5,
   SiCss3,
-  SiJavascript,
+  SiJavascript, SiMysql,
+  SiAndroid,
 } from "react-icons/si";
 
 /* ------------------ Types ------------------ */
@@ -53,21 +54,22 @@ const listHover = {
 /* ------------------ Static Data ------------------ */
 
 const techIconsRow1: TechIcon[] = [
-  { icon: SiMongodb, label: "MongoDB" },
   { icon: SiReact, label: "React" },
+  {icon:SiMysql, label:"MySQL"},
+
   { icon: SiNodedotjs, label: "Node.js" },
-  { icon: SiNextdotjs, label: "Next.js" },
-  { icon: SiFirebase, label: "Firebase" },
-  { icon: SiExpress, label: "Express.js" },
+
 ];
 
 const techIconsRow2: TechIcon[] = [
   { icon: SiTailwindcss, label: "Tailwind CSS" },
-  { icon: SiTypescript, label: "TypeScript" },
   { icon: SiGit, label: "Git" },
   { icon: SiHtml5, label: "HTML5" },
   { icon: SiCss3, label: "CSS3" },
   { icon: SiJavascript, label: "JavaScript" },
+  {icon:SiAndroid, label:"Android Development"},
+  {icon:SiLinux, label: "Linux Bash Shell" },
+
 ];
 
 /* ------------------ Memoized Heavy Components ------------------ */
