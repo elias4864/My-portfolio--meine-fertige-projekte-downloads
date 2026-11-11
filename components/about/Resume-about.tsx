@@ -5,7 +5,7 @@ import { motion, Variants } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import SimpleBar from "simplebar-react";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
-import aboutDataJson from "@/data/document.json";
+import aboutDataJson from "@/data/resume.json"
 
 /* ---------------- Types ---------------- */
 
