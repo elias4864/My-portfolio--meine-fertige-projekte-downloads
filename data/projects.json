@@ -17,7 +17,7 @@
     "frontendRepo": null,
     "backendRepo": null,
     "images": [
-      "public/assets/images/projects/Last.png"
+      "/assets/images/projects/Last.png"
     ],
     "videos": [],
     "challenges": "Collaborative agile coordination and synchronizing database models between Spring Boot and React.",
@@ -50,7 +50,7 @@
     "type": "Full Stack"
   },
   {
-    "title": "WISS Connect for Trainees",
+    "title": "WISS Connectplattform for Trainees",
     "description": "An agile Scrum-based internship portal designed for WISS students, integrating token-based access controls and role-based security routing.",
     "features": [
       "Token-based access controls",
@@ -67,7 +67,7 @@
     "frontendRepo": null,
     "backendRepo": null,
     "images": [
-      "/assets/images/projects/wissconnect.png"
+      "/assets/images/projects/Praktikum.jpg"
     ],
     "videos": [],
     "challenges": "Implementing secure role-based access permissions and connecting local AI instances.",
@@ -93,7 +93,7 @@
     "frontendRepo": null,
     "backendRepo": null,
     "images": [
-      "/assets/images/projects/wikijs.png"
+      "/assets/images/projects/Wiki.jpg"
     ],
     "videos": [],
     "challenges": "Configuring persistent volume claims and Helm chart parameters inside a single-node Minikube environment.",
@@ -117,7 +117,7 @@
     "frontendRepo": null,
     "backendRepo": null,
     "images": [
-      "/assets/images/projects/mastertodo.png"
+      "/assets/images/projects/TodoApp.png"
     ],
     "videos": [],
     "challenges": "Managing asynchronous local database operations and state transitions on Android emulators.",
@@ -143,7 +143,7 @@
     "frontendRepo": null,
     "backendRepo": null,
     "images": [
-      "/assets/images/projects/footballquiz.png"
+      "/assets/images/projects/Fussballquiz.png"
     ],
     "videos": [],
     "challenges": "Structuring score evaluation algorithms and rendering tabular statistics dynamically.",
@@ -200,7 +200,7 @@
     "frontendRepo": "https://github.com/elias4864/manga-frontend",
     "backendRepo": "https://github.com/elias4864/manga-backend",
     "images": [
-      "/assets/images/projects/mangadb.png"
+      "/assets/images/projects/MangaDB.png"
     ],
     "videos": [],
     "challenges": "Enforcing secure endpoint protection, implementing automatic salting, and managing key stretching parameters for BCrypt password verification without exposing plaintext credentials.",
