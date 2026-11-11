@@ -80,7 +80,7 @@ const HeroSection: React.FC = () => {
 
             <div className="flex justify-center items-center h-12 sm:h-16">
               <img
-                  src="/assets/images/blogs/Signature.png"
+                  src="/Signatur.png"
                   alt="Signature"
                   className="w-4/5 max-w-xs h-full object-contain"
               />
