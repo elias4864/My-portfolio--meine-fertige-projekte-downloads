@@ -50,15 +50,25 @@ export default function AboutPage() {
             className="flex flex-col justify-center space-y-3"
           >
             <p className="text-sm sm:text-base text-base-content/80 leading-relaxed">
-              I’m Elias Kaiser, a  passionate Application Developer specializing in fast, scalable web applications using  React, and Tailwind CSS.
+              I’m Elias Kaiser, a passionate Application Developer focused on
+              building modern web applications and native mobile solutions.
+              I specialize in React.js, Java, and Tailwind CSS.
             </p>
 
             <p className="text-sm sm:text-base text-base-content/80 leading-relaxed">
-              I build user-focused applications, contribute to open source, and enjoy turning ideas into practical solutions.
+              My focus lies on developing secure, high-performance applications, from robust authentication and authorization systems using RBAC and modern password-hashing algorithms like bcrypt to custom, intuitive user interfaces
             </p>
 
             <p className="text-sm sm:text-base text-base-content/80 leading-relaxed">
-              Connect with me on{" "}
+              I enjoy turning ideas into practical solutions, writing clean and
+              maintainable code, and continuously improving applications through
+              comprehensive testing, quality assurance, debugging, and thoughtful design.
+
+
+            </p>
+
+            <p className="text-sm sm:text-base text-base-content/80 leading-relaxed">
+              Connect with me on {" "}
               <a
                 href="https://www.linkedin.com/in/elias-jorin-ursin-kaiser-646638371/"
                 target="_blank"
