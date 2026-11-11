@@ -2,24 +2,67 @@
   {
     "category": "Frontend",
     "skills": [
-      "HTML",
+      "HTML&HTML5",
       "CSS",
-      "JavaScript",
-      "TypeScript",
       "React.js",
-      "Next.js",
       "Tailwind CSS"
     ]
   },
   {
-    "category": "Backend",
+    "category": "Backend &Database",
     "skills": [
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT Authentication",
-      "Firebase Authentication",
-      "Mongoose"
+      "Spring Boot(Tomcat)",
+      "Spring Security",
+      "Protected Routing",
+      "Bcrypt Algorithm Basics",
+      "REST-API-Basics",
+      "MySQL",
+
+      "PostgreSQL",
+      "JWT Authentication"
+    ]
+  },
+
+  {
+    "category": "Programming Languages",
+    "skills": [
+      "Python(Basics)",
+      "Java(OOP,Functional Programming)",
+      "JavaScript"
+
+    ]
+  },
+
+
+  {
+    "category": "Software Testing",
+    "skills": [
+      "JUnit",
+      "Mockito",
+      "Jest"
+    ]
+  },
+
+  {
+    "category": "Mobile Development",
+    "skills": [
+      "Android Mobile Development (Android Studio)",
+      "Android SDK",
+      "Gradle"
+    ]
+  },
+
+
+  {
+    "category": "DevOps & Cloud",
+    "skills": [
+      "Cloud & Containerisierung",
+      "GitHub Actions (CI/CD Pipelines)",
+      "Virtual Machine Virtualization",
+      "Linux Bash Shell Scripting",
+      "GItlab Pipelines",
+      "Deployment & Microservices Deployment",
+      "Container Orchestration(Kubernetes-Clustering)"
     ]
   },
   {
@@ -27,17 +70,31 @@
     "skills": [
       "Git",
       "GitHub",
-      "Vercel",
-      "Figma",
+      "Trello",
+      "Visily",
+      "Docker",
+      "Kubernetes",
+      "Helm Package Manager",
+      "Oracle Virtual Box",
+      "IntelliJ IDEA",
+      "WebStorm",
+      "Postman",
+      "Pycharm",
+
       "Linux"
     ]
   },
   {
-    "category": "Soft Skills",
+    "category":  "methodology & Soft Skills",
     "skills": [
+      "Agile Software Development (SCRUM)",
       "Team Collaboration",
       "Adaptability",
-      "Fast Learner"
+      "Fast Learner of new Technologies",
+      "High Perseverance & Resilience",
+      " Hight Reliability & Dependability",
+      " Big Willingness  & Eagerness to Learn"
+
     ]
   }
 ]
