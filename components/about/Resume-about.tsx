@@ -1,11 +1,14 @@
 'use client';
 
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useMemo } from "react";
+import { motion, Variants } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import SimpleBar from "simplebar-react";
+import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import aboutDataJson from "@/data/document.json";
 
 /* ---------------- Types ---------------- */
+
 interface ExperienceItem {
   title: string;
   time?: string;
@@ -21,16 +24,39 @@ interface EducationItem {
   credentialLink?: string | null;
 }
 
+interface LeisureItem {
+  activity: string;
+  description?: string;
+}
+
 interface AboutData {
   education: EducationItem[];
   experience: ExperienceItem[];
+  leisure: LeisureItem[];
 }
 
+/* ---------------- Animations ---------------- */
+
+const fadeIn: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
 /* ---------------- Helpers ---------------- */
+
 const initializeAboutData = (data: any): AboutData => {
-  // Sicherheits-Check: Falls data oder Arrays undefined/null sind
   const educationList: EducationItem[] = Array.isArray(data?.education) ? data.education : [];
   const experienceList: ExperienceItem[] = Array.isArray(data?.experience) ? data.experience : [];
+
+  // Flexibles Auslesen (sucht exakt nach "Leisure Activities" oder Fallbacks)
+  const rawLeisure =
+      data?.["Leisure Activities"] ||
+      data?.leisureActivities ||
+      data?.hobbies ||
+      data?.extracurricular ||
+      [];
+
+  const leisureList: LeisureItem[] = Array.isArray(rawLeisure) ? rawLeisure : [];
 
   const extractYear = (value?: string | null) => {
     if (!value) return 0;
@@ -45,124 +71,170 @@ const initializeAboutData = (data: any): AboutData => {
     experience: [...experienceList].sort(
         (a, b) => extractYear(b.time) - extractYear(a.time)
     ),
+    leisure: leisureList,
   };
 };
 
+/* ---------------- Memoized List Items ---------------- */
+
+const ListItem: React.FC<{
+  title: string;
+  details?: string;
+  extra?: React.ReactNode;
+}> = React.memo(({ title, details, extra }) => (
+    <motion.li
+        whileHover={{ x: 5, boxShadow: "0 8px 20px rgba(0,0,0,0.12)" }}
+        transition={{ type: "spring", stiffness: 300 }}
+        className="bg-base-100 p-4 rounded-lg cursor-pointer"
+    >
+      <p className="font-medium">{title}</p>
+      {details && <p className="text-base-content/70 mt-1">{details}</p>}
+      {extra}
+    </motion.li>
+));
+
+ListItem.displayName = "ListItem";
+
 /* ---------------- Component ---------------- */
-const ResumeAboutSections: React.FC = () => {
-  const [aboutData] = useState<AboutData>(() =>
-      initializeAboutData(aboutDataJson)
-  );
+
+const ResumeSections: React.FC = () => {
+  const aboutData = useMemo(() => initializeAboutData(aboutDataJson), []);
 
   return (
       <motion.section
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="text-base-content font-geist max-w-3xl mx-auto pt-6 px-0 space-y-8"
+          initial="hidden"
+          animate="visible"
+          variants={fadeIn}
+          className="text-base-content font-geist max-w-3xl mx-auto pt-1 space-y-4"
       >
-        {/* ================= Experience ================= */}
-        <motion.div
-            className="relative rounded-lg p-0 backdrop-blur-sm"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-        >
-          <h3 className="flex items-center gap-3 text-xl mb-4 font-semibold">
-            Experience
-          </h3>
+        <div className="grid md:grid-cols-2 gap-4">
 
-          <ul className="space-y-4">
-            {aboutData.experience.map((item, idx) => (
-                <motion.li
-                    key={idx}
-                    transition={{ type: "spring", stiffness: 300 }}
-                    className="group p-4 rounded-lg transition-colors hover:bg-base-100"
-                >
-                  <p className="font-medium transition-colors">
-                    {item.title}
-                  </p>
+          {/* ================= Experience ================= */}
+          <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4">
+            <div className="text-start m-4">
+              <p className="text-sm text-base-content mb-0">Experience</p>
+              <h2 className="text-2xl">
+                Career <span className="text-base-content/60">Highlights</span>
+              </h2>
+            </div>
 
-                  {item.organization && (
-                      <p className="mt-1 text-base-content/70 transition-colors">
-                        {item.organization}
-                        {item.time && ` | ${item.time}`}
-                      </p>
-                  )}
+            <SimpleBar className="max-h-[300px] pr-2">
+              <ul className="space-y-4 list-none p-0">
+                {aboutData.experience.map((item, idx) => (
+                    <ListItem
+                        key={`${item.title}-${item.organization ?? "org"}-${idx}`}
+                        title={item.title}
+                        details={
+                          item.organization
+                              ? `${item.organization}${item.time ? ` | ${item.time}` : ""}`
+                              : undefined
+                        }
+                        extra={
+                          item.description || item.profileLink ? (
+                              <div className="mt-2">
+                                {item.description && (
+                                    <p className="text-base-content/60 text-sm leading-relaxed">
+                                      {item.description}
+                                    </p>
+                                )}
+                                {item.profileLink && (
+                                    <a
+                                        href={item.profileLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex mt-1"
+                                    >
+                            <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                              View Profile
+                              <ArrowUpRight
+                                  size={14}
+                                  className="transition-transform group-hover:translate-x-1"
+                              />
+                            </span>
+                                    </a>
+                                )}
+                              </div>
+                          ) : null
+                        }
+                    />
+                ))}
+              </ul>
+            </SimpleBar>
 
-                  {item.description && (
-                      <p className="mt-2 text-sm leading-relaxed text-base-content/60 transition-colors">
-                        {item.description}
-                      </p>
-                  )}
+            <ProgressiveBlur height="8%" position="bottom" />
+          </div>
 
-                  {item.profileLink && (
-                      <a
-                          href={item.profileLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex mt-2 items-center gap-1 text-sm text-base-content/70 transition-all hover:text-primary underline-offset-4 decoration-dashed hover:underline"
-                      >
-                        View Profile
-                        <ArrowUpRight
-                            size={14}
-                            className="transition-transform group-hover:translate-x-1"
-                        />
-                      </a>
-                  )}
-                </motion.li>
-            ))}
-          </ul>
-        </motion.div>
+          {/* ================= Education ================= */}
+          <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4">
+            <div className="text-start m-4">
+              <p className="text-sm text-base-content mb-0">Education</p>
+              <h2 className="text-2xl">
+                Academic <span className="text-base-content/60">Background</span>
+              </h2>
+            </div>
 
-        {/* ================= Education ================= */}
-        <motion.div
-            className="relative rounded-lg p-0 backdrop-blur-sm"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <h3 className="flex items-center gap-3 text-xl mb-4 font-semibold">
-            Education
-          </h3>
+            <SimpleBar className="max-h-[300px] pr-2">
+              <ul className="space-y-4 list-none p-0 mb-0">
+                {aboutData.education.map((edu, idx) => (
+                    <ListItem
+                        key={`${edu.institution}-${edu.degree}-${idx}`}
+                        title={edu.institution}
+                        details={`${edu.degree}${edu.details ? ` | ${edu.details}` : ""}`}
+                        extra={
+                            edu.credentialLink && (
+                                <a
+                                    href={edu.credentialLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex mt-1"
+                                >
+                        <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                          View Credential
+                          <ArrowUpRight
+                              size={14}
+                              className="transition-transform group-hover:translate-x-1"
+                          />
+                        </span>
+                                </a>
+                            )
+                        }
+                    />
+                ))}
+              </ul>
+            </SimpleBar>
 
-          <ul className="space-y-4">
-            {aboutData.education.map((edu, idx) => (
-                <motion.li
-                    key={idx}
-                    transition={{ type: "spring", stiffness: 300 }}
-                    className="group p-4 rounded-lg hover:bg-base-100 transition-colors"
-                >
-                  <p className="font-medium transition-colors">
-                    {edu.institution}
-                  </p>
+            <ProgressiveBlur height="8%" position="bottom" />
+          </div>
 
-                  <p className="mt-1 text-base-content/70 transition-colors">
-                    {edu.degree}
-                    {edu.details && ` | ${edu.details}`}
-                  </p>
+        </div>
 
-                  {edu.credentialLink && (
-                      <a
-                          href={edu.credentialLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex mt-2 items-center gap-1 text-sm text-base-content/70 transition-all hover:text-primary underline-offset-4 decoration-dashed hover:underline"
-                      >
-                        View Credential
-                        <ArrowUpRight
-                            size={14}
-                            className="transition-transform group-hover:translate-x-1"
-                        />
-                      </a>
-                  )}
-                </motion.li>
-            ))}
-          </ul>
-        </motion.div>
+        {/* ================= Leisure Activities ================= */}
+        {aboutData.leisure.length > 0 && (
+            <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4">
+              <div className="text-start m-4">
+                <p className="text-sm text-base-content mb-0">Interests</p>
+                <h2 className="text-2xl">
+                  Leisure <span className="text-base-content/60">Activities</span>
+                </h2>
+              </div>
+
+              <SimpleBar className="max-h-[300px] pr-2">
+                <ul className="space-y-4 list-none p-0 mb-0">
+                  {aboutData.leisure.map((item, idx) => (
+                      <ListItem
+                          key={`leisure-${item.activity}-${idx}`}
+                          title={item.activity}
+                          details={item.description}
+                      />
+                  ))}
+                </ul>
+              </SimpleBar>
+
+              <ProgressiveBlur height="8%" position="bottom" />
+            </div>
+        )}
       </motion.section>
   );
 };
 
-export default ResumeAboutSections;
+export default ResumeSections;

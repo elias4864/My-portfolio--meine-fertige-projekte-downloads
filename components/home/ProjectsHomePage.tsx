@@ -9,7 +9,7 @@ import { ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 
 const ProjectsHomePage: React.FC = () => {
-  const projects: Project[] = projectsData as Project[];
+  const projects: Project[] = projectsData as unknown as Project[];
   const [showModal, setShowModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 

@@ -33,5 +33,23 @@
       "description": "Building full-stack web and mobile applications using React, Next.js, Java (Spring Boot), Android Studio, and relational databases, applying clean code and agile methodologies.",
       "profileLink": null
     }
+  ],
+  "Leisure Activities": [
+    {
+      "activity": "Beachvolleyball",
+      "description": "Regular team sports and athletic activity."
+    },
+    {
+      "activity": "Traveling",
+      "description": "Exploring new cultures and discovering different languages among the earth."
+    },
+    {
+      "activity": "Reading",
+      "description": "Reading thrillers/crime fiction as well as specialized literature on complex economic and political topics."
+    },
+    {
+      "activity": "Piano",
+      "description": "Playing classical piano for over 10 years, combined with creative free improvisation."
+    }
   ]
 }

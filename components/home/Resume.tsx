@@ -24,9 +24,15 @@ interface EducationItem {
   credentialLink?: string | null;
 }
 
+interface ExtracurricularItem {
+  activity: string;
+  description?: string;
+}
+
 interface AboutData {
   education: EducationItem[];
   experience: ExperienceItem[];
+  "Leisure Activities": ExtracurricularItem[]; // Exakter JSON-Schlüssel
 }
 
 /* ---------------- Animations ---------------- */
@@ -41,6 +47,8 @@ const fadeIn: Variants = {
 const initializeAboutData = (data: any): AboutData => {
   const educationList: EducationItem[] = Array.isArray(data?.education) ? data.education : [];
   const experienceList: ExperienceItem[] = Array.isArray(data?.experience) ? data.experience : [];
+  // Holt die Daten aus dem Key "Leisure Activities"
+  const leisureList: ExtracurricularItem[] = Array.isArray(data?.["Leisure Activities"]) ? data["Leisure Activities"] : [];
 
   const extractYear = (value?: string | null) => {
     if (!value) return 0;
@@ -55,6 +63,7 @@ const initializeAboutData = (data: any): AboutData => {
     experience: [...experienceList].sort(
         (a, b) => extractYear(b.time) - extractYear(a.time)
     ),
+    "Leisure Activities": leisureList,
   };
 };
 
@@ -190,6 +199,32 @@ const ResumeSections: React.FC = () => {
           </div>
 
         </div>
+
+        {/* ================= Leisure Activities / Hobbies ================= */}
+        {aboutData["Leisure Activities"].length > 0 && (
+            <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4 mt-4">
+              <div className="text-start m-4">
+                <p className="text-sm text-base-content mb-0">Interests</p>
+                <h2 className="text-2xl">
+                  Leisure <span className="text-base-content/60">Leisure Activities</span>
+                </h2>
+              </div>
+
+              <SimpleBar className="max-h-[300px] pr-2">
+                <ul className="space-y-4 list-none p-0 mb-0">
+                  {aboutData["Leisure Activities"].map((item, idx) => (
+                      <ListItem
+                          key={`extra-${item.activity}-${idx}`}
+                          title={item.activity}
+                          details={item.description}
+                      />
+                  ))}
+                </ul>
+              </SimpleBar>
+
+              <ProgressiveBlur height="8%" position="bottom" />
+            </div>
+        )}
       </motion.section>
   );
 };

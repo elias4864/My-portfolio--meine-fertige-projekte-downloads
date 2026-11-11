@@ -1,441 +1,306 @@
 [
   {
-    "title": "Plant Care ",
-    "description": "Helps users manage and track plant care routines with reminders and notes.",
+    "title": "World of Chewing Gum (WOC)",
+    "description": "A collaborative full-stack web application built to compare and rate chewing gum products using an agile Scrum framework.",
     "features": [
-      "Add/Edit Plants",
-      "Reminders",
-      "Light/Dark Theme"
+      "Product comparison and rating system",
+      "Agile Scrum project management integration",
+      "Secure backend data persistence"
     ],
     "techStack": [
       "React",
-      "MongoDB",
-      "Firebase",
-      "Node.js"
+      "Spring Boot",
+      "MySQL",
+      "Docker"
     ],
-    "liveLink": "https://plant-care-tracker-bd.web.app",
-    "frontendRepo": "https://github.com/themehedihq/Plant-Care-Client",
-    "backendRepo": "https://github.com/themehedihq/Plant-Care-Server",
+    "liveLink": null,
+    "frontendRepo": null,
+    "backendRepo": null,
     "images": [
-      "/assets/images/projects/plantsc.png"
+      "/assets/images/projects/woc.png"
     ],
-    "videos": [
-      "/assets/video/plant-video.mp4"
-    ],
-    "challenges": "Implementing reliable reminders and syncing data between client and server.",
-    "futurePlans": "Add AI-powered plant disease detection and personalized care tips.",
+    "videos": [],
+    "challenges": "Collaborative agile coordination and synchronizing database models between Spring Boot and React.",
+    "futurePlans": "Expand product categories and enhance user review filters.",
     "type": "Full Stack"
   },
   {
-    "title": "Food Tracker",
-    "description": "A production-ready food management app featuring real-time synchronization, JWT authentication, and optimized performance.",
+    "title": "Titocci Metalcostruzioni SAGL Website",
+    "description": "A responsive client web platform engineered with custom interactive widgets, automated calculation tools, and modern styling.",
     "features": [
-      "Real-time synchronization with Firebase",
-      "JWT Authentication flow",
-      "Full CRUD operations"
+      "Interactive real-time estimation calculator",
+      "Cloudflare Turnstile security integration",
+      "Automated report dispatching via EmailJS"
     ],
     "techStack": [
-      "React ",
+      "React 19",
+      "Vite",
       "Tailwind CSS",
-      "Firebase",
-      "Express.js"
+      "Docker Compose"
     ],
-    "liveLink": "https://food-garden-bd.web.app",
-    "frontendRepo": "https://github.com/themehedihq/Food-Garden-Client",
-    "backendRepo": "https://github.com/themehedihq/Food-Garden-Server",
+    "liveLink": null,
+    "frontendRepo": "https://github.com/elias4864/TitocciMetalcostruzioni-SAGL-Website",
+    "backendRepo": null,
     "images": [
-      "/assets/images/projects/food.png"
+      "/assets/images/projects/titocci.png"
     ],
-    "videos": [
-      "/assets/video/FoodGuardian.mp4"
-    ],
-    "challenges": "Handling real-time data sync and optimizing performance under heavy load.",
-    "type": "Full Stack",
-    "futurePlans": "Integrate AI-based food recommendations and expand recipe database."
-  },
-  {
-    "title": "Duranta Online",
-    "description": "Duranta Online Limited is a modern web application built with Next.js (App Router), React, and Tailwind CSS. It provides high-speed internet and cable services with a responsive UI, a support center, and an admin dashboard for managing plans, teams, and user notifications.",
-    "features": [
-      "Support center with ticket system",
-      "Responsive landing page with animated gradient banner",
-      "Smooth scroll and WhatsApp contact button"
-    ],
-    "techStack": [
-      "Next.js ",
-      "TypeScript",
-      "MongoDB",
-      "Node.js"
-    ],
-    "liveLink": "https://duranta-online.vercel.app/",
-    "frontendRepo": "https://github.com/themehedihq/Duranta-Online-Client",
-    "backendRepo": "https://github.com/themehedihq/Duranta-Online-Server",
-    "images": [
-      "/assets/images/projects/duranta.png"
-    ],
-    "videos": [
-      "/assets/video/duranta-online.mp4"
-    ],
-    "challenges": "Implementing secure payment integration and real-time synchronization.",
-    "futurePlans": "Add multi-player support and analytics dashboard.",
+    "videos": [],
+    "challenges": "Integrating complex Swiss canton calculation logic into responsive interactive sliders.",
+    "futurePlans": "Add multi-language support and client testimonial management.",
     "type": "Full Stack"
   },
   {
-    "title": "Task Manager",
-    "description": "A production-ready, responsive Task Management application built with Next.js and TypeScript. The platform enables users to efficiently create, update, delete, and organize tasks with real-time UI updates, optimized state management, and robust client-side validation for a smooth user experience.",
+    "title": "WISS Connect for Trainees",
+    "description": "An agile Scrum-based internship portal designed for WISS students, integrating token-based access controls and role-based security routing.",
     "features": [
-      "Create, update, and delete tasks",
-      "Real-time UI synchronization with TanStack Query",
-      "Optimistic updates for instant feedback",
-      "Robust client-side validation using Zod",
-      "Responsive and accessible dashboard design",
-      "Clean and scalable REST API integration"
+      "Token-based access controls",
+      "Role-based security routing (RBAC)",
+      "Local Ollama AI assistant configuration"
     ],
     "techStack": [
-      "Next.js",
-      "TypeScript",
-      "MongoDB",
-      "Mongoose",
-      "Express.js",
-      "Zod",
-      "TanStack Query"
+      "React",
+      "Spring Boot",
+      "MySQL",
+      "Docker"
     ],
-    "liveLink": "https://meheditodo.vercel.app",
-    "frontendRepo": "https://github.com/themehedihq/task-manager-client",
-    "backendRepo": "https://github.com/themehedihq/task-manager-server",
+    "liveLink": null,
+    "frontendRepo": null,
+    "backendRepo": null,
     "images": [
-      "/assets/images/projects/task.png"
+      "/assets/images/projects/wissconnect.png"
     ],
-    "videos": [
-      "/assets/video/TaskManagerApp.mp4"
-    ],
-    "challenges": "Designing a clean and maintainable validation architecture using Zod while ensuring consistent form state handling and error feedback across the application.",
-    "futurePlans": "Introduce user authentication, personalized task views, and advanced filtering and search capabilities.",
+    "videos": [],
+    "challenges": "Implementing secure role-based access permissions and connecting local AI instances.",
+    "futurePlans": "Expand company application tracking and automated interview scheduling.",
     "type": "Full Stack"
   },
   {
-    "title": "Active Arena",
-    "description": "A production-ready play ground management app featuring real-time synchronization, JWT authentication, and optimized performance.",
+    "title": "Wiki.js Documentation Platform",
+    "description": "A self-hosted personal documentation and knowledge management instance deployed on a containerized Kubernetes cluster.",
     "features": [
-      "Payment integration with Stripe",
-      "JWT Authentication flow",
-      "Full CRUD operations"
+      "Containerized documentation storage",
+      "Kubernetes cluster deployment via Helm charts",
+      "High availability on local Ubuntu infrastructure"
     ],
     "techStack": [
-      "React ",
-      "Stripe",
-      "Firebase",
-      "Tailwind CSS"
+      "Wiki.js",
+      "Kubernetes",
+      "Minikube",
+      "Docker",
+      "Helm"
     ],
-    "liveLink": "https://buildbox-a12.web.app",
-    "frontendRepo": "https://github.com/themehedihq/Active-Arena-Client",
-    "backendRepo": "https://github.com/themehedihq/Active-Arena-Server",
+    "liveLink": null,
+    "frontendRepo": null,
+    "backendRepo": null,
     "images": [
-      "/assets/images/projects/aarena.png"
+      "/assets/images/projects/wikijs.png"
     ],
-    "videos": [
-      "/assets/video/ActiveArena.mp4"
-    ],
-    "challenges": "Implementing secure payment integration and real-time synchronization.",
-    "futurePlans": "Add multi-player support and analytics dashboard.",
-    "type": "Full Stack"
+    "videos": [],
+    "challenges": "Configuring persistent volume claims and Helm chart parameters inside a single-node Minikube environment.",
+    "futurePlans": "Automate deployment backups and expand documentation categories.",
+    "type": "DevOps"
   },
   {
-    "title": "Event Explorer",
-    "description": "A full-stack event booking platform where users can browse and reserve seats for local events.",
+    "title": "Master Todo Mobile App",
+    "description": "A native Android task management application featuring local database persistence, custom progress indicators, and emulator testing.",
     "features": [
-      "Authentication",
-      "Booking System",
-      "Firebase Integration"
+      "Local database persistence with Room DAO",
+      "Custom visual progress indicators",
+      "Optimized native Android UI components"
     ],
     "techStack": [
-      "React",
-      "Firebase",
-      "Node.js"
+      "Android Studio",
+      "Java",
+      "Room DAO"
     ],
-    "liveLink": "https://event-explorer-bd.netlify.app",
-    "frontendRepo": "https://github.com/themehedihq/Event-Explorer",
+    "liveLink": null,
+    "frontendRepo": null,
+    "backendRepo": null,
     "images": [
-      "/assets/images/projects/events.png"
+      "/assets/images/projects/mastertodo.png"
     ],
-    "videos": [
-      "/assets/video/Home _ Event Explorer.mp4"
-    ],
-    "challenges": "Managing real-time booking availability and user authentication.",
-    "futurePlans": "Add event rating system and push notifications.",
+    "videos": [],
+    "challenges": "Managing asynchronous local database operations and state transitions on Android emulators.",
+    "futurePlans": "Add cloud synchronization and widget support.",
     "type": "Frontend"
   },
   {
-    "title": "Phudu-Medical-Apoinment-App",
-    "description": "Phudu Medical is a modern and responsive medical appointment booking web app.",
+    "title": "Football Quiz Application",
+    "description": "An interactive single-player football quiz featuring a robust REST API backend and a multi-language frontend.",
     "features": [
-      "Animated counters",
-      "Booking System",
-      " Recharts"
+      "Category-based quiz selection",
+      "Detailed tabular evaluation for knowledge gap analysis",
+      "Comprehensive pass/fail feedback reporting"
     ],
     "techStack": [
-      "React",
-      "Tailwind CSS"
-    ],
-    "liveLink": "https://phudu-medical.netlify.app/",
-    "frontendRepo": "https://github.com/themehedihq/Phudu-Medical-Apoinment-App",
-    "images": [
-      "/assets/images/projects/phudu.png"
-    ],
-    "challenges": "Creating smooth animated UI and handling booking concurrency.",
-    "futurePlans": "Integrate doctor availability calendar and SMS reminders.",
-    "type": "Frontend"
-  },
-  {
-    "title": "Auction-Gallery",
-    "description": "A modern React-based application scaffolded with Vite and styled using Tailwind CSS and DaisyUI.",
-    "features": [
-      "Bid System"
-    ],
-    "techStack": [
-      "React",
-      "Tailwind CSS",
-      "DaisyUI"
-    ],
-    "liveLink": "https://auctiongallerybd.netlify.app",
-    "frontendRepo": "https://github.com/themehedihq/Auction-Gallery",
-    "images": [
-      "/assets/images/projects/action.png"
-    ],
-    "challenges": "Implementing real-time bid updates and secure user authentication.",
-    "futurePlans": "Add push notifications and advanced bidding strategies.",
-    "type": "Frontend"
-  },
-  {
-    "title": "Active Arena Server",
-    "description": "Sports Club Management System (Server) This is the backend server for the Active Arena — a single-club sports management system built with Node.js, Express, and MongoDB. It provides RESTful APIs for managing players, coaches, matches, and training sessions.",
-    "features": [
-      "User Authentication with JWT",
-      "CRUD operations for players, coaches, matches, and training sessions",
-      "Data validation and error handling"
-    ],
-    "techStack": [
-      "Node.js",
-      "Express",
-      "MongoDB"
-    ],
-    "backendRepo": " https://github.com/themehedihq/Active-Arena-Server",
-    "liveLink": "https://active-arena.vercel.app/",
-    "images": [
-      "/assets/images/projects/arena.png"
-    ],
-    "challenges": "Implementing secure payment integration and real-time synchronization.",
-    "futurePlans": "Add multi-player support and analytics dashboard.",
-    "type": "Backend"
-  },
-  {
-    "title": "Food Garden Server",
-    "description": "Food Management System (Server) This is the backend server for the Food Garden — a food management system built with Node.js, Express, and MongoDB. It provides RESTful APIs for managing food items, categories, and user orders.",
-    "features": [
-      "User Authentication with JWT",
-      "CRUD operations for food items, categories, and orders",
-      "Data validation and error handling"
-    ],
-    "techStack": [
-      "Node.js",
-      "Express",
-      "MongoDB"
-    ],
-    "backendRepo": "https://github.com/themehedihq/Food-Garden-Server",
-    "liveLink": "https://food-garden-server-bd.vercel.app",
-    "images": [
-      "/assets/images/projects/server.png"
-    ],
-    "challenges": "Handling real-time data sync and optimizing performance under heavy load.",
-    "futurePlans": "Integrate AI-based food recommendations and expand recipe database.",
-    "type": "Backend"
-  },
-  {
-    "title": "Plant Care Server",
-    "description": "A robust Node.js backend service for the Plant Care Tracker application, providing RESTful CRUD operations with MongoDB Atlas integration.",
-    "features": [
-      "MongoDB Atlas cloud database integration",
-      "Environment variables for secure configuration",
-      "CORS enabled for cross-origin requests"
-    ],
-    "techStack": [
-      "Node.js",
-      "Express",
-      "MongoDB"
-    ],
-    "backendRepo": "https://github.com/themehedihq/Plant-Care-Server",
-    "liveLink": "https://project-web-b11-a10-plant-care-serv.vercel.app/",
-    "images": [
-      "/assets/images/projects/plants.png"
-    ],
-    "challenges": " Implementing reliable reminders and syncing data between client and server.",
-    "futurePlans": "Add AI-powered plant disease detection and personalized care tips.  ",
-    "type": "Backend"
-  },
-  {
-    "title": "Payooo Mobile",
-    "description": "A modern and responsive mobile payment web application built with Vanilla JavaScript and Tailwind CSS. It offers a clean UI and smooth user experience for managing digital transactions and payments.",
-    "features": [
-      "Responsive mobile-first design",
-      "Interactive UI built with pure JavaScript",
-      "Real-time payment and balance updates (mock data)",
-      "Reusable and modular component structure",
-      "Tailwind CSS for fast and consistent styling"
-    ],
-    "techStack": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Tailwind CSS"
-    ],
-    "frontendRepo": "https://github.com/themehedihq/Payoo-Mobile-app-function",
-    "liveLink": "https://themehedihq.github.io/Payoo-Mobile-app-function/",
-    "images": [
-      "/assets/images/projects/payoo.png"
-    ],
-    "challenges": "Building dynamic UI interactions using only Vanilla JavaScript without external frameworks.",
-    "futurePlans": "Integrate a backend API for real payment processing and add user authentication features.",
-    "type": "Frontend"
-  },
-  {
-    "title": "Dev Board",
-    "description": "A static developer dashboard built with raw JavaScript and CSS. It serves as a simple tool hub for quick access to development resources and project links.",
-    "features": [
-      "Built entirely with Vanilla JavaScript and CSS",
-      "Clean and minimal dashboard interface",
-      "Static layout optimized for desktop view",
-      "Fast performance with zero external dependencies",
-      "Easy to customize with basic HTML structure"
-    ],
-    "techStack": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
-    "frontendRepo": "https://github.com/themehedihq/Dev-Board",
-    "liveLink": "https://themehedihq.github.io/Dev-Board/",
-    "images": [
-      "/assets/images/projects/devboard.png"
-    ],
-    "challenges": "Designing a visually appealing and organized layout without using responsive design or frameworks.",
-    "futurePlans": "Add responsive design support and light/dark theme toggle for better usability.",
-    "type": "Frontend"
-  },
-  {
-    "title": "Browse4Pets",
-    "description": "A responsive pet adoption website built entirely with HTML and Tailwind CSS. It showcases various pet profiles in a visually appealing layout with smooth styling and animations.",
-    "features": [
-      "Built purely with HTML and Tailwind CSS",
-      "Fully responsive design for all screen sizes",
-      "Clean and minimal pet showcase layout",
-      "Smooth hover effects and transitions",
-      "Optimized for fast loading and accessibility"
-    ],
-    "techStack": [
-      "HTML",
-      "Tailwind CSS"
-    ],
-    "frontendRepo": "https://github.com/themehedihq/Browse4Pets",
-    "liveLink": "https://themehedihq.github.io/Browse4Pets/",
-    "images": [
-      "/assets/images/projects/Browse4Pets.png"
-    ],
-    "challenges": "Achieving responsive and visually appealing design without using JavaScript or any frameworks.",
-    "futurePlans": "Add interactive filters and dynamic content loading using JavaScript in future updates.",
-    "type": "Frontend"
-  },
-  {
-    "title": "English Janala",
-    "description": "A fully responsive and interactive educational web application to enhance English vocabulary learning through levels, quizzes, pronunciation, and rich word details — built with HTML, JavaScript, Tailwind CSS, and DaisyUI.",
-    "features": [
-      "Level-based vocabulary learning and quizzes",
-      "Word details with definitions, examples and pronunciation (Web Speech API)",
-      "Progress tracking per level",
-      "Responsive UI built with Tailwind CSS and DaisyUI",
-      "SweetAlert2 for friendly alerts and feedback"
-    ],
-    "techStack": [
-      "HTML5",
-      "Vanilla JavaScript",
-      "Tailwind CSS",
-      "DaisyUI",
-      "SweetAlert2",
-      "Web Speech API"
-    ],
-    "frontendRepo": "https://github.com/themehedihq/english-janala",
-    "liveLink": "https://english-bd.netlify.app/",
-    "images": [
-      "/assets/images/projects/English-Janala.png"
-    ],
-    "challenges": "Designing an accessible, responsive learning UI while integrating browser APIs (Web Speech) and keeping performance optimal for low-end devices.",
-    "futurePlans": "Add interactive filters, persistent progress using localStorage or a backend, and dynamic content loading with JavaScript.",
-    "type": "Frontend"
-  },
-  {
-    "title": "Kid School",
-    "description": "A responsive informational site for children’s activities and resources, built with HTML and Tailwind CSS. Focus is on a playful, accessible layout that highlights programs and resources.",
-    "features": [
-      "Clean, kid-friendly layout and illustrations",
-      "Responsive design for phones, tablets, and desktops",
-      "Smooth hover effects and lightweight animations",
-      "Accessible markup and fast loading"
-    ],
-    "techStack": [
-      "HTML5",
-      "Tailwind CSS"
-    ],
-    "frontendRepo": "https://github.com/themehedihq/Kids-School",
-    "liveLink": "https://themehedihq.github.io/Kids-School/",
-    "images": [
-      "/assets/images/projects/Kid-School.png"
-    ],
-    "challenges": "Achieving a playful, accessible design that scales across devices without using JavaScript frameworks.",
-    "futurePlans": "Add interactive elements (sliders, collapsible FAQ) and minor JS improvements for richer UX.",
-    "type": "Frontend"
-  },
-  {
-    "title": "Bangladesh 2.0",
-    "description": "A static landing page built with semantic HTML and basic CSS, designed to highlight Bangladesh’s culture, innovation, and development vision. It focuses on layout structure and clean visual presentation.",
-    "features": [
-      "Static single-page layout using HTML and CSS",
-      "Structured and semantic content sections",
-      "Simple grid-based layout for clarity",
-      "Clean typography and color balance"
-    ],
-    "techStack": [
-      "HTML5",
-      "CSS3"
-    ],
-    "frontendRepo": "https://github.com/themehedihq/Bangladesh-2.0",
-    "liveLink": "https://themehedihq.github.io/Bangladesh-2.0/",
-    "images": [
-      "/assets/images/projects/Bangladesh.png"
-    ],
-    "challenges": "Maintaining visual consistency and layout balance without using any responsive techniques or frameworks.",
-    "futurePlans": "Refactor the layout to be fully responsive using Tailwind CSS or CSS Grid for better mobile compatibility.",
-    "type": "Frontend"
-  },
-  {
-    "title": "Shiritori-Game-Player",
-    "description": "A multiplayer Shiritori word game built with React and Vite. Players take turns entering words that must start with the last letter of the previous word; the app validates inputs and tracks scores.",
-    "features": [
-      "Turn-based multiplayer gameplay",
-      "Real-time word validation and scoring",
-      "Responsive UI built with React + Tailwind",
-      "Game history and round summaries"
-    ],
-    "techStack": [
+      "Java",
+      "Spring Boot",
       "React",
       "Vite",
-      "Tailwind CSS"
+      "MySQL"
     ],
-    "frontendRepo": "https://github.com/themehedihq/Shiritori-Game-Player",
-    "liveLink": "https://shiritori-game-player.vercel.app/",
+    "liveLink": null,
+    "frontendRepo": null,
+    "backendRepo": null,
     "images": [
-      "/assets/images/projects/Shiritori-Game.png"
+      "/assets/images/projects/footballquiz.png"
     ],
-    "challenges": "Handling real-time state and validation for multiplayer turns, ensuring fair scoring, and designing a simple yet responsive UI.",
-    "futurePlans": "Introduce a backend (Socket.IO) for robust multiplayer support, persistent user accounts, and match-making.",
+    "videos": [],
+    "challenges": "Structuring score evaluation algorithms and rendering tabular statistics dynamically.",
+    "futurePlans": "Introduce multiplayer mode and global leaderboards.",
+    "type": "Full Stack"
+  },
+  {
+    "title": "Microservices & Infrastructure Deployment",
+    "description": "Deployment of enterprise microservices including Nextcloud and an internal MediaWiki instance using Docker on virtual machines with database administration via phpMyAdmin.",
+    "features": [
+      "Dockerized container deployment on VMs",
+      "Database management via phpMyAdmin",
+      "Custom internal intranet service setup"
+    ],
+    "techStack": [
+      "Docker",
+      "Linux",
+      "PHPMyAdmin",
+      "MySQL",
+      "Nextcloud"
+    ],
+    "liveLink": null,
+    "frontendRepo": null,
+    "backendRepo": null,
+    "images": [
+      "/assets/images/projects/infrastructure.png"
+    ],
+    "videos": [],
+    "challenges": "Configuring networking rules and persistent volumes across multiple containerized services.",
+    "futurePlans": "Implement automated SSL certificates and centralized log monitoring.",
+    "type": "DevOps"
+  },
+  {
+    "title": "MangaDB Library",
+    "description": "A web-based full-stack application developed for Module 183 (Implementing Application Security) featuring multi-user management, secure user authentication, automatic salting, and BCrypt password hashing for organized manga libraries.",
+    "features": [
+      "Role-Based Access Control (RBAC)",
+      "Secure password hashing with BCrypt & automatic unique salting",
+      "Key Stretching (configurable work factor) to mitigate brute-force attacks",
+      "Secure login verification via Spring Security",
+      "Protected frontend routing with Vite & React"
+    ],
+    "techStack": [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "React",
+      "Vite",
+      "SQL",
+      "JPA/Hibernate",
+      "Tomcat"
+    ],
+    "liveLink": null,
+    "frontendRepo": "https://github.com/elias4864/manga-frontend",
+    "backendRepo": "https://github.com/elias4864/manga-backend",
+    "images": [
+      "/assets/images/projects/mangadb.png"
+    ],
+    "videos": [],
+    "challenges": "Enforcing secure endpoint protection, implementing automatic salting, and managing key stretching parameters for BCrypt password verification without exposing plaintext credentials.",
+    "futurePlans": "Add advanced bookmarking, chapter tracking features, and continuous security audits.",
+    "type": "Full Stack"
+  },
+  {
+    "title": "Glance Dashboard",
+    "description": "A self-hosted containerized dashboard deployed in a local area network to monitor and visualize real-time telemetry data via widgets.",
+    "features": [
+      "Real-time data visualization widgets",
+      "Docker container deployment",
+      "Self-hosted local network integration"
+    ],
+    "techStack": [
+      "Docker",
+      "Glance",
+      "Linux"
+    ],
+    "liveLink": null,
+    "frontendRepo": null,
+    "backendRepo": null,
+    "images": [
+      "/assets/images/projects/glance.png"
+    ],
+    "videos": [],
+    "challenges": "Configuring network endpoints and API widgets for smooth real-time telemetry monitoring.",
+    "futurePlans": "Add custom alert thresholds and smart home integrations.",
+    "type": "DevOps"
+  },
+  {
+    "title": "Wissquiz Testing & Enhancement",
+    "description": "Refactoring and enhancement of an interactive quiz application with score evaluation, authentication context, and unit testing.",
+    "features": [
+      "Unit testing with JUnit and Mockito",
+      "Authentication context integration",
+      "Score tracking and validation logic"
+    ],
+    "techStack": [
+      "Java",
+      "JUnit",
+      "Mockito",
+      "Spring Boot"
+    ],
+    "liveLink": null,
+    "frontendRepo": null,
+    "backendRepo": null,
+    "images": [
+      "/assets/images/projects/wissquiztest.png"
+    ],
+    "videos": [],
+    "challenges": "Writing mock services and ensuring comprehensive test coverage for backend controllers.",
+    "futurePlans": "Integrate continuous integration test pipelines.",
+    "type": "Full Stack"
+  },
+  {
+    "title": "Miniclub Website",
+    "description": "A personal web platform implementation inspired by the design and structure of the 'MINI Electric Cars' webshop collection.",
+    "features": [
+      "Thematic product showcase layout",
+      "Responsive design structure",
+      "Custom CSS styling mirroring brand identity"
+    ],
+    "techStack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "liveLink": null,
+    "frontendRepo": null,
+    "backendRepo": null,
+    "images": [
+      "/assets/images/projects/miniclub.png"
+    ],
+    "videos": [],
+    "challenges": "Replicating exact high-end corporate styling and animations without external design frameworks.",
+    "futurePlans": "Add interactive car configurator features.",
+    "type": "Frontend"
+  },
+  {
+    "title": "Maestro Budget (E-Banking API Prototype)",
+    "description": "A prototype of an e-banking API designed visually using interactive UI/UX wireframes and layout prototypes without code.",
+    "features": [
+      "Interactive UI/UX wireframing",
+      "Visual layout prototyping",
+      "Simulated transaction flows"
+    ],
+    "techStack": [
+      "Visily",
+      "UI/UX Design"
+    ],
+    "liveLink": null,
+    "frontendRepo": null,
+    "backendRepo": null,
+    "images": [
+      "/assets/images/projects/maestro.png"
+    ],
+    "videos": [],
+    "challenges": "Translating complex banking workflows into intuitive, user-friendly visual prototypes.",
+    "futurePlans": "Develop a functional backend implementation for the prototype.",
     "type": "Frontend"
   }
 ]

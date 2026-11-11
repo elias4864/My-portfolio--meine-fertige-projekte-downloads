@@ -5,7 +5,6 @@ import HeroSection from '@/components/home/Hero';
 import ResumeSections from '@/components/home/Resume';
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 import ProjectsHomePage from '@/components/home/ProjectsHomePage';
-import BlogHomePage from '@/components/home/BlogHomePage';
 import GitHubActivitySection from '@/components/home/GitHub';
 import SkillsSection from '@/components/home/Skills';
 import ContactHomePage from '@/components/home/ContactHomePage';
@@ -60,7 +59,6 @@ export default async function Home() {
       {/* ================================================
           6. Blog Section – Thought Leadership
       ================================================ */}
-      <BlogHomePage latestBlogs={latestBlogs} />
 
       {/* ================================================
           7. GitHub Section – Activity Proof
