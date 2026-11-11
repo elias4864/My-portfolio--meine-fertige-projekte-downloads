@@ -208,12 +208,12 @@ You are free to use, modify, and distribute this project for personal or commerc
 
 ## 📬 Contact
 
-**Mehedi Hasan** — Full Stack Web Developer (MERN)
+**Elias Kaiser** — Full Stack Web Developer (MERN)
 
-- 📧 Email: [hello@mehedi-hasan.me](mailto:hello@mehedi-hasan.me)
-- 🔗 LinkedIn: [themehedihq](https://www.linkedin.com/in/themehedihq)
+- 📧 Email: [elias.kaiser@gmx.ch](mailto:elias.kaiser@gmx.ch)
+- 🔗 LinkedIn: [elias-kaiser](https://www.linkedin.com/in/elias-kaiser-646638371/)
 - 🌐 Portfolio: [mehedi-h.vercel.app](https://mehedi-h.vercel.app)
-- 🐙 GitHub: [themehedihq](https://github.com/themehedihq)
+- 🐙 GitHub: [elias4864](https://github.com/elias4864)
 
 ---
 
@@ -221,6 +221,6 @@ You are free to use, modify, and distribute this project for personal or commerc
 
 **If you find this project useful, consider giving it a ⭐ on GitHub!**
 
-Built with ❤️ by [Mehedi Hasan](https://github.com/themehedihq)
+Built with ❤️ by [Elias Kaiser](https://github.com/elias4864)
 
 </div>
