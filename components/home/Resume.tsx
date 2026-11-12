@@ -2,9 +2,8 @@
 
 import React, { useMemo } from "react";
 import { motion, Variants } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, FileText } from "lucide-react";
 import SimpleBar from "simplebar-react";
-import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import aboutDataJson from "@/data/resume.json";
 
 /* ---------------- Types ---------------- */
@@ -15,6 +14,8 @@ interface ExperienceItem {
   organization?: string;
   description?: string;
   profileLink?: string | null;
+  pdfLink?: string;
+  PdfLink?: string;
 }
 
 interface EducationItem {
@@ -48,11 +49,15 @@ const fadeIn: Variants = {
 const initializeAboutData = (data: any): AboutData => {
   const educationList: EducationItem[] = Array.isArray(data?.education) ? data.education : [];
 
-  // Holt die Daten aus "Professional experience" (mit Fallback auf "experience")
-  const rawExperience = data?.["Professional experience"] || data?.experience || [];
-  const experienceList: ExperienceItem[] = Array.isArray(rawExperience) ? rawExperience : [];
+  // Kombiniert beide Experience-Arrays aus der JSON
+  const profExperience: ExperienceItem[] = Array.isArray(data?.["Professional experience"])
+      ? data["Professional experience"]
+      : [];
+  const generalExperience: ExperienceItem[] = Array.isArray(data?.experience)
+      ? data.experience
+      : [];
+  const combinedExperience = [...profExperience, ...generalExperience];
 
-  // Holt die Daten aus dem Key "Leisure Activities"
   const leisureList: LeisureItem[] = Array.isArray(data?.["Leisure Activities"]) ? data["Leisure Activities"] : [];
 
   const extractYear = (value?: string | null) => {
@@ -65,7 +70,7 @@ const initializeAboutData = (data: any): AboutData => {
     education: [...educationList].sort(
         (a, b) => extractYear(b.details) - extractYear(a.details)
     ),
-    experience: [...experienceList].sort(
+    experience: combinedExperience.sort(
         (a, b) => extractYear(b.time) - extractYear(a.time)
     ),
     "Leisure Activities": leisureList,
@@ -125,50 +130,74 @@ const ResumeSections: React.FC = () => {
               </h2>
             </div>
 
-            <SimpleBar className="max-h-[300px] pr-2">
+            <SimpleBar className="max-h-[750px] pr-2">
               <ul className="space-y-4 list-none p-0">
-                {aboutData.experience.map((item, idx) => (
-                    <ListItem
-                        key={`${item.title}-${item.organization ?? "org"}-${idx}`}
-                        title={item.title}
-                        details={
-                          item.organization
-                              ? `${item.organization}${item.time ? ` | ${item.time}` : ""}`
-                              : undefined
-                        }
-                        extra={
-                          item.description || item.profileLink ? (
-                              <div className="mt-2">
-                                {item.description && (
-                                    <p className="text-base-content/60 text-sm leading-relaxed">
-                                      {item.description}
-                                    </p>
-                                )}
-                                {item.profileLink && (
-                                    <a
-                                        href={item.profileLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex mt-1"
-                                    >
-                            <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
-                              View Company Website
-                              <ArrowUpRight
-                                  size={14}
-                                  className="transition-transform group-hover:translate-x-1"
-                              />
-                            </span>
-                                    </a>
-                                )}
-                              </div>
-                          ) : null
-                        }
-                    />
-                ))}
+                {aboutData.experience.map((item, idx) => {
+                  const rawPdf = item.pdfLink || item.PdfLink;
+                  const cleanPdfUrl = rawPdf
+                      ? encodeURI(rawPdf.replace(/^\/?public\//, "/"))
+                      : null;
+
+                  return (
+                      <ListItem
+                          key={`${item.title}-${item.organization ?? "org"}-${idx}`}
+                          title={item.title.trim()}
+                          details={
+                            item.organization
+                                ? `${item.organization}${item.time ? ` | ${item.time.trim()}` : ""}`
+                                : undefined
+                          }
+                          extra={
+                            item.description || item.profileLink || cleanPdfUrl ? (
+                                <div className="mt-2 space-y-1">
+                                  {item.description && (
+                                      <p className="text-base-content/60 text-sm leading-relaxed">
+                                        {item.description}
+                                      </p>
+                                  )}
+                                  <div className="flex flex-wrap gap-4 pt-1">
+                                    {item.profileLink && (
+                                        <a
+                                            href={item.profileLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex"
+                                        >
+                                          <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                                            View Company Website
+                                            <ArrowUpRight
+                                                size={14}
+                                                className="transition-transform group-hover:translate-x-1"
+                                            />
+                                          </span>
+                                        </a>
+                                    )}
+                                    {cleanPdfUrl && (
+                                        <a
+                                            href={cleanPdfUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex text-primary font-medium"
+                                        >
+                                          <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                                            <FileText size={14} />
+                                            View Trial Report
+                                            <ArrowUpRight
+                                                size={14}
+                                                className="transition-transform group-hover:translate-x-1"
+                                            />
+                                          </span>
+                                        </a>
+                                    )}
+                                  </div>
+                                </div>
+                            ) : null
+                          }
+                      />
+                  );
+                })}
               </ul>
             </SimpleBar>
-
-            <ProgressiveBlur height="8%" position="bottom" />
           </div>
 
           {/* ================= Education ================= */}
@@ -180,7 +209,7 @@ const ResumeSections: React.FC = () => {
               </h2>
             </div>
 
-            <SimpleBar className="max-h-[300px] pr-2">
+            <SimpleBar className="max-h-[750px] pr-2">
               <ul className="space-y-4 list-none p-0 mb-0">
                 {aboutData.education.map((edu, idx) => (
                     <ListItem
@@ -190,18 +219,18 @@ const ResumeSections: React.FC = () => {
                         extra={
                             edu.credentialLink && (
                                 <a
-                                    href={edu.credentialLink}
+                                    href={encodeURI(edu.credentialLink)}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex mt-1"
                                 >
-                        <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
-                          View Credential
-                          <ArrowUpRight
-                              size={14}
-                              className="transition-transform group-hover:translate-x-1"
-                          />
-                        </span>
+                                  <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                                    View Credential
+                                    <ArrowUpRight
+                                        size={14}
+                                        className="transition-transform group-hover:translate-x-1"
+                                    />
+                                  </span>
                                 </a>
                             )
                         }
@@ -209,8 +238,6 @@ const ResumeSections: React.FC = () => {
                 ))}
               </ul>
             </SimpleBar>
-
-            <ProgressiveBlur height="8%" position="bottom" />
           </div>
 
         </div>
@@ -225,7 +252,7 @@ const ResumeSections: React.FC = () => {
                 </h2>
               </div>
 
-              <SimpleBar className="max-h-[300px] pr-2">
+              <SimpleBar className="max-h-[750px] pr-2">
                 <ul className="space-y-4 list-none p-0 mb-0">
                   {aboutData["Leisure Activities"].map((item, idx) => (
                       <ListItem
@@ -237,8 +264,6 @@ const ResumeSections: React.FC = () => {
                   ))}
                 </ul>
               </SimpleBar>
-
-              <ProgressiveBlur height="8%" position="bottom" />
             </div>
         )}
       </motion.section>

@@ -2,7 +2,7 @@
 
 import React, { useMemo } from "react";
 import { motion, Variants } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, FileText } from "lucide-react";
 import SimpleBar from "simplebar-react";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import aboutDataJson from "@/data/resume.json";
@@ -10,103 +10,99 @@ import aboutDataJson from "@/data/resume.json";
 /* ---------------- Types ---------------- */
 
 interface ExperienceItem {
-  title: string;
-  time?: string;
-  organization?: string;
-  description?: string;
-  profileLink?: string | null;
+    title: string;
+    time?: string;
+    organization?: string;
+    description?: string;
+    profileLink?: string | null;
+    pdfLink?: string;
 }
 
 interface EducationItem {
-  institution: string;
-  degree: string;
-  details?: string;
-  credentialLink?: string | null;
+    institution: string;
+    degree: string;
+    details?: string;
+    credentialLink?: string | null;
 }
 
 interface LeisureItem {
-  activity: string;
-  description?: string;
-  image?: string;
+    activity: string;
+    description?: string;
+    image?: string;
 }
 
 interface AboutData {
-  education: EducationItem[];
-  experience: ExperienceItem[];
-  leisure: LeisureItem[];
+    education: EducationItem[];
+    experience: ExperienceItem[];
+    "Leisure Activities": LeisureItem[];
 }
 
 /* ---------------- Animations ---------------- */
 
 const fadeIn: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
 /* ---------------- Helpers ---------------- */
 
 const initializeAboutData = (data: any): AboutData => {
-  const educationList: EducationItem[] = Array.isArray(data?.education) ? data.education : [];
+    const educationList: EducationItem[] = Array.isArray(data?.education) ? data.education : [];
 
-  // Flexibles Auslesen für Experience ("Professional experience" sowie Fallbacks)
-  const rawExperience =
-      data?.["Professional experience"] ||
-      data?.experience ||
-      data?.workExperience ||
-      [];
-  const experienceList: ExperienceItem[] = Array.isArray(rawExperience) ? rawExperience : [];
+    const profExperience: ExperienceItem[] = Array.isArray(data?.["Professional experience"])
+        ? data["Professional experience"]
+        : [];
+    const generalExperience: ExperienceItem[] = Array.isArray(data?.experience)
+        ? data.experience
+        : [];
+    const combinedExperience = [...profExperience, ...generalExperience];
 
-  // Flexibles Auslesen für Leisure Activities
-  const rawLeisure =
-      data?.["Leisure Activities"] ||
-      data?.leisureActivities ||
-      data?.leisure ||
-      data?.hobbies ||
-      [];
-  const leisureList: LeisureItem[] = Array.isArray(rawLeisure) ? rawLeisure : [];
+    const leisureList: LeisureItem[] = Array.isArray(data?.["Leisure Activities"])
+        ? data["Leisure Activities"]
+        : [];
 
-  const extractYear = (value?: string | null) => {
-    if (!value) return 0;
-    const match = value.match(/\d{4}/);
-    return match ? parseInt(match[0], 10) : 0;
-  };
+    const extractYear = (value?: string | null) => {
+        if (!value) return 0;
+        const match = value.match(/\d{4}/);
+        return match ? parseInt(match[0], 10) : 0;
+    };
 
-  return {
-    education: [...educationList].sort(
-        (a, b) => extractYear(b.details) - extractYear(a.details)
-    ),
-    experience: [...experienceList].sort(
-        (a, b) => extractYear(b.time) - extractYear(a.time)
-    ),
-    leisure: leisureList,
-  };
+    return {
+        education: [...educationList].sort(
+            (a, b) => extractYear(b.details) - extractYear(a.details)
+        ),
+        experience: combinedExperience.sort(
+            (a, b) => extractYear(b.time) - extractYear(a.time)
+        ),
+        "Leisure Activities": leisureList,
+    };
 };
 
 /* ---------------- Memoized List Items ---------------- */
 
 const ListItem: React.FC<{
-  title: string;
-  details?: string;
-  image?: string;
-  extra?: React.ReactNode;
+    title: string;
+    details?: string;
+    image?: string;
+    extra?: React.ReactNode;
 }> = React.memo(({ title, details, image, extra }) => (
     <motion.li
         whileHover={{ x: 5, boxShadow: "0 8px 20px rgba(0,0,0,0.12)" }}
         transition={{ type: "spring", stiffness: 300 }}
         className="bg-base-100 p-4 rounded-lg cursor-pointer flex items-start gap-4"
     >
-      {image && (
-          <img
-              src={image}
-              alt={title}
-              className="w-12 h-12 rounded-md object-cover flex-shrink-0 mt-1"
-          />
-      )}
-      <div className="flex-1">
-        <p className="font-medium">{title}</p>
-        {details && <p className="text-base-content/70 mt-1 text-sm">{details}</p>}
-        {extra}
-      </div>
+        {image && (
+            <img
+                src={image}
+                alt={title}
+                className="w-12 h-12 rounded-md object-cover flex-shrink-0 mt-1"
+            />
+        )}
+        <div className="flex-1">
+            <p className="font-medium">{title}</p>
+            {details && <p className="text-base-content/70 mt-1 text-sm">{details}</p>}
+            {extra}
+        </div>
     </motion.li>
 ));
 
@@ -115,144 +111,163 @@ ListItem.displayName = "ListItem";
 /* ---------------- Component ---------------- */
 
 const ResumeSections: React.FC = () => {
-  const aboutData = useMemo(() => initializeAboutData(aboutDataJson), []);
+    const aboutData = useMemo(() => initializeAboutData(aboutDataJson), []);
 
-  return (
-      <motion.section
-          initial="hidden"
-          animate="visible"
-          variants={fadeIn}
-          className="text-base-content font-geist max-w-3xl mx-auto pt-1 space-y-4"
-      >
-        <div className="grid md:grid-cols-2 gap-4">
+    return (
+        <motion.section
+            initial="hidden"
+            animate="visible"
+            variants={fadeIn}
+            className="text-base-content font-geist max-w-3xl mx-auto pt-1 space-y-4"
+        >
+            <div className="grid md:grid-cols-2 gap-4">
 
-          {/* ================= Experience ================= */}
-          <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4">
-            <div className="text-start m-4">
-              <p className="text-sm text-base-content mb-0">Experience</p>
-              <h2 className="text-2xl font-bold">
-                Career <span className="text-base-content/60">Highlights</span>
-              </h2>
+                {/* ================= Professional Experience ================= */}
+                <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4">
+                    <div className="text-start m-4">
+                        <p className="text-sm text-base-content mb-0">Experience</p>
+                        <h2 className="text-2xl font-bold">
+                            Career <span className="text-base-content/60">Highlights</span>
+                        </h2>
+                    </div>
+
+                    <SimpleBar className="max-h-[750px] pr-2">
+                        <ul className="space-y-4 list-none p-0">
+                            {aboutData.experience.map((item, idx) => {
+                                const cleanPdfUrl = item.pdfLink
+                                    ? encodeURI(item.pdfLink.replace(/^\/?public\//, "/"))
+                                    : null;
+
+                                return (
+                                    <ListItem
+                                        key={`${item.title}-${item.organization ?? "org"}-${idx}`}
+                                        title={item.title.trim()}
+                                        details={
+                                            item.organization
+                                                ? `${item.organization}${item.time ? ` | ${item.time.trim()}` : ""}`
+                                                : undefined
+                                        }
+                                        extra={
+                                            item.description || item.profileLink || cleanPdfUrl ? (
+                                                <div className="mt-2 space-y-1">
+                                                    {item.description && (
+                                                        <p className="text-base-content/60 text-sm leading-relaxed">
+                                                            {item.description}
+                                                        </p>
+                                                    )}
+                                                    <div className="flex flex-wrap gap-4 pt-1">
+                                                        {item.profileLink && (
+                                                            <a
+                                                                href={item.profileLink}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className="inline-flex"
+                                                            >
+                                                                <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                                                                    View Company Website
+                                                                    <ArrowUpRight
+                                                                        size={14}
+                                                                        className="transition-transform group-hover:translate-x-1"
+                                                                    />
+                                                                </span>
+                                                            </a>
+                                                        )}
+                                                        {cleanPdfUrl && (
+                                                            <a
+                                                                href={cleanPdfUrl}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className="inline-flex text-primary font-medium"
+                                                            >
+                                                                <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                                                                    <FileText size={14} />
+                                                                    View Trial Report
+                                                                    <ArrowUpRight
+                                                                        size={14}
+                                                                        className="transition-transform group-hover:translate-x-1"
+                                                                    />
+                                                                </span>
+                                                            </a>
+                                                        )}
+                                                    </div>
+                                                </div>
+                                            ) : null
+                                        }
+                                    />
+                                );
+                            })}
+                        </ul>
+                    </SimpleBar>
+                </div>
+
+                {/* ================= Education ================= */}
+                <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4">
+                    <div className="text-start m-4">
+                        <p className="text-sm text-base-content mb-0">Education</p>
+                        <h2 className="text-2xl font-bold">
+                            Academic <span className="text-base-content/60">Background</span>
+                        </h2>
+                    </div>
+
+                    <SimpleBar className="max-h-[750px] pr-2">
+                        <ul className="space-y-4 list-none p-0 mb-0">
+                            {aboutData.education.map((edu, idx) => (
+                                <ListItem
+                                    key={`${edu.institution}-${edu.degree}-${idx}`}
+                                    title={edu.institution}
+                                    details={`${edu.degree}${edu.details ? ` | ${edu.details}` : ""}`}
+                                    extra={
+                                        edu.credentialLink && (
+                                            <a
+                                                href={encodeURI(edu.credentialLink)}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex mt-1"
+                                            >
+                                                <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                                                    View Credential
+                                                    <ArrowUpRight
+                                                        size={14}
+                                                        className="transition-transform group-hover:translate-x-1"
+                                                    />
+                                                </span>
+                                            </a>
+                                        )
+                                    }
+                                />
+                            ))}
+                        </ul>
+                    </SimpleBar>
+                </div>
+
             </div>
 
-            <SimpleBar className="max-h-[300px] pr-2">
-              <ul className="space-y-4 list-none p-0">
-                {aboutData.experience.map((item, idx) => (
-                    <ListItem
-                        key={`${item.title}-${item.organization ?? "org"}-${idx}`}
-                        title={item.title}
-                        details={
-                          item.organization
-                              ? `${item.organization}${item.time ? ` | ${item.time}` : ""}`
-                              : undefined
-                        }
-                        extra={
-                          item.description || item.profileLink ? (
-                              <div className="mt-2">
-                                {item.description && (
-                                    <p className="text-base-content/60 text-sm leading-relaxed">
-                                      {item.description}
-                                    </p>
-                                )}
-                                {item.profileLink && (
-                                    <a
-                                        href={item.profileLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex mt-1"
-                                    >
-                            <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
-                              View Company Website
-                              <ArrowUpRight
-                                  size={14}
-                                  className="transition-transform group-hover:translate-x-1"
-                              />
-                            </span>
-                                    </a>
-                                )}
-                              </div>
-                          ) : null
-                        }
-                    />
-                ))}
-              </ul>
-            </SimpleBar>
+            {/* ================= Leisure Activities ================= */}
+            {aboutData["Leisure Activities"].length > 0 && (
+                <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4">
+                    <div className="text-start m-4">
+                        <p className="text-sm text-base-content mb-0">Interests</p>
+                        <h2 className="text-2xl font-bold">
+                            Leisure <span className="text-base-content/60">Activities</span>
+                        </h2>
+                    </div>
 
-            <ProgressiveBlur height="8%" position="bottom" />
-          </div>
-
-          {/* ================= Education ================= */}
-          <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4">
-            <div className="text-start m-4">
-              <p className="text-sm text-base-content mb-0">Education</p>
-              <h2 className="text-2xl font-bold">
-                Academic <span className="text-base-content/60">Background</span>
-              </h2>
-            </div>
-
-            <SimpleBar className="max-h-[300px] pr-2">
-              <ul className="space-y-4 list-none p-0 mb-0">
-                {aboutData.education.map((edu, idx) => (
-                    <ListItem
-                        key={`${edu.institution}-${edu.degree}-${idx}`}
-                        title={edu.institution}
-                        details={`${edu.degree}${edu.details ? ` | ${edu.details}` : ""}`}
-                        extra={
-                            edu.credentialLink && (
-                                <a
-                                    href={edu.credentialLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex mt-1"
-                                >
-                        <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
-                          View Credential
-                          <ArrowUpRight
-                              size={14}
-                              className="transition-transform group-hover:translate-x-1"
-                          />
-                        </span>
-                                </a>
-                            )
-                        }
-                    />
-                ))}
-              </ul>
-            </SimpleBar>
-
-            <ProgressiveBlur height="8%" position="bottom" />
-          </div>
-
-        </div>
-
-        {/* ================= Leisure Activities ================= */}
-        {aboutData.leisure.length > 0 && (
-            <div className="relative overflow-hidden border border-primary/30 bg-base-200 rounded-lg p-4">
-              <div className="text-start m-4">
-                <p className="text-sm text-base-content mb-0">Interests</p>
-                <h2 className="text-2xl font-bold">
-                  Leisure <span className="text-base-content/60">Activities</span>
-                </h2>
-              </div>
-
-              <SimpleBar className="max-h-[300px] pr-2">
-                <ul className="space-y-4 list-none p-0 mb-0">
-                  {aboutData.leisure.map((item, idx) => (
-                      <ListItem
-                          key={`leisure-${item.activity}-${idx}`}
-                          title={item.activity}
-                          details={item.description}
-                          image={item.image}
-                      />
-                  ))}
-                </ul>
-              </SimpleBar>
-
-              <ProgressiveBlur height="8%" position="bottom" />
-            </div>
-        )}
-      </motion.section>
-  );
+                    <SimpleBar className="max-h-[750px] pr-2">
+                        <ul className="space-y-4 list-none p-0 mb-0">
+                            {aboutData["Leisure Activities"].map((item, idx) => (
+                                <ListItem
+                                    key={`leisure-${item.activity}-${idx}`}
+                                    title={item.activity}
+                                    details={item.description}
+                                    image={item.image}
+                                />
+                            ))}
+                        </ul>
+                    </SimpleBar>
+                </div>
+            )}
+        </motion.section>
+    );
 };
 
 export default ResumeSections;

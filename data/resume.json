@@ -65,7 +65,9 @@
         "organization": "ASE AG Zürich",
         "time": "April 7, 2026",
         "description": "Trial apprenticeship gaining insights into application development and software projects.",
-        "profileLink":  "https://ase.ch/"
+        "profileLink":  "https://ase.ch/",
+        "pdfLink": "/assets/docs/Kaiser_Elias_Schnupperbericht_ASE AG.pdf"
+
       },
       {
         "title": "Software Developer Apprentice EFZ (Trial Apprenticeship)",
