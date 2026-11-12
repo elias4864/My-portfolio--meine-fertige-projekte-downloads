@@ -188,9 +188,9 @@ const AllProjectsPage: React.FC = () => {
 
           <div className="my-4 text-start">
             <p className="text-sm sm:text-base text-base-content/80 leading-relaxed">
-              <span>This page highlights selected work. View the full project list on </span>
+              <span>This page highlights selected work of it-projects. View the full project list on </span>
               <Link
-                href="https://github.com/themehedihq"
+                href="https://github.com/elias4864"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium hover:text-primary underline underline-offset-6 decoration-dashed transition-all duration-300"

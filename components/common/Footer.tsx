@@ -30,7 +30,8 @@ const Footer = () => {
     { icon: Gitlab, href: "https://gitlab.com/elias4864", label: "Gitlab" },
 
     { icon: Linkedin, href: "https://www.linkedin.com/in/elias-jorin-ursin-kaiser-646638371/", label: "LinkedIn" },
-    { icon: FaEnvelope, href: "mailto:elias.kaiser@gmx.ch", label: "Email" },
+    { icon: FaEnvelope, href: "mailto:elias.kaiser@gmx.ch", label: " Private-Email" },
+    {icon:FaEnvelope, href:"mailto:Elias.kaiser@wiss-edu.ch",label:"WISS-Email-Adress"},
   ];
 
   const mainPages: NavLink[] = [
@@ -38,7 +39,6 @@ const Footer = () => {
     { label: "About", href: "/about" },
    
     { label: "Projects", href: "/projects" },
-     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ];
 

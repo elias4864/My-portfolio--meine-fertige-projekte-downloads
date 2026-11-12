@@ -55,7 +55,7 @@ export default function AboutPage() {
               I specialize in React.js, Java, and Tailwind CSS.
             </p>
 
-            <p className="text-sm sm:text-base text-base-content/80 leading-relaxed">
+            <p className="text-sm sm:text-base  text-base-content/80 leading-relaxed">
               My focus lies on developing secure, high-performance applications, from robust authentication and authorization systems using RBAC and modern password-hashing algorithms like bcrypt to custom, intuitive user interfaces
             </p>
 

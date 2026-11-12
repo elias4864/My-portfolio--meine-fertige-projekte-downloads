@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 // React-icons imports
 import { FiGlobe, FiMail, FiFileText } from "react-icons/fi";
-import { Github, Linkedin, Facebook, Instagram } from "lucide-react";
+import {Gitlab, Github, Linkedin, Facebook, Instagram } from "lucide-react";
 import {
   FaDev,
   FaDiscord,
@@ -42,7 +42,7 @@ const socialCategories: SocialCategory[] = [
     title: "Developer",
     links: [
       { icon: Github, href: "https://github.com/elias4864", label: "GitHub" },
-      { icon: FaHashnode, href: "https://gitlab.com/elias4864", label: "Gitlab" },
+      { icon: Gitlab, href: "https://gitlab.com/elias4864", label: "Gitlab" },
     ],
   },
   {
@@ -50,7 +50,9 @@ const socialCategories: SocialCategory[] = [
     links: [
       { icon: Linkedin, href: "https://www.linkedin.com/in/elias-jorin-ursin-kaiser-646638371/", label: "LinkedIn" },
 
-      { icon: FiMail, href: "mailto:elias.kaiser@gmx.ch", label: "Email" },
+      { icon: FiMail, href: "mailto:elias.kaiser@gmx.ch", label: " Private-Email" },
+
+      {icon: FiMail, href: "Elias.Kaiser@wiss-edu.ch",label:"WISS-School Email"},
       { icon: FaUsers, href: "https://teams.microsoft.com/l/chat/0/0?users=Elias.Kaiser@wiss-edu.ch", label: "Microsoft Teams" }
     ],
   },

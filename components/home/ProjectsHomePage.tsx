@@ -65,7 +65,7 @@ const ProjectsHomePage: React.FC = () => {
                 See More
                 <ChevronDown
                     size={14}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
+                    className="transition-transform duration-300 group-hover:translate-y-1"
                 />
               </Link>
             </div>

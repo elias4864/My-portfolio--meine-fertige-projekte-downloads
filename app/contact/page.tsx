@@ -159,7 +159,7 @@ const ContactMe: React.FC = () => {
                   <h2 className="text-3xl ">Contact</h2>
                   <h3 className="mt-4 text-sm sm:text-base text-base-content/80 leading-relaxed">
     Actively seeking full-time opportunities where I can contribute as a
-    Frontend / Full-Stack Developer. If you are hiring or would like to discuss
+    Frontend / Full-Stack  Application Developer. If you are hiring or would like to discuss
     a potential role, feel free to get in touch.
   </h3>
                 </motion.div>
