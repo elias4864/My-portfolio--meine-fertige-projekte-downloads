@@ -56,9 +56,27 @@
       "image": "/assets/images/projects/Piano.jpg"
     }
   ],
-  "Professional experience": [
+
+
+
+    "Professional experience": [
+      {
+        "title": "Software Developer Apprentice (Trial Apprenticeship)",
+        "organization": "ASE AG Zürich",
+        "time": "April 7, 2026",
+        "description": "Trial apprenticeship gaining insights into application development and software projects.",
+        "profileLink":  "https://ase.ch/"
+      },
+      {
+        "title": "Software Developer Apprentice EFZ (Trial Apprenticeship)",
+        "organization": "AZW Uster",
+        "time": "February 4 - 5, 2026",
+        "description": "Trial apprenticeship gaining practical insights into the vocational education and training for Software Developer EFZ.",
+        "profileLink": "https://www.azw.info/"
+      },
+
     {
-      "title": "Web Development and SEO",
+      "title": " Trainee in Web Development and SEO",
       "organization": "Netmaster (Schweiz) AG",
       "time": " October 2026-2 weeks",
       "description": "Assisted in website development and redesign projects with SEO. Managed time tracking, order processing, and administrative workflows within an ERP system(EI One ERP).",
