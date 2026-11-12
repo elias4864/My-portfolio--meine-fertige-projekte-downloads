@@ -23,15 +23,34 @@
     ]
   },
 
+
+
   {
     "category": "Programming Languages",
     "skills": [
       "Python(Basics)",
       "Java(OOP,Functional Programming)",
-      "JavaScript"
+      "JavaScript",
+      "Bash",
+      ""
 
     ]
   },
+
+
+
+
+
+  {
+    "category": "Database  Query Languages",
+    "skills": [
+      "MySQL",
+      "PostgreSQL"
+
+
+    ]
+  },
+
 
 
   {
@@ -68,11 +87,12 @@
   {
     "category": "Tools",
     "skills": [
-      "Git",
       "GitHub",
+      "Gitlab",
       "Trello",
       "Visily",
-      "Docker",
+      "Visual Studio Code",
+      "Docker Desktop",
       "Kubernetes",
       "Helm Package Manager",
       "Oracle Virtual Box",
@@ -80,6 +100,8 @@
       "WebStorm",
       "Postman",
       "Pycharm",
+      "Vite",
+      "Visual Studio Code",
 
       "Linux"
     ]
