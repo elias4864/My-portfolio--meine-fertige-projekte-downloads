@@ -230,9 +230,14 @@ export default function DashboardPage() {
 
         {/* GitHub Insights Image */}
         <div className="my-6">
-          <h3 className="text-xl my-3 text-start">Current GitHub Stats
-</h3>
-  <img src={`https://ghinsights.vercel.app/api/insight?username=${USERNAME}&theme=ocean&graph=false&languages=false&streak=true&stats=false&header=false&summary=false&profile=false`} alt="GitHub Insights" />
+          <h3 className="text-xl my-3 text-start">Current GitHub Stats</h3>
+
+
+          <img
+              src="https://github-readme-streak-stats.herokuapp.com/?user=elias4864&theme=tokyonight&hide_border=true"
+              alt="GitHub Streak Stats"
+              className="w-full h-auto rounded-lg"
+          />
 
            
    

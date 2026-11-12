@@ -63,7 +63,7 @@ const AllProjectsPage: React.FC = () => {
           >
             <h2 className="text-3xl">My IT-Projects</h2>
             <h3 className="mt-4 text-sm sm:text-base text-base-content/80 leading-relaxed">
-              A collection of  my IT-projects developed during my studies at WISS,
+              A collection of  my IT-projects developed during my school days at WISS,
               as well as personal hobby projects and independent applications
               built in my free time.
             </h3>
