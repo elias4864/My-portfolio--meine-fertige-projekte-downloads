@@ -19,6 +19,8 @@
     "images": [
       "/assets/images/projects/Last.png"
     ],
+
+    "downloadLink": "/assets/downloads/MasterTodo.apk",
     "videos": [
       "/assets/video/Marketingvideo_World of Chewinggum_Elias und Vincent_Release V.1.6.mp4"
     ],
@@ -26,6 +28,7 @@
     "futurePlans": "Expand product categories and enhance user review filters.",
     "type": "Full Stack"
   },
+
   {
     "title": "Titocci Metalcostruzioni SAGL Website",
     "description": "A responsive client web platform engineered with custom interactive widgets, automated calculation tools, and modern styling.",
@@ -43,6 +46,7 @@
     ],
     "liveLink": "https://elias4864.github.io/Titocci-Metalcostruzioni-SAGL-Website-/",
     "frontendRepo": "https://github.com/elias4864/Titocci-Metalcostruzioni-SAGL-Website-",
+    "downloadLink": "/assets/downloads/MasterTodo.apk",
     "images": [
       "/assets/images/projects/titocci.png"
     ],
@@ -69,6 +73,7 @@
     ],
     "frontendRepo": "https://github.com/LeoKuhnZH/WISS-Praktikum-App/tree/dev/frontend",
     "backendRepo":"https://github.com/LeoKuhnZH/WISS-Praktikum-App/tree/dev/backend",
+    "downloadLink": "/assets/downloads/MasterTodo.apk",
     "images": [
       "/assets/images/projects/Praktikum.jpg"
     ],
@@ -97,10 +102,13 @@
       "/assets/images/projects/Wiki.jpg"
     ],
     "videos": [],
+    "downloadLink": "/assets/downloads/MasterTodo.apk",
+
     "challenges": "Configuring persistent volume claims and Helm chart parameters inside a single-node Minikube environment.",
     "futurePlans": "Automate deployment backups and expand documentation categories.",
     "type": "Deployment"
   },
+
   {
     "title": "Master Todo Mobile App",
     "description": "A native Android task management application featuring local database persistence, custom progress indicators, and emulator testing.",
@@ -115,6 +123,8 @@
       "Room DAO"
     ],
     "frontendRepo": "https://github.com/elias4864/Aufgabenplanner-Mobile-App",
+    "downloadLink": "/assets/downloads/MasterTodo.apk",
+
     "images": [
       "/assets/images/projects/TodoApp.png"
     ],
@@ -141,6 +151,8 @@
       "Docker-Compose"
     ],
     "frontendRepo": "https://github.com/elias4864/Fussballquiz-React-Projekt",
+    "downloadLink": "/assets/downloads/MasterTodo.apk",
+
     "backendRepo": "https://github.com/elias4864/Fussballquizapplikation",
     "images": [
       "/assets/images/projects/Fussballquiz.png"
@@ -166,6 +178,8 @@
       "Nextcloud"
     ],
     "Repo": "https://gitlab.com/docker1472640/DockerKMU",
+    "downloadLink": "/assets/downloads/MasterTodo.apk",
+
     "images": [
       "/assets/images/projects/Nextcloud.png"
     ],
@@ -195,6 +209,8 @@
       "Tomcat"
     ],
     "frontendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-frontend",
+    "downloadLink": "/assets/downloads/MasterTodo.apk",
+
     "backendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-backend",
     "images": [
       "/assets/images/projects/MangaDB.png"
@@ -218,10 +234,13 @@
       "Linux"
     ],
     "Repo": "https://github.com/elias4864/Glance-Home-Assistant-Dashboard-",
+
     "images": [
       "/assets/images/projects/Glance.svg"
     ],
     "videos": [],
+    "downloadLink": "/assets/downloads/MasterTodo.apk",
+
     "challenges": "Configuring network endpoints and API widgets for smooth real-time telemetry monitoring.",
     "futurePlans": "Add custom alert thresholds and smart home integrations.",
     "type": "Microservices Deployment"
@@ -241,6 +260,8 @@
       "Mockito",
       "Spring Boot"
     ],
+    "downloadLink": "/assets/downloads/MasterTodo.apk",
+
     "frontendRepo": "https://github.com/elias4864/M450-Apptesting-CodeQuiz/tree/main/frontend",
     "backendRepo": "https://github.com/elias4864/M450-Apptesting-CodeQuiz/tree/main/backend",
 
@@ -265,6 +286,8 @@
       "CSS3"
     ],
     "frontendRepo": "https://gitlab.com/elias4864/miniclub-website",
+    "downloadLink": "/assets/downloads/MasterTodo.apk",
+
     "images": [
       "/assets/images/projects/Miniclub.svg"
     ],
@@ -286,6 +309,8 @@
       "UI/UX Design"
     ],
     "liveLink": "https://app.visily.ai/projects/5cb68c40-2b03-47d6-bfa1-80e98050b34d/boards/2314570/presenter?play-mode=All+screens",
+    "downloadLink": "/assets/downloads/MasterTodo.apk",
+
     "images": [
       "/assets/images/projects/Maestro.png"
     ],

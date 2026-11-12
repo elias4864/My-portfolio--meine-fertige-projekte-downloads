@@ -16,7 +16,7 @@
       "institution": "Kantonsschule Zürich Nord",
       "degree": "Gymnasium (Four-year program)",
       "details": "08/2019 – 08/2024 | Focus: Business and Law (Wirtschaft & Recht)",
-      "credentialLink":"/assets/docs/ECDL Zertifikat Elias Kaiser 2022.pdf"
+      "credentialLink": "/assets/docs/ECDL Zertifikat Elias Kaiser 2022.pdf"
     },
     {
       "institution": "Primarschule Im Birch",
@@ -38,23 +38,31 @@
     {
       "activity": "Beachvolleyball",
       "description": "Regular team sports and athletic activity.",
-      "image":"/assets/images/Beachvolley.jpg"
+      "image": "/assets/images/projects/Beachvolley.jpg"
     },
     {
       "activity": "Traveling",
       "description": "Exploring new cultures and discovering different languages among the earth.",
-      "image":"/assets/images/Reisen.jpg"
+      "image": "/assets/images/projects/Reisen.jpg"
     },
     {
       "activity": "Reading",
       "description": "Reading thrillers/crime fiction as well as specialized literature on complex economic and political topics.",
-      "image":"/assets/images/Lesen.jpg"
+      "image": "/assets/images/projects/Lesen.jpg"
     },
     {
       "activity": "Piano",
       "description": "Playing classical piano for over 10 years, combined with creative free improvisation.",
-      "image": "/assets/images/Piano.jpg"
-
+      "image": "/assets/images/projects/Piano.jpg"
+    }
+  ],
+  "Professional experience": [
+    {
+      "title": "Web Development and SEO",
+      "organization": "Netmaster (Schweiz) AG",
+      "time": " October 2026-2 weeks",
+      "description": "Assisted in website development and redesign projects with SEO. Managed time tracking, order processing, and administrative workflows within an ERP system(EI One ERP).",
+      "profileLink": "https://netmaster.ch/"
     }
   ]
 }
