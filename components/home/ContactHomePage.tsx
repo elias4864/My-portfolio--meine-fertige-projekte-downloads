@@ -105,7 +105,7 @@ const ContactHomePage: React.FC = () => {
     {
       icon: <MapPin size={20} />,
       label: "Address",
-      value: "Neunbrunnenstrasse 116B",
+      value: "Neunbrunnenstrasse 116B, 8050 Zurich",
     },
 
   ], []);
