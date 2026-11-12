@@ -297,9 +297,6 @@
     "futurePlans": "Add interactive car configurator features.",
     "type": "Frontend"
   },
-
-
-
   {
     "title": "Maestro Budget (E-Banking API Prototype)",
     "description": "A prototype of an e-banking API designed visually using interactive UI/UX wireframes and layout prototypes without code.",
@@ -323,34 +320,4 @@
     "futurePlans": "Develop a functional backend implementation for the prototype.",
     "type": "Design"
   }
-],
-  {
-    "title": "Maestro Budget (E-Banking API Prototype)",
-    "description": "A prototype of an e-banking API designed visually using interactive UI/UX wireframes and layout prototypes without code.",
-    "features": [
-      "Interactive UI/UX wireframing",
-      "Visual layout prototyping",
-      "Simulated transaction flows"
-    ],
-    "techStack": [
-      "Visily",
-      "UI/UX Design"
-    ],
-    "liveLink": "https://app.visily.ai/projects/5cb68c40-2b03-47d6-bfa1-80e98050b34d/boards/2314570/presenter?play-mode=All+screens",
-    "downloadLink": "/assets/downloads/MasterTodo.apk",
-
-    "images": [
-      "/assets/images/projects/Maestro.png"
-    ],
-    "videos": [],
-    "challenges": "Translating complex banking workflows into intuitive, user-friendly visual prototypes.",
-    "futurePlans": "Develop a functional backend implementation for the prototype.",
-    "type": "Design"
-  }
-],
-
-
-
-
-
-
+]
