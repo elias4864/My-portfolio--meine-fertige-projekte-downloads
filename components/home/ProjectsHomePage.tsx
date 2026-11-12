@@ -71,7 +71,6 @@ const ProjectsHomePage: React.FC = () => {
             </div>
           </div>
         </motion.section>
-
         <ProjectModal
             showModal={showModal}
             selectedProject={selectedProject}

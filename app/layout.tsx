@@ -57,9 +57,9 @@ export const metadata = {
     images: [
       {
         url: "../assets/images/Initalen.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Elias Kaiser Portfolio",
+        width: 2000,
+        height: 2000,
+        alt: "Elias Kaiser-Portfolio",
       },
     ],
     locale: "en_US",

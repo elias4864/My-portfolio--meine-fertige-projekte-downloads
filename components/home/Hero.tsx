@@ -140,7 +140,7 @@ const HeroSection: React.FC = () => {
              HTML5/CSS and Tailwind CSS
             </span>
 
-            I build modern, scalable web applications using React.js, Next.js, JavaScript, Java, and Tailwind CSS. I focus on clean architecture, intuitive user experiences, and high-performance solutions. Passionate about developing efficient backend systems, modern frontend interfaces, and reliable applications through clean code, continuous testing, and thoughtful problem-solving.
+            I build modern, scalable web applications using React.js, Next.js, JavaScript, Java, and Tailwind CSS. I focus on clean architecture, intuitive user experiences, and high-performance solutions. Passionate about developing efficient backend systems, modern frontend interfaces, and reliable applications through clean code, continuous testing,Code-Refactoring and thoughtful problem-solving.
           </motion.p>
 
           <div className="flex flex-wrap gap-4 mt-2">

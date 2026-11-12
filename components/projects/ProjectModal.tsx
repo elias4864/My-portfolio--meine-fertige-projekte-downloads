@@ -5,20 +5,21 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight, Github, X, Download } from "lucide-react";
 import Image from "next/image";
 
-interface Project {
+export interface Project {
   title: string;
   description: string;
   images: string[];
   videos?: string[];
   techStack: string[];
-  liveLink: string;
+  type: 'Frontend' | 'Backend' | 'Full Stack' | 'Mobile Development' | 'DevOps' | 'Deployment' | 'Other' | 'Design';
+  liveLink?: string;
   frontendRepo?: string;
   backendRepo?: string;
   challenges?: string;
   futurePlans?: string;
-  features?: string[];
+  features?: string[] | string;
   downloadLink?: string;
-
+  githubLink?: string;
 }
 
 interface ProjectModalProps {
@@ -62,15 +63,15 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 exit={{ opacity: 0 }}
                 className="font-geist fixed inset-0 backdrop-blur-sm z-[99]
                      p-4 flex items-center justify-center"
-                onClick={closeModal} // close on backdrop click
+                onClick={closeModal}
             >
               <motion.div
                   initial={{ scale: 0.95, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   exit={{ scale: 0.95, opacity: 0 }}
-                  className="bg-base-200 border border-primary/30 rounded-br-none rounded-tr-none rounded-2xl shadow-2xl
+                  className="bg-base-200 border border-primary/30 rounded-2xl shadow-2xl
                        w-full max-h-[95vh] overflow-hidden flex flex-col relative max-w-2xl mx-auto"
-                  onClick={(e) => e.stopPropagation()} // prevent backdrop close when clicking inside
+                  onClick={(e) => e.stopPropagation()}
               >
                 <button
                     onClick={closeModal}
@@ -104,21 +105,23 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                   </div>
 
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                    <h2 className="text-2xl md:text-3xl ">
+                    <h2 className="text-2xl md:text-3xl">
                       {project.title}
                     </h2>
 
                     <div className="flex flex-wrap gap-4">
-                      <motion.a
-                          whileHover={{ x: 3 }}
-                          href={project.liveLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="underline-offset-6 decoration-dashed hover:underline rounded-lg group inline-flex items-center gap-1 hover:text-primary font-geist text-sm cursor-pointer transition-all duration-300"
-                      >
-                        <ArrowUpRight size={14} />
-                        Live
-                      </motion.a>
+                      {project.liveLink && (
+                          <motion.a
+                              whileHover={{ x: 3 }}
+                              href={project.liveLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="underline-offset-6 decoration-dashed hover:underline rounded-lg group inline-flex items-center gap-1 hover:text-primary font-geist text-sm cursor-pointer transition-all duration-300"
+                          >
+                            <ArrowUpRight size={14} />
+                            Live
+                          </motion.a>
+                      )}
 
                       {project.downloadLink && (
                           <motion.a
@@ -169,7 +172,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                     <div className="bg-base-300/40 border border-primary/20 rounded-xl p-5 space-y-3">
                       <h3 className="text-md text-base-content">Key Features</h3>
                       <ul className="space-y-2 text-sm text-base-content/80 list-disc list-inside">
-                        {project.features?.length ? (
+                        {Array.isArray(project.features) && project.features.length ? (
                             project.features.map((feature, index) => (
                                 <li key={feature + index}>{feature}</li>
                             ))
@@ -187,8 +190,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                                 key={tech + i}
                                 className="px-3 py-1 text-xs border border-primary/30 rounded-lg"
                             >
-                        {tech}
-                      </span>
+                              {tech}
+                            </span>
                         ))}
                       </div>
                     </div>
@@ -196,32 +199,16 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
 
                   {project.challenges && (
                       <div>
-                        <span className="text-md text-base-content">Challenges</span>
+                        <span className="text-md text-base-content font-semibold">Challenges</span>
                         <p className="text-sm text-base-content/80 mt-1">
                           {project.challenges}
                         </p>
                       </div>
                   )}
 
-
-
-                  {project.downloadLink && (
-                      <motion.a
-                          whileHover={{ x: 3 }}
-                          href={project.downloadLink}
-                          download
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="underline-offset-6 decoration-dashed hover:underline rounded-lg group inline-flex items-center gap-1 hover:text-primary font-geist text-sm cursor-pointer transition-all duration-300"
-                      >
-                        <Download size={14} />
-                        Download Projects
-                      </motion.a>
-                  )}
-
                   {project.futurePlans && (
                       <div>
-                        <span className="text-md text-base-content">Future Plans</span>
+                        <span className="text-md text-base-content font-semibold">Future Plans</span>
                         <p className="text-sm text-base-content/80 mt-1">
                           {project.futurePlans}
                         </p>
