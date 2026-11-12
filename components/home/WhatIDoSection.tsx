@@ -34,6 +34,8 @@ const whatIDo = [
     text: "Implement authentication & role-based access (JWT token-based authentication) with Spring Security (IAM)",
     icon: SiSpring,
   },
+
+
   {
     text: "Optimize Accessibility and User Experience of UIs using Tailwind CSS",
     icon: SiTailwindcss,
