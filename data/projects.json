@@ -20,11 +20,8 @@
       "/assets/images/projects/Last.png"
     ],
 
-    "downloadLink": "https://github.com/Vinci4600/meine-projekt-downloads/releases/download/v1.1.2/World-of-Chewing-gum-main.zip",
 
-    "videos": [
-      "/assets/video/Marketingvideo_World of Chewinggum_Elias und Vincent_Release V.1.6.mp4"
-    ],
+
     "challenges": "Collaborative agile coordination and synchronizing database models between Spring Boot and React.",
     "futurePlans": "Expand product categories and enhance user review filters.",
     "type": "Full Stack"
@@ -318,6 +315,30 @@
     "videos": [],
     "challenges": "Translating complex banking workflows into intuitive, user-friendly visual prototypes.",
     "futurePlans": "Develop a functional backend implementation for the prototype.",
+    "type": "Design"
+  },
+
+
+
+
+
+  {
+    "title": "Lift Mate-Ergonomic Ergonomic laptop stand(Innovation project)",
+    "description": "LiftMate was developed as part of Module 245. The project entails the development and marketing of a wooden laptop stand, integrating product design, project management, and marketing. Furthermore, LiftMate was already utilized in Module 241—Initiating Innovative ICT Solutions.",
+    "features": [
+      "Ergonomic, Sustainable wooden laptop stand"
+    ],
+    "techStack": [
+      "Visily",
+      "UI/UX Design"
+    ],
+    "downloadLink": "/assets/images/projects/DokumentationLiftMate.pdf",
+
+    "images": [
+      "/assets/images/projects/LiftMate2.png"
+    ],
+    "videos": [],
+    "challenges": "Translating complex banking workflows into intuitive, user-friendly visual prototypes.",
     "type": "Design"
   }
 ]
