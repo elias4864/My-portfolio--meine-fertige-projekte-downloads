@@ -68,13 +68,13 @@ const HeroSection: React.FC = () => {
             transition={{ type: "spring", stiffness: 220 }}
             className="w-36 sm:w-44 md:w-48 overflow-hidden"
           >
-            <div className="relative w-full aspect-square">
+            <div className="relative w-full max-w-md md:max-w-lg aspect-square mx-auto">
               <Image
-                src="/About.JPG"
-                alt="Elias Kaiser "
-                fill
-                className="object-cover rounded-lg"
-                priority
+                  src="/About.JPG"
+                  alt="Elias Kaiser"
+                  fill
+                  className="object-cover rounded-lg"
+                  priority
               />
             </div>
 
@@ -83,7 +83,7 @@ const HeroSection: React.FC = () => {
               <img
                   src="/Signatur.png"
                   alt="Signature"
-                  className="w-full max-w-2xl h-full object-contain"
+                  className="w-full max-w-2xl h-full object-contain "
               />
             </div>
           </motion.div>
@@ -150,7 +150,7 @@ const HeroSection: React.FC = () => {
               whileHover={{ scale: 1.05, rotate: -0.5 }}
               whileTap={{ scale: 0.97 }}
 
-              href="/Lebenslauf_Elias Kaiser.pdf"
+              href="/Lebenslauf_Elias Kaiser (2).pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-1 hover:text-primary underline-offset-6 decoration-dashed hover:underline rounded-lg font-geist text-sm transition-all duration-300"
