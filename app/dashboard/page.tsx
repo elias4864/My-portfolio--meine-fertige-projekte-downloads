@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Loader2 } from "lucide-react";
+import { ArrowUpRight, Loader2, Download, Tag, ExternalLink } from "lucide-react";
 import {
   PieChart,
   Pie,
@@ -34,6 +34,150 @@ interface LanguageData {
   [key: string]: string | number;
 }
 
+interface ReleaseAsset {
+  id: number;
+  name: string;
+  browser_download_url: string;
+  size: number;
+}
+
+interface GitHubRelease {
+  id: number;
+  tag_name: string;
+  name: string;
+  html_url: string;
+  published_at: string;
+  body: string;
+  zipball_url: string;
+  assets: ReleaseAsset[];
+}
+
+// ================================================
+// RELEASES SECTION SUB-COMPONENT
+// ================================================
+function ReleasesSection({ repoName }: { repoName: string }) {
+  const USERNAME = "elias4864";
+  const TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
+
+  const [releases, setReleases] = useState<GitHubRelease[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const headers: HeadersInit = TOKEN
+        ? { Authorization: `token ${TOKEN}` }
+        : {};
+
+    async function loadReleases() {
+      try {
+        setLoading(true);
+        const res = await fetch(
+            `https://api.github.com/repos/${USERNAME}/${repoName}/releases`,
+            { headers }
+        );
+        if (!res.ok) throw new Error("Releases konnten nicht geladen werden");
+        const data: GitHubRelease[] = await res.json();
+        setReleases(data);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    if (repoName) loadReleases();
+  }, [repoName, TOKEN]);
+
+  if (loading) {
+    return (
+        <div className="flex items-center gap-2 text-sm text-base-content/70 p-4">
+          <Loader2 className="w-4 h-4 animate-spin text-primary" />
+          <span>Lade Releases für {repoName}...</span>
+        </div>
+    );
+  }
+
+  if (releases.length === 0) {
+    return (
+        <p className="text-sm text-base-content/60 p-4">
+          Keine Releases für dieses Repository vorhanden.
+        </p>
+    );
+  }
+
+  return (
+      <div className="space-y-4 my-6">
+        <h3 className="text-xl font-semibold">Releases & Downloads ({repoName})</h3>
+
+        {releases.map((release, index) => (
+            <div
+                key={release.id}
+                className="bg-base-100 p-4 rounded-lg border border-base-300 shadow-sm"
+            >
+              {/* Kopfzeile mit Version & Datum */}
+              <div className="flex flex-wrap justify-between items-center gap-2 mb-2">
+                <div className="flex items-center gap-2">
+                  <Tag className="w-4 h-4 text-primary" />
+                  <span className="font-bold text-lg">
+                {release.name || release.tag_name}
+              </span>
+                  {index === 0 && (
+                      <span className="px-2 py-0.5 text-xs rounded-full bg-green-500/20 text-green-400 border border-green-500/30">
+                  Latest
+                </span>
+                  )}
+                </div>
+
+                <span className="text-xs text-base-content/60">
+              {new Date(release.published_at).toLocaleDateString("de-CH")}
+            </span>
+              </div>
+
+              {/* Release-Beschreibung */}
+              {release.body && (
+                  <p className="text-sm text-base-content/80 whitespace-pre-line mb-4">
+                    {release.body}
+                  </p>
+              )}
+
+              {/* Download-Buttons */}
+              <div className="flex flex-wrap gap-2 mt-3">
+                {release.assets.map((asset) => (
+                    <a
+                        key={asset.id}
+                        href={asset.browser_download_url}
+                        className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md bg-primary text-primary-content hover:opacity-90 transition"
+                    >
+                      <Download className="w-3.5 h-3.5" />
+                      {asset.name} ({(asset.size / (1024 * 1024)).toFixed(1)} MB)
+                    </a>
+                ))}
+
+                <a
+                    href={release.zipball_url}
+                    className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md bg-base-200 hover:bg-base-300 transition"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  Source Code (.zip)
+                </a>
+
+                <a
+                    href={release.html_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-md border border-base-300 hover:bg-base-200 transition"
+                >
+                  GitHub <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </div>
+        ))}
+      </div>
+  );
+}
+
+// ================================================
+// MAIN DASHBOARD PAGE
+// ================================================
 export default function DashboardPage() {
   const USERNAME = "elias4864";
   const TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
@@ -47,7 +191,7 @@ export default function DashboardPage() {
     followers: 0,
   });
   const [languagesData, setLanguagesData] = useState<LanguageData[]>([]);
-  const [loading, setLoading] = useState<boolean>(true); // <--- Neu: Globaler Ladezustand
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const headers: HeadersInit = TOKEN ? { Authorization: `token ${TOKEN}` } : {};
@@ -123,7 +267,7 @@ export default function DashboardPage() {
       } catch (err) {
         console.error(err);
       } finally {
-        setLoading(false); // <--- Laden beendet (egal ob Erfolg oder Fehler)
+        setLoading(false);
       }
     }
 
@@ -132,7 +276,6 @@ export default function DashboardPage() {
 
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#AF19FF", "#FF4560", "#FF9F40"];
 
-  // Wenn Daten noch laden, schicken wir einen sauberen Lade-Spinner im selben Layout-Container
   if (loading) {
     return (
         <motion.section
@@ -285,6 +428,9 @@ export default function DashboardPage() {
               ))}
             </ul>
           </div>
+
+          {/* 🔹 Integration der ReleasesSection für dein Hauptprojekt */}
+          <ReleasesSection repoName="elias-portfolio" />
 
           {/* Recent Commits */}
           <div>

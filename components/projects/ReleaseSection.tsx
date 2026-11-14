@@ -22,7 +22,14 @@ interface GitHubRelease {
 }
 
 interface ReleasesProps {
-    repoName: string; // z.B. "MangaDB" oder dein Portfolio-Repo
+    repoName: string;
+}
+
+function formatFileSize(bytes: number): string {
+    if (bytes < 1024 * 1024) {
+        return `${(bytes / 1024).toFixed(0)} KB`;
+    }
+    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 }
 
 export default function ReleasesSection({ repoName }: ReleasesProps) {
@@ -88,30 +95,29 @@ export default function ReleasesSection({ repoName }: ReleasesProps) {
                         <div className="flex items-center gap-2">
                             <Tag className="w-4 h-4 text-primary" />
                             <span className="font-bold text-lg">
-                {release.name || release.tag_name}
-              </span>
+                                {release.name || release.tag_name}
+                            </span>
                             {index === 0 && (
                                 <span className="px-2 py-0.5 text-xs rounded-full bg-green-500/20 text-green-400 border border-green-500/30">
-                  Latest
-                </span>
+                                    Latest
+                                </span>
                             )}
                         </div>
 
                         <span className="text-xs text-base-content/60">
-              {new Date(release.published_at).toLocaleDateString("de-CH")}
-            </span>
+                            {new Date(release.published_at).toLocaleDateString("de-CH")}
+                        </span>
                     </div>
 
-                    {/* Release-Beschreibung (falls vorhanden) */}
+                    {/* Release-Beschreibung */}
                     {release.body && (
                         <p className="text-sm text-base-content/80 whitespace-pre-line mb-4">
                             {release.body}
                         </p>
                     )}
 
-                    {/* Download-Buttons (Assets + Source Code ZIP) */}
+                    {/* Download-Buttons */}
                     <div className="flex flex-wrap gap-2 mt-3">
-                        {/* Falls eigene Dateien im Release hochgeladen wurden */}
                         {release.assets.map((asset) => (
                             <a
                                 key={asset.id}
@@ -119,20 +125,18 @@ export default function ReleasesSection({ repoName }: ReleasesProps) {
                                 className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md bg-primary text-primary-content hover:opacity-90 transition"
                             >
                                 <Download className="w-3.5 h-3.5" />
-                                {asset.name} ({(asset.size / (1024 * 1024)).toFixed(1)} MB)
+                                {asset.name} ({formatFileSize(asset.size)})
                             </a>
                         ))}
 
-                        {/* Standard-ZIP Download des Quellcodes */}
                         <a
-                            href={release.zipball_url}
+                            href={`https://github.com/${USERNAME}/${repoName}/archive/refs/tags/${release.tag_name}.zip`}
                             className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md bg-base-200 hover:bg-base-300 transition"
                         >
                             <Download className="w-3.5 h-3.5" />
                             Source Code (.zip)
                         </a>
 
-                        {/* Link direkt zu GitHub */}
                         <a
                             href={release.html_url}
                             target="_blank"
