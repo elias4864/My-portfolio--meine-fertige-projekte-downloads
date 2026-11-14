@@ -129,7 +129,7 @@
     ],
     "backendRepo": "https://github.com/elias4864/Purpure-Ventures-Coding-Assessment",
     "downloadLink": "/assets/releases/Purpure-Ventures-Coding-Assessment-main.zip",
-    "images": [],
+    "images": ["/assets/images/projects/Purpure.png"],
     "videos": [],
     "challenges": "Implementing a secure zero-trust architecture and role-based access control in combination with AI components.",
     "futurePlans": "Expanding AI models and performance optimization.",
