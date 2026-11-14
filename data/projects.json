@@ -46,7 +46,7 @@
     ],
     "liveLink": "https://elias4864.github.io/Titocci-Metalcostruzioni-SAGL-Website-/",
     "frontendRepo": "https://github.com/elias4864/Titocci-Metalcostruzioni-SAGL-Website-",
-    "downloadLink": "/assets/downloads/MasterTodo.apk",
+    "downloadLink": "/assets/releases/Titocci-Metalcostruzioni-SAGL-Website--main.zip",
     "images": [
       "/assets/images/projects/Titocci.png"
     ],
@@ -73,7 +73,7 @@
     ],
     "frontendRepo": "https://github.com/LeoKuhnZH/WISS-Praktikum-App/tree/dev/frontend",
     "backendRepo":"https://github.com/LeoKuhnZH/WISS-Praktikum-App/tree/dev/backend",
-    "downloadLink": "/assets/downloads/MasterTodo.apk",
+    "downloadLink": "/assets/releases/WISS-Praktikum-App-main.zip",
     "images": [
       "/assets/images/projects/Praktikum.jpg"
     ],
@@ -102,7 +102,7 @@
       "/assets/images/projects/Wiki.jpg"
     ],
     "videos": [],
-    "downloadLink": "/assets/downloads/MasterTodo.apk",
+    "downloadLink": "/assets/releases/My-Wiki-main.zip",
 
     "challenges": "Configuring persistent volume claims and Helm chart parameters inside a single-node Minikube environment.",
     "futurePlans": "Automate deployment backups and expand documentation categories.",
@@ -123,7 +123,7 @@
       "Room DAO"
     ],
     "frontendRepo": "https://github.com/elias4864/Aufgabenplanner-Mobile-App",
-    "downloadLink": "/assets/downloads/MasterTodo.apk",
+    "downloadLink": "/assets/releases/Aufgabenplanner-Mobile-App-main.zip",
 
     "images": [
       "/assets/images/projects/TodoApp.png"
@@ -151,7 +151,7 @@
       "Docker-Compose"
     ],
     "frontendRepo": "https://github.com/elias4864/Fussballquiz-React-Projekt",
-    "downloadLink": "/assets/downloads/MasterTodo.apk",
+    "downloadLink": "/assets/releases/Fussballquiz-React-Projekt-main.zip",
 
     "backendRepo": "https://github.com/elias4864/Fussballquizapplikation",
     "images": [
@@ -178,7 +178,7 @@
       "Nextcloud"
     ],
     "Repo": "https://gitlab.com/docker1472640/DockerKMU",
-    "downloadLink": "/assets/downloads/MasterTodo.apk",
+    "downloadLink": "/assets/releases/DockerKMU-main.zip",
 
     "images": [
       "/assets/images/projects/Nextcloud.png"
@@ -209,7 +209,7 @@
       "Tomcat"
     ],
     "frontendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-frontend",
-    "downloadLink": "/assets/downloads/MasterTodo.apk",
+    "downloadLink": "/assets/releases/Manga-DB-mit-BCrypt-Hashing-main.zip",
 
     "backendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-backend",
     "images": [
@@ -239,7 +239,7 @@
       "/assets/images/projects/Glance.svg"
     ],
     "videos": [],
-    "downloadLink": "/assets/downloads/MasterTodo.apk",
+    "downloadLink": "/assets/releases/Glance-Home-Assistant-Dashboard--main.zip",
 
     "challenges": "Configuring network endpoints and API widgets for smooth real-time telemetry monitoring.",
     "futurePlans": "Add custom alert thresholds and smart home integrations.",
@@ -260,7 +260,7 @@
       "Mockito",
       "Spring Boot"
     ],
-    "downloadLink": "/assets/downloads/MasterTodo.apk",
+    "downloadLink": "/assets/releases/M450-Apptesting-CodeQuiz-main.zip",
 
     "frontendRepo": "https://github.com/elias4864/M450-Apptesting-CodeQuiz/tree/main/frontend",
     "backendRepo": "https://github.com/elias4864/M450-Apptesting-CodeQuiz/tree/main/backend",
