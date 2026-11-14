@@ -14,18 +14,20 @@
       "Docker"
     ],
     "frontendRepo": "https://github.com/Vinci4600/World-of-Chewing-gum/tree/dev/Frontend",
-
     "backendRepo": "https://github.com/Vinci4600/World-of-Chewing-gum/tree/dev/Backend",
+    "downloadLink": "https://github.com/Vinci4600/meine-projekt-downloads/releases/download/v1.1.2/World-of-Chewing-gum-main.zip",
+
     "images": [
       "/assets/images/projects/Last.png"
     ],
-
-
-
+    "videos": [
+      "/assets/video/WoC-Release (1).mp4"
+    ],
     "challenges": "Collaborative agile coordination and synchronizing database models between Spring Boot and React.",
     "futurePlans": "Expand product categories and enhance user review filters.",
     "type": "Full Stack"
   },
+
 
   {
     "title": "Titocci Metalcostruzioni SAGL Website",
