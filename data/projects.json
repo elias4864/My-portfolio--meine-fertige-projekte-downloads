@@ -134,8 +134,8 @@
     "challenges": "Implementing a secure zero-trust architecture and role-based access control in combination with AI components.",
     "futurePlans": "Expanding AI models and performance optimization.",
     "type": "Full Stack"
-  }
-],
+  },
+
   {
     "title": "Wiki.js Documentation Platform",
     "description": "A self-hosted personal documentation and knowledge management instance deployed on a containerized Kubernetes cluster.",
