@@ -1,226 +1,114 @@
-<div align="center">
+# 🚀 Elias Kaiser — Personal Portfolio
 
-# 🚀 Modern Developer Portfolio
+> My personal portfolio website built to showcase my projects, skills, and professional journey as an application development student at WISS Zurich.
 
-### A clean, fast, and fully responsive open-source portfolio built with Next.js 16 & TypeScript
-
-[Live Demo](https://mehedi-h.vercel.app) · [Report Bug](https://github.com/themehedihq/Open-Source-Modern-Developer-Portfolio/issues) · [Request Feature](https://github.com/themehedihq/Open-Source-Modern-Developer-Portfolio/issues)
-
-</div>
+🌐 **Personal Live Website:** [elias-portfolio.eljourka.workers.dev](https://elias-portfolio.eljourka.workers.dev/)
 
 ---
 
-## ✨ About
+## ✨ Features
 
-**Modern Developer Portfolio** is an open-source, production-ready personal website designed for developers who want a beautiful, fast, and customizable online presence. It ships with an about page, projects showcase, blog, contact form, dashboard, resume, and more — all ready to make yours.
-
-Fork it, customize the data files, and deploy. That's it.
-
----
-
-## 🌟 Features
-
-- **🎨 Modern UI** — Clean design with TailwindCSS + DaisyUI theming (Abyss / Lemonade)
-- **⚡ Blazing Fast** — Built on Next.js 16 App Router with React 19
-- **📱 Fully Responsive** — Looks great on desktop, tablet, and mobile
-- **🌙 Theme Switcher** — Toggle between dark and light themes
-- **📂 Projects Showcase** — Driven by a simple `projects.json` file
-- **✍️ Blog Section** — Write posts in Markdown / MDX
-- **📊 GitHub Activity** — Live contribution calendar powered by the GitHub API
-- **📄 Resume / CV** — Dedicated resume page with downloadable PDF
-- **📬 Contact Form** — EmailJS-powered contact form (no backend needed)
-- **🎭 Animations** — Smooth transitions with Framer Motion & GSAP
-- **🔍 SEO Ready** — Open Graph tags, metadata, and optimized for search engines
-- **🛡️ TypeScript** — Fully typed codebase for reliability and great DX
+- **🎨 Modern UI:** Clean design with Tailwind CSS 4 + DaisyUI 5 (Abyss / Lemonade themes)
+- **⚡ Blazing Fast:** Built on Next.js 16 App Router with React 19 and Edge deployment
+- **📱 Fully Responsive:** Optimized for desktop, tablet, and mobile viewports
+- **🌙 Theme Switcher:** Seamless toggle between dark and light modes
+- **📂 Projects Showcase:** Dynamic project entries driven by `projects.json`
+- **✍️ Blog Section:** Markdown / MDX-powered blog posts
+- **📊 GitHub Activity:** Live contribution charts and metrics
+- **📄 Resume / CV:** Dedicated professional resume page with downloadable details
+- **📬 Contact Form:** Fully client-side integrated contact form powered by EmailJS
+- **🎭 Animations:** Smooth page transitions and micro-interactions with Framer Motion & GSAP
+- **🔍 SEO Ready:** Open Graph tags, automated sitemaps, and search engine optimization
+- **🛡️ TypeScript:** Fully typed codebase for maximum reliability and developer experience
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category       | Technology                        |
-| -------------- | --------------------------------- |
-| Framework      | Next.js 16 (App Router)           |
-| Language       | TypeScript                        |
-| Styling        | TailwindCSS 4 + DaisyUI 5         |
-| Animations     | Framer Motion + GSAP              |
-| Icons          | Lucide React + React Icons        |
-| Charts         | Recharts                          |
-| Blog           | Gray Matter + Remark              |
-| Contact        | EmailJS                           |
-| Deployment     | Vercel                            |
+| Category | Technology |
+| :--- | :--- |
+| **Framework** | Next.js 16 (App Router) |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS 4 + DaisyUI 5 |
+| **Animations** | Framer Motion + GSAP |
+| **Icons** | Lucide React |
+| **Content & Blog** | Gray Matter + Remark |
+| **Contact Integration** | EmailJS |
+| **Deployment / Edge** | Cloudflare Workers & Pages (via Open-Next & Wrangler) |
 
 ---
 
 ## 📁 Project Structure
 
-```
-├── app/                    # Next.js App Router pages
-│   ├── about/              # About me page
-│   ├── blog/               # Blog listing & posts
-│   ├── contact/            # Contact form
-│   ├── dashboard/          # GitHub activity dashboard
-│   ├── links/              # Social links page
-│   ├── projects/           # Projects showcase
-│   ├── layout.tsx          # Root layout
-│   ├── page.tsx            # Home page
-│   └── not-found.tsx       # Custom 404
-├── components/             # Reusable UI components
-│   ├── about/              # About page components
-│   ├── blogs/              # Blog components
-│   ├── common/             # Shared components (navbar, footer, etc.)
-│   ├── home/               # Home page sections
-│   ├── projects/           # Project card components
-│   └── ui/                 # Base UI primitives
-├── data/                   # Content data files
-│   ├── blogs/              # Markdown blog posts
-│   ├── projects.json       # Project entries
-│   ├── resume.json         # Resume / CV data
-│   └── skills-list.json    # Skills & technologies
-├── lib/                    # Utility functions
-├── public/                 # Static assets & images
-└── types/                  # TypeScript type declarations
-```
+```text
+├── app/                      # Next.js App Router pages
+│   ├── about/                # About me page
+│   ├── blog/                 # Blog listing & posts
+│   ├── contact/              # Contact form
+│   ├── dashboard/            # GitHub activity dashboard
+│   ├── links/                # Social links page
+│   ├── projects/             # Projects showcase
+│   ├── layout.tsx            # Root layout
+│   ├── page.tsx              # Home page
+│   └── not-found.tsx         # Custom 404 page
+├── components/               # Reusable UI components
+│   ├── about/                # About page components
+│   ├── blogs/                # Blog components
+│   ├── common/               # Shared components (navbar, footer, etc.)
+│   ├── home/                 # Home page sections
+│   ├── projects/             # Project card components
+│   └── ui/                   # Base UI primitives
+├── data/                     # Content data files
+│   ├── blogs/                # Markdown blog posts
+│   ├── projects.json         # Project entries
+│   ├── resume.json           # Resume / CV data
+│   └── skills-list.json      # Skills & technologies
+├── lib/                      # Utility functions & helpers
+├── public/                   # Static assets & images
+└── types/                    # TypeScript type declarations
 
----
 
-## 🚀 Getting Started
 
-### Prerequisites
 
-- **Node.js** 18+ installed
-- **pnpm** (recommended) or npm
+⚙️ Scripts & Commands
+This project uses pnpm as the package manager. Available scripts in package.json:
 
-### Installation
+pnpm run dev — Starts the local Next.js development server.
 
-```bash
-# Clone the repository
-git clone https://github.com/themehedihq/Open-Source-Modern-Developer-Portfolio.git
-cd Open-Source-Modern-Developer-Portfolio
+pnpm run build — Builds the application for production (next build).
 
-# Install dependencies
-pnpm install
+pnpm run start — Starts the production server locally (next start).
 
-# Start the development server
-pnpm run dev
-```
+pnpm run lint — Runs ESLint for code quality checks.
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+pnpm run preview — Builds the project using Open-Next and starts a local Cloudflare Worker preview.
 
-### Build for Production
+pnpm run deploy — Builds the application and deploys it live to Cloudflare via Wrangler.
 
-```bash
-pnpm run build
-pnpm run start
-```
+☁️ Cloudflare Deployment Setup
+This Next.js application uses Open-Next and Wrangler to run efficiently on Cloudflare's edge network.
 
----
+Log in to your Cloudflare account through the CLI:
 
-## 🎨 Customization Guide
 
-Make this portfolio yours by editing the data files — no need to touch the component code.
+npx wrangler login
+Deploy your app live on Cloudflare:
 
-### 1. Personal Info
 
-Update your name, bio, social links, and images in the relevant component files under `components/home/` and `components/about/`.
+npx wrangler deploy
+(Alternative via package script: pnpm run deploy)
 
-### 2. Projects
+📬 Contact
+Elias Kaiser — Full Stack Application Developer
 
-Edit `data/projects.json`:
+📧 Email: elias.kaiser@gmx.ch
 
-```json
-{
-  "title": "My Project",
-  "description": "A short description of the project.",
-  "image": "/assets/project.png",
-  "liveUrl": "https://myproject.com",
-  "repoUrl": "https://github.com/me/myproject",
-  "tags": ["React", "Node.js", "MongoDB"]
-}
-```
+🔗 LinkedIn: elias-kaiser
 
-### 3. Skills
+🌐 Portfolio: https://elias-portfolio.eljourka.workers.dev/
 
-Edit `data/skills-list.json` to list your technologies and proficiency levels.
+🐙 GitHub: elias4864
 
-### 4. Blog Posts
+If you find this project useful, consider giving it a ⭐ on GitHub!
 
-Add Markdown files to `data/blogs/`. Each file should include frontmatter:
-
-```markdown
----
-title: "My Blog Post"
-date: "2025-08-17"
-summary: "A brief summary of the post."
-tags: ["nextjs", "tutorial"]
----
-
-Your content here...
-```
-
-### 5. Resume
-
-Edit `data/resume.json` for your experience, education, and certifications. Place your PDF resume in `public/` and update the download link.
-
-### 6. Theme
-
-The portfolio uses DaisyUI themes. Toggle between **Abyss** (dark) and **Lemonade** (light) or add your own in `app/globals.css`.
-
----
-
-## 🌐 Deployment
-
-Deploy to **Vercel** with one click:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/themehedihq/Open-Source-Modern-Developer-Portfolio)
-
-Or deploy to any platform that supports Next.js:
-
-```bash
-# Vercel CLI
-npx vercel
-
-# Or push to GitHub and connect via Vercel dashboard
-```
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! This is an open-source project and your ideas help make it better.
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/my-feature`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature/my-feature`
-5. Open a Pull Request
-
-Please make sure to update the data files (not personal info) when adding features so the template stays generic.
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
-You are free to use, modify, and distribute this project for personal or commercial use. Attribution is appreciated but not required.
-
----
-
-## 📬 Contact
-
-**Elias Kaiser** — Full Stack Web Developer (MERN)
-
-- 📧 Email: [elias.kaiser@gmx.ch](mailto:elias.kaiser@gmx.ch)
-- 🔗 LinkedIn: [elias-kaiser](https://www.linkedin.com/in/elias-kaiser-646638371/)
-- 🌐 Portfolio: [https://elias-portfolio.eljourka.workers.dev/](https://elias-portfolio.eljourka.workers.dev/)
-- 🐙 GitHub: [elias4864](https://github.com/elias4864)
-
----
-
-<div align="center">
-
-**If you find this project useful, consider giving it a ⭐ on GitHub!**
-
-Built with ❤️ by [Elias Kaiser](https://github.com/elias4864)
-
-</div>
+Built with ❤️ by Elias Kaiser
