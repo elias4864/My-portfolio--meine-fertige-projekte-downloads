@@ -135,9 +135,9 @@ const Footer = () => {
             })}
           </div>
 
-          <p className="mt-4 text-xs text-base-content/40">
-            © {new Date().getFullYear()} Elias Kaiser
-          </p>
+           <p className="text-xs text-stone-500">
+             © {new Date().getFullYear()} Elias Kaiser
+           </p>
 {/* this div use for available badge  */}
 
           <div className="mb-12"></div>
@@ -170,7 +170,7 @@ const Footer = () => {
             })}
           </div>
 
-          <p className="text-xs text-base-content/40 ">
+          <p className="text-xs text-stone-500">
             © {new Date().getFullYear()} Elias Kaiser
           </p>
         </div>
