@@ -36,7 +36,7 @@ export default function AboutPage() {
                 src="/assets/Aboutme.JPG"
               alt="Elias Kaiser"
               fill
-              sizes="(max-width: 768px) 200px, 224px"
+              sizes=" 400px, 500px"
               className="object-cover"
               priority
             />
@@ -51,8 +51,8 @@ export default function AboutPage() {
           >
             <p className="text-sm sm:text-base text-base-content/80 leading-relaxed">
               I’m Elias Kaiser, a passionate Application Developer focused on
-              building modern web applications and native mobile solutions.
-              I specialize in React.js, Java, and Tailwind CSS.
+              building modern, secure web applications and native mobile App.
+              I specialize in React.js, Java, and Tailwind CSS and HTML/CSS .
             </p>
 
             <p className="text-sm sm:text-base  text-base-content/80 leading-relaxed">
@@ -61,8 +61,8 @@ export default function AboutPage() {
 
             <p className="text-sm sm:text-base text-base-content/80 leading-relaxed">
               I enjoy turning ideas into practical solutions, writing clean and
-              maintainable code, and continuously improving applications through
-              comprehensive testing, quality assurance, debugging, and thoughtful design.
+              maintainable code, write Detailed project documentation and continuously improving applications through
+              comprehensive testing, quality assurance, debugging, refactoring my code and thoughtful design of the UI's.
 
 
             </p>
