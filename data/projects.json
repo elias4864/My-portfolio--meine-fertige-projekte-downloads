@@ -55,6 +55,33 @@
     "futurePlans": "Add multi-language support and client testimonial management.",
     "type": "Frontend"
   },
+
+
+
+  {
+    "title": "Carrosserie Örlike Web Presence",
+    "description": "A responsive corporate web application for Carrosserie Örlike developed during a trial day at Netmaster AG, featuring social media popups, an interactive multi-language content dropdown, and an automated CI/CD pipeline.",
+    "features": [
+      "Interactive social media popups",
+      "Dynamic multi-language content dropdown",
+      "Automated CI/CD deployment pipeline via GitHub Actions"
+    ],
+    "techStack": [
+      "React",
+      "Vite",
+      "Docker",
+      "GitHub Actions"
+    ],
+    "frontendRepo": "https://github.com/elias4864/Website-Carosserie-Oerlikon",
+    "downloadLink": "/assets/releases/Website-Carosserie-Oerlikon-main (1).zip",
+    "images": [
+      "/assets/images/projects/Carosserie.jpg"
+    ],
+    "videos": [],
+    "challenges": "Implementing a responsive multi-language interface and configuring an automated Docker/GitHub Actions CI/CD workflow within a tight trial day timeframe.",
+    "futurePlans": "Add an interactive appointment booking form and a before-and-after repair gallery.",
+    "type": "Frontend"
+  },
   {
     "title": "WISS Connect-Plattform for WISS-Trainees",
     "description": "An agile Scrum-based internship portal designed for WISS students, integrating token-based access controls and role-based security routing.",
