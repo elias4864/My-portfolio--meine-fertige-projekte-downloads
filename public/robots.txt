@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://elias-portfolio.eljourka.workers.dev/sitemap.xml
+Sitemap: https://elias-portfolio.eljourka.workers.dev/sitemap.xmlnpx wrangler deploy

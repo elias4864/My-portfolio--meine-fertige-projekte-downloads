@@ -2,8 +2,9 @@
 // GLOBAL IMPORTS
 // ================================================
 import "./globals.css";
-import 'simplebar/dist/simplebar.min.css';
+import "simplebar/dist/simplebar.min.css";
 import { ReactNode } from "react";
+import Script from "next/script";
 
 // ================================================
 // COMPONENT IMPORTS
@@ -14,7 +15,7 @@ import Footer from "@/components/common/Footer";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
 import ScrollToTopButton from "@/components/common/ScrollButton";
 import Navbar from "@/components/common/NavBar";
-import Splash from '@/components/ui/Splash';
+import Splash from "@/components/ui/Splash";
 // import CustomCursor from "@/components/common/CustomCursor";
 import { Toaster } from "react-hot-toast";
 import AvailabilityBadge from "@/components/common/AvailabilityBadge";
@@ -46,19 +47,19 @@ export const metadata = {
     "ReactJS Portfolio",
     "Next.js Portfolio",
     "Full-Stack Web Developer",
-    "Web Application Developer"
+    "Web Application Developer",
   ],
   authors: [{ name: "Elias Kaiser" }],
   openGraph: {
     title: "Elias Kaiser | Application Developer",
     description: "Portfolio of Elias Kaiser – Fullstack Application Developer",
-    url: "",
-    siteName: 'Elias Kaiser Portfolio',
+    url: "https://elias-portfolio.eljourka.workers.dev/",
+    siteName: "Elias Kaiser Portfolio",
     images: [
       {
-        url: "../assets/images/Initalen.jpg",
-        width: 5000,
-        height: 5000,
+        url: "/EK.jpg",
+        width: 1200,
+        height: 630,
         alt: "Elias Kaiser-Portfolio",
       },
     ],
@@ -66,7 +67,6 @@ export const metadata = {
     alternateLocales: ["en_BD"],
     type: "website",
   },
-
   robots: "index, follow",
   icons: { icon: "/EK.jpg" },
 };
@@ -90,7 +90,7 @@ export default function RootLayout({
                 "@context": "https://schema.org",
                 "@type": "Person",
                 name: "Elias Kaiser",
-                url: "https://m-hasan.vercel.app",
+                url: "https://elias-portfolio.eljourka.workers.dev/",
                 sameAs: [
                   "https://www.linkedin.com/in/elias-jorin-ursin-kaiser-646638371/",
                   "https://github.com/elias4864",
@@ -103,16 +103,19 @@ export default function RootLayout({
               }),
             }}
         />
+
         {/* Canonical URL */}
-        <link rel="canonical" href="https://m-hasan.vercel.app" />
+        <link
+            rel="canonical"
+            href="https://elias-portfolio.eljourka.workers.dev/"
+        />
       </head>
 
       <body suppressHydrationWarning>
       {/* ================================================
-            CLIENT THEME PROVIDER
-        ================================================ */}
+              CLIENT THEME PROVIDER
+          ================================================ */}
       <ClientThemeProvider>
-
         {/* 🔹 Splash Screen */}
         <Splash />
 
@@ -123,8 +126,8 @@ export default function RootLayout({
         {/* <CustomCursor /> */}
 
         {/* ================================================
-              GLOBAL TOASTER
-          ================================================ */}
+                GLOBAL TOASTER
+            ================================================ */}
         <Toaster
             position="top-right"
             reverseOrder={false}
@@ -138,8 +141,8 @@ export default function RootLayout({
         />
 
         {/* ================================================
-              PAGE LAYOUT WRAPPER
-          ================================================ */}
+                PAGE LAYOUT WRAPPER
+            ================================================ */}
         <div className="px-2 lg:px-0">
           {/* 🔹 Navbar */}
           <Navbar />
@@ -152,13 +155,20 @@ export default function RootLayout({
         </div>
 
         {/* ================================================
-              CLIENT WIDGETS
-          ================================================ */}
+                CLIENT WIDGETS
+            ================================================ */}
         <ScrollToTopButton />
         <WhatsAppButton />
         <AvailabilityBadge status="Full-time" />
-
       </ClientThemeProvider>
+
+
+      {/* Cloudflare Web Analytics */}
+      <Script
+          strategy="afterInteractive"
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "e2f851cd1efd412cb137e9ba58e407ac"}'
+      />
       </body>
       </html>
   );
