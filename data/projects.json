@@ -1,4 +1,34 @@
 [
+
+
+  {
+    "title": "AI Learning Protection & Document Processing",
+    "description": "A modular Python service for preparing, marking, and modifying metadata of documents (PDF, DOCX, PPTX, TXT) to label and complicate unauthorized AI learning.",
+    "features": [
+      "Central file size and format validation (10 MB limit)",
+      "Document router for PDF, DOCX, PPTX, and TXT",
+      "Protection level implementation (easy / hard)",
+      "Metadata customization and visible notices (footers / slide notes)"
+    ],
+    "techStack": [
+      "Python",
+      "FastAPI",
+      "Uvicorn",
+      "python-docx",
+      "python-pptx",
+      "PyPDF2 / PDF-Libraries"
+    ],
+
+    "frontendRepo": "https://github.com/Vinci4600/Anti-AI-Shield/tree/dev",
+    "downloadLink": "/assets/releases/Anti-AI-Shield-dev.zip",
+    "images": [
+      "/Shield.jpg"
+    ],
+    "challenges": "Consistent implementation of protection levels across different file formats and differentiation between visible labeling and true technical protection.",
+    "futurePlans": "Integration of OCR (Tesseract/Poppler), Excel support (.xlsx), and end-to-end HTTP tests.",
+    "type": "Full Stack"
+  },
+
   {
     "title": "World of Chewing Gum (WOC)",
     "description": "A collaborative full-stack web application built to compare and rate chewing gum products using an agile Scrum framework.",
