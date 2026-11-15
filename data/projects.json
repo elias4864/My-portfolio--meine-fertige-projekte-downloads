@@ -4,6 +4,7 @@
   {
     "title": "AI Learning Protection & Document Processing",
     "description": "A modular Python service for preparing, marking, and modifying metadata of documents (PDF, DOCX, PPTX, TXT) to label and complicate unauthorized AI learning.",
+    "contributors": ["Elias Kaiser", "Vincent Diergardt"],
     "features": [
       "Central file size and format validation (10 MB limit)",
       "Document router for PDF, DOCX, PPTX, and TXT",
@@ -32,6 +33,7 @@
   {
     "title": "World of Chewing Gum (WOC)",
     "description": "A collaborative full-stack web application built to compare and rate chewing gum products using an agile Scrum framework.",
+    "contributors": ["Elias Kaiser", "Vincent Diergardt"],
     "features": [
       "Product comparison and rating system",
       "Agile Scrum project management integration",
@@ -115,6 +117,7 @@
   {
     "title": "WISS Connect-Plattform for WISS-Trainees",
     "description": "An agile Scrum-based internship portal designed for WISS students, integrating token-based access controls and role-based security routing.",
+    "contributors": ["Elias Kaiser", "Vincent Diergardt","Leo Kuhn","Cem Sin","Indujan Vinajarah","Fabian Imanuel Imhasly"],
     "features": [
       "Token-based access controls",
       "Role-based security routing (RBAC)",
@@ -275,6 +278,7 @@
   {
     "title": "MangaDB Library",
     "description": "A web-based full-stack application developed for Module 183 (Implementing Application Security) featuring multi-user management, secure user authentication, automatic salting, and BCrypt password hashing for organized manga libraries.",
+    "contributors": ["Elias Kaiser", "Dominik Brinkmann"],
     "features": [
       "Role-Based Access Control (RBAC)",
       "Secure password hashing with BCrypt & automatic unique salting",
@@ -332,6 +336,7 @@
   {
     "title": "Wissquiz Testing & Enhancement",
     "description": "Refactoring and enhancement of an interactive quiz application with score evaluation, authentication context, and unit testing.",
+    "contributors": ["Elias Kaiser", "Fabian Imannuel Imhasly"],
     "features": [
       "Unit testing with JUnit and Mockito",
       "Authentication context integration",
@@ -383,6 +388,7 @@
   {
     "title": "Maestro Budget (E-Banking API Prototype)",
     "description": "A prototype of an e-banking API designed visually using interactive UI/UX wireframes and layout prototypes without code.",
+    "contributors": ["Elias Kaiser", "Vincent Diergardt","Leo Kuhn","Fabian Immanuel Imhasly"],
     "features": [
       "Interactive UI/UX wireframing",
       "Visual layout prototyping",
@@ -411,6 +417,7 @@
   {
     "title": "Lift Mate-Ergonomic Ergonomic laptop stand(Innovation project)",
     "description": "LiftMate was developed as part of Module 245. The project entails the development and marketing of a wooden laptop stand, integrating product design, project management, and marketing. Furthermore, LiftMate was already utilized in Module 241—Initiating Innovative ICT Solutions.",
+    "contributors": ["Elias Kaiser", "Vincent Diergardt","Leo Kuhn"],
     "features": [
       "Ergonomic, Sustainable wooden laptop stand"
     ],

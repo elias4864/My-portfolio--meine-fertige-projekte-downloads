@@ -2,7 +2,7 @@
 
 import React, { useMemo } from 'react';
 import Image from 'next/image';
-import { ArrowUpRight, Eye, Download } from 'lucide-react';
+import { ArrowUpRight, Eye, Download, Users } from 'lucide-react';
 import { BorderBeam } from '@/components/ui/border-beam';
 
 export interface Project {
@@ -19,6 +19,7 @@ export interface Project {
   futurePlans?: string;
   downloadLink?: string;
   features?: string;
+  contributors?: string[]; // Namen der Mitwirkenden, die am Projekt gearbeitet haben
 }
 
 interface ProjectCardProps {
@@ -81,8 +82,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
                 : memoProject.description}
           </p>
 
+          {/* Contributors Section (für alle Projekte verfügbar) */}
+          {memoProject.contributors && memoProject.contributors.length > 0 && (
+              <div className="flex items-center gap-1.5 text-xs text-base-content/70 pt-0.5">
+                <Users size={13} className="shrink-0 text-primary" />
+                <span className="truncate">
+                  Mitwirkend: {memoProject.contributors.join(', ')}
+                </span>
+              </div>
+          )}
+
           {/* Tech Stack */}
-          <div className="flex gap-1 mb-2">
+          <div className="flex gap-1 mb-2 pt-1">
             {memoProject.techStack.slice(0, 3).map((tech, i) => (
                 <span
                     key={`${tech}-${i}`}

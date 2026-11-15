@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpRight, Github, X, Download } from "lucide-react";
+import { ArrowUpRight, Github, X, Download, Users } from "lucide-react";
 import Image from "next/image";
 
 export interface Project {
@@ -11,7 +11,7 @@ export interface Project {
   images: string[];
   videos?: string[];
   techStack: string[];
-  type: 'Frontend' | 'Backend' | 'Full Stack' | 'Mobile Development' | 'DevOps' | 'Deployment' | 'Other' | 'Design' | 'All'; // <--- Hier '| "All"' ergänzt
+  type: 'Frontend' | 'Backend' | 'Full Stack' | 'Mobile Development' | 'DevOps' | 'Deployment' | 'Other' | 'Design' | 'All';
   liveLink?: string;
   frontendRepo?: string;
   backendRepo?: string;
@@ -20,6 +20,7 @@ export interface Project {
   features?: string[] | string;
   downloadLink?: string;
   githubLink?: string;
+  contributors?: string[]; // Namen der Mitwirkenden, die am Projekt gearbeitet haben
 }
 
 interface ProjectModalProps {
@@ -167,6 +168,17 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                   <p className="text-sm md:text-base text-base-content/80 leading-relaxed">
                     {project.description}
                   </p>
+
+                  {/* Contributors Section (Neu im Modal) */}
+                  {project.contributors && project.contributors.length > 0 && (
+                      <div className="flex items-center gap-2 bg-base-300/40 border border-primary/20 rounded-xl px-4 py-3 text-sm text-base-content/90">
+                        <Users size={16} className="shrink-0 text-primary" />
+                        <div>
+                          <span className="font-semibold text-base-content mr-1">Mitwirkende:</span>
+                          <span>{project.contributors.join(', ')}</span>
+                        </div>
+                      </div>
+                  )}
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="bg-base-300/40 border border-primary/20 rounded-xl p-5 space-y-3">
