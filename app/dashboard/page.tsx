@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -397,13 +397,34 @@ export default function DashboardPage() {
               </div>
           )}
 
-          {/* GitHub Insights Image */}
+          {/* GitHub Extra Stats Card */}
           <div className="my-6">
-            <h3 className="text-xl my-3 text-start">Current GitHub Stats</h3>
+            <h3 className="text-xl my-3 text-start">GitHub Stats & Metrics</h3>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                  href={`https://github.com/${USERNAME}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full"
+              >
+                <img
+                    src={`https://github-readme-stats.vercel.app/api?username=${USERNAME}&show_icons=true&theme=tokyonight&hide_border=true&count_private=true`}
+                    alt={`${USERNAME}'s GitHub Stats`}
+                    className="w-full h-auto rounded-lg"
+                    loading="lazy"
+                />
+              </a>
+            </div>
+          </div>
+
+          {/* GitHub Streak Stats Image */}
+          <div className="my-6">
+            <h3 className="text-xl my-3 text-start">Current GitHub Streak</h3>
             <img
                 src={`https://github-readme-streak-stats.herokuapp.com/?user=${USERNAME}&theme=tokyonight&hide_border=true`}
                 alt="GitHub Streak Stats"
                 className="w-full h-auto rounded-lg"
+                loading="lazy"
             />
           </div>
 
