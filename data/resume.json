@@ -27,11 +27,11 @@
   ],
   "experience": [
     {
-      "title": "Junior Software/Web Developer & Student",
-      "organization": "Independent Projects & WISS IT-Projects",
+      "title": "Application Development Student (Applikationsentwicklung)",
+      "organization": "WISS Schulen für Wirtschaft Informatik Immobilien",
       "time": "2024 – Present",
       "description": "Building full-stack web and mobile applications using React, Next.js, Java (Spring Boot), Android Studio, and relational databases (SQL), applying clean code with Code-Refactoring, automated Testing with Jest and Mockito, and agile methodologies.",
-      "profileLink": "https://github.com/elias4864"
+      "profileLink": "https://www.wiss.ch/de-CH"
     }
   ],
   "Leisure Activities": [
@@ -83,6 +83,14 @@
       "time": " October 2026-2 weeks",
       "description": "Assisted in website development and redesign projects with SEO. Managed time tracking, order processing, and administrative workflows within an ERP system(EI One ERP).",
       "profileLink": "https://netmaster.ch/"
-    }
+    },
+      {
+        "title": "ICT Career Information Afternoon",
+        "organization": "Ergon Informatik AG Zürich",
+        "time": "April 10, 2024",
+        "description": "Attended an ICT career orientation event in cooperation with Laufbahnzentrum Zürich, gaining insights into application development, company projects, selection processes, and participating in practical CS Unplugged exercises.",
+        "profileLink": "https://www.ergon.ch/",
+        "pdfLink": "/assets/docs/Zertifikat_ Informationstag Ergon_2024 (1).jpg"
+      }
   ]
 }
