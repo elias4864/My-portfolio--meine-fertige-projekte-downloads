@@ -119,18 +119,18 @@ function ReleasesSection({ repoName }: { repoName: string }) {
                 <div className="flex items-center gap-2">
                   <Tag className="w-4 h-4 text-primary" />
                   <span className="font-bold text-lg">
-                {release.name || release.tag_name}
-              </span>
+                    {release.name || release.tag_name}
+                  </span>
                   {index === 0 && (
                       <span className="px-2 py-0.5 text-xs rounded-full bg-green-500/20 text-green-400 border border-green-500/30">
-                  Latest
-                </span>
+                        Latest
+                      </span>
                   )}
                 </div>
 
                 <span className="text-xs text-base-content/60">
-              {new Date(release.published_at).toLocaleDateString("de-CH")}
-            </span>
+                  {new Date(release.published_at).toLocaleDateString("de-CH")}
+                </span>
               </div>
 
               {/* Release-Beschreibung */}
@@ -428,12 +428,11 @@ export default function DashboardPage() {
             />
           </div>
 
-          {/* Most Used Languages (Nativ berechnet & 100% zuverlässig) */}
+          {/* Most Used Languages */}
           {languagesData.length > 0 && (
               <div className="my-6">
                 <h3 className="text-xl my-3 text-start">Most Used Languages</h3>
                 <div className="bg-base-100 p-5 rounded-lg shadow-sm space-y-4">
-                  {/* Durchgehender Multi-Color Progress-Balken wie auf GitHub */}
                   <div className="w-full h-3 rounded-full overflow-hidden flex bg-base-300">
                     {languagesData.map((lang, index) => (
                         <div
@@ -448,18 +447,17 @@ export default function DashboardPage() {
                     ))}
                   </div>
 
-                  {/* Legende mit Prozentangaben */}
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-1">
                     {languagesData.map((lang, index) => (
                         <div key={lang.name} className="flex items-center gap-2 text-sm">
-                    <span
-                        className="w-3 h-3 rounded-full shrink-0"
-                        style={{ backgroundColor: COLORS[index % COLORS.length] }}
-                    />
+                          <span
+                              className="w-3 h-3 rounded-full shrink-0"
+                              style={{ backgroundColor: COLORS[index % COLORS.length] }}
+                          />
                           <span className="font-medium truncate">{lang.name}</span>
                           <span className="text-base-content/60 text-xs ml-auto">
-                      {lang.percentage}%
-                    </span>
+                            {lang.percentage}%
+                          </span>
                         </div>
                     ))}
                   </div>
@@ -522,14 +520,19 @@ export default function DashboardPage() {
                             title={commit.message}
                             className="text-sm font-medium line-clamp-2 break-words"
                         >
-                      <span className="text-base-content/70">
-                        [{commit.repo}]
-                      </span>{" "}
+                          <span className="text-base-content/70">
+                            [{commit.repo}]
+                          </span>{" "}
                           {commit.message.split("\n")[0]}
                         </p>
-
                         <p className="text-xs text-base-content/60 mt-1">
-                          {new Date(commit.date).toLocaleString()}
+                          {new Date(commit.date).toLocaleString("de-CH", {
+                            day: "2-digit",
+                            month: "2-digit",
+                            year: "numeric",
+                            hour: "2-digit",
+                            minute: "2-digit",
+                          })}
                         </p>
                       </div>
 
