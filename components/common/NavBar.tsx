@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Github, Linkedin } from "lucide-react";
+import { Menu, X, Github,Gitlab, Linkedin } from "lucide-react";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -23,6 +23,7 @@ const Navbar: React.FC = () => {
 
   const socialLinks: SocialLink[] = useMemo(() => [
     { icon: Github, url: "https://github.com/elias4864", label: "GitHub" },
+    {icon:Gitlab, url: "https://gitlab.com/elias4864", label: "Gitlab" },
     { icon: Linkedin, url: "https://www.linkedin.com/in/elias-jorin-ursin-kaiser-646638371/", label: "LinkedIn" },
   ], []);
 
