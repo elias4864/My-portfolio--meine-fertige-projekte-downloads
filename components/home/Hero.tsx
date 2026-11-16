@@ -140,7 +140,7 @@ const HeroSection: React.FC = () => {
              HTML5/CSS and Tailwind CSS
             </span>
 
-            I build modern, scalable web applications using React.js, Next.js, JavaScript, Java, HTML/CSS and Tailwind CSS. I focus on clean architecture, intuitive user experiences, and high-performance solutions. Passionate about developing efficient backend systems, modern frontend interfaces, and reliable applications through clean code, continuous testing,Code-Refactoring and thoughtful problem-solving.
+            I build modern,  secure ,scalable web applications using React.js, Next.js, JavaScript, Java, HTML/CSS and Tailwind CSS. I focus on clean architecture, intuitive user experiences, and high-performance solutions. Passionate about developing efficient backend systems, modern frontend interfaces, and reliable applications through clean code, continuous testing,Code-Refactoring and thoughtful problem-solving.
           </motion.p>
 
           <div className="flex flex-wrap gap-4 mt-2">
@@ -150,7 +150,7 @@ const HeroSection: React.FC = () => {
               whileHover={{ scale: 1.05, rotate: -0.5 }}
               whileTap={{ scale: 0.97 }}
 
-              href="/Lebenslauf_Elias Kaiser (2).pdf"
+              href="/Lebenslauf_Elias Kaiser.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-1.5 hover:text-primary underline-offset-6 decoration-dashed hover:underline rounded-lg font-geist text-lg transition-all duration-300"
