@@ -438,7 +438,29 @@
     "futurePlans": "Develop a functional backend implementation for the prototype.",
     "type": "Design"
   },
-
+  {
+    "title": "Einkaufsliste Android Planer App",
+    "description": "A native Android mobile application designed to plan shopping lists, manage items efficiently, and streamline daily organization.",
+    "features": [
+      "Intuitive native Android user interface",
+      "Dynamic shopping list management",
+      "Local data persistence and smooth user experience"
+    ],
+    "techStack": [
+      "Android SDK",
+      "Java / Kotlin",
+      "Mobile App Development"
+    ],
+    "liveLink": "https://github.com/elias4864/Einkaufliste-Android-Mobile-App",
+    "downloadLink": "/assets/releases/Einkaufliste-Android-Mobile-App-main.zip",
+    "images": [
+      "/assets/images/projects/Shoppinglist.png"
+    ],
+    "videos": [],
+    "challenges": "Optimizing mobile UI responsiveness and ensuring reliable state management for local task lists.",
+    "futurePlans": "Add cloud synchronization and shareable shopping lists.",
+    "type": "Mobile App"
+  },
 
 
 
