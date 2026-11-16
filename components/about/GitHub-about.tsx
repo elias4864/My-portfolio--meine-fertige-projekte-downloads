@@ -46,7 +46,7 @@ const GitHubAboutSection: React.FC = () => {
                             loading="lazy"
                         />
                     </a>
-                </div>
+                </div>  
 
                 {/* Footer */}
                 <div className="my-4 px-4 text-start">

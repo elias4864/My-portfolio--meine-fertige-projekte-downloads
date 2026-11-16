@@ -31,6 +31,7 @@ interface Commit {
 interface LanguageData {
   name: string;
   value: number;
+  percentage: number;
   [key: string]: string | number;
 }
 
@@ -245,15 +246,24 @@ export default function DashboardPage() {
             (c): c is Commit => c !== null
         );
 
-        // Language PieChart
+        // Language Calculation (inkl. Prozentwerte)
         const langMap: Record<string, number> = {};
+        let totalLangRepos = 0;
+
         repoData.forEach((r) => {
-          if (r.language) langMap[r.language] = (langMap[r.language] || 0) + 1;
+          if (r.language) {
+            langMap[r.language] = (langMap[r.language] || 0) + 1;
+            totalLangRepos++;
+          }
         });
-        const langArr: LanguageData[] = Object.entries(langMap).map(([name, value]) => ({
-          name,
-          value,
-        }));
+
+        const langArr: LanguageData[] = Object.entries(langMap)
+            .map(([name, value]) => ({
+              name,
+              value,
+              percentage: totalLangRepos > 0 ? Math.round((value / totalLangRepos) * 1000) / 10 : 0,
+            }))
+            .sort((a, b) => b.value - a.value);
 
         setStats({
           repos: profile.public_repos,
@@ -307,7 +317,9 @@ export default function DashboardPage() {
               viewport={{ once: true }}
               className="my-4 text-start"
           >
-            <h2 className="text-3xl">Dashboard</h2>
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              Github-Dashboard
+            </h2>
           </motion.div>
 
           {/* Stats */}
@@ -325,7 +337,7 @@ export default function DashboardPage() {
                   <p className="text-sm text-base-content/70 mb-2 text-center">
                     {item.label}
                   </p>
-                  <p className="text-2xl text-center">{item.value}</p>
+                  <p className="text-2xl font-bold text-center">{item.value}</p>
                 </div>
             ))}
           </div>
@@ -395,6 +407,45 @@ export default function DashboardPage() {
             />
           </div>
 
+          {/* Most Used Languages (Nativ berechnet & 100% zuverlässig) */}
+          {languagesData.length > 0 && (
+              <div className="my-6">
+                <h3 className="text-xl my-3 text-start">Most Used Languages</h3>
+                <div className="bg-base-100 p-5 rounded-lg shadow-sm space-y-4">
+                  {/* Durchgehender Multi-Color Progress-Balken wie auf GitHub */}
+                  <div className="w-full h-3 rounded-full overflow-hidden flex bg-base-300">
+                    {languagesData.map((lang, index) => (
+                        <div
+                            key={lang.name}
+                            style={{
+                              width: `${lang.percentage}%`,
+                              backgroundColor: COLORS[index % COLORS.length],
+                            }}
+                            title={`${lang.name}: ${lang.percentage}%`}
+                            className="h-full transition-all duration-500"
+                        />
+                    ))}
+                  </div>
+
+                  {/* Legende mit Prozentangaben */}
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-1">
+                    {languagesData.map((lang, index) => (
+                        <div key={lang.name} className="flex items-center gap-2 text-sm">
+                    <span
+                        className="w-3 h-3 rounded-full shrink-0"
+                        style={{ backgroundColor: COLORS[index % COLORS.length] }}
+                    />
+                          <span className="font-medium truncate">{lang.name}</span>
+                          <span className="text-base-content/60 text-xs ml-auto">
+                      {lang.percentage}%
+                    </span>
+                        </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+          )}
+
           {/* Latest Repos */}
           <div className="mb-6">
             <h3 className="text-xl my-3">Latest Repositories</h3>
@@ -429,7 +480,7 @@ export default function DashboardPage() {
             </ul>
           </div>
 
-          {/* 🔹 Integration der ReleasesSection für dein Hauptprojekt */}
+          {/* ReleasesSection */}
           <ReleasesSection repoName="elias-portfolio" />
 
           {/* Recent Commits */}

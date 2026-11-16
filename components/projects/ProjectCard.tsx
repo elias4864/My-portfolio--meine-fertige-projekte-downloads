@@ -87,7 +87,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
               <div className="flex items-center gap-1.5 text-xs text-base-content/70 pt-0.5">
                 <Users size={13} className="shrink-0 text-primary" />
                 <span className="truncate">
-                  Mitwirkend: {memoProject.contributors.join(', ')}
+                  Mitwirkende: {memoProject.contributors.join(', ')}
                 </span>
               </div>
           )}

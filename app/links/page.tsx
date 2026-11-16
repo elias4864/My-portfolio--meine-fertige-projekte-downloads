@@ -41,7 +41,7 @@ const socialCategories: SocialCategory[] = [
   {
     title: "Developer",
     links: [
-      { icon: Github, href: "https://github.com/elias4864", label: "GitHub" },
+      { icon: Github, href: "https://github.com/elias4864", label: "Github" },
       { icon: Gitlab, href: "https://gitlab.com/elias4864", label: "Gitlab" },
     ],
   },
@@ -59,7 +59,7 @@ const socialCategories: SocialCategory[] = [
   {
     title: "Designer",
     links: [
-      { icon: FaFigma, href: "https://www.figma.com/files/team/1546370570397248215/user/1546370568436002861?fuid=1546370568436002861", label: "Figma" },
+      { icon: FaFigma, href: "https://www.figma.com/files/team/1703442487264216333/recents-and-sharing?fuid=1703442485268038198", label: "Figma" },
     ],
   },
 

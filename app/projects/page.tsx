@@ -62,7 +62,7 @@ const AllProjectsPage: React.FC = () => {
                 viewport={{ once: true }}
                 className="my-4 text-start"
             >
-              <h2 className="text-3xl">My IT-Projects</h2>
+              <h2 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">My IT-Projects</h2>
               <h3 className="mt-4 text-sm sm:text-base text-base-content/80 leading-relaxed">
                 A collection of  my IT-projects developed during my school days at WISS,
                 as well as personal hobby projects and independent applications
@@ -135,7 +135,7 @@ const AllProjectsPage: React.FC = () => {
                               <div className="flex items-center gap-1.5 text-xs text-base-content/70 mt-2">
                                 <Users size={13} className="shrink-0 text-primary" />
                                 <span className="truncate">
-                            Mitwirkend: {project.contributors.join(', ')}
+                            Mitwirkende: {project.contributors.join(', ')}
                           </span>
                               </div>
                           )}

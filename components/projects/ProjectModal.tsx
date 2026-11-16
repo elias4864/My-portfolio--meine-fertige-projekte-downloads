@@ -174,7 +174,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                       <div className="flex items-center gap-2 bg-base-300/40 border border-primary/20 rounded-xl px-4 py-3 text-sm text-base-content/90">
                         <Users size={16} className="shrink-0 text-primary" />
                         <div>
-                          <span className="font-semibold text-base-content mr-1">Mitwirkende:</span>
+                          <span className="font-semibold text-base-content mr-1 text-lg">Mitwirkende:</span>
                           <span>{project.contributors.join(', ')}</span>
                         </div>
                       </div>
@@ -182,7 +182,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="bg-base-300/40 border border-primary/20 rounded-xl p-5 space-y-3">
-                      <h3 className="text-md text-base-content">Key Features</h3>
+                      <h3 className="text-md text-base-content bg-sky-500">Key Features</h3>
                       <ul className="space-y-2 text-sm text-base-content/80 list-disc list-inside">
                         {Array.isArray(project.features) && project.features.length ? (
                             project.features.map((feature, index) => (
