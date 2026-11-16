@@ -54,12 +54,14 @@ interface GitHubRelease {
 }
 
 // ================================================
-// RELEASES SECTION SUB-COMPONENT
+// RELEASES SECTION SUB-COMPONENT (mit Repo-Auswahl)
 // ================================================
-function ReleasesSection({ repoName }: { repoName: string }) {
+function ReleasesSection({ repos }: { repos: Repo[] }) {
   const USERNAME = "elias4864";
   const TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
+  // Standardmässig das erste Repo oder "elias-portfolio" auswählen
+  const [selectedRepo, setSelectedRepo] = useState<string>("elias-portfolio");
   const [releases, setReleases] = useState<GitHubRelease[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -69,109 +71,122 @@ function ReleasesSection({ repoName }: { repoName: string }) {
         : {};
 
     async function loadReleases() {
+      if (!selectedRepo) return;
       try {
         setLoading(true);
         const res = await fetch(
-            `https://api.github.com/repos/${USERNAME}/${repoName}/releases`,
+            `https://api.github.com/repos/${USERNAME}/${selectedRepo}/releases`,
             { headers }
         );
-        if (!res.ok) throw new Error("Releases konnten nicht geladen werden");
+        if (!res.ok) {
+          setReleases([]);
+          return;
+        }
         const data: GitHubRelease[] = await res.json();
         setReleases(data);
       } catch (err) {
         console.error(err);
+        setReleases([]);
       } finally {
         setLoading(false);
       }
     }
 
-    if (repoName) loadReleases();
-  }, [repoName, TOKEN]);
-
-  if (loading) {
-    return (
-        <div className="flex items-center gap-2 text-sm text-base-content/70 p-4">
-          <Loader2 className="w-4 h-4 animate-spin text-primary" />
-          <span>Lade Releases für {repoName}...</span>
-        </div>
-    );
-  }
-
-  if (releases.length === 0) {
-    return (
-        <p className="text-sm text-base-content/60 p-4">
-          Keine Releases für dieses Repository vorhanden.
-        </p>
-    );
-  }
+    loadReleases();
+  }, [selectedRepo, TOKEN]);
 
   return (
-      <div className="space-y-4 my-6">
-        <h3 className="text-xl font-semibold">Releases & Downloads ({repoName})</h3>
+      <div className="space-y-4 my-6 bg-base-100 p-5 rounded-lg border border-base-300 shadow-sm">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+          <h3 className="text-xl font-semibold">Releases & Downloads</h3>
 
-        {releases.map((release, index) => (
-            <div
-                key={release.id}
-                className="bg-base-100 p-4 rounded-lg border border-base-300 shadow-sm"
-            >
-              {/* Kopfzeile mit Version & Datum */}
-              <div className="flex flex-wrap justify-between items-center gap-2 mb-2">
-                <div className="flex items-center gap-2">
-                  <Tag className="w-4 h-4 text-primary" />
-                  <span className="font-bold text-lg">
-                    {release.name || release.tag_name}
-                  </span>
-                  {index === 0 && (
-                      <span className="px-2 py-0.5 text-xs rounded-full bg-green-500/20 text-green-400 border border-green-500/30">
-                        Latest
-                      </span>
-                  )}
-                </div>
+          {/* Dropdown zur Repository-Auswahl */}
+          <select
+              value={selectedRepo}
+              onChange={(e) => setSelectedRepo(e.target.value)}
+              className="px-3 py-1.5 text-sm rounded-md bg-base-200 border border-base-300 focus:outline-none focus:ring-2 focus:ring-primary"
+          >
+            {repos.map((r) => (
+                <option key={r.name} value={r.name}>
+                  {r.name}
+                </option>
+            ))}
+          </select>
+        </div>
 
-                <span className="text-xs text-base-content/60">
-                  {new Date(release.published_at).toLocaleDateString("de-CH")}
-                </span>
-              </div>
-
-              {/* Release-Beschreibung */}
-              {release.body && (
-                  <p className="text-sm text-base-content/80 whitespace-pre-line mb-4">
-                    {release.body}
-                  </p>
-              )}
-
-              {/* Download-Buttons */}
-              <div className="flex flex-wrap gap-2 mt-3">
-                {release.assets.map((asset) => (
-                    <a
-                        key={asset.id}
-                        href={asset.browser_download_url}
-                        className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md bg-primary text-primary-content hover:opacity-90 transition"
-                    >
-                      <Download className="w-3.5 h-3.5" />
-                      {asset.name} ({(asset.size / (1024 * 1024)).toFixed(1)} MB)
-                    </a>
-                ))}
-
-                <a
-                    href={release.zipball_url}
-                    className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md bg-base-200 hover:bg-base-300 transition"
-                >
-                  <Download className="w-3.5 h-3.5" />
-                  Source Code (.zip)
-                </a>
-
-                <a
-                    href={release.html_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-md border border-base-300 hover:bg-base-200 transition"
-                >
-                  GitHub <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-              </div>
+        {loading ? (
+            <div className="flex items-center gap-2 text-sm text-base-content/70 py-6 justify-center">
+              <Loader2 className="w-4 h-4 animate-spin text-primary" />
+              <span>Lade Releases für {selectedRepo}...</span>
             </div>
-        ))}
+        ) : releases.length === 0 ? (
+            <p className="text-sm text-base-content/60 py-4 text-center">
+              Keine Releases für &quot;{selectedRepo}&quot; vorhanden.
+            </p>
+        ) : (
+            <div className="space-y-4 mt-4">
+              {releases.map((release, index) => (
+                  <div
+                      key={release.id}
+                      className="bg-base-200/50 p-4 rounded-lg border border-base-300"
+                  >
+                    <div className="flex flex-wrap justify-between items-center gap-2 mb-2">
+                      <div className="flex items-center gap-2">
+                        <Tag className="w-4 h-4 text-primary" />
+                        <span className="font-bold text-lg">
+                          {release.name || release.tag_name}
+                        </span>
+                        {index === 0 && (
+                            <span className="px-2 py-0.5 text-xs rounded-full bg-green-500/20 text-green-400 border border-green-500/30">
+                              Latest
+                            </span>
+                        )}
+                      </div>
+
+                      <span className="text-xs text-base-content/60">
+                        {new Date(release.published_at).toLocaleDateString("de-CH")}
+                      </span>
+                    </div>
+
+                    {release.body && (
+                        <p className="text-sm text-base-content/80 whitespace-pre-line mb-4">
+                          {release.body}
+                        </p>
+                    )}
+
+                    <div className="flex flex-wrap gap-2 mt-3">
+                      {release.assets.map((asset) => (
+                          <a
+                              key={asset.id}
+                              href={asset.browser_download_url}
+                              className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md bg-primary text-primary-content hover:opacity-90 transition"
+                          >
+                            <Download className="w-3.5 h-3.5" />
+                            {asset.name} ({(asset.size / (1024 * 1024)).toFixed(1)} MB)
+                          </a>
+                      ))}
+
+                      <a
+                          href={release.zipball_url}
+                          className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md bg-base-200 hover:bg-base-300 transition"
+                      >
+                        <Download className="w-3.5 h-3.5" />
+                        Source Code (.zip)
+                      </a>
+
+                      <a
+                          href={release.html_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-md border border-base-300 hover:bg-base-200 transition"
+                      >
+                        GitHub <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    </div>
+                  </div>
+              ))}
+            </div>
+        )}
       </div>
   );
 }
@@ -183,6 +198,7 @@ export default function DashboardPage() {
   const USERNAME = "elias4864";
   const TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
+  const [allRepos, setAllRepos] = useState<Repo[]>([]);
   const [repos, setRepos] = useState<Repo[]>([]);
   const [commits, setCommits] = useState<Commit[]>([]);
   const [stats, setStats] = useState({
@@ -246,7 +262,7 @@ export default function DashboardPage() {
             (c): c is Commit => c !== null
         );
 
-        // Language Calculation (inkl. Prozentwerte)
+        // Language Calculation
         const langMap: Record<string, number> = {};
         let totalLangRepos = 0;
 
@@ -271,6 +287,7 @@ export default function DashboardPage() {
           forks: totalForks,
           followers: profile.followers,
         });
+        setAllRepos(repoData); // Alle Repos für das Dropdown
         setRepos(latestRepos);
         setCommits(commitResults);
         setLanguagesData(langArr);
@@ -499,8 +516,8 @@ export default function DashboardPage() {
             </ul>
           </div>
 
-          {/* ReleasesSection */}
-          <ReleasesSection repoName="elias-portfolio" />
+          {/* ReleasesSection mit dynamischer Repo-Auswahl */}
+          <ReleasesSection repos={allRepos} />
 
           {/* Recent Commits */}
           <div>
