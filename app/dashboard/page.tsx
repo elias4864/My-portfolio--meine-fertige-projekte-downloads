@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Loader2, Download, Tag, ExternalLink } from "lucide-react";
+import { ArrowUpRight, Loader2, Download, Tag, ExternalLink, Trophy, Award, Flame } from "lucide-react";
 import {
   PieChart,
   Pie,
@@ -359,13 +359,64 @@ export default function DashboardPage() {
             ))}
           </div>
 
+          {/* Achievements & Badges Section */}
+          <div className="my-6">
+            <h3 className="text-xl my-3 text-start flex items-center gap-2">
+              <Trophy className="w-5 h-5 text-primary" />
+              GitHub Achievements & Badges
+            </h3>
+            <div className="bg-base-100 p-5 rounded-lg shadow-sm space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {/* GitHub Trophies Badge */}
+                <div className="bg-base-200/50 p-3 rounded-lg border border-base-300 flex flex-col items-center justify-center">
+                  <span className="text-xs font-semibold text-base-content/70 mb-2 flex items-center gap-1">
+                    <Award className="w-4 h-4 text-secondary" /> GitHub Trophies
+                  </span>
+                  <a
+                      href={`https://github.com/${USERNAME}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full flex justify-center"
+                  >
+                    <img
+                        src={`https://github-profile-trophy.vercel.app/?username=${USERNAME}&theme=tokyonight&no-bg=true&margin-w=4&margin-h=4`}
+                        alt={`${USERNAME}'s GitHub Trophies`}
+                        className="max-w-full h-auto rounded-md"
+                        loading="lazy"
+                    />
+                  </a>
+                </div>
+
+                {/* GitHub Streak Badge */}
+                <div className="bg-base-200/50 p-3 rounded-lg border border-base-300 flex flex-col items-center justify-center">
+                  <span className="text-xs font-semibold text-base-content/70 mb-2 flex items-center gap-1">
+                    <Flame className="w-4 h-4 text-orange-400" /> Contribution Streak
+                  </span>
+                  <a
+                      href={`https://github.com/${USERNAME}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full flex justify-center"
+                  >
+                    <img
+                        src={`https://github-readme-streak-stats.herokuapp.com/?user=${USERNAME}&theme=tokyonight&hide_border=true`}
+                        alt="GitHub Streak Stats"
+                        className="max-w-full h-auto rounded-md"
+                        loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Contribution Graph */}
           <div>
             <h3 className="text-xl my-3">Consistency & Open-Source Activity</h3>
             <img
                 src={`https://ghchart.rshah.org/${USERNAME}`}
                 alt="GitHub Contribution Graph"
-                className="w-full h-auto my-6 px-4 rounded-lg"
+                className="w-full h-auto my-6 px-4 rounded-lg bg-base-100 py-4 shadow-sm"
                 loading="lazy"
             />
           </div>
@@ -375,7 +426,7 @@ export default function DashboardPage() {
               <div className="pb-6 w-full rounded-lg">
                 <h3 className="text-xl my-3 text-start">Language Usage</h3>
 
-                <div className="w-full h-80">
+                <div className="w-full h-80 bg-base-100 rounded-lg p-4 shadow-sm mb-4">
                   <ResponsiveContainer width="100%" height="100%">
                     <PieChart>
                       <Pie
@@ -427,22 +478,11 @@ export default function DashboardPage() {
                 <img
                     src={`https://github-readme-stats.vercel.app/api?username=${USERNAME}&show_icons=true&theme=tokyonight&hide_border=true&count_private=true`}
                     alt={`${USERNAME}'s GitHub Stats`}
-                    className="w-full h-auto rounded-lg"
+                    className="w-full h-auto rounded-lg shadow-sm"
                     loading="lazy"
                 />
               </a>
             </div>
-          </div>
-
-          {/* GitHub Streak Stats Image */}
-          <div className="my-6">
-            <h3 className="text-xl my-3 text-start">Current GitHub Streak</h3>
-            <img
-                src={`https://github-readme-streak-stats.herokuapp.com/?user=${USERNAME}&theme=tokyonight&hide_border=true`}
-                alt="GitHub Streak Stats"
-                className="w-full h-auto rounded-lg"
-                loading="lazy"
-            />
           </div>
 
           {/* Most Used Languages */}
@@ -492,10 +532,10 @@ export default function DashboardPage() {
                       href={repo.html_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group block p-4 rounded-lg hover:bg-base-100 transition-colors duration-200"
+                      className="group block p-4 rounded-lg bg-base-100 hover:bg-base-100/80 shadow-sm transition-colors duration-200"
                   >
                     <div className="flex justify-between items-center">
-                      <span>{repo.name}</span>
+                      <span className="font-semibold">{repo.name}</span>
                       <motion.span
                           className="opacity-0 group-hover:opacity-100"
                           transition={{ duration: 0.2 }}
@@ -529,7 +569,7 @@ export default function DashboardPage() {
                       href={commit.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group block p-4 rounded-lg hover:bg-base-100 transition-colors duration-200"
+                      className="group block p-4 rounded-lg bg-base-100 hover:bg-base-100/80 shadow-sm transition-colors duration-200"
                   >
                     <div className="flex justify-between items-start gap-3">
                       <div className="flex-1 min-w-0">
