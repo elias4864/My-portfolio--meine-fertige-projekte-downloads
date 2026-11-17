@@ -381,7 +381,6 @@
     "downloadLink": "/assets/releases/M450-Apptesting-CodeQuiz-main.zip",
 
     "frontendRepo": "https://github.com/elias4864/M450-Apptesting-CodeQuiz/tree/main/frontend",
-    "backendRepo": "https://github.com/elias4864/M450-Apptesting-CodeQuiz/tree/main/backend",
 
     "images": [
       "/assets/images/projects/Wissquiz.png"
@@ -404,7 +403,7 @@
       "CSS3"
     ],
     "frontendRepo": "https://gitlab.com/elias4864/miniclub-website",
-    "downloadLink": "/assets/downloads/MasterTodo.apk",
+    "downloadLink": "/assets/MINI.png",
 
     "images": [
       "/assets/MINI.png"
@@ -414,6 +413,38 @@
     "futurePlans": "Add interactive car configurator features.",
     "type": "Frontend"
   },
+
+
+
+  {
+    "title": "Wissquiz Testing & Enhancement",
+    "period": "March – April 2026",
+    "description": "Expansion and refactoring of an existing full-stack multi-user quiz web application ('Wissquiz'), implementing Role-Based Access Control (RBAC), a global authentication context, score evaluation, and comprehensive JUnit backend tests.",
+    "contributors": ["Elias Kaiser", "Fabian Immanuel Imhasly"],
+    "features": [
+      "Role-Based Access Control (RBAC) for backend and frontend",
+      "Global authentication context integration",
+      "Automated unit testing with JUnit and Mockito",
+      "Score tracking and validation logic"
+    ],
+    "techStack": [
+      "Java",
+      "Spring Boot",
+      "React.js",
+      "JUnit",
+      "Mockito"
+    ],
+    "downloadLink": "/assets/releases/223-master.zip",
+    "frontendRepo": "https://github.com/elias4864/223",
+    "images": [
+      "/assets/images/projects/Wissquiz.png"
+    ],
+    "videos": [],
+    "challenges": "Implementing a consistent global authentication context alongside RBAC across frontend and backend while writing mock services for comprehensive JUnit test coverage.",
+    "futurePlans": "Integrate continuous integration test pipelines.",
+    "type": "Full Stack"
+  }
+,
   {
     "title": "Maestro Budget (E-Banking API Prototype)",
     "description": "A prototype of an e-banking API designed visually using interactive UI/UX wireframes and layout prototypes without code.",
