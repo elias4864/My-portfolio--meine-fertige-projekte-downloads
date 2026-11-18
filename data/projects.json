@@ -19,7 +19,7 @@
     ],
     "frontendRepo": "https://github.com/Vinci4600/Anti-AI-Shield/tree/dev",
     "downloadLink": "/assets/releases/Anti-AI-Shield-dev.zip",
-    "documentationLink": "",
+    "documentationLink": "public/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio",
     "powerpointLink": "",
     "images": [
       "/Shield.jpg"
@@ -217,7 +217,7 @@
     "videos": [],
     "downloadLink": "/assets/releases/MangaDB-main.zip",
     "documentationLink": "/assets/releases/Modul 210_Projektdokumentation_Wiki JS_Elias und Fabian.pdf",
-    "powerpointLink": "",
+    "powerpointLink": "/assets/images/projects/MangaDB_Praesentation.pptx",
     "challenges": "",
     "futurePlans": "",
     "type": "Fullstack"
@@ -328,7 +328,7 @@
     "frontendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-frontend",
     "downloadLink": "/assets/releases/Manga-DB-mit-BCrypt-Hashing-main.zip",
     "documentationLink": "/assets/releases/223_LB_Dokumentation.pdf",
-    "powerpointLink": "",
+    "powerpointLink": "public/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio",
     "backendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-backend",
     "images": [
       "/assets/images/projects/MangaDB.png"
@@ -380,7 +380,7 @@
       "Spring Boot"
     ],
     "downloadLink": "/assets/releases/M450-Apptesting-CodeQuiz-main.zip",
-    "documentationLink": "",
+    "documentationLink": "/assets/images/projects/Abschlussarbeit_Mögliche Features für SQ7A.pdf",
     "powerpointLink": "",
     "frontendRepo": "https://github.com/elias4864/M450-Apptesting-CodeQuiz/tree/main/frontend",
     "images": [
@@ -434,7 +434,7 @@
       "Mockito"
     ],
     "downloadLink": "/assets/releases/223-master.zip",
-    "documentationLink": "",
+    "documentationLink": "/assets/images/projects/API-Integration(Service-Layer).drawio",
     "powerpointLink": "",
     "frontendRepo": "https://github.com/elias4864/223",
     "images": [
@@ -484,6 +484,7 @@
       "Mobile App Development"
     ],
     "liveLink": "https://github.com/elias4864/Einkaufliste-Android-Mobile-App",
+    "frontendRep": "https://github.com/elias4864/Einkaufliste-Android-Mobile-App",
     "downloadLink": "/assets/releases/Einkaufliste-Android-Mobile-App-main.zip",
     "documentationLink": "",
     "powerpointLink": "",

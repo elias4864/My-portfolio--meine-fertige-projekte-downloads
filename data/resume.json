@@ -31,7 +31,10 @@
       "organization": "WISS Schulen für Wirtschaft Informatik Immobilien",
       "time": "2024 – Present",
       "description": "Building full-stack web and mobile applications using React, Next.js, Java (Spring Boot), Android Studio, and relational databases (SQL), applying clean code with Code-Refactoring, automated Testing with Jest and Mockito, and agile methodologies.",
-      "profileLink": "https://www.wiss.ch/de-CH"
+      "profileLink": "https://www.wiss.ch/de-CH",
+      "internshipSheetLink": "public/assets/docs/WISS-Grundlagen-IFZ_Pra-2026.pdf",
+      "internshipapplprojectplan":"/assets/docs/Applikationsentwicklung.png"
+
     }
   ],
   "Leisure Activities": [

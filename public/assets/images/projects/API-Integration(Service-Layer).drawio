@@ -1,0 +1,50 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Seite-1" id="OROyjRd_afF3sADTR9nR">
+    <mxGraphModel dx="1265" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qP4z8_t4t7X2yshwKQjx-3" edge="1" parent="1" source="qP4z8_t4t7X2yshwKQjx-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qP4z8_t4t7X2yshwKQjx-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;color: rgb(255, 21, 34);&quot;&gt;JSX-Komponenten:&lt;/font&gt;&lt;/b&gt;&lt;div&gt;-RegisterPage.jsx&lt;/div&gt;&lt;div&gt;-LoginPage.jsx&lt;/div&gt;&lt;div&gt;-LeaderboardPage.jsx&lt;/div&gt;&lt;div&gt;-MangaList.jsx&lt;/div&gt;&lt;div&gt;-UserList.jsx etc bei jeweiligen Ordner Publisher&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="330" x="255" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xjzRVKiK7w1CE3V3xXCY-2" edge="1" parent="1" source="qP4z8_t4t7X2yshwKQjx-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="405" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qP4z8_t4t7X2yshwKQjx-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(255, 21, 34);&quot;&gt;Services:&lt;/font&gt;&lt;div&gt;&lt;div&gt;-authService.js(Validierung user mit /auth/login Request) welcher Token bei Anmeldung speichert&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="170" x="320" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="qP4z8_t4t7X2yshwKQjx-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 21, 34);&quot;&gt;API-Requests&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Axios-Instance in (client.js)&lt;div&gt;-Axios-Interceptor(asyn, promise-based Calls)&lt;/div&gt;&lt;div&gt;-client.js&lt;/div&gt;&lt;div&gt;-categoryApi.js&lt;/div&gt;&lt;div&gt;-mangaApi.js&lt;/div&gt;&lt;div&gt;-publisherApi.js&lt;/div&gt;&lt;div&gt;-userApi.js&lt;/div&gt;&lt;div&gt;-userMangaApi.js&lt;/div&gt;&lt;div&gt;-leaderboardApi.js&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-Request Interceptor:Autatische Generierung von Berare Token im header nach 200 OK und Authentifizierung&lt;/span&gt;&lt;/div&gt;&lt;div&gt;-Response Interceptor:&lt;/div&gt;&lt;div&gt;Löscht nach Logout&amp;nbsp; Token&amp;nbsp; automatisch bei falschen Login Daten im Header mitgebenen(401 Unauthorized HTTP-Status) oder wenn der Token das expirationTime erreicht hat und abgelaufen ist und sofort zur Login-Page&amp;nbsp; den User weiterleitet&lt;/div&gt;" vertex="1">
+          <mxGeometry height="300" width="500" x="150" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="qP4z8_t4t7X2yshwKQjx-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="HTTP-Request schickt ans Backen und holt Daten aus Datenbank durch Repository(wandelt Entitys durch Mapping in SQL-Queries mit JPA um)" vertex="1">
+          <mxGeometry height="30" width="350" x="360" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="qP4z8_t4t7X2yshwKQjx-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ruft Service auf mit Axios asynchronouse Call&amp;nbsp; und erstellt JWT-Token" vertex="1">
+          <mxGeometry height="30" width="230" x="520" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="qP4z8_t4t7X2yshwKQjx-11" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" value="MySQL Datenbank(manga_db)" vertex="1">
+          <mxGeometry height="90" width="120" x="260" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="qP4z8_t4t7X2yshwKQjx-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Backend mit Daten die bei HTTP-Methode wie Post Daten hol tund im Header" vertex="1">
+          <mxGeometry height="30" width="300" x="390" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="qP4z8_t4t7X2yshwKQjx-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="nutzt bei jedem HTPT-Request zentrale Benutezrverwaltung&amp;nbsp; um beim Login mit Credentials user und token zu extrahieren" vertex="1">
+          <mxGeometry height="30" width="300" x="410" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="qP4z8_t4t7X2yshwKQjx-17" edge="1" parent="1" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" target="qP4z8_t4t7X2yshwKQjx-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="810" as="sourcePoint" />
+            <mxPoint x="390" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

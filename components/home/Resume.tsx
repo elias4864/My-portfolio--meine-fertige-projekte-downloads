@@ -2,7 +2,7 @@
 
 import React, { useMemo } from "react";
 import { motion, Variants } from "framer-motion";
-import { ArrowUpRight, FileText } from "lucide-react";
+import { ArrowUpRight, FileText, Image as ImageIcon } from "lucide-react";
 import SimpleBar from "simplebar-react";
 import aboutDataJson from "@/data/resume.json";
 
@@ -16,6 +16,8 @@ interface ExperienceItem {
   profileLink?: string | null;
   pdfLink?: string;
   PdfLink?: string;
+  internshipSheetLink?: string;
+  internshipapplprojectplan?: string;
 }
 
 interface EducationItem {
@@ -62,6 +64,8 @@ const initializeAboutData = (data: any): AboutData => {
 
   const extractYear = (value?: string | null) => {
     if (!value) return 0;
+    // Laufende Stationen ("Present") immer ganz nach oben sortieren
+    if (/present|heute|aktuell/i.test(value)) return 9999;
     const match = value.match(/\d{4}/);
     return match ? parseInt(match[0], 10) : 0;
   };
@@ -138,6 +142,20 @@ const ResumeSections: React.FC = () => {
                       ? encodeURI(rawPdf.replace(/^\/?public\//, "/"))
                       : null;
 
+                  const cleanInternshipSheetUrl = item.internshipSheetLink
+                      ? encodeURI(item.internshipSheetLink.replace(/^\/?public\//, "/"))
+                      : null;
+
+                  const cleanProjectPlanUrl = item.internshipapplprojectplan
+                      ? encodeURI(item.internshipapplprojectplan.replace(/^\/?public\//, "/"))
+                      : null;
+
+                  const hasLinks =
+                      item.profileLink ||
+                      cleanPdfUrl ||
+                      cleanInternshipSheetUrl ||
+                      cleanProjectPlanUrl;
+
                   return (
                       <ListItem
                           key={`${item.title}-${item.organization ?? "org"}-${idx}`}
@@ -148,7 +166,7 @@ const ResumeSections: React.FC = () => {
                                 : undefined
                           }
                           extra={
-                            item.description || item.profileLink || cleanPdfUrl ? (
+                            item.description || hasLinks ? (
                                 <div className="mt-2 space-y-1">
                                   {item.description && (
                                       <p className="text-base-content/60 text-sm leading-relaxed">
@@ -163,13 +181,13 @@ const ResumeSections: React.FC = () => {
                                             rel="noopener noreferrer"
                                             className="inline-flex"
                                         >
-                                          <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
-                                            View Company Website
-                                            <ArrowUpRight
-                                                size={14}
-                                                className="transition-transform group-hover:translate-x-1"
-                                            />
-                                          </span>
+                                                                <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                                                                    View Company Website
+                                                                    <ArrowUpRight
+                                                                        size={14}
+                                                                        className="transition-transform group-hover:translate-x-1"
+                                                                    />
+                                                                </span>
                                         </a>
                                     )}
                                     {cleanPdfUrl && (
@@ -179,14 +197,48 @@ const ResumeSections: React.FC = () => {
                                             rel="noopener noreferrer"
                                             className="inline-flex text-primary font-medium"
                                         >
-                                          <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
-                                            <FileText size={14} />
-                                            View Trial Report
-                                            <ArrowUpRight
-                                                size={14}
-                                                className="transition-transform group-hover:translate-x-1"
-                                            />
-                                          </span>
+                                                                <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                                                                    <FileText size={14} />
+                                                                    View Trial Report
+                                                                    <ArrowUpRight
+                                                                        size={14}
+                                                                        className="transition-transform group-hover:translate-x-1"
+                                                                    />
+                                                                </span>
+                                        </a>
+                                    )}
+                                    {cleanInternshipSheetUrl && (
+                                        <a
+                                            href={cleanInternshipSheetUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex text-primary font-medium"
+                                        >
+                                                                <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                                                                    <FileText size={14} />
+                                                                    Internship Info Sheet
+                                                                    <ArrowUpRight
+                                                                        size={14}
+                                                                        className="transition-transform group-hover:translate-x-1"
+                                                                    />
+                                                                </span>
+                                        </a>
+                                    )}
+                                    {cleanProjectPlanUrl && (
+                                        <a
+                                            href={cleanProjectPlanUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex text-primary font-medium"
+                                        >
+                                                                <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                                                                    <ImageIcon size={14} />
+                                                                 Overview for Internship as Application Developer
+                                                                    <ArrowUpRight
+                                                                        size={14}
+                                                                        className="transition-transform group-hover:translate-x-1"
+                                                                    />
+                                                                </span>
                                         </a>
                                     )}
                                   </div>
@@ -224,13 +276,13 @@ const ResumeSections: React.FC = () => {
                                     rel="noopener noreferrer"
                                     className="inline-flex mt-1"
                                 >
-                                  <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
-                                    View Credential
-                                    <ArrowUpRight
-                                        size={14}
-                                        className="transition-transform group-hover:translate-x-1"
-                                    />
-                                  </span>
+                                                <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                                                    View Credential
+                                                    <ArrowUpRight
+                                                        size={14}
+                                                        className="transition-transform group-hover:translate-x-1"
+                                                    />
+                                                </span>
                                 </a>
                             )
                         }

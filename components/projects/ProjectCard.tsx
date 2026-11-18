@@ -116,7 +116,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
                     rel="noopener noreferrer"
                     className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
                 >
-                  <Download size={14} /> Download
+                  <Download size={14} /> Download Project Files
                 </a>
             ) : memoProject.powerpointLink ? (
                 <a
@@ -125,7 +125,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
                     rel="noopener noreferrer"
                     className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
                 >
-                  <Presentation size={14} /> PowerPoint
+                  <Presentation size={14} /> Download Powerpoint-Presentation
                 </a>
             ) : memoProject.documentationLink ? (
                 <a

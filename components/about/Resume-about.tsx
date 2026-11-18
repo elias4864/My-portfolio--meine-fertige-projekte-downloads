@@ -2,9 +2,8 @@
 
 import React, { useMemo } from "react";
 import { motion, Variants } from "framer-motion";
-import { ArrowUpRight, FileText } from "lucide-react";
+import { ArrowUpRight, FileText, Image as ImageIcon } from "lucide-react";
 import SimpleBar from "simplebar-react";
-import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import aboutDataJson from "@/data/resume.json";
 
 /* ---------------- Types ---------------- */
@@ -16,6 +15,9 @@ interface ExperienceItem {
     description?: string;
     profileLink?: string | null;
     pdfLink?: string;
+    PdfLink?: string;
+    internshipSheetLink?: string;
+    internshipapplprojectplan?: string;
 }
 
 interface EducationItem {
@@ -49,6 +51,7 @@ const fadeIn: Variants = {
 const initializeAboutData = (data: any): AboutData => {
     const educationList: EducationItem[] = Array.isArray(data?.education) ? data.education : [];
 
+    // Kombiniert beide Experience-Arrays aus der JSON
     const profExperience: ExperienceItem[] = Array.isArray(data?.["Professional experience"])
         ? data["Professional experience"]
         : [];
@@ -57,12 +60,12 @@ const initializeAboutData = (data: any): AboutData => {
         : [];
     const combinedExperience = [...profExperience, ...generalExperience];
 
-    const leisureList: LeisureItem[] = Array.isArray(data?.["Leisure Activities"])
-        ? data["Leisure Activities"]
-        : [];
+    const leisureList: LeisureItem[] = Array.isArray(data?.["Leisure Activities"]) ? data["Leisure Activities"] : [];
 
     const extractYear = (value?: string | null) => {
         if (!value) return 0;
+        // Laufende Stationen ("Present") immer ganz nach oben sortieren
+        if (/present|heute|aktuell/i.test(value)) return 9999;
         const match = value.match(/\d{4}/);
         return match ? parseInt(match[0], 10) : 0;
     };
@@ -134,9 +137,24 @@ const ResumeSections: React.FC = () => {
                     <SimpleBar className="max-h-[750px] pr-2">
                         <ul className="space-y-4 list-none p-0">
                             {aboutData.experience.map((item, idx) => {
-                                const cleanPdfUrl = item.pdfLink
-                                    ? encodeURI(item.pdfLink.replace(/^\/?public\//, "/"))
+                                const rawPdf = item.pdfLink || item.PdfLink;
+                                const cleanPdfUrl = rawPdf
+                                    ? encodeURI(rawPdf.replace(/^\/?public\//, "/"))
                                     : null;
+
+                                const cleanInternshipSheetUrl = item.internshipSheetLink
+                                    ? encodeURI(item.internshipSheetLink.replace(/^\/?public\//, "/"))
+                                    : null;
+
+                                const cleanProjectPlanUrl = item.internshipapplprojectplan
+                                    ? encodeURI(item.internshipapplprojectplan.replace(/^\/?public\//, "/"))
+                                    : null;
+
+                                const hasLinks =
+                                    item.profileLink ||
+                                    cleanPdfUrl ||
+                                    cleanInternshipSheetUrl ||
+                                    cleanProjectPlanUrl;
 
                                 return (
                                     <ListItem
@@ -148,7 +166,7 @@ const ResumeSections: React.FC = () => {
                                                 : undefined
                                         }
                                         extra={
-                                            item.description || item.profileLink || cleanPdfUrl ? (
+                                            item.description || hasLinks ? (
                                                 <div className="mt-2 space-y-1">
                                                     {item.description && (
                                                         <p className="text-base-content/60 text-sm leading-relaxed">
@@ -182,6 +200,40 @@ const ResumeSections: React.FC = () => {
                                                                 <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
                                                                     <FileText size={14} />
                                                                     View Trial Report
+                                                                    <ArrowUpRight
+                                                                        size={14}
+                                                                        className="transition-transform group-hover:translate-x-1"
+                                                                    />
+                                                                </span>
+                                                            </a>
+                                                        )}
+                                                        {cleanInternshipSheetUrl && (
+                                                            <a
+                                                                href={cleanInternshipSheetUrl}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className="inline-flex text-primary font-medium"
+                                                            >
+                                                                <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                                                                    <FileText size={14} />
+                                                                    Internship Info Sheet
+                                                                    <ArrowUpRight
+                                                                        size={14}
+                                                                        className="transition-transform group-hover:translate-x-1"
+                                                                    />
+                                                                </span>
+                                                            </a>
+                                                        )}
+                                                        {cleanProjectPlanUrl && (
+                                                            <a
+                                                                href={cleanProjectPlanUrl}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className="inline-flex text-primary font-medium"
+                                                            >
+                                                                <span className="group inline-flex items-center gap-1 text-sm hover:text-primary underline-offset-4 decoration-dashed hover:underline transition">
+                                                                    <ImageIcon size={14} />
+                                                                    Internship Overview
                                                                     <ArrowUpRight
                                                                         size={14}
                                                                         className="transition-transform group-hover:translate-x-1"
