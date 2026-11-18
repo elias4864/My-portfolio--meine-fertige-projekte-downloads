@@ -2,7 +2,7 @@
 
 import React, { useMemo } from 'react';
 import Image from 'next/image';
-import { ArrowUpRight, Eye, Download, Users } from 'lucide-react';
+import { ArrowUpRight, Eye, Download, Users, FileText } from 'lucide-react';
 import { BorderBeam } from '@/components/ui/border-beam';
 
 export interface Project {
@@ -20,6 +20,7 @@ export interface Project {
   downloadLink?: string;
   features?: string;
   contributors?: string[]; // Namen der Mitwirkenden, die am Projekt gearbeitet haben
+  documentationLink?: string; // Neu: Link zur Projektdokumentation
 }
 
 interface ProjectCardProps {
@@ -114,7 +115,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
                     rel="noopener noreferrer"
                     className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
                 >
-                  <Download size={14} /> Download Project
+                  <Download size={14} /> Download
+                </a>
+            ) : memoProject.documentationLink ? (
+                <a
+                    href={memoProject.documentationLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
+                >
+                  <FileText size={14} /> Doku
                 </a>
             ) : memoProject.liveLink ? (
                 <a

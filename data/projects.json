@@ -1,6 +1,4 @@
 [
-
-
   {
     "title": "AI Learning Protection & Document Processing",
     "description": "A modular Python service for preparing, marking, and modifying metadata of documents (PDF, DOCX, PPTX, TXT) to label and complicate unauthorized AI learning.",
@@ -19,9 +17,9 @@
       "python-pptx",
       "PyPDF2 / PDF-Libraries"
     ],
-
     "frontendRepo": "https://github.com/Vinci4600/Anti-AI-Shield/tree/dev",
     "downloadLink": "/assets/releases/Anti-AI-Shield-dev.zip",
+    "documentationLink": "",
     "images": [
       "/Shield.jpg"
     ],
@@ -29,7 +27,6 @@
     "futurePlans": "Integration of OCR (Tesseract/Poppler), Excel support (.xlsx), and end-to-end HTTP tests.",
     "type": "Full Stack"
   },
-
   {
     "title": "World of Chewing Gum (WOC)",
     "description": "A collaborative full-stack web application built to compare and rate chewing gum products using an agile Scrum framework.",
@@ -48,7 +45,7 @@
     "frontendRepo": "https://github.com/Vinci4600/World-of-Chewing-gum/tree/dev/Frontend",
     "backendRepo": "https://github.com/Vinci4600/World-of-Chewing-gum/tree/dev/Backend",
     "downloadLink": "https://github.com/Vinci4600/meine-projekt-downloads/releases/download/v1.1.2/World-of-Chewing-gum-main.zip",
-
+    "documentationLink": "/assets/releases/Dokumentation_ Idee World of Chewing gum_One Shot_Elias und Vincent.docx",
     "images": [
       "/assets/images/projects/Last.png"
     ],
@@ -59,8 +56,6 @@
     "futurePlans": "Expand product categories and enhance user review filters.",
     "type": "Full Stack"
   },
-
-
   {
     "title": "Titocci Metalcostruzioni SAGL Website",
     "description": "A responsive client web platform engineered with custom interactive widgets, automated calculation tools, and modern styling.",
@@ -79,6 +74,7 @@
     "liveLink": "https://elias4864.github.io/Titocci-Metalcostruzioni-SAGL-Website-/",
     "frontendRepo": "https://github.com/elias4864/Titocci-Metalcostruzioni-SAGL-Website-",
     "downloadLink": "/assets/releases/Titocci-Metalcostruzioni-SAGL-Website--main.zip",
+    "documentationLink": "",
     "images": [
       "/assets/images/projects/Titocci.png"
     ],
@@ -87,9 +83,6 @@
     "futurePlans": "Add multi-language support and client testimonial management.",
     "type": "Frontend"
   },
-
-
-
   {
     "title": "Carrosserie Örlike Web Presence",
     "description": "A responsive corporate web application for Carrosserie Örlike developed during a trial day at Netmaster AG, featuring social media popups, an interactive multi-language content dropdown, and an automated CI/CD pipeline.",
@@ -106,6 +99,7 @@
     ],
     "frontendRepo": "https://github.com/elias4864/Website-Carosserie-Oerlikon",
     "downloadLink": "/assets/releases/Website-Carosserie-Oerlikon-main (1).zip",
+    "documentationLink": "",
     "images": [
       "/assets/images/projects/Carosserie.jpg"
     ],
@@ -117,7 +111,7 @@
   {
     "title": "WISS Connect-Plattform for WISS-Trainees",
     "description": "An agile Scrum-based internship portal designed for WISS students, integrating token-based access controls and role-based security routing.",
-    "contributors": ["Elias Kaiser", "Vincent Diergardt","Leo Kuhn","Cem Sin","Indujan Vinajarah","Fabian Imanuel Imhasly"],
+    "contributors": ["Elias Kaiser", "Vincent Diergardt", "Leo Kuhn", "Cem Sin", "Indujan Vinajarah", "Fabian Imanuel Imhasly"],
     "features": [
       "Token-based access controls",
       "Role-based security routing (RBAC)",
@@ -132,8 +126,9 @@
       "CSS"
     ],
     "frontendRepo": "https://github.com/LeoKuhnZH/WISS-Praktikum-App/tree/dev/frontend",
-    "backendRepo":"https://github.com/LeoKuhnZH/WISS-Praktikum-App/tree/dev/backend",
+    "backendRepo": "https://github.com/LeoKuhnZH/WISS-Praktikum-App/tree/dev/backend",
     "downloadLink": "/assets/releases/WISS-Praktikum-App-main.zip",
+    "documentationLink": "/assets/releases/426 Gruppenprojekt_WISS Connect Praktikumsportal_.docx",
     "images": [
       "/assets/images/projects/Praktikum.jpg"
     ],
@@ -142,8 +137,6 @@
     "futurePlans": "Expand company application tracking and automated interview scheduling.",
     "type": "Full Stack"
   },
-
-
   {
     "title": "Purpur Verai AI App",
     "description": "A modern full-stack application with integrated AI features, role-based access control (RBAC) for protected routes, a zero-trust architecture, and comprehensive unit tests for the most important backend endpoints.",
@@ -162,19 +155,18 @@
     ],
     "backendRepo": "https://github.com/elias4864/Purpure-Ventures-Coding-Assessment",
     "downloadLink": "/assets/releases/Purpure-Ventures-Coding-Assessment-main.zip",
+    "documentationLink": "/assets/releases/426 Gruppenprojekt_WISS Connect Praktikumsportal_.docx",
     "images": ["/assets/images/projects/Purpure.png"],
     "videos": [],
     "challenges": "Implementing a secure zero-trust architecture and role-based access control in combination with AI components.",
     "futurePlans": "Expanding AI models and performance optimization.",
     "type": "Full Stack"
   },
-
   {
     "title": "Wiki.js Documentation Platform",
     "description": "A self-hosted personal documentation and knowledge management instance deployed on a containerized Kubernetes cluster.",
     "contributors": ["Elias Kaiser", "Fabian Immanuel Imhasly"],
     "features": [
-
       "Containerized documentation storage",
       "Kubernetes cluster deployment via Helm charts",
       "High availability on local Ubuntu infrastructure"
@@ -192,18 +184,15 @@
     ],
     "videos": [],
     "downloadLink": "/assets/releases/My-Wiki-main.zip",
-
+    "documentationLink": "",
     "challenges": "Configuring persistent volume claims and Helm chart parameters inside a single-node Minikube environment.",
     "futurePlans": "Automate deployment backups and expand documentation categories.",
     "type": "Deployment"
   },
-
-
   {
     "title": "MangaDB",
     "description": "A fullstack web application for managing manga collections, featuring JWT authentication, role-based access control, personal reading statuses, a leaderboard, and reading session tracking.",
-    "contributors":  ["Elias Kaiser", "Fabian Immanuel Imhasly"],
-
+    "contributors": ["Elias Kaiser", "Fabian Immanuel Imhasly"],
     "features": [
       "JWT authentication with USER and ADMIN role model",
       "Personal reading status management",
@@ -220,11 +209,11 @@
     "images": ["/assets/images/projects/MangaDB.png"],
     "videos": [],
     "downloadLink": "/assets/releases/MangaDB-main.zip",
+    "documentationLink": "/assets/releases/Modul 210_Projektdokumentation_Wiki JS_Elias und Fabian.pdf",
     "challenges": "",
     "futurePlans": "",
     "type": "Fullstack"
   },
-
   {
     "title": "Master Todo Mobile App",
     "description": "A native Android task management application featuring local database persistence, custom progress indicators, and emulator testing.",
@@ -240,7 +229,7 @@
     ],
     "frontendRepo": "https://github.com/elias4864/Aufgabenplanner-Mobile-App",
     "downloadLink": "/assets/releases/Aufgabenplanner-Mobile-App-main.zip",
-
+    "documentationLink": "/assets/releases/Modul 335_Projektdokumentation_Aufgabenplanner Master Todo Mobile Native App_Elias Kaiser.pd",
     "images": [
       "/assets/images/projects/TodoApp.png"
     ],
@@ -268,7 +257,7 @@
     ],
     "frontendRepo": "https://github.com/elias4864/Fussballquiz-React-Projekt",
     "downloadLink": "/assets/releases/Fussballquiz-React-Projekt-main.zip",
-
+    "documentationLink": "/assets/releases/Projektdokumentation_ Webapplikation Viteserver_Fussballquiz_Elias Kaiser (1).pdf",
     "backendRepo": "https://github.com/elias4864/Fussballquizapplikation",
     "images": [
       "/assets/images/projects/Fussballquiz.png"
@@ -295,7 +284,7 @@
     ],
     "Repo": "https://gitlab.com/docker1472640/DockerKMU",
     "downloadLink": "/assets/releases/DockerKMU-main.zip",
-
+    "documentationLink": "",
     "images": [
       "/assets/images/projects/Nextcloud.png"
     ],
@@ -327,7 +316,7 @@
     ],
     "frontendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-frontend",
     "downloadLink": "/assets/releases/Manga-DB-mit-BCrypt-Hashing-main.zip",
-
+    "documentationLink": "/assets/releases/223_LB_Dokumentation.pdf",
     "backendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-backend",
     "images": [
       "/assets/images/projects/MangaDB.png"
@@ -351,13 +340,12 @@
       "Linux"
     ],
     "Repo": "https://github.com/elias4864/Glance-Home-Assistant-Dashboard-",
-
     "images": [
       "/assets/images/projects/Glance.svg"
     ],
     "videos": [],
     "downloadLink": "/assets/releases/Glance-Home-Assistant-Dashboard--main.zip",
-
+    "documentationLink": "",
     "challenges": "Configuring network endpoints and API widgets for smooth real-time telemetry monitoring.",
     "futurePlans": "Add custom alert thresholds and smart home integrations.",
     "type": "Microservices Deployment"
@@ -379,9 +367,8 @@
       "Spring Boot"
     ],
     "downloadLink": "/assets/releases/M450-Apptesting-CodeQuiz-main.zip",
-
+    "documentationLink": "",
     "frontendRepo": "https://github.com/elias4864/M450-Apptesting-CodeQuiz/tree/main/frontend",
-
     "images": [
       "/assets/images/projects/Wissquiz.png"
     ],
@@ -404,7 +391,7 @@
     ],
     "frontendRepo": "https://gitlab.com/elias4864/miniclub-website",
     "downloadLink": "/assets/MINI.png",
-
+    "documentationLink": "",
     "images": [
       "/assets/MINI.png"
     ],
@@ -413,9 +400,6 @@
     "futurePlans": "Add interactive car configurator features.",
     "type": "Frontend"
   },
-
-
-
   {
     "title": "Wissquiz Testing & Enhancement",
     "period": "March – April 2026",
@@ -435,6 +419,7 @@
       "Mockito"
     ],
     "downloadLink": "/assets/releases/223-master.zip",
+    "documentationLink": "",
     "frontendRepo": "https://github.com/elias4864/223",
     "images": [
       "/assets/images/projects/Wissquiz.png"
@@ -443,12 +428,11 @@
     "challenges": "Implementing a consistent global authentication context alongside RBAC across frontend and backend while writing mock services for comprehensive JUnit test coverage.",
     "futurePlans": "Integrate continuous integration test pipelines.",
     "type": "Full Stack"
-  }
-,
+  },
   {
     "title": "Maestro Budget (E-Banking API Prototype)",
     "description": "A prototype of an e-banking API designed visually using interactive UI/UX wireframes and layout prototypes without code.",
-    "contributors": ["Elias Kaiser", "Vincent Diergardt","Leo Kuhn","Fabian Immanuel Imhasly"],
+    "contributors": ["Elias Kaiser", "Vincent Diergardt", "Leo Kuhn", "Fabian Immanuel Imhasly"],
     "features": [
       "Interactive UI/UX wireframing",
       "Visual layout prototyping",
@@ -460,7 +444,7 @@
     ],
     "liveLink": "https://app.visily.ai/projects/5cb68c40-2b03-47d6-bfa1-80e98050b34d/boards/2314570/presenter?play-mode=All+screens",
     "downloadLink": "/assets/downloads/MasterTodo.apk",
-
+    "documentationLink": "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf",
     "images": [
       "/assets/images/projects/Maestro.png"
     ],
@@ -484,6 +468,7 @@
     ],
     "liveLink": "https://github.com/elias4864/Einkaufliste-Android-Mobile-App",
     "downloadLink": "/assets/releases/Einkaufliste-Android-Mobile-App-main.zip",
+    "documentationLink": "",
     "images": [
       "/assets/images/projects/Shoppinglist.png"
     ],
@@ -492,14 +477,10 @@
     "futurePlans": "Add cloud synchronization and shareable shopping lists.",
     "type": "Mobile App"
   },
-
-
-
-
   {
     "title": "Lift Mate-Ergonomic Ergonomic laptop stand(Innovation project)",
     "description": "LiftMate was developed as part of Module 245. The project entails the development and marketing of a wooden laptop stand, integrating product design, project management, and marketing. Furthermore, LiftMate was already utilized in Module 241—Initiating Innovative ICT Solutions.",
-    "contributors": ["Elias Kaiser", "Vincent Diergardt","Leo Kuhn"],
+    "contributors": ["Elias Kaiser", "Vincent Diergardt", "Leo Kuhn"],
     "features": [
       "Ergonomic, Sustainable wooden laptop stand"
     ],
@@ -507,11 +488,9 @@
       "Poc",
       "MvP",
       "Visily",
-
       "UI/UX Design"
     ],
-    "downloadLink": "/assets/images/projects/DokumentationLiftMate.pdf",
-
+    "documentationLink": "/assets/images/projects/DokumentationLiftMate.pdf",
     "images": [
       "/assets/images/projects/LiftMate2.png"
     ],
