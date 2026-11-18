@@ -2,7 +2,7 @@
 
 import React, { useMemo } from 'react';
 import Image from 'next/image';
-import { ArrowUpRight, Eye, Download, Users, FileText } from 'lucide-react';
+import { ArrowUpRight, Eye, Download, Users, FileText, Presentation } from 'lucide-react';
 import { BorderBeam } from '@/components/ui/border-beam';
 
 export interface Project {
@@ -20,7 +20,8 @@ export interface Project {
   downloadLink?: string;
   features?: string;
   contributors?: string[]; // Namen der Mitwirkenden, die am Projekt gearbeitet haben
-  documentationLink?: string; // Neu: Link zur Projektdokumentation
+  documentationLink?: string;
+  powerpointLink?: string;
 }
 
 interface ProjectCardProps {
@@ -63,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
                   preload="metadata"
                   poster={memoProject.images?.[0] ?? '/fallback-image.jpg'}
               />
-          ) : (
+          ) : memoProject.images?.[0] ? (
               <Image
                   src={memoProject.images[0]}
                   alt={memoProject.title}
@@ -71,7 +72,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
                   style={{ objectFit: 'cover' }}
                   className="rounded-lg transition-transform duration-500 transform-gpu will-change-transform motion-safe:group-hover:scale-105"
               />
-          )}
+          ) : null}
         </div>
 
         {/* Info */}
@@ -94,7 +95,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
           )}
 
           {/* Tech Stack */}
-          <div className="flex gap-1 mb-2 pt-1">
+          <div className="flex gap-1 mb-2 pt-1 flex-wrap">
             {memoProject.techStack.slice(0, 3).map((tech, i) => (
                 <span
                     key={`${tech}-${i}`}
@@ -116,6 +117,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
                     className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
                 >
                   <Download size={14} /> Download
+                </a>
+            ) : memoProject.powerpointLink ? (
+                <a
+                    href={memoProject.powerpointLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
+                >
+                  <Presentation size={14} /> PowerPoint
                 </a>
             ) : memoProject.documentationLink ? (
                 <a
@@ -142,7 +152,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
             <button
                 onClick={() => onOpenModal(memoProject)}
                 aria-label={`View details for ${memoProject.title}`}
-                className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
+                className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1 cursor-pointer"
             >
               <Eye size={14} /> Details
             </button>

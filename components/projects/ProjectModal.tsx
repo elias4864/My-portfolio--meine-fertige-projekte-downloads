@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpRight, Github, X, Download, Users, FileText } from "lucide-react";
+import { ArrowUpRight, Github, X, Download, Users, FileText, Presentation } from "lucide-react";
 import Image from "next/image";
 
 export interface Project {
@@ -21,7 +21,8 @@ export interface Project {
   downloadLink?: string;
   githubLink?: string;
   contributors?: string[]; // Namen der Mitwirkenden, die am Projekt gearbeitet haben
-  documentationLink?: string; // Neu: Link zur Projektdokumentation
+  documentationLink?: string;
+  powerpointLink?: string; // Neu hinzugefügt in der Schnittstelle
 }
 
 interface ProjectModalProps {
@@ -125,7 +126,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                           </motion.a>
                       )}
 
-                      {/* Neu: Link zur Projektdokumentation */}
+                      {/* Link zur Projektdokumentation */}
                       {project.documentationLink && (
                           <motion.a
                               whileHover={{ x: 3 }}
@@ -136,6 +137,20 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                           >
                             <FileText size={14} />
                             Dokumentation
+                          </motion.a>
+                      )}
+
+                      {/* Neu: Link zur PowerPoint-Präsentation */}
+                      {project.powerpointLink && (
+                          <motion.a
+                              whileHover={{ x: 3 }}
+                              href={project.powerpointLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="underline-offset-6 decoration-dashed hover:underline rounded-lg group inline-flex items-center gap-1 hover:text-primary font-geist text-sm cursor-pointer transition-all duration-300"
+                          >
+                            <Presentation size={14} />
+                            PowerPoint
                           </motion.a>
                       )}
 
