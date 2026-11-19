@@ -4,25 +4,22 @@ import React, { useMemo, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import { Eye, ArrowUpRight, Github, Users } from "lucide-react";
 import projectsData from "../../data/projects.json";
+import ProjectCard, { Project } from "@/components/projects/ProjectCard";
 import ProjectModal from "@/components/projects/ProjectModal";
 import Image from "next/image";
 import Link from "next/link";
 
-interface Project {
-  title: string;
-  description: string;
-  images: string[];
-  techStack: string[];
-  type: "Frontend" | "Backend" | "Full Stack" | "All";
-  liveLink: string;
-  frontendRepo?: string;
-  backendRepo?: string;
-  challenges?: string;
-  futurePlans?: string;
-  contributors?: string[]; // Namen der Mitwirkenden, die am Projekt gearbeitet haben
-}
-
-type FilterType = "Design" |"Other"| "Frontend" | "Backend" | "Full Stack" |"Microservices Deployment"|"Android Development"|"All";
+type FilterType =
+    | "Design"
+    | "Other"
+    | "Frontend"
+    | "Backend"
+    | "Full Stack"
+    | "Fullstack"
+    | "Microservices Deployment"
+    | "Android Development"
+    | "Mobile App"
+    | "All";
 
 const AllProjectsPage: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -62,16 +59,29 @@ const AllProjectsPage: React.FC = () => {
                 viewport={{ once: true }}
                 className="my-4 text-start"
             >
-              <h2 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">My IT-Projects</h2>
+              <h2 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                My IT-Projects
+              </h2>
               <h3 className="mt-4 text-sm sm:text-base text-base-content/80 leading-relaxed">
-                A collection of  my IT-projects developed during my school days at WISS,
+                A collection of my IT-projects developed during my school days at WISS,
                 as well as personal hobby projects and independent applications
                 built in my free time.
               </h3>
             </motion.div>
 
             <div className="flex justify-center gap-2 mb-2 flex-wrap">
-              {["Other", "Frontend", "Backend", "Full Stack","Microservices Deployment","Android Development","Design","All"].map((type) => (
+              {[
+                "Other",
+                "Frontend",
+                "Backend",
+                "Full Stack",
+                "Fullstack",
+                "Microservices Deployment",
+                "Android Development",
+                "Mobile App",
+                "Design",
+                "All",
+              ].map((type) => (
                   <button
                       key={type}
                       onClick={() => setFilter(type as FilterType)}
@@ -92,7 +102,7 @@ const AllProjectsPage: React.FC = () => {
             <div className="space-y-2">
               {filteredProjects.map((project, index) => (
                   <motion.div
-                      key={project.title}
+                      key={`${project.title}-${index}`}
                       transition={{ type: "spring", stiffness: 200 }}
                       className="
                   group overflow-hidden rounded-md
@@ -103,22 +113,24 @@ const AllProjectsPage: React.FC = () => {
                   >
                     <div className="flex flex-col sm:flex-row gap-4">
                       {/* Image */}
-                      <div className="relative w-full sm:w-[250px] aspect-[16/9] overflow-hidden rounded-lg hidden sm:block">
-                        <Image
-                            src={project.images[0]}
-                            alt={project.title}
-                            fill
-                            sizes="(max-width: 768px) 100vw, 250px"
-                            priority={index === 0} // only first project image preloads
-                            loading={index === 0 ? "eager" : "lazy"}
-                            decoding="async"
-                            className="
-                        object-cover rounded-lg
-                        transition-transform duration-300
-                        group-hover:scale-105
-                      "
-                        />
-                      </div>
+                      {project.images?.[0] && (
+                          <div className="relative w-full sm:w-[250px] aspect-[16/9] overflow-hidden rounded-lg hidden sm:block">
+                            <Image
+                                src={project.images[0]}
+                                alt={project.title}
+                                fill
+                                sizes="(max-width: 768px) 100vw, 250px"
+                                priority={index === 0}
+                                loading={index === 0 ? "eager" : "lazy"}
+                                decoding="async"
+                                className="
+                          object-cover rounded-lg
+                          transition-transform duration-300
+                          group-hover:scale-105
+                        "
+                            />
+                          </div>
+                      )}
 
                       <div className="flex flex-col justify-between flex-1">
                         <div>
@@ -153,14 +165,16 @@ const AllProjectsPage: React.FC = () => {
                         </div>
 
                         <div className="flex flex-wrap gap-4 text-sm">
-                          <a
-                              href={project.liveLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1 hover:text-primary underline-offset-6 decoration-dashed hover:underline"
-                          >
-                            <ArrowUpRight size={14} /> Live
-                          </a>
+                          {project.liveLink && (
+                              <a
+                                  href={project.liveLink}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-1 hover:text-primary underline-offset-6 decoration-dashed hover:underline"
+                              >
+                                <ArrowUpRight size={14} /> Live
+                              </a>
+                          )}
 
                           {project.frontendRepo && (
                               <a
@@ -186,7 +200,7 @@ const AllProjectsPage: React.FC = () => {
 
                           <button
                               onClick={() => openModal(project)}
-                              className="inline-flex items-center gap-1 hover:text-primary underline-offset-6 decoration-dashed hover:underline"
+                              className="inline-flex items-center gap-1 hover:text-primary underline-offset-6 decoration-dashed hover:underline cursor-pointer"
                           >
                             <Eye size={14} /> Details
                           </button>

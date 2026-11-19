@@ -13,27 +13,7 @@ import {
   Workflow,
 } from "lucide-react";
 import Image from "next/image";
-
-export interface Project {
-  title: string;
-  description: string;
-  images: string[];
-  videos?: string[];
-  techStack: string[];
-  type: 'Frontend' | 'Backend' | 'Full Stack' | 'Mobile Development' | 'DevOps' | 'Deployment' | 'Other' | 'Design' | 'All';
-  liveLink?: string;
-  frontendRepo?: string;
-  backendRepo?: string;
-  challenges?: string;
-  futurePlans?: string;
-  features?: string[] | string;
-  downloadLink?: string;
-  githubLink?: string;
-  contributors?: string[]; // Namen der Mitwirkenden, die am Projekt gearbeitet haben
-  documentationLink?: string;
-  powerpointLink?: string;
-  drawioLink?: string;
-}
+import type { Project } from "@/components/projects/ProjectCard";
 
 interface ProjectModalProps {
   showModal: boolean;

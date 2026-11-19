@@ -514,7 +514,30 @@
     "challenges": "Optimizing mobile UI responsiveness and ensuring reliable state management for local task lists.",
     "futurePlans": "Add cloud synchronization and shareable shopping lists.",
     "type": "Mobile App"
-  },
+  },{
+  "title": "Work Analysis: Telephone Spare Parts Ordering (Topomedics)",
+  "description": "A structured business process and work analysis for ordering spare parts by phone at Topomedics (Sidequest 2A), covering involved stakeholders, tools and systems, availability windows, and workflows across customer service, database checks, and logistics.",
+  "features": [
+    "Stakeholder mapping across customers, customer service, and logistics",
+    "Overview of required tools, phone systems, customer database, and order confirmations",
+    "Order availability Monday to Friday (08:00–17:00) or next-week delivery when out of stock",
+    "Clear location and process split between Topomedics office, database availability check, and warehouse picking/shipping"
+  ],
+  "techStack": [
+    "Business Analysis",
+    "Process Modeling",
+    "Database Systems"
+  ],
+  "documentationLink": "/assets/images/projects/Dokumentation_Topomedics AG_Elias_Fabian_Vincent_Leo.docx",
+  "powerpointLink": "/assets/images/projects/254_Vortrag_Begleitprojekt-Topomedics_AG_Elias_Fabian_Leo_Vincent.pptx",
+  "drawioLink": "/assets/images/projects/Aktivitätendiagramm_Ersatzteilbestellung.drawio",
+  "images": [],
+  "videos": [],
+  "challenges": "Mapping dependencies between phone intake, real-time stock/database checks, and warehouse fulfillment.",
+  "futurePlans": "Digitize and streamline spare parts order tracking between customer support and logistics.",
+  "type": "Other"
+},
+
   {
     "title": "Lift Mate-Ergonomic Ergonomic laptop stand(Innovation project)",
     "description": "LiftMate was developed as part of Module 245. The project entails the development and marketing of a wooden laptop stand, integrating product design, project management, and marketing. Furthermore, LiftMate was already utilized in Module 241—Initiating Innovative ICT Solutions.",
@@ -530,7 +553,7 @@
     ],
     "documentationLink": "/assets/releases/DokumentationLiftMate (2).pdf",
     "powerpointLink": "/assets/releases/Vortrag_Pitch_Laptopstütze_Elias_Fabian_Leo.pptx",
-    "drawioLink": "",
+    "drawioLink": "/assets/images/projects/09_StakeholderMap_Basic_DE_Elias_VIncent_Leo_Fabian (1).pdf",
     "images": [
       "/assets/images/projects/LiftMate2.png"
     ],
