@@ -450,7 +450,7 @@
       "Mockito"
     ],
     "downloadLink": "/assets/releases/223-master.zip",
-    "documentationLink": "",
+    "documentationLink": "/assets/images/projects/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
     "powerpointLink": "",
     "drawioLink": "/assets/images/projects/API-Integration(Service-Layer).drawio",
     "frontendRepo": "https://github.com/elias4864/223",
@@ -531,7 +531,7 @@
   "documentationLink": "/assets/images/projects/Dokumentation_Topomedics AG_Elias_Fabian_Vincent_Leo.docx",
   "powerpointLink": "/assets/images/projects/254_Vortrag_Begleitprojekt-Topomedics_AG_Elias_Fabian_Leo_Vincent.pptx",
   "drawioLink": "/assets/images/projects/Aktivitätendiagramm_Ersatzteilbestellung.drawio",
-  "images": [],
+  "images": ["/assets/images/projects/Topomedics.png"],
   "videos": [],
   "challenges": "Mapping dependencies between phone intake, real-time stock/database checks, and warehouse fulfillment.",
   "futurePlans": "Digitize and streamline spare parts order tracking between customer support and logistics.",
