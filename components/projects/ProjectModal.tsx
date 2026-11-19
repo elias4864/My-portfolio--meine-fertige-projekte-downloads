@@ -2,7 +2,16 @@
 
 import { useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpRight, Github, X, Download, Users, FileText, Presentation } from "lucide-react";
+import {
+  ArrowUpRight,
+  Github,
+  X,
+  Download,
+  Users,
+  FileText,
+  Presentation,
+  Workflow,
+} from "lucide-react";
 import Image from "next/image";
 
 export interface Project {
@@ -22,7 +31,8 @@ export interface Project {
   githubLink?: string;
   contributors?: string[]; // Namen der Mitwirkenden, die am Projekt gearbeitet haben
   documentationLink?: string;
-  powerpointLink?: string; // Neu hinzugefügt in der Schnittstelle
+  powerpointLink?: string;
+  drawioLink?: string;
 }
 
 interface ProjectModalProps {
@@ -140,7 +150,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                           </motion.a>
                       )}
 
-                      {/* Neu: Link zur PowerPoint-Präsentation */}
+                      {/* Link zur PowerPoint-Präsentation */}
                       {project.powerpointLink && (
                           <motion.a
                               whileHover={{ x: 3 }}
@@ -154,10 +164,26 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                           </motion.a>
                       )}
 
+                      {/* Download Draw.io Diagramm */}
+                      {project.drawioLink && (
+                          <motion.a
+                              whileHover={{ x: 3 }}
+                              href={project.drawioLink}
+                              download
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="underline-offset-6 decoration-dashed hover:underline rounded-lg group inline-flex items-center gap-1 hover:text-primary font-geist text-sm cursor-pointer transition-all duration-300"
+                          >
+                            <Workflow size={14} />
+                            Draw.io
+                          </motion.a>
+                      )}
+
                       {project.downloadLink && (
                           <motion.a
                               whileHover={{ x: 3 }}
                               href={project.downloadLink}
+                              download
                               target="_blank"
                               rel="noopener noreferrer"
                               className="underline-offset-6 decoration-dashed hover:underline rounded-lg group inline-flex items-center gap-1 hover:text-primary font-geist text-sm cursor-pointer transition-all duration-300"

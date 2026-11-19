@@ -1,0 +1,88 @@
+<mxfile host="Electron">
+  <diagram name="Seite-1" id="o2Cmg8MU5JYJV-uGiWfP">
+    <mxGraphModel dx="1280" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-9" edge="1" parent="1" source="q-jzmyFvsXNkEGr2nicZ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="185.5" y="280.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-1" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.rds_postgresql_instance;" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="241" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Postgres Datenbank(DB)&lt;/b&gt;&lt;div&gt;&lt;b&gt;auf Port&amp;nbsp; 5432&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="151" x="90" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-7" edge="1" parent="1" source="q-jzmyFvsXNkEGr2nicZ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="118" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-32" edge="1" parent="1" source="q-jzmyFvsXNkEGr2nicZ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="118" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-3" parent="1" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.android;fillColor=#8CC64F;gradientColor=none;" value="" vertex="1">
+          <mxGeometry height="84" width="73.5" x="558.25" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Node.js Frontend&amp;nbsp;&lt;div&gt;Standartport: 3000&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="500" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;holt sich&amp;nbsp; Inhalte für Wiki aus Backend(fetcht)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="350" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-22" edge="1" parent="1" source="q-jzmyFvsXNkEGr2nicZ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="q-jzmyFvsXNkEGr2nicZ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-24" edge="1" parent="1" source="q-jzmyFvsXNkEGr2nicZ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="656.75" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-26" edge="1" parent="1" source="q-jzmyFvsXNkEGr2nicZ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="656.75" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-14" parent="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=pod" value="" vertex="1">
+          <mxGeometry height="48" width="50" x="631.75" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Wiki Chart(Container)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="690" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Graph QL- Backend API: Port 8080&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Cluster IP: 5432" vertex="1">
+          <mxGeometry height="30" width="60" x="690" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-28" edge="1" parent="1" source="q-jzmyFvsXNkEGr2nicZ-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Ingress Controller für externes Routing:&amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="597" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Externer Port 80/443&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="60" x="460" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Internet/Browser" vertex="1">
+          <mxGeometry height="60" width="120" x="425" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-33" parent="1" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.browser;" value="" vertex="1">
+          <mxGeometry height="72.5" width="47.5" x="697" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&amp;nbsp;WIki JS&amp;nbsp; Page im Browser&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="120" x="680" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q-jzmyFvsXNkEGr2nicZ-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Helm-Package Manager" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="430" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

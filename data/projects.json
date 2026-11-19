@@ -19,8 +19,9 @@
     ],
     "frontendRepo": "https://github.com/Vinci4600/Anti-AI-Shield/tree/dev",
     "downloadLink": "/assets/releases/Anti-AI-Shield-dev.zip",
-    "documentationLink": "public/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio",
+    "documentationLink": "",
     "powerpointLink": "",
+    "drawioLink": "/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio",
     "images": [
       "/Shield.jpg"
     ],
@@ -48,6 +49,7 @@
     "downloadLink": "https://github.com/Vinci4600/meine-projekt-downloads/releases/download/v1.1.2/World-of-Chewing-gum-main.zip",
     "documentationLink": "/assets/releases/Dokumentation_ Idee World of Chewing gum_One Shot_Elias und Vincent.docx",
     "powerpointLink": "",
+    "drawioLink": "/assets/images/projects/WOC.drawio",
     "images": [
       "/assets/images/projects/Last.png"
     ],
@@ -78,6 +80,7 @@
     "downloadLink": "/assets/releases/Titocci-Metalcostruzioni-SAGL-Website--main.zip",
     "documentationLink": "",
     "powerpointLink": "",
+    "drawioLink": "",
     "images": [
       "/assets/images/projects/Titocci.png"
     ],
@@ -104,6 +107,7 @@
     "downloadLink": "/assets/releases/Website-Carosserie-Oerlikon-main (1).zip",
     "documentationLink": "",
     "powerpointLink": "",
+    "drawioLink": "",
     "images": [
       "/assets/images/projects/Carosserie.jpg"
     ],
@@ -134,6 +138,7 @@
     "downloadLink": "/assets/releases/WISS-Praktikum-App-main.zip",
     "documentationLink": "/assets/releases/426 Gruppenprojekt_WISS Connect Praktikumsportal_.docx",
     "powerpointLink": "",
+    "drawioLink": "",
     "images": [
       "/assets/images/projects/Praktikum.jpg"
     ],
@@ -162,6 +167,7 @@
     "downloadLink": "/assets/releases/Purpure-Ventures-Coding-Assessment-main.zip",
     "documentationLink": "/assets/releases/426 Gruppenprojekt_WISS Connect Praktikumsportal_.docx",
     "powerpointLink": "",
+    "drawioLink": "",
     "images": ["/assets/images/projects/Purpure.png"],
     "videos": [],
     "challenges": "Implementing a secure zero-trust architecture and role-based access control in combination with AI components.",
@@ -192,6 +198,7 @@
     "downloadLink": "/assets/releases/My-Wiki-main.zip",
     "documentationLink": "",
     "powerpointLink": "/assets/releases/Modul 210_Präsentation_Wiki.js_Elias und Fabian.odp",
+    "drawioLink": "/assets/images/projects/Techstack_Infrastruktur_Wiki.js.drawio",
     "challenges": "Configuring persistent volume claims and Helm chart parameters inside a single-node Minikube environment.",
     "futurePlans": "Automate deployment backups and expand documentation categories.",
     "type": "Deployment"
@@ -218,6 +225,7 @@
     "downloadLink": "/assets/releases/MangaDB-main.zip",
     "documentationLink": "/assets/releases/Modul 210_Projektdokumentation_Wiki JS_Elias und Fabian.pdf",
     "powerpointLink": "/assets/images/projects/MangaDB_Praesentation.pptx",
+    "drawioLink": "",
     "challenges": "",
     "futurePlans": "",
     "type": "Fullstack"
@@ -239,6 +247,7 @@
     "downloadLink": "/assets/releases/Aufgabenplanner-Mobile-App-main.zip",
     "documentationLink": "/assets/releases/Modul 335_Projektdokumentation_Aufgabenplanner Master Todo Mobile Native App_Elias Kaiser.pd",
     "powerpointLink": "",
+    "drawioLink": "",
     "images": [
       "/assets/images/projects/TodoApp.png"
     ],
@@ -268,6 +277,7 @@
     "downloadLink": "/assets/releases/Fussballquiz-React-Projekt-main.zip",
     "documentationLink": "/assets/releases/Projektdokumentation_ Webapplikation Viteserver_Fussballquiz_Elias Kaiser (1).pdf",
     "powerpointLink": "",
+    "drawioLink": "/assets/images/projects/Infrastruktur React Komponenten Fussballqiuz_Elias.drawio",
     "backendRepo": "https://github.com/elias4864/Fussballquizapplikation",
     "images": [
       "/assets/images/projects/Fussballquiz.png"
@@ -296,6 +306,7 @@
     "downloadLink": "/assets/releases/DockerKMU-main.zip",
     "documentationLink": "/assets/releases/Dokumentation_mit_Hermes_Testkonzept_Informatik-Edugames_AG__Elias_Kaiser_Modul_169-347 (1).pdf",
     "powerpointLink": "/assets/releases/Docker-Informatik_KMU_Edugames_AG_Elias_Kaiser_Modul_146-347 (1).odp",
+    "drawioLink": "/assets/images/projects/WOC.drawio",
     "images": [
       "/assets/images/projects/Nextcloud.png"
     ],
@@ -328,7 +339,9 @@
     "frontendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-frontend",
     "downloadLink": "/assets/releases/Manga-DB-mit-BCrypt-Hashing-main.zip",
     "documentationLink": "/assets/releases/223_LB_Dokumentation.pdf",
-    "powerpointLink": "public/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio",
+    "powerpointLink": "",
+
+    "drawioLink": "/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio",
     "backendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-backend",
     "images": [
       "/assets/images/projects/MangaDB.png"
@@ -359,6 +372,7 @@
     "downloadLink": "/assets/releases/Glance-Home-Assistant-Dashboard--main.zip",
     "documentationLink": "",
     "powerpointLink": "",
+    "drawioLink": "",
     "challenges": "Configuring network endpoints and API widgets for smooth real-time telemetry monitoring.",
     "futurePlans": "Add custom alert thresholds and smart home integrations.",
     "type": "Microservices Deployment"
@@ -382,6 +396,7 @@
     "downloadLink": "/assets/releases/M450-Apptesting-CodeQuiz-main.zip",
     "documentationLink": "/assets/images/projects/Abschlussarbeit_Mögliche Features für SQ7A.pdf",
     "powerpointLink": "",
+    "drawioLink": "",
     "frontendRepo": "https://github.com/elias4864/M450-Apptesting-CodeQuiz/tree/main/frontend",
     "images": [
       "/assets/images/projects/Wissquiz.png"
@@ -407,6 +422,7 @@
     "downloadLink": "/assets/MINI.png",
     "documentationLink": "",
     "powerpointLink": "",
+    "drawioLink": "",
     "images": [
       "/assets/MINI.png"
     ],
@@ -434,8 +450,9 @@
       "Mockito"
     ],
     "downloadLink": "/assets/releases/223-master.zip",
-    "documentationLink": "/assets/images/projects/API-Integration(Service-Layer).drawio",
+    "documentationLink": "",
     "powerpointLink": "",
+    "drawioLink": "/assets/images/projects/API-Integration(Service-Layer).drawio",
     "frontendRepo": "https://github.com/elias4864/223",
     "images": [
       "/assets/images/projects/Wissquiz.png"
@@ -462,6 +479,7 @@
     "downloadLink": "/assets/downloads/MasterTodo.apk",
     "documentationLink": "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf",
     "powerpointLink": "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf",
+    "drawioLink": "",
     "images": [
       "/assets/images/projects/Maestro.png"
     ],
@@ -488,6 +506,7 @@
     "downloadLink": "/assets/releases/Einkaufliste-Android-Mobile-App-main.zip",
     "documentationLink": "",
     "powerpointLink": "",
+    "drawioLink": "",
     "images": [
       "/assets/images/projects/Shoppinglist.png"
     ],
@@ -511,6 +530,7 @@
     ],
     "documentationLink": "/assets/releases/DokumentationLiftMate (2).pdf",
     "powerpointLink": "/assets/releases/Vortrag_Pitch_Laptopstütze_Elias_Fabian_Leo.pptx",
+    "drawioLink": "",
     "images": [
       "/assets/images/projects/LiftMate2.png"
     ],

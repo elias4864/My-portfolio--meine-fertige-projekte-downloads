@@ -2,7 +2,15 @@
 
 import React, { useMemo } from 'react';
 import Image from 'next/image';
-import { ArrowUpRight, Eye, Download, Users, FileText, Presentation } from 'lucide-react';
+import {
+  ArrowUpRight,
+  Eye,
+  Download,
+  Users,
+  FileText,
+  Presentation,
+  Workflow,
+} from 'lucide-react';
 import { BorderBeam } from '@/components/ui/border-beam';
 
 export interface Project {
@@ -11,17 +19,33 @@ export interface Project {
   images: string[];
   videos?: string[];
   techStack: string[];
-  type: 'Frontend' | 'Backend' | 'Full Stack' | 'Mobile Development' | 'DevOps' | 'Deployment' | 'Other' | 'Design';
+  type:
+      | 'Frontend'
+      | 'Backend'
+      | 'Full Stack'
+      | 'Mobile Development'
+      | 'DevOps'
+      | 'Deployment'
+      | 'Other'
+      | 'Design'
+      | 'Fullstack'
+      | 'Android Development'
+      | 'Microservices Deployment'
+      | 'Mobile App';
+  period?: string;
   liveLink?: string;
   frontendRepo?: string;
   backendRepo?: string;
+  Repo?: string;
+  frontendRep?: string;
   challenges?: string;
   futurePlans?: string;
   downloadLink?: string;
-  features?: string;
+  features?: string[];
   contributors?: string[]; // Namen der Mitwirkenden, die am Projekt gearbeitet haben
   documentationLink?: string;
   powerpointLink?: string;
+  drawioLink?: string;
 }
 
 interface ProjectCardProps {
@@ -89,8 +113,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
               <div className="flex items-center gap-1.5 text-xs text-base-content/70 pt-0.5">
                 <Users size={13} className="shrink-0 text-primary" />
                 <span className="truncate">
-                  Mitwirkende: {memoProject.contributors.join(', ')}
-                </span>
+              Mitwirkende: {memoProject.contributors.join(', ')}
+            </span>
               </div>
           )}
 
@@ -107,47 +131,62 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
           </div>
 
           {/* Actions */}
-          <div className="flex items-center justify-between text-sm whitespace-nowrap pt-1">
-            {memoProject.downloadLink ? (
-                <a
-                    href={memoProject.downloadLink}
-                    download
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
-                >
-                  <Download size={14} /> Download Project Files
-                </a>
-            ) : memoProject.powerpointLink ? (
-                <a
-                    href={memoProject.powerpointLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
-                >
-                  <Presentation size={14} /> Download Powerpoint-Presentation
-                </a>
-            ) : memoProject.documentationLink ? (
-                <a
-                    href={memoProject.documentationLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
-                >
-                  <FileText size={14} /> Doku
-                </a>
-            ) : memoProject.liveLink ? (
-                <a
-                    href={memoProject.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
-                >
-                  <ArrowUpRight size={14} /> Live
-                </a>
-            ) : (
-                <span className="text-xs text-base-content/50">Local Project</span>
-            )}
+          <div className="flex items-center justify-between text-sm whitespace-nowrap pt-1 gap-2">
+            <div className="flex items-center gap-3 flex-wrap">
+              {memoProject.downloadLink ? (
+                  <a
+                      href={memoProject.downloadLink}
+                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
+                  >
+                    <Download size={14} /> Download Project Files
+                  </a>
+              ) : memoProject.powerpointLink ? (
+                  <a
+                      href={memoProject.powerpointLink}
+                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
+                  >
+                    <Presentation size={14} /> Download Powerpoint-Presentation
+                  </a>
+              ) : memoProject.documentationLink ? (
+                  <a
+                      href={memoProject.documentationLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
+                  >
+                    <FileText size={14} /> Doku
+                  </a>
+              ) : memoProject.liveLink ? (
+                  <a
+                      href={memoProject.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
+                  >
+                    <ArrowUpRight size={14} /> Live
+                  </a>
+              ) : !memoProject.drawioLink ? (
+                  <span className="text-xs text-base-content/50">Local Project</span>
+              ) : null}
+
+              {memoProject.drawioLink && (
+                  <a
+                      href={memoProject.drawioLink}
+                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline-offset-6 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
+                  >
+                    <Workflow size={14} /> Download Draw.io
+                  </a>
+              )}
+            </div>
 
             <button
                 onClick={() => onOpenModal(memoProject)}
