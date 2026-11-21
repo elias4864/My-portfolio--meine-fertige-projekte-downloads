@@ -515,8 +515,10 @@
     "futurePlans": "Add cloud synchronization and shareable shopping lists.",
     "type": "Mobile App"
   },{
-  "title": "Work Analysis: Telephone Spare Parts Ordering (Topomedics)",
+  "title": "Work Analysis: Telephone Spare Parts Ordering (Topomedics AG)",
   "description": "A structured business process and work analysis for ordering spare parts by phone at Topomedics (Sidequest 2A), covering involved stakeholders, tools and systems, availability windows, and workflows across customer service, database checks, and logistics.",
+  "contributors": ["Elias Kaiser", "Vincent Diergardt", "Leo Kuhn", "Fabian Immanuel Imhasly"],
+
   "features": [
     "Stakeholder mapping across customers, customer service, and logistics",
     "Overview of required tools, phone systems, customer database, and order confirmations",
