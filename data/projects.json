@@ -228,7 +228,7 @@
     "drawioLink": "",
     "challenges": "",
     "futurePlans": "",
-    "type": "Fullstack"
+    "type": "Full Stack"
   },
   {
     "title": "Master Todo Mobile App",
@@ -479,7 +479,7 @@
     "downloadLink": "/assets/downloads/MasterTodo.apk",
     "documentationLink": "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf",
     "powerpointLink": "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf",
-    "drawioLink": "",
+    "drawioLink": "/assets/images/projects/Kreditkarten_Manager_Tool.drawio",
     "images": [
       "/assets/images/projects/Maestro.png"
     ],
@@ -560,5 +560,32 @@
     "videos": [],
     "challenges": "Making a great marketing analysis, stakeholder and markt analysic and to find out which should be our target audience",
     "type": "Design"
+  },
+  {
+    "title": "Modul 306: IT-Mini Project in Team",
+    "description": "Structured planning, execution, testing, and documentation of a small IT project following project management phases from requirements definition to handover and retrospective.",
+    "contributors": ["Elias Kaiser","Andreas Peter Björg Offersen","Vincent Diergardt"],
+    "features": [
+      "Goal and scope definition with work breakdown structure (WBS)",
+      "Task scheduling, milestone tracking, and risk management",
+      "Test protocol, deliverable handover, and lessons learned review"
+    ],
+    "techStack": [
+      "Project Management",
+      "Requirements Engineering",
+      "Documentation",
+      "Git"
+
+    ],
+    "frontendRepo": "",
+    "downloadLink": "",
+    "documentationLink": "public/assets/images/projects/Dokumentation_Elektroshop_Vincent_Elias_Andreas.docx.pdf",
+    "powerpointLink": "",
+    "drawioLink": "/assets/images/projects/Organigramm.drawio",
+    "images": ["/assets/images/projects/Elektro.png"],
+    "videos": [],
+    "challenges": "Balancing scope, realistic time estimates, and documentation depth within a compact project timeline.",
+    "futurePlans": "Automate status tracking and refine estimation templates for future projects.",
+    "type": "Full Stack"
   }
 ]
