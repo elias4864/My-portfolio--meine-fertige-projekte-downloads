@@ -897,36 +897,65 @@ export default function DashboardPage() {
             </ul>
           </div>
 
+
           {/* Latest Commits */}
-          {commits.length > 0 && (
-              <div className="mb-6">
-                <h3 className="text-xl my-3">Latest Commits</h3>
-                <ul className="space-y-2.5">
-                  {commits.map((c, idx) => (
-                      <li key={`${c.repo}-${idx}`}>
+          <div className="my-6">
+            <h3 className="text-xl my-3 text-start">Latest Commits</h3>
+            <div className="bg-base-100 p-5 rounded-lg shadow-sm space-y-3 border border-base-300/60">
+              {commits.length === 0 ? (
+                  <p className="text-sm text-base-content/60">
+                    Keine aktuellen Commits gefunden.
+                  </p>
+              ) : (
+                  commits.map((commit, index) => {
+                    const commitDate = new Date(commit.date);
+                    const formattedTimestamp = commitDate.toLocaleString("de-CH", {
+                      day: "2-digit",
+                      month: "2-digit",
+                      year: "numeric",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                    });
+
+                    return (
                         <a
-                            href={c.url}
+                            key={`${commit.repo}-${commit.date}-${index}`}
+                            href={commit.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block p-3.5 rounded-lg bg-base-100 hover:bg-base-100/80 shadow-sm transition-colors"
+                            className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-lg bg-base-200/50 hover:bg-base-200 border border-base-300/60 transition group"
                         >
-                          <div className="flex items-center justify-between gap-2 text-xs text-base-content/60 mb-1">
-                            <span className="font-semibold text-primary">{c.repo}</span>
-                            <span>{new Date(c.date).toLocaleDateString("de-CH")}</span>
+                          <div className="space-y-1 min-w-0">
+                            <div className="flex items-center gap-2 text-xs text-base-content/65">
+                              <GitCommit className="w-3.5 h-3.5 text-primary shrink-0" />
+                              <span className="font-semibold text-base-content">
+                            {commit.repo}
+                          </span>
+                              <span>•</span>
+                              <time dateTime={commit.date} className="tabular-nums">
+                                {formattedTimestamp}
+                              </time>
+                            </div>
+                            <p className="text-sm text-base-content/90 truncate">
+                              {commit.message}
+                            </p>
                           </div>
-                          <p className="text-sm text-base-content/90 line-clamp-2">
-                            {c.message}
-                          </p>
-                        </a>
-                      </li>
-                  ))}
-                </ul>
-              </div>
-          )}
 
-          {/* Releases */}
+                          <ArrowUpRight className="w-4 h-4 text-base-content/50 group-hover:text-primary shrink-0 transition" />
+                        </a>
+                    );
+                  })
+              )}
+            </div>
+          </div>
+
+          {/* Releases & Downloads */}
           <ReleasesSection repos={allRepos} />
         </div>
       </motion.section>
   );
 }
+
+
+
+
