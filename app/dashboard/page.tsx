@@ -22,6 +22,8 @@ import {
   Layers,
   Calendar,
   Zap,
+  GitPullRequest,
+  Sparkles,
 } from "lucide-react";
 import {
   PieChart,
@@ -82,6 +84,7 @@ interface AchievementItem {
   unlocked: boolean;
   progressText: string;
   tier: "Gold" | "Silver" | "Bronze";
+  category: "GitHub Profile" | "Repo Activity";
   icon: React.ReactNode;
   badgeStyle?: string;
 }
@@ -262,7 +265,7 @@ function AchievementsBadgesSection({
 
   const devopsOrFullstackCount = originalRepos.filter((r) => {
     const text = `${r.name} ${r.description ?? ""} ${r.language ?? ""} ${(r.topics ?? []).join(" ")}`.toLowerCase();
-    return ["docker", "kubernetes", "helm", "ci", "cd", "pipeline", "api", "react", "next", "spring"].some(
+    return ["docker", "kubernetes", "helm", "ci", "cd", "pipeline", "api", "react", "next", "spring", "fastapi"].some(
         (kw) => text.includes(kw)
     );
   }).length;
@@ -277,33 +280,57 @@ function AchievementsBadgesSection({
       )
       : 0;
 
+  // GitHub Achievements & Repo-Meilensteine (kein zusätzliches Token nötig)
   const achievements: AchievementItem[] = [
     {
       id: "quickdraw",
       title: "Quickdraw",
-      description: "Offizielles GitHub-Profil-Achievement für das schnelle Schliessen eines Issues oder einer Pull Request kurz nach dem Öffnen[cite: 1].",
+      description: "Offizielles GitHub-Achievement für das schnelle Schliessen eines Issues oder einer Pull Request nach dem Erstellen.",
       unlocked: true,
-      progressText: "Auf GitHub-Profil sichtbar",
+      progressText: "Profil-Achievement",
       tier: "Gold",
+      category: "GitHub Profile",
       icon: <Zap className="w-4 h-4 text-amber-300" />,
       badgeStyle: "bg-gradient-to-br from-amber-300/30 to-yellow-500/20 border-amber-400/50",
     },
     {
+      id: "pull-shark",
+      title: "Pull Shark",
+      description: "Offizielles GitHub-Achievement für gemergte Pull Requests in Repositories.",
+      unlocked: false,
+      progressText: "Auf GitHub-Profil prüfen",
+      tier: "Silver",
+      category: "GitHub Profile",
+      icon: <GitPullRequest className="w-4 h-4 text-sky-300" />,
+    },
+    {
+      id: "galaxy-brain",
+      title: "Galaxy Brain",
+      description: "Offizielles GitHub-Achievement für akzeptierte Antworten in GitHub Discussions.",
+      unlocked: false,
+      progressText: "Auf GitHub-Profil prüfen",
+      tier: "Silver",
+      category: "GitHub Profile",
+      icon: <Sparkles className="w-4 h-4 text-purple-300" />,
+    },
+    {
       id: "polyglot",
       title: "Polyglot Developer",
-      description: "Verwendet mindestens 4 verschiedene Programmiersprachen über Repositories hinweg.",
+      description: "Verwendet mindestens 4 verschiedene Programmiersprachen über öffentliche Repositories.",
       unlocked: languagesData.length >= 4,
       progressText: `${languagesData.length} / 4 Sprachen`,
       tier: "Gold",
+      category: "Repo Activity",
       icon: <Code2 className="w-4 h-4 text-purple-400" />,
     },
     {
       id: "builder",
       title: "Project Builder",
-      description: "Baut und veröffentlicht mindestens 10 eigene Repositories.",
+      description: "Veröffentlicht mindestens 10 eigene Repositories (ohne Forks).",
       unlocked: originalReposCount >= 10,
       progressText: `${originalReposCount} / 10 Eigene Repos`,
       tier: "Gold",
+      category: "Repo Activity",
       icon: <Package className="w-4 h-4 text-emerald-400" />,
     },
     {
@@ -311,8 +338,9 @@ function AchievementsBadgesSection({
       title: "Release Shipper",
       description: "Veröffentlicht mindestens einen Release / Tag auf GitHub.",
       unlocked: releasesCount >= 1,
-      progressText: releasesCount >= 1 ? `${releasesCount} Release(s) erkannt` : "0 / 1 Release",
+      progressText: releasesCount >= 1 ? `${releasesCount} Release(s)` : "0 / 1 Release",
       tier: "Silver",
+      category: "Repo Activity",
       icon: <Award className="w-4 h-4 text-amber-400" />,
     },
     {
@@ -322,15 +350,17 @@ function AchievementsBadgesSection({
       unlocked: recentCommitsCount >= 3,
       progressText: `${recentCommitsCount} / 3 Repos mit Commits`,
       tier: "Silver",
+      category: "Repo Activity",
       icon: <GitCommit className="w-4 h-4 text-sky-400" />,
     },
     {
       id: "documenter",
       title: "Clean Documenter",
-      description: "Versieht mindestens 5 eigene Repositories mit einer klaren Beschreibung.",
+      description: "Versieht mindestens 5 eigene Repositories mit einer Beschreibung.",
       unlocked: documentedReposCount >= 5,
       progressText: `${documentedReposCount} / 5 Beschrieben`,
       tier: "Silver",
+      category: "Repo Activity",
       icon: <FileText className="w-4 h-4 text-cyan-400" />,
     },
     {
@@ -340,6 +370,7 @@ function AchievementsBadgesSection({
       unlocked: devopsOrFullstackCount >= 3,
       progressText: `${devopsOrFullstackCount} / 3 Stack-Projekte`,
       tier: "Silver",
+      category: "Repo Activity",
       icon: <Layers className="w-4 h-4 text-indigo-400" />,
     },
     {
@@ -349,6 +380,7 @@ function AchievementsBadgesSection({
       unlocked: stats.stars >= 1,
       progressText: `${stats.stars} Star${stats.stars === 1 ? "" : "s"}`,
       tier: "Bronze",
+      category: "Repo Activity",
       icon: <Star className="w-4 h-4 text-yellow-400" />,
     },
     {
@@ -358,15 +390,17 @@ function AchievementsBadgesSection({
       unlocked: stats.followers >= 1 || stats.forks >= 1,
       progressText: `${stats.followers} Follower · ${stats.forks} Forks`,
       tier: "Bronze",
+      category: "Repo Activity",
       icon: <Users className="w-4 h-4 text-pink-400" />,
     },
     {
       id: "veteran",
       title: "GitHub Builder (1+ Jahr)",
-      description: "Ist seit mindestens einem Jahr aktiv mit einem GitHub-Profil vertreten.",
+      description: "Ist seit mindestens einem Jahr mit einem GitHub-Profil aktiv.",
       unlocked: accountAgeYears >= 1,
       progressText: `${accountAgeYears} Jahr${accountAgeYears === 1 ? "" : "e"} aktiv`,
       tier: "Bronze",
+      category: "Repo Activity",
       icon: <Calendar className="w-4 h-4 text-teal-400" />,
     },
   ];
@@ -393,36 +427,45 @@ function AchievementsBadgesSection({
             GitHub Achievements &amp; Badges
           </h3>
           <span className="text-xs px-2.5 py-1 rounded-full bg-base-100 border border-base-300 text-base-content/80">
-            {unlockedCount} / {achievements.length} Badges freigeschaltet
+            {unlockedCount} / {achievements.length} aktiv
           </span>
         </div>
 
         <div className="bg-base-100 p-5 rounded-lg shadow-sm space-y-5 border border-base-300/60">
-          {/* Filter-Buttons */}
-          <div className="flex flex-wrap items-center gap-2">
-            {(
-                [
-                  { key: "all", label: `Alle (${achievements.length})` },
-                  { key: "unlocked", label: `Freigeschaltet (${unlockedCount})` },
-                  { key: "locked", label: `Offen (${achievements.length - unlockedCount})` },
-                ] as const
-            ).map((tab) => (
-                <button
-                    key={tab.key}
-                    type="button"
-                    onClick={() => setFilter(tab.key)}
-                    className={`px-3 py-1 rounded-md text-xs font-medium border transition ${
-                        filter === tab.key
-                            ? "bg-primary text-primary-content border-primary"
-                            : "bg-base-200/60 text-base-content/75 border-base-300 hover:bg-base-200"
-                    }`}
-                >
-                  {tab.label}
-                </button>
-            ))}
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <div className="flex flex-wrap items-center gap-2">
+              {(
+                  [
+                    { key: "all", label: `Alle (${achievements.length})` },
+                    { key: "unlocked", label: `Freigeschaltet (${unlockedCount})` },
+                    { key: "locked", label: `Offen (${achievements.length - unlockedCount})` },
+                  ] as const
+              ).map((tab) => (
+                  <button
+                      key={tab.key}
+                      type="button"
+                      onClick={() => setFilter(tab.key)}
+                      className={`px-3 py-1 rounded-md text-xs font-medium border transition ${
+                          filter === tab.key
+                              ? "bg-primary text-primary-content border-primary"
+                              : "bg-base-200/60 text-base-content/75 border-base-300 hover:bg-base-200"
+                      }`}
+                  >
+                    {tab.label}
+                  </button>
+              ))}
+            </div>
+
+            <a
+                href={`https://github.com/${username}?tab=achievements`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-primary hover:underline"
+            >
+              Alle GitHub Achievements ansehen <ExternalLink className="w-3.5 h-3.5" />
+            </a>
           </div>
 
-          {/* Live-berechnete & Profil-Achievement Badges */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {filteredAchievements.map((badge) => (
                 <div
@@ -442,11 +485,16 @@ function AchievementsBadgesSection({
                         <p className="font-semibold text-sm leading-tight">
                           {badge.title}
                         </p>
-                        <span
-                            className={`inline-block mt-1 text-[10px] font-medium px-2 py-0.5 rounded-full border ${tierStyles[badge.tier]}`}
-                        >
-                          {badge.tier}
-                        </span>
+                        <div className="flex items-center gap-1.5 mt-1">
+                          <span
+                              className={`inline-block text-[10px] font-medium px-2 py-0.5 rounded-full border ${tierStyles[badge.tier]}`}
+                          >
+                            {badge.tier}
+                          </span>
+                          <span className="text-[10px] text-base-content/50">
+                            {badge.category}
+                          </span>
+                        </div>
                       </div>
                     </div>
 
@@ -473,7 +521,6 @@ function AchievementsBadgesSection({
             ))}
           </div>
 
-          {/* Optionale externe GitHub Badge-Widgets mit Fallback */}
           {(!trophyError || !streakError) && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 border-t border-base-300/60">
                 {!trophyError && (
@@ -554,12 +601,10 @@ export default function DashboardPage() {
       try {
         setLoading(true);
 
-        // Profile
         const profileRes = await fetch(`https://api.github.com/users/${USERNAME}`, { headers });
         if (!profileRes.ok) throw new Error("Failed to fetch profile");
         const profile = await profileRes.json();
 
-        // Repos
         const repoRes = await fetch(
             `https://api.github.com/users/${USERNAME}/repos?per_page=100`,
             { headers }
@@ -567,16 +612,13 @@ export default function DashboardPage() {
         if (!repoRes.ok) throw new Error("Failed to fetch repos");
         const repoData: Repo[] = await repoRes.json();
 
-        // Stats
         const totalStars = repoData.reduce((acc, r) => acc + r.stargazers_count, 0);
         const totalForks = repoData.reduce((acc, r) => acc + r.forks_count, 0);
 
-        // Latest 5 repos
         const latestRepos = [...repoData]
             .sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime())
             .slice(0, 5);
 
-        // Latest commit per repo
         const commitPromises = latestRepos.map(async (repo) => {
           const res = await fetch(
               `https://api.github.com/repos/${USERNAME}/${repo.name}/commits?per_page=1`,
@@ -599,7 +641,6 @@ export default function DashboardPage() {
             (c): c is Commit => c !== null
         );
 
-        // Releases über die Top-Repos prüfen
         const releaseChecks = await Promise.all(
             latestRepos.map(async (repo) => {
               try {
@@ -617,7 +658,6 @@ export default function DashboardPage() {
         );
         const totalDetectedReleases = releaseChecks.reduce((sum, n) => sum + n, 0);
 
-        // Language Calculation
         const langMap: Record<string, number> = {};
         let totalLangRepos = 0;
 
@@ -826,84 +866,66 @@ export default function DashboardPage() {
             <h3 className="text-xl my-3">Latest Repositories</h3>
             <ul className="space-y-3">
               {repos.map((repo) => (
-                  <a
-                      key={repo.name}
-                      href={repo.html_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group block p-4 rounded-lg bg-base-100 hover:bg-base-100/80 shadow-sm transition-colors duration-200"
-                  >
-                    <div className="flex justify-between items-center">
-                      <span className="font-semibold">{repo.name}</span>
-                      <motion.span
-                          className="opacity-0 group-hover:opacity-100"
-                          transition={{ duration: 0.2 }}
-                      >
-                        <ArrowUpRight size={16} />
-                      </motion.span>
-                    </div>
-                    <p className="text-sm text-base-content/80 mt-1 line-clamp-2 break-words">
-                      {repo.description || "No description"}
-                    </p>
-                    <div className="text-xs mt-2 flex gap-4 flex-wrap">
-                      <span>⭐ {repo.stargazers_count}</span>
-                      <span>🍴 {repo.forks_count}</span>
-                      {repo.language && <span>🧠 {repo.language}</span>}
-                    </div>
-                  </a>
-              ))}
-            </ul>
-          </div>
-
-          {/* ReleasesSection mit dynamischer Repo-Auswahl */}
-          <ReleasesSection repos={allRepos} />
-
-          {/* Recent Commits */}
-          <div>
-            <h3 className="text-xl my-3">Recent Commits</h3>
-            <ul className="space-y-3">
-              {commits.map((commit, idx) => (
-                  <a
-                      key={idx}
-                      href={commit.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group block p-4 rounded-lg bg-base-100 hover:bg-base-100/80 shadow-sm transition-colors duration-200"
-                  >
-                    <div className="flex justify-between items-start gap-3">
-                      <div className="flex-1 min-w-0">
-                        <p
-                            title={commit.message}
-                            className="text-sm font-medium line-clamp-2 break-words"
-                        >
-                          <span className="text-base-content/70">
-                            [{commit.repo}]
-                          </span>{" "}
-                          {commit.message.split("\n")[0]}
-                        </p>
-                        <p className="text-xs text-base-content/60 mt-1">
-                          {new Date(commit.date).toLocaleString("de-CH", {
-                            day: "2-digit",
-                            month: "2-digit",
-                            year: "numeric",
-                            hour: "2-digit",
-                            minute: "2-digit",
-                          })}
-                        </p>
+                  <li key={repo.name}>
+                    <a
+                        href={repo.html_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group block p-4 rounded-lg bg-base-100 hover:bg-base-100/80 shadow-sm transition-colors duration-200"
+                    >
+                      <div className="flex justify-between items-center gap-2">
+                        <span className="font-semibold text-base group-hover:text-primary transition-colors">
+                          {repo.name}
+                        </span>
+                        <ArrowUpRight className="w-4 h-4 text-base-content/60 group-hover:text-primary shrink-0" />
                       </div>
-
-                      <motion.span
-                          className="mt-1 opacity-0 group-hover:opacity-100 transition-opacity"
-                          aria-hidden
-                      >
-                        <ArrowUpRight size={16} />
-                      </motion.span>
-                    </div>
-                  </a>
+                      {repo.description && (
+                          <p className="text-sm text-base-content/70 mt-1">
+                            {repo.description}
+                          </p>
+                      )}
+                      <div className="flex flex-wrap items-center gap-3 text-xs text-base-content/60 mt-2">
+                        {repo.language && <span>{repo.language}</span>}
+                        <span>★ {repo.stargazers_count}</span>
+                        <span>
+                          Aktualisiert: {new Date(repo.updated_at).toLocaleDateString("de-CH")}
+                        </span>
+                      </div>
+                    </a>
+                  </li>
               ))}
             </ul>
           </div>
 
+          {/* Latest Commits */}
+          {commits.length > 0 && (
+              <div className="mb-6">
+                <h3 className="text-xl my-3">Latest Commits</h3>
+                <ul className="space-y-2.5">
+                  {commits.map((c, idx) => (
+                      <li key={`${c.repo}-${idx}`}>
+                        <a
+                            href={c.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block p-3.5 rounded-lg bg-base-100 hover:bg-base-100/80 shadow-sm transition-colors"
+                        >
+                          <div className="flex items-center justify-between gap-2 text-xs text-base-content/60 mb-1">
+                            <span className="font-semibold text-primary">{c.repo}</span>
+                            <span>{new Date(c.date).toLocaleDateString("de-CH")}</span>
+                          </div>
+                          <p className="text-sm text-base-content/90 line-clamp-2">
+                            {c.message}
+                          </p>
+                        </a>
+                      </li>
+                  ))}
+                </ul>
+              </div>
+          )}
+
+          {/* Releases */}
+          <ReleasesSection repos={allRepos} />
         </div>
       </motion.section>
   );
