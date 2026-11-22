@@ -54,6 +54,12 @@
       "image": "/assets/images/projects/Lesen.jpg"
     },
     {
+      "activity": "Table tennis",
+      "description": "Fast-paced table tennis matches that keep me sharp, reactive,  energized, and connected with  other teammates.",
+      "image": "/assets/images/projects/Tischtennis.jpg"
+    },
+
+    {
       "activity": "Piano",
       "description": "Playing classical piano for over 10 years, combined with creative free improvisation.",
       "image": "/assets/images/projects/Piano.jpg"
