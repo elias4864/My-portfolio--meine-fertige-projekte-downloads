@@ -424,7 +424,7 @@
     "downloadLink": "/assets/releases/M450-Apptesting-CodeQuiz-main.zip",
     "documentationLinks": [
       "/assets/images/projects/Abschlussarbeit_Mögliche Features für SQ7A.pdf",
-      "/assets/releases/Sidequest 4B_Mockitotest_Elias Kaiser.pdf"
+      "/assets/releases/Sidequest 4B_Mockitotest_Elias Kaiser.pdf","/assets/images/projects/WISS_M450_3A und 3B.docx"
     ],
     "powerpointLink": "",
     "drawioLink": "",
@@ -516,11 +516,13 @@
     ],
     "liveLink": "https://app.visily.ai/projects/5cb68c40-2b03-47d6-bfa1-80e98050b34d/boards/2314570/presenter?play-mode=All+screens",
     "downloadLink": "/assets/downloads/MasterTodo.apk",
+
     "documentationLink": "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf",
     "powerpointLink": "/assets/images/projects/LB-Vortrag_Elias_Leo und Vincent (1).pptx",
     "drawioLinks": [
       "/assets/images/projects/Kreditkarten_Manager_Tool.drawio",
-      "/assets/images/projects/254_Geschäftsprozessmanagment_Appentwicklung_Programmablaufplan.drawio" ],
+      "/assets/images/projects/254_Geschäftsprozessmanagment_Appentwicklung_Programmablaufplan.drawio",    "/assets/images/projects/254_2A_Flussdiagramm_und_Arbeitsanalyse.drawio.svg"
+    ],
     "images": [
       "/assets/images/projects/Maestro.png"
     ],
@@ -610,7 +612,7 @@
     ],
     "documentationLink": "/assets/releases/DokumentationLiftMate (2).pdf",
     "powerpointLink": "/assets/releases/Vortrag_Pitch_Laptopstütze_Elias_Fabian_Leo.pptx",
-    "drawioLink": "/assets/images/projects/09_StakeholderMap_Basic_DE_Elias_VIncent_Leo_Fabian (1).pdf",
+    "drawioLink":[ "/assets/images/projects/09_StakeholderMap_Basic_DE_Elias_VIncent_Leo_Fabian (1).pdf", "/assets/images/projects/Risikoanalyse_Laptopstütze_Vincent_Leo_Elias_Fabian.draw.io 1.drawio"]
     "images": [
       "/assets/images/projects/LiftMate2.png"
     ],
