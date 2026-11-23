@@ -695,13 +695,13 @@
       "Mockito"
     ],
     "frontendRepo": "https://github.com/elias4864/223",
-    "backendRepo": "https://github.com/elias4864/quiz-backend-clean"
+    "backendRepo": "https://github.com/elias4864/quiz-backend-clean",
     "downloadLink": "/assets/releases/quiz-backend-clean-main.zip",
     "documentationLink": "/assets/images/projects/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
     "powerpointLink": "",
     "drawioLink": "/assets/images/projects/API-Integration(Service-Layer).drawio",
     "images": [
-      "/assets/images/projects/Wissquiz.png"
+      "/assets/images/projects/Multiuser.png"
     ],
     "videos": [],
     "challenges": "Coordinating multi-user state, authentication/RBAC, and backend service/controller tests across frontend and backend.",
