@@ -610,7 +610,7 @@
       "Visily",
       "UI/UX Design"
     ],
-    "documentationLink": "/assets/releases/DokumentationLiftMate (2).pdf",
+    "documentationLink": ["/assets/releases/DokumentationLiftMate (2).pdf","/assets/images/projects/PoC_Liftmate_Leo_Elias_Fabian_Vincent.docx"]
     "powerpointLink": "/assets/releases/Vortrag_Pitch_Laptopstütze_Elias_Fabian_Leo.pptx",
     "drawioLink":[ "/assets/images/projects/09_StakeholderMap_Basic_DE_Elias_VIncent_Leo_Fabian (1).pdf", "/assets/images/projects/Risikoanalyse_Laptopstütze_Vincent_Leo_Elias_Fabian.draw.io 1.drawio"]
     "images": [
