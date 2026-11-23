@@ -36,8 +36,8 @@
     "title": "World of Chewing Gum (WOC)",
     "description": "A collaborative full-stack web application built to compare and rate chewing gum products using an agile Scrum framework.",
     "contributors": [
-      "Elias Kaiser",
-      "Vincent Diergardt"
+
+      "Vincent Diergardt","Elias Kaiser"
     ],
     "features": [
       "Product comparison and rating system",
@@ -422,7 +422,10 @@
       "Spring Boot"
     ],
     "downloadLink": "/assets/releases/M450-Apptesting-CodeQuiz-main.zip",
-    "documentationLink": "/assets/images/projects/Abschlussarbeit_Mögliche Features für SQ7A.pdf",
+    "documentationLinks": [
+      "/assets/images/projects/Abschlussarbeit_Mögliche Features für SQ7A.pdf",
+      "/assets/releases/Sidequest 4B_Mockitotest_Elias Kaiser.pdf"
+    ],
     "powerpointLink": "",
     "drawioLink": "",
     "frontendRepo": "https://github.com/elias4864/M450-Apptesting-CodeQuiz/tree/main/frontend",
@@ -573,7 +576,11 @@
     ],
     "documentationLink": "/assets/images/projects/Dokumentation_Topomedics AG_Elias_Fabian_Vincent_Leo.docx",
     "powerpointLink": "/assets/images/projects/254_Vortrag_Begleitprojekt-Topomedics_AG_Elias_Fabian_Leo_Vincent.pptx",
-    "drawioLink": "/assets/images/projects/Aktivitätendiagramm_Ersatzteilbestellung.drawio",
+    "drawioLinks": [
+      "/assets/images/projects/Aktivitätendiagramm_Ersatzteilbestellung.drawio",
+      "/assets/images/projects/Aktivitätendiagramm.Elias_ Leo_Fabian Vincent.drawio"
+    ],
+
     "images": [
       "/assets/images/projects/Topomedics.png"
     ],
@@ -644,7 +651,7 @@
   {
     "title": "Codexo GmbH & Swiss Albanian Network – Application & Web Presence",
     "description": "Tailored web presence and application showcase designed for Codexo GmbH within the Swiss Albanian Network ecosystem, highlighting full-stack web engineering, UI/UX design, application security, and practical software projects at the intersection of business, design, and IT.",
-    "contributors": ["Elias Kaiser"],
+
     "features": [
       "Project showcase with filtering by tech stack and project category",
       "Overview of full-stack architectures, RBAC/JWT security, Docker, and CI/CD pipelines",
