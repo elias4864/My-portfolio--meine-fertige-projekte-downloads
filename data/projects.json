@@ -517,7 +517,7 @@
     "liveLink": "https://app.visily.ai/projects/5cb68c40-2b03-47d6-bfa1-80e98050b34d/boards/2314570/presenter?play-mode=All+screens",
     "downloadLink": "/assets/downloads/MasterTodo.apk",
     "documentationLink": "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf",
-    "powerpointLink": "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf",
+    "powerpointLink": "/assets/images/projects/LB-Vortrag_Elias_Leo und Vincent (1).pptx",
     "drawioLinks": [
       "/assets/images/projects/Kreditkarten_Manager_Tool.drawio",
       "/assets/images/projects/254_Geschäftsprozessmanagment_Appentwicklung_Programmablaufplan.drawio" ],
@@ -672,6 +672,40 @@
     "videos": [],
     "challenges": "Structuring and presenting full-stack projects, technical documentation, and web engineering capabilities in a clear, targeted format tailored to Codexo GmbH and the Swiss Albanian Network.",
     "futurePlans": "Add dedicated project previews, custom UI mockups, and additional live demos tailored to the application dossier.",
+    "type": "Full Stack"
+  },
+
+  {
+    "title": "Wissquiz – Full-Stack & Multiuser Quiz Platform",
+    "description": "Full-stack quiz web application with a frontend and backend supporting multi-user management, role-based access control, score evaluation, and automated testing.",
+    "contributors": [
+      "Elias Kaiser",
+      "Fabian Immanuel Imhasly"
+    ],
+    "features": [
+      "Multi-user support and authentication context",
+      "Role-based access control (RBAC) across frontend and backend",
+      "Score evaluation and automated unit/mock testing"
+    ],
+    "techStack": [
+      "Java",
+      "Spring Boot",
+      "React",
+      "JUnit",
+      "Mockito"
+    ],
+    "frontendRepo": "https://github.com/elias4864/223",
+    "backendRepo": "https://github.com/elias4864/quiz-backend-clean"
+    "downloadLink": "/assets/releases/quiz-backend-clean-main.zip",
+    "documentationLink": "/assets/images/projects/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
+    "powerpointLink": "",
+    "drawioLink": "/assets/images/projects/API-Integration(Service-Layer).drawio",
+    "images": [
+      "/assets/images/projects/Wissquiz.png"
+    ],
+    "videos": [],
+    "challenges": "Coordinating multi-user state, authentication/RBAC, and backend service/controller tests across frontend and backend.",
+    "futurePlans": "Expand multi-user features, leaderboards, and automated CI test pipelines.",
     "type": "Full Stack"
   }
 ]
