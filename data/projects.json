@@ -518,7 +518,9 @@
     "downloadLink": "/assets/downloads/MasterTodo.apk",
     "documentationLink": "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf",
     "powerpointLink": "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf",
-    "drawioLink": "/assets/images/projects/Kreditkarten_Manager_Tool.drawio",
+    "drawioLinks": [
+      "/assets/images/projects/Kreditkarten_Manager_Tool.drawio",
+      "/assets/images/projects/254_Geschäftsprozessmanagment_Appentwicklung_Programmablaufplan.drawio" ],
     "images": [
       "/assets/images/projects/Maestro.png"
     ],
