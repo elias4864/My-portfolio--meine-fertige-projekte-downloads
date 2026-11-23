@@ -5,7 +5,10 @@
       "HTML&HTML5",
       "CSS",
       "React.js",
-      "Tailwind CSS"
+      "Tailwind CSS",
+      "Next.js",
+      "Webhosting with Cloudflare and SEO",
+
     ]
   },
   {
@@ -45,7 +48,7 @@
     "category": "Database  Query Languages",
     "skills": [
       "MySQL",
-      "PostgreSQL"
+      "PostgreSQL(NoSQL)"
 
 
     ]
@@ -91,12 +94,17 @@
       "GitHub",
       "Gitlab",
       "Trello",
+      "Github Actions",
       "Visily",
       "Visual Studio Code",
       "Docker Desktop",
       "Kubernetes",
       "Helm Package Manager",
       "Oracle Virtual Box",
+      "React.js",
+      "CMD",
+      "Git Bash",
+
       "IntelliJ IDEA",
       "WebStorm",
       "Postman",
@@ -111,12 +119,17 @@
     "category":  "Methodology & Soft Skills",
     "skills": [
       "Agile Software Development (SCRUM)",
-      "Team Collaboration",
-      "Adaptability",
+      "Team Collaboration with Extreme Programming",
+      "Adaptability and ",
+      "Rapid Onboarding into New Technologies",
+      "Structured Problem-Solving & Root-Cause Debugging",
+      "End-to-End Ownership & Delievery Reliability",
       "Fast Learner of new Technologies",
       "High Perseverance & Resilience",
       " High Reliability & Dependability",
-      " Big Willingness  & Eagerness to Learn new Technologies and Frameworks"
+      " Big Willingness  & Eagerness to Learn new Technologies and Frameworks",
+      "Translating Business Requirements into UI/UX",
+      ""
 
     ]
   }
