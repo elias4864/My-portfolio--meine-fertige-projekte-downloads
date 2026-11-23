@@ -2,7 +2,10 @@
   {
     "title": "AI Learning Protection & Document Processing",
     "description": "A modular Python service for preparing, marking, and modifying metadata of documents (PDF, DOCX, PPTX, TXT) to label and complicate unauthorized AI learning.",
-    "contributors": ["Elias Kaiser", "Vincent Diergardt"],
+    "contributors": [
+      "Elias Kaiser",
+      "Vincent Diergardt"
+    ],
     "features": [
       "Central file size and format validation (10 MB limit)",
       "Document router for PDF, DOCX, PPTX, and TXT",
@@ -32,7 +35,10 @@
   {
     "title": "World of Chewing Gum (WOC)",
     "description": "A collaborative full-stack web application built to compare and rate chewing gum products using an agile Scrum framework.",
-    "contributors": ["Elias Kaiser", "Vincent Diergardt"],
+    "contributors": [
+      "Elias Kaiser",
+      "Vincent Diergardt"
+    ],
     "features": [
       "Product comparison and rating system",
       "Agile Scrum project management integration",
@@ -119,7 +125,14 @@
   {
     "title": "WISS Connect-Plattform for WISS-Trainees",
     "description": "An agile Scrum-based internship portal designed for WISS students, integrating token-based access controls and role-based security routing.",
-    "contributors": ["Elias Kaiser", "Vincent Diergardt", "Leo Kuhn", "Cem Sin", "Indujan Vinajarah", "Fabian Imanuel Imhasly"],
+    "contributors": [
+      "Elias Kaiser",
+      "Vincent Diergardt",
+      "Leo Kuhn",
+      "Cem Sin",
+      "Indujan Vinajarah",
+      "Fabian Imanuel Imhasly"
+    ],
     "features": [
       "Token-based access controls",
       "Role-based security routing (RBAC)",
@@ -168,7 +181,9 @@
     "documentationLink": "/assets/releases/426 Gruppenprojekt_WISS Connect Praktikumsportal_.docx",
     "powerpointLink": "",
     "drawioLink": "",
-    "images": ["/assets/images/projects/Purpure.png"],
+    "images": [
+      "/assets/images/projects/Purpure.png"
+    ],
     "videos": [],
     "challenges": "Implementing a secure zero-trust architecture and role-based access control in combination with AI components.",
     "futurePlans": "Expanding AI models and performance optimization.",
@@ -177,7 +192,10 @@
   {
     "title": "Wiki.js Documentation Platform",
     "description": "A self-hosted personal documentation and knowledge management instance deployed on a containerized Kubernetes cluster.",
-    "contributors": ["Elias Kaiser", "Fabian Immanuel Imhasly"],
+    "contributors": [
+      "Elias Kaiser",
+      "Fabian Immanuel Imhasly"
+    ],
     "features": [
       "Containerized documentation storage",
       "Kubernetes cluster deployment via Helm charts",
@@ -206,7 +224,10 @@
   {
     "title": "MangaDB",
     "description": "A fullstack web application for managing manga collections, featuring JWT authentication, role-based access control, personal reading statuses, a leaderboard, and reading session tracking.",
-    "contributors": ["Elias Kaiser", "Fabian Immanuel Imhasly"],
+    "contributors": [
+      "Elias Kaiser",
+      "Fabian Immanuel Imhasly"
+    ],
     "features": [
       "JWT authentication with USER and ADMIN role model",
       "Personal reading status management",
@@ -220,7 +241,9 @@
       "Vite"
     ],
     "frontendRepo": "https://github.com/fabiblian/MangaDB",
-    "images": ["/assets/images/projects/MangaDB.png"],
+    "images": [
+      "/assets/images/projects/MangaDB.png"
+    ],
     "videos": [],
     "downloadLink": "/assets/releases/MangaDB-main.zip",
     "documentationLink": "/assets/releases/Modul 210_Projektdokumentation_Wiki JS_Elias und Fabian.pdf",
@@ -318,7 +341,10 @@
   {
     "title": "MangaDB Library",
     "description": "A web-based full-stack application developed for Module 183 (Implementing Application Security) featuring multi-user management, secure user authentication, automatic salting, and BCrypt password hashing for organized manga libraries.",
-    "contributors": ["Elias Kaiser", "Dominik Brinkmann"],
+    "contributors": [
+      "Elias Kaiser",
+      "Dominik Brinkmann"
+    ],
     "features": [
       "Role-Based Access Control (RBAC)",
       "Secure password hashing with BCrypt & automatic unique salting",
@@ -340,7 +366,6 @@
     "downloadLink": "/assets/releases/Manga-DB-mit-BCrypt-Hashing-main.zip",
     "documentationLink": "/assets/releases/223_LB_Dokumentation.pdf",
     "powerpointLink": "",
-
     "drawioLink": "/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio",
     "backendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-backend",
     "images": [
@@ -380,7 +405,10 @@
   {
     "title": "Wissquiz Testing & Enhancement",
     "description": "Refactoring and enhancement of an interactive quiz application with score evaluation, authentication context, and unit testing.",
-    "contributors": ["Elias Kaiser", "Fabian Imannuel Imhasly"],
+    "contributors": [
+      "Elias Kaiser",
+      "Fabian Imannuel Imhasly"
+    ],
     "features": [
       "Unit testing with JUnit and Mockito",
       "Authentication context integration",
@@ -435,7 +463,10 @@
     "title": "Wissquiz Testing & Enhancement",
     "period": "March – April 2026",
     "description": "Expansion and refactoring of an existing full-stack multi-user quiz web application ('Wissquiz'), implementing Role-Based Access Control (RBAC), a global authentication context, score evaluation, and comprehensive JUnit backend tests.",
-    "contributors": ["Elias Kaiser", "Fabian Immanuel Imhasly"],
+    "contributors": [
+      "Elias Kaiser",
+      "Fabian Immanuel Imhasly"
+    ],
     "features": [
       "Role-Based Access Control (RBAC) for backend and frontend",
       "Global authentication context integration",
@@ -465,7 +496,12 @@
   {
     "title": "Maestro Budget (E-Banking API Prototype)",
     "description": "A prototype of an e-banking API designed visually using interactive UI/UX wireframes and layout prototypes without code.",
-    "contributors": ["Elias Kaiser", "Vincent Diergardt", "Leo Kuhn", "Fabian Immanuel Imhasly"],
+    "contributors": [
+      "Elias Kaiser",
+      "Vincent Diergardt",
+      "Leo Kuhn",
+      "Fabian Immanuel Imhasly"
+    ],
     "features": [
       "Interactive UI/UX wireframing",
       "Visual layout prototyping",
@@ -514,36 +550,46 @@
     "challenges": "Optimizing mobile UI responsiveness and ensuring reliable state management for local task lists.",
     "futurePlans": "Add cloud synchronization and shareable shopping lists.",
     "type": "Mobile App"
-  },{
-  "title": "Work Analysis: Telephone Spare Parts Ordering (Topomedics AG)",
-  "description": "A structured business process and work analysis for ordering spare parts by phone at Topomedics (Sidequest 2A), covering involved stakeholders, tools and systems, availability windows, and workflows across customer service, database checks, and logistics.",
-  "contributors": ["Elias Kaiser", "Vincent Diergardt", "Leo Kuhn", "Fabian Immanuel Imhasly"],
-
-  "features": [
-    "Stakeholder mapping across customers, customer service, and logistics",
-    "Overview of required tools, phone systems, customer database, and order confirmations",
-    "Order availability Monday to Friday (08:00–17:00) or next-week delivery when out of stock",
-    "Clear location and process split between Topomedics office, database availability check, and warehouse picking/shipping"
-  ],
-  "techStack": [
-    "Business Analysis",
-    "Process Modeling",
-    "Database Systems"
-  ],
-  "documentationLink": "/assets/images/projects/Dokumentation_Topomedics AG_Elias_Fabian_Vincent_Leo.docx",
-  "powerpointLink": "/assets/images/projects/254_Vortrag_Begleitprojekt-Topomedics_AG_Elias_Fabian_Leo_Vincent.pptx",
-  "drawioLink": "/assets/images/projects/Aktivitätendiagramm_Ersatzteilbestellung.drawio",
-  "images": ["/assets/images/projects/Topomedics.png"],
-  "videos": [],
-  "challenges": "Mapping dependencies between phone intake, real-time stock/database checks, and warehouse fulfillment.",
-  "futurePlans": "Digitize and streamline spare parts order tracking between customer support and logistics.",
-  "type": "Other"
-},
-
+  },
+  {
+    "title": "Work Analysis: Telephone Spare Parts Ordering (Topomedics AG)",
+    "description": "A structured business process and work analysis for ordering spare parts by phone at Topomedics (Sidequest 2A), covering involved stakeholders, tools and systems, availability windows, and workflows across customer service, database checks, and logistics.",
+    "contributors": [
+      "Elias Kaiser",
+      "Vincent Diergardt",
+      "Leo Kuhn",
+      "Fabian Immanuel Imhasly"
+    ],
+    "features": [
+      "Stakeholder mapping across customers, customer service, and logistics",
+      "Overview of required tools, phone systems, customer database, and order confirmations",
+      "Order availability Monday to Friday (08:00–17:00) or next-week delivery when out of stock",
+      "Clear location and process split between Topomedics office, database availability check, and warehouse picking/shipping"
+    ],
+    "techStack": [
+      "Business Analysis",
+      "Process Modeling",
+      "Database Systems"
+    ],
+    "documentationLink": "/assets/images/projects/Dokumentation_Topomedics AG_Elias_Fabian_Vincent_Leo.docx",
+    "powerpointLink": "/assets/images/projects/254_Vortrag_Begleitprojekt-Topomedics_AG_Elias_Fabian_Leo_Vincent.pptx",
+    "drawioLink": "/assets/images/projects/Aktivitätendiagramm_Ersatzteilbestellung.drawio",
+    "images": [
+      "/assets/images/projects/Topomedics.png"
+    ],
+    "videos": [],
+    "challenges": "Mapping dependencies between phone intake, real-time stock/database checks, and warehouse fulfillment.",
+    "futurePlans": "Digitize and streamline spare parts order tracking between customer support and logistics.",
+    "type": "Other"
+  },
   {
     "title": "Lift Mate-Ergonomic Ergonomic laptop stand(Innovation project)",
     "description": "LiftMate was developed as part of Module 245. The project entails the development and marketing of a wooden laptop stand, integrating product design, project management, and marketing. Furthermore, LiftMate was already utilized in Module 241—Initiating Innovative ICT Solutions.",
-    "contributors": ["Elias Kaiser", "Vincent Diergardt", "Leo Kuhn"],
+    "contributors": [
+      "Elias Kaiser",
+      "Vincent Diergardt",
+      "Leo Kuhn"
+    ],
     "features": [
       "Ergonomic, Sustainable wooden laptop stand"
     ],
@@ -566,7 +612,11 @@
   {
     "title": "Modul 306: IT-Mini Project in Team",
     "description": "Structured planning, execution, testing, and documentation of a small IT project following project management phases from requirements definition to handover and retrospective.",
-    "contributors": ["Elias Kaiser","Andreas Peter Björg Offersen","Vincent Diergardt"],
+    "contributors": [
+      "Elias Kaiser",
+      "Andreas Peter Björg Offersen",
+      "Vincent Diergardt"
+    ],
     "features": [
       "Goal and scope definition with work breakdown structure (WBS)",
       "Task scheduling, milestone tracking, and risk management",
@@ -577,17 +627,42 @@
       "Requirements Engineering",
       "Documentation",
       "Git"
-
     ],
     "frontendRepo": "",
     "downloadLink": "",
     "documentationLink": "public/assets/images/projects/Dokumentation_Elektroshop_Vincent_Elias_Andreas.docx.pdf",
     "powerpointLink": "",
     "drawioLink": "/assets/images/projects/Organigramm.drawio",
-    "images": ["/assets/images/projects/Elektro.png"],
+    "images": [
+      "/assets/images/projects/Elektro.png"
+    ],
     "videos": [],
     "challenges": "Balancing scope, realistic time estimates, and documentation depth within a compact project timeline.",
     "futurePlans": "Automate status tracking and refine estimation templates for future projects.",
+    "type": "Full Stack"
+  },
+  {
+    "title": "Codexo GmbH & Swiss Albanian Network – Application & Web Presence",
+    "description": "Tailored web presence and application showcase designed for Codexo GmbH within the Swiss Albanian Network ecosystem, highlighting full-stack web engineering, UI/UX design, application security, and practical software projects at the intersection of business, design, and IT.",
+    "contributors": ["Elias Kaiser"],
+    "features": [
+      "Project showcase with filtering by tech stack and project category",
+      "Overview of full-stack architectures, RBAC/JWT security, Docker, and CI/CD pipelines",
+      "Direct access to source code repositories, technical documentation, and live demos"
+    ],
+    "techStack": [
+      "TailwindCSS",
+      "HTML5"
+    ],
+    "frontendRepo": "https://gitlab.com/bewerbung-codexo/bewerbung-codexo-gmbh-swiss-albanian-network",
+    "downloadLink": "/assets/images/projects/bewerbung-codexo-gmbh-swiss-albanian-network-main.zip",
+    "documentationLink": "",
+    "powerpointLink": "",
+    "drawioLink": "",
+    "images": [],
+    "videos": [],
+    "challenges": "Structuring and presenting full-stack projects, technical documentation, and web engineering capabilities in a clear, targeted format tailored to Codexo GmbH and the Swiss Albanian Network.",
+    "futurePlans": "Add dedicated project previews, custom UI mockups, and additional live demos tailored to the application dossier.",
     "type": "Full Stack"
   }
 ]
