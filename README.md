@@ -1,6 +1,6 @@
-# 🚀 Elias Kaiser — Personal Portfolio
+# 🚀 Elias Kaiser — Personal IT-Portfolio
 
-> My personal portfolio website built to showcase my projects, skills, and professional journey as an application development student at WISS Zurich.
+> My personal portfolio website built to showcase my projects, skills, and my  professional  coding journey as an application development student at WISS Zurich.
 
 🌐 **Personal Live Website:** [elias-portfolio.eljourka.workers.dev](https://elias-portfolio.eljourka.workers.dev/)
 
@@ -12,9 +12,8 @@
 - **⚡ Blazing Fast:** Built on Next.js 16 App Router with React 19 and Edge deployment
 - **📱 Fully Responsive:** Optimized for desktop, tablet, and mobile viewports
 - **🌙 Theme Switcher:** Seamless toggle between dark and light modes
-- **📂 Projects Showcase:** Dynamic project entries driven by `projects.json`
-- **✍️ Blog Section:** Markdown / MDX-powered blog posts
-- **📊 GitHub Activity:** Live contribution charts and metrics
+- **📂 Projects Showcase:** Dynamic project entries driven by `projects.json` with Download Link, Live Preview, Contributors shown, Frontend and Backendgithubrepository, Powerpointlink and Drawio-URL.
+- **📊 GitHub Activity:** Live contribution charts and metrics with Dashboard of my  Github Stats
 - **📄 Resume / CV:** Dedicated professional resume page with downloadable details
 - **📬 Contact Form:** Fully client-side integrated contact form powered by EmailJS
 - **🎭 Animations:** Smooth page transitions and micro-interactions with Framer Motion & GSAP
@@ -81,7 +80,7 @@ pnpm run start — Starts the production server locally (next start).
 
 pnpm run lint — Runs ESLint for code quality checks.
 
-pnpm run preview — Builds the project using Open-Next and starts a local Cloudflare Worker preview.
+pnpm run preview — Builds the project using Open-Next and starts a local Cloudflare Worker preview before Deploying on Cloudflare
 
 pnpm run deploy — Builds the application and deploys it live to Cloudflare via Wrangler.
 
@@ -89,7 +88,6 @@ pnpm run deploy — Builds the application and deploys it live to Cloudflare via
 This Next.js application uses Open-Next and Wrangler to run efficiently on Cloudflare's edge network.
 
 Log in to your Cloudflare account through the CLI:
-
 
 npx wrangler login
 Deploy your app live on Cloudflare:
@@ -108,6 +106,8 @@ Elias Kaiser — Full Stack Application Developer
 🌐 Portfolio: https://elias-portfolio.eljourka.workers.dev/
 
 🐙 GitHub: elias4864
+   Gitlab: elias4864
+   Gitlab: elias4864
 
 If you find this project useful, consider giving it a ⭐ on GitHub!
 
