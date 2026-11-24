@@ -216,7 +216,7 @@
     "downloadLink": "/assets/releases/My-Wiki-main.zip",
     "documentationLink": "",
     "powerpointLink": "/assets/releases/Modul 210_Präsentation_Wiki.js_Elias und Fabian.odp",
-    "drawioLink": "/assets/images/projects/Techstack_Infrastruktur_Wiki.js.drawio",
+    "drawioLink": ["/assets/images/projects/Techstack_Infrastruktur_Wiki.js.drawio","assets/images/projects/Datenbankmodell_Task_Aufgabenplaner Elias.drawio","public/assets/images/projects/Komponentendiagramm_Architektur_Wiki.js_Elias und Fabian.drawio"],
     "challenges": "Configuring persistent volume claims and Helm chart parameters inside a single-node Minikube environment.",
     "futurePlans": "Automate deployment backups and expand documentation categories.",
     "type": "Deployment"
@@ -610,7 +610,7 @@
       "Visily",
       "UI/UX Design"
     ],
-    "documentationLink": ["/assets/releases/DokumentationLiftMate (2).pdf","/assets/images/projects/PoC_Liftmate_Leo_Elias_Fabian_Vincent.docx"]
+    "documentationLink": ["/assets/releases/DokumentationLiftMate (2).pdf","/assets/images/projects/PoC_Liftmate_Leo_Elias_Fabian_Vincent.docx"],
     "powerpointLink": "/assets/releases/Vortrag_Pitch_Laptopstütze_Elias_Fabian_Leo.pptx",
     "drawioLink":[ "/assets/images/projects/09_StakeholderMap_Basic_DE_Elias_VIncent_Leo_Fabian (1).pdf", "/assets/images/projects/Risikoanalyse_Laptopstütze_Vincent_Leo_Elias_Fabian.draw.io 1.drawio"]
     "images": [
