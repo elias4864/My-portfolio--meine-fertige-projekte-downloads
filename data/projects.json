@@ -329,7 +329,7 @@
     "downloadLink": "/assets/releases/DockerKMU-main.zip",
     "documentationLink": "/assets/releases/Dokumentation_mit_Hermes_Testkonzept_Informatik-Edugames_AG__Elias_Kaiser_Modul_169-347 (1).pdf",
     "powerpointLink": "/assets/releases/Docker-Informatik_KMU_Edugames_AG_Elias_Kaiser_Modul_146-347 (1).odp",
-    "drawioLink": "/assets/images/projects/WOC.drawio",
+    "drawioLink": ["/assets/images/projects/WOC.drawio","public/assets/images/projects/Dockerinformatik-KMU_Edugames.drawio"],
     "images": [
       "/assets/images/projects/Nextcloud.png"
     ],
@@ -424,7 +424,8 @@
     "downloadLink": "/assets/releases/M450-Apptesting-CodeQuiz-main.zip",
     "documentationLinks": [
       "/assets/images/projects/Abschlussarbeit_Mögliche Features für SQ7A.pdf",
-      "/assets/releases/Sidequest 4B_Mockitotest_Elias Kaiser.pdf","/assets/images/projects/WISS_M450_3A und 3B.docx"
+      "/assets/releases/Sidequest 4B_Mockitotest_Elias Kaiser.pdf","/assets/images/projects/WISS_M450_3A und 3B.docx",
+      "public/assets/images/projects/TDD(Test Driven Development).pdf"
     ],
     "powerpointLink": "",
     "drawioLink": "",
