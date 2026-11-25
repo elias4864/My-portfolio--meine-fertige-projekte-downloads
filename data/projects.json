@@ -482,7 +482,7 @@
     "frontendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-frontend",
     "downloadLink": "/assets/releases/Manga-DB-mit-BCrypt-Hashing-main.zip",
     "documentationLink": "/assets/releases/223_LB_Dokumentation.pdf",
-    "documentationLink1": "/assets/releases/223_LB_Dokumentation.pdf",
+    "documentationLink1": "",
     "documentationLink2": "/assets/images/projects/Modul 183_Projektdokumentation_Fullstackapplikation MangaDB mit Bcrypt Hashing des Logins_Elias und Dominik.pdf",
     "documentationLinks": [
       "/assets/releases/223_LB_Dokumentation.pdf",
@@ -492,7 +492,7 @@
     "powerpointLink1": "",
     "powerpointLink2": "",
     "powerpointLinks": [],
-    "drawioLink": "/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio",
+    "drawioLink": "",
     "drawioLinks": [
       "/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio"
     ],
@@ -638,9 +638,10 @@
     "downloadLink": "/assets/releases/223-master.zip",
     "documentationLink": "/assets/images/projects/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
     "documentationLink1": "/assets/images/projects/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
-    "documentationLink2": "",
+    "documentationLink2": "/assets/images/projects/Rest-API_Funktionale und Nichtfunktionale Anforderungen_Elias und Fabian.pdf",
     "documentationLinks": [
-      "/assets/images/projects/Sidequest 4B_Mockitotest_Elias Kaiser.pdf"
+      "/assets/images/projects/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
+      "/assets/images/projects/Testumgebung_ Sidequest 2A_Rest-API.pdf"
     ],
     "powerpointLink": "",
     "powerpointLink1": "",
