@@ -46,6 +46,18 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
   // Memoize project data
   const project = useMemo(() => selectedProject, [selectedProject]);
 
+  const documentationList = useMemo(() => {
+    if (!project) return [];
+    const collected = [
+      project.documentationLink1,
+      project.documentationLink2,
+      ...(Array.isArray(project.documentationLinks) ? project.documentationLinks : []),
+      project.documentationLink,
+    ].filter((link): link is string => Boolean(link && link.trim()));
+
+    return Array.from(new Set(collected)).slice(0, 2);
+  }, [project]);
+
   const powerpointList = useMemo(() => {
     if (!project) return [];
     const collected = [
@@ -139,19 +151,20 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                           </motion.a>
                       )}
 
-                      {/* Link zur Projektdokumentation */}
-                      {project.documentationLink && (
+                      {/* Links zu Projektdokumentationen (max. 2) */}
+                      {documentationList.map((docLink, idx) => (
                           <motion.a
+                              key={`${docLink}-${idx}`}
                               whileHover={{ x: 3 }}
-                              href={project.documentationLink}
+                              href={docLink}
                               target="_blank"
                               rel="noopener noreferrer"
                               className="underline-offset-6 decoration-dashed hover:underline rounded-lg group inline-flex items-center gap-1 hover:text-primary font-geist text-sm cursor-pointer transition-all duration-300"
                           >
                             <FileText size={14} />
-                            Dokumentation
+                            {documentationList.length > 1 ? `Dokumentation ${idx + 1}` : "Dokumentation"}
                           </motion.a>
-                      )}
+                      ))}
 
                       {/* Links zu PowerPoint-Präsentationen */}
                       {powerpointList.map((pptLink, idx) => (

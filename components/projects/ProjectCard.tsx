@@ -4,12 +4,9 @@ import React from 'react';
 import Image from 'next/image';
 import {
   ArrowUpRight,
-  Eye,
   Download,
   Users,
   FileText,
-  Presentation,
-  Workflow,
 } from 'lucide-react';
 import { BorderBeam } from '@/components/ui/border-beam';
 
@@ -44,6 +41,9 @@ export interface Project {
   features?: string[];
   contributors?: string[];
   documentationLink?: string;
+  documentationLink1?: string;
+  documentationLink2?: string;
+  documentationLinks?: string[];
   powerpointLink?: string;
   powerpointLinks?: string[];
   powerpointLink1?: string;
@@ -59,7 +59,7 @@ interface ProjectCardProps {
   onOpenModal: (project: Project) => void;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const hasVideo = Boolean(project.videos && project.videos.length > 0);
   const hasImage = Boolean(project.images && project.images.length > 0);
   const shortDescription =
@@ -67,27 +67,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
           ? `${project.description.slice(0, 64)}...`
           : project.description;
 
-  const firstPowerpointLink =
-      project.powerpointLink1 ||
-      project.powerpointLink ||
-      (Array.isArray(project.powerpointLinks) ? project.powerpointLinks[0] : undefined);
+  const firstDocLink =
+      project.documentationLink1 ||
+      project.documentationLink ||
+      (Array.isArray(project.documentationLinks) ? project.documentationLinks[0] : undefined);
 
-  const secondPowerpointLink =
-      project.powerpointLink2 ||
-      (Array.isArray(project.powerpointLinks) ? project.powerpointLinks[1] : undefined);
+  const secondDocLink =
+      project.documentationLink2 ||
+      (Array.isArray(project.documentationLinks) ? project.documentationLinks[1] : undefined);
 
-  const hasAnyPowerpointLink = Boolean(firstPowerpointLink || secondPowerpointLink);
-
-  const firstDrawioLink =
-      project.drawioLink1 ||
-      project.drawioLink ||
-      (Array.isArray(project.drawioLinks) ? project.drawioLinks[0] : undefined);
-
-  const secondDrawioLink =
-      project.drawioLink2 ||
-      (Array.isArray(project.drawioLinks) ? project.drawioLinks[1] : undefined);
-
-  const hasAnyDrawioLink = Boolean(firstDrawioLink || secondDrawioLink);
+  const docLinks = [firstDocLink, secondDocLink].filter((link): link is string => Boolean(link));
 
   return (
       <article
@@ -161,7 +150,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
 
           <div className="flex items-center justify-between text-sm whitespace-nowrap pt-1 gap-2">
             <div className="flex items-center gap-3 flex-wrap">
-              {project.downloadLink ? (
+              {project.downloadLink && (
                   <a
                       href={project.downloadLink}
                       download
@@ -171,16 +160,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
                   >
                     <Download size={14} /> Download Project Files
                   </a>
-              ) : project.documentationLink ? (
+              )}
+
+              {docLinks.map((docUrl, idx) => (
                   <a
-                      href={project.documentationLink}
+                      key={`${docUrl}-${idx}`}
+                      href={docUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="underline-offset-4 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
                   >
-                    <FileText size={14} /> Documentation
+                    <FileText size={14} /> {docLinks.length > 1 ? `Doc ${idx + 1}` : 'Documentation'}
                   </a>
-              ) : project.liveLink ? (
+              ))}
+
+              {!project.downloadLink && docLinks.length === 0 && project.liveLink && (
                   <a
                       href={project.liveLink}
                       target="_blank"
@@ -189,71 +183,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
                   >
                     <ArrowUpRight size={14} /> Live
                   </a>
-              ) : !hasAnyPowerpointLink && !hasAnyDrawioLink ? (
-                  <span className="text-xs text-base-content/50">Local Project</span>
-              ) : null}
-
-              {firstPowerpointLink && (
-                  <a
-                      href={firstPowerpointLink}
-                      download
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline-offset-4 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
-                  >
-                    <Presentation size={14} /> {secondPowerpointLink ? 'PowerPoint 1' : 'PowerPoint'}
-                  </a>
-              )}
-
-              {secondPowerpointLink && (
-                  <a
-                      href={secondPowerpointLink}
-                      download
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline-offset-4 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
-                  >
-                    <Presentation size={14} /> PowerPoint 2
-                  </a>
-              )}
-
-              {firstDrawioLink && (
-                  <a
-                      href={firstDrawioLink}
-                      download
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline-offset-4 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
-                  >
-                    <Workflow size={14} /> Draw.io 1
-                  </a>
-              )}
-
-              {secondDrawioLink && (
-                  <a
-                      href={secondDrawioLink}
-                      download
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline-offset-4 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
-                  >
-                    <Workflow size={14} /> Draw.io 2
-                  </a>
               )}
             </div>
-
-            <button
-                type="button"
-                onClick={() => onOpenModal(project)}
-                aria-label={`View details for ${project.title}`}
-                className="underline-offset-4 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1 cursor-pointer"
-            >
-              <Eye size={14} /> Details
-            </button>
           </div>
         </div>
       </article>
   );
 };
 
-export default React.memo(ProjectCard);
+export default ProjectCard;
