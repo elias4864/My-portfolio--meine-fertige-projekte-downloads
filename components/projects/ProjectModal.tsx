@@ -26,7 +26,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                                                      selectedProject,
                                                      closeModal,
                                                    }) => {
-
   // Close on Escape + prevent body scroll
   useEffect(() => {
     if (!showModal) return;
@@ -46,6 +45,15 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
 
   // Memoize project data
   const project = useMemo(() => selectedProject, [selectedProject]);
+
+  const firstDrawioLink =
+      project?.drawioLink1 ||
+      project?.drawioLink ||
+      (Array.isArray(project?.drawioLinks) ? project.drawioLinks[0] : undefined);
+
+  const secondDrawioLink =
+      project?.drawioLink2 ||
+      (Array.isArray(project?.drawioLinks) ? project.drawioLinks[1] : undefined);
 
   return (
       <AnimatePresence>
@@ -144,18 +152,33 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                           </motion.a>
                       )}
 
-                      {/* Download Draw.io Diagramm */}
-                      {project.drawioLink && (
+                      {/* Download Draw.io Diagramm 1 */}
+                      {firstDrawioLink && (
                           <motion.a
                               whileHover={{ x: 3 }}
-                              href={project.drawioLink}
+                              href={firstDrawioLink}
                               download
                               target="_blank"
                               rel="noopener noreferrer"
                               className="underline-offset-6 decoration-dashed hover:underline rounded-lg group inline-flex items-center gap-1 hover:text-primary font-geist text-sm cursor-pointer transition-all duration-300"
                           >
                             <Workflow size={14} />
-                            Draw.io
+                            Draw.io 1
+                          </motion.a>
+                      )}
+
+                      {/* Download Draw.io Diagramm 2 */}
+                      {secondDrawioLink && (
+                          <motion.a
+                              whileHover={{ x: 3 }}
+                              href={secondDrawioLink}
+                              download
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="underline-offset-6 decoration-dashed hover:underline rounded-lg group inline-flex items-center gap-1 hover:text-primary font-geist text-sm cursor-pointer transition-all duration-300"
+                          >
+                            <Workflow size={14} />
+                            Draw.io 2
                           </motion.a>
                       )}
 
@@ -238,8 +261,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                                 key={tech + i}
                                 className="px-3 py-1 text-xs border border-primary/30 rounded-lg"
                             >
-                              {tech}
-                            </span>
+                        {tech}
+                      </span>
                         ))}
                       </div>
                     </div>

@@ -46,6 +46,9 @@ export interface Project {
   documentationLink?: string;
   powerpointLink?: string;
   drawioLink?: string;
+  drawioLinks?: string[];
+  drawioLink1?: string;
+  drawioLink2?: string;
 }
 
 interface ProjectCardProps {
@@ -60,6 +63,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
       project.description.length > 64
           ? `${project.description.slice(0, 64)}...`
           : project.description;
+
+  const firstDrawioLink =
+      project.drawioLink1 ||
+      project.drawioLink ||
+      (Array.isArray(project.drawioLinks) ? project.drawioLinks[0] : undefined);
+
+  const secondDrawioLink =
+      project.drawioLink2 ||
+      (Array.isArray(project.drawioLinks) ? project.drawioLinks[1] : undefined);
+
+  const hasAnyDrawioLink = Boolean(firstDrawioLink || secondDrawioLink);
 
   return (
       <article
@@ -171,19 +185,31 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
                   >
                     <ArrowUpRight size={14} /> Live
                   </a>
-              ) : !project.drawioLink ? (
+              ) : !hasAnyDrawioLink ? (
                   <span className="text-xs text-base-content/50">Local Project</span>
               ) : null}
 
-              {project.drawioLink && (
+              {firstDrawioLink && (
                   <a
-                      href={project.drawioLink}
+                      href={firstDrawioLink}
                       download
                       target="_blank"
                       rel="noopener noreferrer"
                       className="underline-offset-4 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
                   >
-                    <Workflow size={14} /> Download Draw.io
+                    <Workflow size={14} /> Draw.io 1
+                  </a>
+              )}
+
+              {secondDrawioLink && (
+                  <a
+                      href={secondDrawioLink}
+                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline-offset-4 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
+                  >
+                    <Workflow size={14} /> Draw.io 2
                   </a>
               )}
             </div>

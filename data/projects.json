@@ -25,6 +25,9 @@
     "documentationLink": "",
     "powerpointLink": "",
     "drawioLink": "/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio",
+    "drawioLinks": [
+      "/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio"
+    ],
     "images": [
       "/Shield.jpg"
     ],
@@ -36,8 +39,8 @@
     "title": "World of Chewing Gum (WOC)",
     "description": "A collaborative full-stack web application built to compare and rate chewing gum products using an agile Scrum framework.",
     "contributors": [
-
-      "Vincent Diergardt","Elias Kaiser"
+      "Vincent Diergardt",
+      "Elias Kaiser"
     ],
     "features": [
       "Product comparison and rating system",
@@ -56,6 +59,9 @@
     "documentationLink": "/assets/releases/Dokumentation_ Idee World of Chewing gum_One Shot_Elias und Vincent.docx",
     "powerpointLink": "",
     "drawioLink": "/assets/images/projects/WOC.drawio",
+    "drawioLinks": [
+      "/assets/images/projects/WOC.drawio"
+    ],
     "images": [
       "/assets/images/projects/Last.png"
     ],
@@ -87,6 +93,7 @@
     "documentationLink": "",
     "powerpointLink": "",
     "drawioLink": "",
+    "drawioLinks": [],
     "images": [
       "/assets/images/projects/Titocci.png"
     ],
@@ -114,6 +121,7 @@
     "documentationLink": "",
     "powerpointLink": "",
     "drawioLink": "",
+    "drawioLinks": [],
     "images": [
       "/assets/images/projects/Carosserie.jpg"
     ],
@@ -152,6 +160,7 @@
     "documentationLink": "/assets/releases/426 Gruppenprojekt_WISS Connect Praktikumsportal_.docx",
     "powerpointLink": "",
     "drawioLink": "",
+    "drawioLinks": [],
     "images": [
       "/assets/images/projects/Praktikum.jpg"
     ],
@@ -181,6 +190,7 @@
     "documentationLink": "/assets/releases/426 Gruppenprojekt_WISS Connect Praktikumsportal_.docx",
     "powerpointLink": "",
     "drawioLink": "",
+    "drawioLinks": [],
     "images": [
       "/assets/images/projects/Purpure.png"
     ],
@@ -216,7 +226,12 @@
     "downloadLink": "/assets/releases/My-Wiki-main.zip",
     "documentationLink": "",
     "powerpointLink": "/assets/releases/Modul 210_Präsentation_Wiki.js_Elias und Fabian.odp",
-    "drawioLink": ["/assets/images/projects/Techstack_Infrastruktur_Wiki.js.drawio","assets/images/projects/Datenbankmodell_Task_Aufgabenplaner Elias.drawio","public/assets/images/projects/Komponentendiagramm_Architektur_Wiki.js_Elias und Fabian.drawio"],
+    "drawioLink": "/assets/images/projects/Techstack_Infrastruktur_Wiki.js.drawio",
+    "drawioLinks": [
+      "/assets/images/projects/Techstack_Infrastruktur_Wiki.js.drawio",
+      "assets/images/projects/Datenbankmodell_Task_Aufgabenplaner Elias.drawio",
+      "public/assets/images/projects/Komponentendiagramm_Architektur_Wiki.js_Elias und Fabian.drawio"
+    ],
     "challenges": "Configuring persistent volume claims and Helm chart parameters inside a single-node Minikube environment.",
     "futurePlans": "Automate deployment backups and expand documentation categories.",
     "type": "Deployment"
@@ -249,6 +264,7 @@
     "documentationLink": "/assets/releases/Modul 210_Projektdokumentation_Wiki JS_Elias und Fabian.pdf",
     "powerpointLink": "/assets/images/projects/MangaDB_Praesentation.pptx",
     "drawioLink": "",
+    "drawioLinks": [],
     "challenges": "",
     "futurePlans": "",
     "type": "Full Stack"
@@ -271,6 +287,7 @@
     "documentationLink": "/assets/releases/Modul 335_Projektdokumentation_Aufgabenplanner Master Todo Mobile Native App_Elias Kaiser.pd",
     "powerpointLink": "",
     "drawioLink": "",
+    "drawioLinks": [],
     "images": [
       "/assets/images/projects/TodoApp.png"
     ],
@@ -301,6 +318,9 @@
     "documentationLink": "/assets/releases/Projektdokumentation_ Webapplikation Viteserver_Fussballquiz_Elias Kaiser (1).pdf",
     "powerpointLink": "",
     "drawioLink": "/assets/images/projects/Infrastruktur React Komponenten Fussballqiuz_Elias.drawio",
+    "drawioLinks": [
+      "/assets/images/projects/Infrastruktur React Komponenten Fussballqiuz_Elias.drawio"
+    ],
     "backendRepo": "https://github.com/elias4864/Fussballquizapplikation",
     "images": [
       "/assets/images/projects/Fussballquiz.png"
@@ -329,7 +349,11 @@
     "downloadLink": "/assets/releases/DockerKMU-main.zip",
     "documentationLink": "/assets/releases/Dokumentation_mit_Hermes_Testkonzept_Informatik-Edugames_AG__Elias_Kaiser_Modul_169-347 (1).pdf",
     "powerpointLink": "/assets/releases/Docker-Informatik_KMU_Edugames_AG_Elias_Kaiser_Modul_146-347 (1).odp",
-    "drawioLink": ["/assets/images/projects/WOC.drawio","public/assets/images/projects/Dockerinformatik-KMU_Edugames.drawio"],
+    "drawioLink": "/assets/images/projects/WOC.drawio",
+    "drawioLinks": [
+      "/assets/images/projects/WOC.drawio",
+      "public/assets/images/projects/Dockerinformatik-KMU_Edugames.drawio"
+    ],
     "images": [
       "/assets/images/projects/Nextcloud.png"
     ],
@@ -367,6 +391,9 @@
     "documentationLink": "/assets/releases/223_LB_Dokumentation.pdf",
     "powerpointLink": "",
     "drawioLink": "/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio",
+    "drawioLinks": [
+      "/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio"
+    ],
     "backendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-backend",
     "images": [
       "/assets/images/projects/MangaDB.png"
@@ -398,6 +425,7 @@
     "documentationLink": "",
     "powerpointLink": "",
     "drawioLink": "",
+    "drawioLinks": [],
     "challenges": "Configuring network endpoints and API widgets for smooth real-time telemetry monitoring.",
     "futurePlans": "Add custom alert thresholds and smart home integrations.",
     "type": "Microservices Deployment"
@@ -424,11 +452,13 @@
     "downloadLink": "/assets/releases/M450-Apptesting-CodeQuiz-main.zip",
     "documentationLinks": [
       "/assets/images/projects/Abschlussarbeit_Mögliche Features für SQ7A.pdf",
-      "/assets/releases/Sidequest 4B_Mockitotest_Elias Kaiser.pdf","/assets/images/projects/WISS_M450_3A und 3B.docx",
+      "/assets/releases/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
+      "/assets/images/projects/WISS_M450_3A und 3B.docx",
       "public/assets/images/projects/TDD(Test Driven Development).pdf"
     ],
     "powerpointLink": "",
     "drawioLink": "",
+    "drawioLinks": [],
     "frontendRepo": "https://github.com/elias4864/M450-Apptesting-CodeQuiz/tree/main/frontend",
     "images": [
       "/assets/images/projects/Wissquiz.png"
@@ -455,6 +485,7 @@
     "documentationLink": "",
     "powerpointLink": "",
     "drawioLink": "",
+    "drawioLinks": [],
     "images": [
       "/assets/MINI.png"
     ],
@@ -488,6 +519,9 @@
     "documentationLink": "/assets/images/projects/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
     "powerpointLink": "",
     "drawioLink": "/assets/images/projects/API-Integration(Service-Layer).drawio",
+    "drawioLinks": [
+      "/assets/images/projects/API-Integration(Service-Layer).drawio"
+    ],
     "frontendRepo": "https://github.com/elias4864/223",
     "images": [
       "/assets/images/projects/Wissquiz.png"
@@ -517,12 +551,13 @@
     ],
     "liveLink": "https://app.visily.ai/projects/5cb68c40-2b03-47d6-bfa1-80e98050b34d/boards/2314570/presenter?play-mode=All+screens",
     "downloadLink": "/assets/downloads/MasterTodo.apk",
-
     "documentationLink": "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf",
     "powerpointLink": "/assets/images/projects/LB-Vortrag_Elias_Leo und Vincent (1).pptx",
+    "drawioLink": "/assets/images/projects/Kreditkarten_Manager_Tool.drawio",
     "drawioLinks": [
       "/assets/images/projects/Kreditkarten_Manager_Tool.drawio",
-      "/assets/images/projects/254_Geschäftsprozessmanagment_Appentwicklung_Programmablaufplan.drawio",    "/assets/images/projects/254_2A_Flussdiagramm_und_Arbeitsanalyse.drawio.svg"
+      "/assets/images/projects/254_Geschäftsprozessmanagment_Appentwicklung_Programmablaufplan.drawio",
+      "/assets/images/projects/254_2A_Flussdiagramm_und_Arbeitsanalyse.drawio.svg"
     ],
     "images": [
       "/assets/images/projects/Maestro.png"
@@ -551,6 +586,7 @@
     "documentationLink": "",
     "powerpointLink": "",
     "drawioLink": "",
+    "drawioLinks": [],
     "images": [
       "/assets/images/projects/Shoppinglist.png"
     ],
@@ -581,11 +617,11 @@
     ],
     "documentationLink": "/assets/images/projects/Dokumentation_Topomedics AG_Elias_Fabian_Vincent_Leo.docx",
     "powerpointLink": "/assets/images/projects/254_Vortrag_Begleitprojekt-Topomedics_AG_Elias_Fabian_Leo_Vincent.pptx",
+    "drawioLink": "/assets/images/projects/Aktivitätendiagramm_Ersatzteilbestellung.drawio",
     "drawioLinks": [
       "/assets/images/projects/Aktivitätendiagramm_Ersatzteilbestellung.drawio",
       "/assets/images/projects/Aktivitätendiagramm.Elias_ Leo_Fabian Vincent.drawio"
     ],
-
     "images": [
       "/assets/images/projects/Topomedics.png"
     ],
@@ -611,9 +647,16 @@
       "Visily",
       "UI/UX Design"
     ],
-    "documentationLink": ["/assets/releases/DokumentationLiftMate (2).pdf","/assets/images/projects/PoC_Liftmate_Leo_Elias_Fabian_Vincent.docx"],
+    "documentationLink": [
+      "/assets/releases/DokumentationLiftMate (2).pdf",
+      "/assets/images/projects/PoC_Liftmate_Leo_Elias_Fabian_Vincent.docx"
+    ],
     "powerpointLink": "/assets/releases/Vortrag_Pitch_Laptopstütze_Elias_Fabian_Leo.pptx",
-    "drawioLink":[ "/assets/images/projects/09_StakeholderMap_Basic_DE_Elias_VIncent_Leo_Fabian (1).pdf", "/assets/images/projects/Risikoanalyse_Laptopstütze_Vincent_Leo_Elias_Fabian.draw.io 1.drawio"],
+    "drawioLink": "/assets/images/projects/09_StakeholderMap_Basic_DE_Elias_VIncent_Leo_Fabian (1).pdf",
+    "drawioLinks": [
+      "/assets/images/projects/09_StakeholderMap_Basic_DE_Elias_VIncent_Leo_Fabian (1).pdf",
+      "/assets/images/projects/Risikoanalyse_Laptopstütze_Vincent_Leo_Elias_Fabian.draw.io 1.drawio"
+    ],
     "images": [
       "/assets/images/projects/LiftMate2.png"
     ],
@@ -645,6 +688,9 @@
     "documentationLink": "public/assets/images/projects/Dokumentation_Elektroshop_Vincent_Elias_Andreas.docx.pdf",
     "powerpointLink": "",
     "drawioLink": "/assets/images/projects/Organigramm.drawio",
+    "drawioLinks": [
+      "/assets/images/projects/Organigramm.drawio"
+    ],
     "images": [
       "/assets/images/projects/Elektro.png"
     ],
@@ -656,7 +702,6 @@
   {
     "title": "Codexo GmbH & Swiss Albanian Network – Application & Web Presence",
     "description": "Tailored web presence and application showcase designed for Codexo GmbH within the Swiss Albanian Network ecosystem, highlighting full-stack web engineering, UI/UX design, application security, and practical software projects at the intersection of business, design, and IT.",
-
     "features": [
       "Project showcase with filtering by tech stack and project category",
       "Overview of full-stack architectures, RBAC/JWT security, Docker, and CI/CD pipelines",
@@ -671,13 +716,15 @@
     "documentationLink": "",
     "powerpointLink": "",
     "drawioLink": "",
-    "images": ["/assets/images/projects/Swissalbanian.jpg"],
+    "drawioLinks": [],
+    "images": [
+      "/assets/images/projects/Swissalbanian.jpg"
+    ],
     "videos": [],
     "challenges": "Structuring and presenting full-stack projects, technical documentation, and web engineering capabilities in a clear, targeted format tailored to Codexo GmbH and the Swiss Albanian Network.",
     "futurePlans": "Add dedicated project previews, custom UI mockups, and additional live demos tailored to the application dossier.",
     "type": "Full Stack"
   },
-
   {
     "title": "Wissquiz – Full-Stack & Multiuser Quiz Platform",
     "description": "Full-stack quiz web application with a frontend and backend supporting multi-user management, role-based access control, score evaluation, and automated testing.",
@@ -703,6 +750,9 @@
     "documentationLink": "/assets/images/projects/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
     "powerpointLink": "",
     "drawioLink": "/assets/images/projects/API-Integration(Service-Layer).drawio",
+    "drawioLinks": [
+      "/assets/images/projects/API-Integration(Service-Layer).drawio"
+    ],
     "images": [
       "/assets/images/projects/Multiuser.png"
     ],
