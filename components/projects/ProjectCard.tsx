@@ -45,6 +45,9 @@ export interface Project {
   contributors?: string[];
   documentationLink?: string;
   powerpointLink?: string;
+  powerpointLinks?: string[];
+  powerpointLink1?: string;
+  powerpointLink2?: string;
   drawioLink?: string;
   drawioLinks?: string[];
   drawioLink1?: string;
@@ -63,6 +66,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
       project.description.length > 64
           ? `${project.description.slice(0, 64)}...`
           : project.description;
+
+  const firstPowerpointLink =
+      project.powerpointLink1 ||
+      project.powerpointLink ||
+      (Array.isArray(project.powerpointLinks) ? project.powerpointLinks[0] : undefined);
+
+  const secondPowerpointLink =
+      project.powerpointLink2 ||
+      (Array.isArray(project.powerpointLinks) ? project.powerpointLinks[1] : undefined);
+
+  const hasAnyPowerpointLink = Boolean(firstPowerpointLink || secondPowerpointLink);
 
   const firstDrawioLink =
       project.drawioLink1 ||
@@ -157,16 +171,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
                   >
                     <Download size={14} /> Download Project Files
                   </a>
-              ) : project.powerpointLink ? (
-                  <a
-                      href={project.powerpointLink}
-                      download
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline-offset-4 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
-                  >
-                    <Presentation size={14} /> Download Powerpoint-Presentation
-                  </a>
               ) : project.documentationLink ? (
                   <a
                       href={project.documentationLink}
@@ -185,9 +189,33 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }) => {
                   >
                     <ArrowUpRight size={14} /> Live
                   </a>
-              ) : !hasAnyDrawioLink ? (
+              ) : !hasAnyPowerpointLink && !hasAnyDrawioLink ? (
                   <span className="text-xs text-base-content/50">Local Project</span>
               ) : null}
+
+              {firstPowerpointLink && (
+                  <a
+                      href={firstPowerpointLink}
+                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline-offset-4 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
+                  >
+                    <Presentation size={14} /> {secondPowerpointLink ? 'PowerPoint 1' : 'PowerPoint'}
+                  </a>
+              )}
+
+              {secondPowerpointLink && (
+                  <a
+                      href={secondPowerpointLink}
+                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline-offset-4 decoration-dashed hover:underline rounded-lg inline-flex items-center gap-1 hover:text-primary text-sm transition-transform duration-300 hover:translate-x-1"
+                  >
+                    <Presentation size={14} /> PowerPoint 2
+                  </a>
+              )}
 
               {firstDrawioLink && (
                   <a

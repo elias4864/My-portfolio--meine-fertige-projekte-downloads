@@ -46,14 +46,29 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
   // Memoize project data
   const project = useMemo(() => selectedProject, [selectedProject]);
 
-  const firstDrawioLink =
-      project?.drawioLink1 ||
-      project?.drawioLink ||
-      (Array.isArray(project?.drawioLinks) ? project.drawioLinks[0] : undefined);
+  const powerpointList = useMemo(() => {
+    if (!project) return [];
+    const collected = [
+      project.powerpointLink1,
+      project.powerpointLink2,
+      ...(Array.isArray(project.powerpointLinks) ? project.powerpointLinks : []),
+      project.powerpointLink,
+    ].filter((link): link is string => Boolean(link && link.trim()));
 
-  const secondDrawioLink =
-      project?.drawioLink2 ||
-      (Array.isArray(project?.drawioLinks) ? project.drawioLinks[1] : undefined);
+    return Array.from(new Set(collected));
+  }, [project]);
+
+  const drawioList = useMemo(() => {
+    if (!project) return [];
+    const collected = [
+      project.drawioLink1,
+      project.drawioLink2,
+      ...(Array.isArray(project.drawioLinks) ? project.drawioLinks : []),
+      project.drawioLink,
+    ].filter((link): link is string => Boolean(link && link.trim()));
+
+    return Array.from(new Set(collected));
+  }, [project]);
 
   return (
       <AnimatePresence>
@@ -138,49 +153,37 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                           </motion.a>
                       )}
 
-                      {/* Link zur PowerPoint-Präsentation */}
-                      {project.powerpointLink && (
+                      {/* Links zu PowerPoint-Präsentationen */}
+                      {powerpointList.map((pptLink, idx) => (
                           <motion.a
+                              key={`${pptLink}-${idx}`}
                               whileHover={{ x: 3 }}
-                              href={project.powerpointLink}
+                              href={pptLink}
+                              download
                               target="_blank"
                               rel="noopener noreferrer"
                               className="underline-offset-6 decoration-dashed hover:underline rounded-lg group inline-flex items-center gap-1 hover:text-primary font-geist text-sm cursor-pointer transition-all duration-300"
                           >
                             <Presentation size={14} />
-                            PowerPoint
+                            {powerpointList.length > 1 ? `PowerPoint ${idx + 1}` : "PowerPoint"}
                           </motion.a>
-                      )}
+                      ))}
 
-                      {/* Download Draw.io Diagramm 1 */}
-                      {firstDrawioLink && (
+                      {/* Links zu Draw.io Diagrammen */}
+                      {drawioList.map((diagramLink, idx) => (
                           <motion.a
+                              key={`${diagramLink}-${idx}`}
                               whileHover={{ x: 3 }}
-                              href={firstDrawioLink}
+                              href={diagramLink}
                               download
                               target="_blank"
                               rel="noopener noreferrer"
                               className="underline-offset-6 decoration-dashed hover:underline rounded-lg group inline-flex items-center gap-1 hover:text-primary font-geist text-sm cursor-pointer transition-all duration-300"
                           >
                             <Workflow size={14} />
-                            Draw.io 1
+                            {drawioList.length > 1 ? `Draw.io ${idx + 1}` : "Draw.io"}
                           </motion.a>
-                      )}
-
-                      {/* Download Draw.io Diagramm 2 */}
-                      {secondDrawioLink && (
-                          <motion.a
-                              whileHover={{ x: 3 }}
-                              href={secondDrawioLink}
-                              download
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="underline-offset-6 decoration-dashed hover:underline rounded-lg group inline-flex items-center gap-1 hover:text-primary font-geist text-sm cursor-pointer transition-all duration-300"
-                          >
-                            <Workflow size={14} />
-                            Draw.io 2
-                          </motion.a>
-                      )}
+                      ))}
 
                       {project.downloadLink && (
                           <motion.a

@@ -9,6 +9,7 @@ import {
   SiKotlin,
   SiAndroidstudio,
   SiGithub,
+  SiGithubactions,
   SiSpring,
   SiSpringboot,
 } from "react-icons/si";
@@ -34,8 +35,10 @@ const whatIDo = [
     text: "Implement authentication & role-based access (JWT token-based authentication) with Spring Security (IAM)",
     icon: SiSpring,
   },
-
-
+  {
+    text: "Automate CI/CD workflows, builds, tests, and deployments with GitHub Actions",
+    icon: SiGithubactions,
+  },
   {
     text: "Optimize Accessibility and User Experience of UIs using Tailwind CSS",
     icon: SiTailwindcss,
