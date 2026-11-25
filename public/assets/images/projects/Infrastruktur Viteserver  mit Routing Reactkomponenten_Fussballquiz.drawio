@@ -1,0 +1,290 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
+  <diagram name="Seite-1" id="tsmMBYp5IE68hzf-Pbke">
+    <mxGraphModel dx="4755" dy="1375" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hhp1moWoIRyvFcI05odu-1" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-1" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Google Webbrowser:&lt;div&gt;&lt;b&gt;Port:&amp;nbsp;http://localhost:5173&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="190" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-3" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#f8cecc;strokeColor=#b85450;" value="React app" vertex="1">
+          <mxGeometry height="80" width="120" x="380" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;b&gt;rendert auf Port&amp;nbsp;http://localhost:5173/kategorien&amp;nbsp; alle Kategorien&amp;nbsp;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="390" x="-30" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-6" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=90;" value="" vertex="1">
+          <mxGeometry height="578.11" width="143.76" x="338.12" y="49.72" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="505" x="-1290" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-11" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Vite/ Webserver&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="120" x="-70" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-14" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="&amp;nbsp;&lt;b&gt;CMD-Kommandozeile Projektverzeichnis&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;:&amp;nbsp;\OneDrive - Kalaidos Bildungsgruppe AG\Documents\WISS\WISS-Module\Semester 3\294-Frontend einer interaktiven Webapplikation realisieren\NodejsServer\Fussballquiz React Projekt\m294-game&lt;/span&gt;" vertex="1">
+          <mxGeometry height="155" width="1650" x="-2020" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Unterordner : /pages&lt;div&gt;mit&amp;nbsp; allen Komponete der Seiten für unterschiedliche Ansicht&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="130" x="330" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-30" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-27" style="endArrow=classic;html=1;rounded=0;exitX=0.079;exitY=1.009;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="tIbI6A7mEQhwVB5nKfqB-31" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="320" y="530" as="sourcePoint" />
+            <mxPoint x="190" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&amp;nbsp; Komponente&lt;/b&gt;:&amp;nbsp; Buttons&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;div&gt;-Buttons mit Funktionen für FrageButtons inklusive CSS&amp;nbsp; Styling&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="210" x="-40" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-36" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-27" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" target="tIbI6A7mEQhwVB5nKfqB-37" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="510" as="sourcePoint" />
+            <mxPoint x="500" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&amp;nbsp;GlobalNaviagtion:&lt;/b&gt;&lt;div&gt;Hauptkomponente die alle Pages wie SPielregeln, Kateogrieauswahl,Impressum etc&amp;nbsp; durch Links und dem zugehörigen Path/URL verindet und dafür sorgt dass alle Komponenten korrekt gerendert werden&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="250" x="570" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Unterordner&amp;nbsp; mit Komponenten:&lt;/b&gt;&lt;div&gt;/components&amp;nbsp;&lt;/div&gt;&lt;div&gt;mit JSX Files&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="345" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-41" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-40" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="650" as="sourcePoint" />
+            <mxPoint x="270" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Komponente:&amp;nbsp;&amp;nbsp;&lt;br&gt;Kategorieauswahl&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Kategorieauswahl mit allen Kategorien welche einer Frge zugeordnet ist&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="150" x="170" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Impressum:&amp;nbsp;&lt;/b&gt;&amp;nbsp;Creator des Spiles mit Informationen zum Spiel und der SPielanleitugn soiwe ein Button welcher zum Quiz/Game Bildschirm wechselt&lt;b&gt;&amp;nbsp;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="220" x="-10" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-45" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-27" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="540" />
+            </Array>
+            <mxPoint x="120" y="570" as="sourcePoint" />
+            <mxPoint x="190" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Spielansicht&lt;/b&gt;: Interaktie Gamesession welches das Gameboard darstellt mit den Fragen und Antworten sowie dem Spielbericht&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="220" x="-120" y="496.87" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-48" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-40" style="endArrow=classic;html=1;rounded=0;exitX=0.356;exitY=1.071;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="710" as="sourcePoint" />
+            <mxPoint x="388" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hhp1moWoIRyvFcI05odu-5" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="397.5" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Question Display:&lt;/b&gt;&lt;div&gt;Alle Fragen werden statisch angezeigt in einem&amp;nbsp; Array Object&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="135" x="330" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-42" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-650" y="685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;b&gt;Router: Hauptzentrale(Gehirn der App)&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;App.jsx &lt;/b&gt;: Ausgabe der App unterteilt in Layout Funktion(blauer Schattierung aussen am Rand für das Layout des Gameboard(Box) und der Navigationsleiste die eingebunden wird sowie dem Outlet , dass für jeden unterschiedlichen Path eine andere Ansicht anzeigt(&lt;b&gt;Wechsel der URL!&lt;/b&gt; mit blauer Schattierung aussen und&amp;nbsp; der App Funktion , wo alle&amp;nbsp; unteschiedlichen Komonenten&lt;div&gt;an die entsprechene Routen schickt und Verindung von Outlet und GlobalNaviagtion macht(WIchtig: &amp;lt;BrowserRouter&amp;gt; umschliesst alle Router damit Browsesr Routen erkennt&lt;/div&gt;&lt;div&gt;-Funktion 404: Fehlerlemdlugn falls GlobalNaviagiton eien Route nict erkennt gitb Nachricht &quot;404&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="290" width="295" x="-475" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-57" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="450" y="533.75" as="sourcePoint" />
+            <mxPoint x="540" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-58" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Spielregeln:&amp;nbsp;&lt;/b&gt;&lt;div&gt;-Info über alle Spielregeln des Fussballquizes 2026 sowie&amp;nbsp; 4 Evenhandler mit Onclick Funktionen&amp;nbsp; wird simuliert&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="370" x="540" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="wH0ZzwXyRrMnyn0kYzhH-1" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-40" style="endArrow=classic;html=1;rounded=0;exitX=0.868;exitY=1.05;exitDx=0;exitDy=0;exitPerimeter=0;" target="wH0ZzwXyRrMnyn0kYzhH-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="750" as="sourcePoint" />
+            <mxPoint x="530" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wH0ZzwXyRrMnyn0kYzhH-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Komponente :&lt;/b&gt; Auswertung mit allen Fragen die korrekt beantowrtet werden angzeigt werdne sowie auch die falschen werdne einzeln aufgelistet in einer Tabelle(Beispielauswertung eines Users)" vertex="1">
+          <mxGeometry height="70" width="300" x="550" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="wH0ZzwXyRrMnyn0kYzhH-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;b&gt;ladet Daten&amp;nbsp; aus Rest-APIüber den Router(App.jsx)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="310" x="160" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="wH0ZzwXyRrMnyn0kYzhH-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="490" as="sourcePoint" />
+            <mxPoint x="620" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-35" edge="1" parent="1" source="wH0ZzwXyRrMnyn0kYzhH-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-480" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-40" edge="1" parent="1" source="wH0ZzwXyRrMnyn0kYzhH-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-360" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wH0ZzwXyRrMnyn0kYzhH-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Main.jsx:&lt;/b&gt;&lt;br&gt;Alle Komponenten/Pages fürs Spiel werden vom&amp;nbsp; BrowserRouter umschlossen im RootVerzeichnis der gesamten DOM-Baumstruktur: Verbindet alle Komponenten des Spielfelds aus der App.jsx udn fügt in im Root Div ein&amp;nbsp;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="245" x="-290" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="YTM7VDPqh-nyQGD1YG7d-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;Unterordner /test:&lt;/b&gt;&lt;div&gt;Mocking Tests um die DOM Komponenten zu simulieren und&amp;nbsp; die Eingabewerte zu validieren&lt;br&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="190" x="330" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="YTM7VDPqh-nyQGD1YG7d-6" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="520" y="880" as="sourcePoint" />
+            <mxPoint x="570" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YTM7VDPqh-nyQGD1YG7d-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;App.test.jsx&lt;/b&gt;&lt;div&gt;Routing der Navigation wird geprüft ob sie angezeigt wird&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="570" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="YTM7VDPqh-nyQGD1YG7d-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="870" as="sourcePoint" />
+            <mxPoint x="270" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YTM7VDPqh-nyQGD1YG7d-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;GlobalNavigation.test.jsx&lt;/b&gt;&lt;div&gt;Mocking Tests&amp;nbsp; dre GlobalNavigation um zu überprüfen ob einzeln Paths der untershciedlicdh URLS stimmt und Routing aller Inhalte funktioniert und korrekt die INhalte anzeigt pro Komponente/Funktion&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="200" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="YTM7VDPqh-nyQGD1YG7d-11" edge="1" parent="1" source="YTM7VDPqh-nyQGD1YG7d-3" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="550" y="970" as="sourcePoint" />
+            <mxPoint x="600" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YTM7VDPqh-nyQGD1YG7d-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Kategorieauswahl.test.jsx&lt;/b&gt;&lt;div&gt;Mocking Test um zu überprüfen ob einzelen Kateogiren&amp;nbsp; vorhand sind&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="210" x="600" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="YTM7VDPqh-nyQGD1YG7d-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Question.test.jsx&lt;/b&gt;&lt;div&gt;Mocking Tests der Fragen&amp;nbsp; welcher durhc Buttons zu einer Kateogir anhand der catId angehören&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="50" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="YTM7VDPqh-nyQGD1YG7d-16" edge="1" parent="1" source="YTM7VDPqh-nyQGD1YG7d-3" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="1030" as="sourcePoint" />
+            <mxPoint x="500" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YTM7VDPqh-nyQGD1YG7d-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Spielregeln.test.jsx&lt;/b&gt;&lt;div&gt;Mocking Tests der&amp;nbsp; Komponente Spielregeln welcher der Text simuliert&amp;nbsp; und die Naviagiton zum Kategorien Button&amp;nbsp; mit dem richtigen Pfad aufgerufen wird&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="250" x="470" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-10" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.002;entryY=0.554;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.928;exitY=0.535;exitDx=0;exitDy=0;exitPerimeter=0;" target="tIbI6A7mEQhwVB5nKfqB-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="startet Vite Server&amp;nbsp; i n Fronten ddurch (npm run dev) auf&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="320" x="-430" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Home:&lt;/b&gt;&amp;nbsp; Funktion Home, die&amp;nbsp; den Inhalt des Entrypoints / anzeigt mit dem Startbildschirm der React App und&amp;nbsp; der User eine Page aususche kann ind er Navbar" vertex="1">
+          <mxGeometry height="70" width="300" x="620" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="Kommuniziert zwischen Backend also Port 8081:80 aus der RestApi und ladet Daten&amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="480" x="-1315" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-47" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-780" y="433" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Index.css :&lt;div&gt;Styling der Komponenten sowie Bilder(Favicon-Icon)der Einstiegsseite auf Port: localhost:// 5500&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="175" x="-650" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;App.css:&lt;/b&gt;&lt;div&gt;Gesamtes Styling durch Klassen aller&amp;nbsp; Komponente von React in einem&amp;nbsp; Stylesheet&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="135" x="-785" y="660" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Importiert index.css&amp;nbsp;&lt;/span&gt;" link="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Importiert index.css und App.jsxund fügt&amp;nbsp; den Inhalt der eigentlih Ausgabe( ein welche durch(&amp;lt;App&amp;gt; im Root&amp;lt;Div eingebunden ist&lt;/span&gt;" id="UzOyy9jRKVCqiErysxOY-39">
+          <mxCell parent="1" style="text;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="50" width="560" x="-560" y="330" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="fügt HTML Code der App.jsxim Return Statement im Div &amp;lt;Root ein&amp;gt;&lt;div&gt;anhand des Elements Id&quot;root&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="380" x="-735" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-50" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="Verschönert das Layout der Einstiegsseite der Daten aus der Rest-ApI" vertex="1">
+          <mxGeometry height="30" width="400" x="-880" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-56" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-27" style="endArrow=classic;html=1;rounded=0;entryX=1.014;entryY=0.397;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" target="tIbI6A7mEQhwVB5nKfqB-44" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="510" as="sourcePoint" />
+            <mxPoint x="330" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-57" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="entscheidet welche Komponente jeweils geladen wird" vertex="1">
+          <mxGeometry height="30" width="310" x="-140" y="612.5" as="geometry" />
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-59" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-53" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1.003;exitY=0.458;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="580" as="sourcePoint" />
+            <mxPoint x="330" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-60" edge="1" parent="1" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="tIbI6A7mEQhwVB5nKfqB-40" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-170" y="770" as="sourcePoint" />
+            <mxPoint x="-120" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-61" connectable="0" parent="UzOyy9jRKVCqiErysxOY-60" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Verteiler der URLd auf Komponente ,die in der Navigationsleiste am Ende&lt;div&gt;angezeugt werde n&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.7268" y="-11" as="geometry">
+            <mxPoint x="57" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-63" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="alle Komponenten der React App w werden im App.css&amp;nbsp; designed" vertex="1">
+          <mxGeometry height="30" width="370" x="-865" y="606.87" as="geometry" />
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-64" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="490" as="sourcePoint" />
+            <mxPoint x="750" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-65" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;KategoryListe:&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;font-weight: bold; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Tabelle welche alle Kategorien anzeigt udn von der Rest-ApI aus em Backen durhc die HTTP Methoden aufruft und einze KategorieListe löscht(Delete-Methode&lt;/div&gt;" vertex="1">
+          <mxGeometry height="65" width="300" x="750" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-66" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" target="UzOyy9jRKVCqiErysxOY-67" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="490" as="sourcePoint" />
+            <mxPoint x="620" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UzOyy9jRKVCqiErysxOY-67" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;KategorieForm:&amp;nbsp; &lt;/b&gt;Kategorieforrmular, dass anhand der ID oder dem Kateogirnamen eine neu Kateogri zur Kateogry Liste hinzufügt und in der URL&amp;nbsp;http://localhost:5173/kategorien&amp;nbsp;&lt;div&gt;anzeigt und dorthin navigiet nachdme der Submit Button gedürckt wurde(POST-Methode)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="360" x="680" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="hhp1moWoIRyvFcI05odu-2" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.007;entryY=0.565;entryDx=0;entryDy=0;entryPerimeter=0;" target="tIbI6A7mEQhwVB5nKfqB-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hhp1moWoIRyvFcI05odu-3" edge="1" parent="1" source="tIbI6A7mEQhwVB5nKfqB-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.422;entryY=-0.024;entryDx=0;entryDy=0;entryPerimeter=0;" target="tIbI6A7mEQhwVB5nKfqB-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hhp1moWoIRyvFcI05odu-4" edge="1" parent="1" source="UzOyy9jRKVCqiErysxOY-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="tIbI6A7mEQhwVB5nKfqB-9" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-650" y="433" as="sourcePoint" />
+            <mxPoint x="-780" y="433" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tIbI6A7mEQhwVB5nKfqB-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;b&gt;Index.htm&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;l: Einstiegspunkt&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;der Website mit dem&amp;nbsp;&lt;/span&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Div&amp;lt;root&amp;gt; im Wurzellverzeichnis welcehs alle darunterliegenden Komponenten&lt;/div&gt;&lt;div&gt;(/pages/comonents)&amp;nbsp;&lt;/div&gt;&lt;div&gt;der DOM-Baumstruktur ladet&amp;nbsp; Beinhaltet alle Node JS Module&amp;nbsp; und ist mit Main.jsx Komponente verbunden&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="590" x="-1332.5" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="hhp1moWoIRyvFcI05odu-6" edge="1" parent="1" source="YTM7VDPqh-nyQGD1YG7d-3" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="220" y="860" as="sourcePoint" />
+            <mxPoint x="210" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,683 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
+  <diagram name="Seite-1" id="yDeUuJ6rRxMAhbkXqMcl">
+    <mxGraphModel dx="6065" dy="3780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-2" edge="1" parent="1" source="rz9MpftG4LUBUy3UAz2q-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="1.User ruft Website auf&amp;nbsp; Port&amp;nbsp; http://localhost:5173/ ausund kan zwischen vershcie Kateogri wie Player, Nationalität auswählen" vertex="1">
+          <mxGeometry height="90" width="180" x="310" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-4" edge="1" parent="1" source="rz9MpftG4LUBUy3UAz2q-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="2.User wählt eine Kategorie beispielsweise &quot;Nationalität" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-6" edge="1" parent="1" source="rz9MpftG4LUBUy3UAz2q-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="3.Das React Server&amp;nbsp; wählt von der Compnents&amp;nbsp; questions 3 zufällige Fragen aus" vertex="1">
+          <mxGeometry height="70" width="170" x="340" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-8" edge="1" parent="1" source="rz9MpftG4LUBUy3UAz2q-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="442.5" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="4. Die erste Fragen erhält Antwrotmöglichketien zu de Frage durch Buttons angezeigt" vertex="1">
+          <mxGeometry height="90" width="155" x="365" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-10" edge="1" parent="1" source="rz9MpftG4LUBUy3UAz2q-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="5.Wenn der Benitzer eine ANtowrt ausgesucht aht wird si durec ein Click ausgewertet" vertex="1">
+          <mxGeometry height="70" width="140" x="400" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-12" edge="1" parent="1" source="rz9MpftG4LUBUy3UAz2q-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="6. Der user erhält eien Antwort derucn Alert ob die Antwore trichtis ist ode rer erneut eien CHance hat. Falls sie richtig ist erhält er eien Punkt" vertex="1">
+          <mxGeometry height="90" width="190" x="420" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-14" edge="1" parent="1" source="rz9MpftG4LUBUy3UAz2q-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="585" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="7.Die Punkteanzahl wird in der Komponente unter compnents in der Auswertung.jsx" vertex="1">
+          <mxGeometry height="60" width="230" x="470" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-16" edge="1" parent="1" source="rz9MpftG4LUBUy3UAz2q-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="1290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="8.Die nächste Frage erscheint auf dem Dashboard in der App.jsx mit&amp;nbsp; jeweils 3 Antwortmöglichkeiten&amp;nbsp;" vertex="1">
+          <mxGeometry height="70" width="200" x="540" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-18" edge="1" parent="1" source="rz9MpftG4LUBUy3UAz2q-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="1430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="9. Nachdem User ein Button acngelickt hat wird die Antowrt ausgewertet ud es wrid ihm mitgeteilt ob er die Frage richtig oder falsch beantowrte hat mit einer alert Rückmeldung" vertex="1">
+          <mxGeometry height="40" width="540" x="580" y="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-20" edge="1" parent="1" source="rz9MpftG4LUBUy3UAz2q-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="915" y="1560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="10. Wenn alle Fragen der Objekte beantowotet wurden&amp;nbsp; wird der Gesamtpuntekstand &quot;points&quot; angezeigt im Dashboard" vertex="1">
+          <mxGeometry height="70" width="230" x="800" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-22" edge="1" parent="1" source="rz9MpftG4LUBUy3UAz2q-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="995" y="1720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="11. Der Endspielzustand wir in dre Component &quot;Auswertung.js&quot; angezeigt und duchr EndState deklariert. Es wir dien BUtton gemach der bei der erichti Antwort erhöht wird um 1 mit count+" vertex="1">
+          <mxGeometry height="80" width="250" x="870" y="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="rz9MpftG4LUBUy3UAz2q-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="12. Der User hat die Möglichkeit&amp;nbsp; die Spielregeln.jxs Seite oder das Impressum.jsx zu lesen und zugreifen über die einzelne paths&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="255" x="935" y="1720" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User kann innerhalb der Navigaitonsleiste das SPiel beginne unter /quiz oder andere Pages aufrufen wie die Kateogiren, Spileanleitung(/spielregeln), Kategorilsite udn Fragelist anzeugen oder das Impressum (Über das Spiel Informationen lesen wie der Entwickler etc.)" vertex="1">
+          <mxGeometry height="110" width="320" x="1360" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-5" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1460" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Um das Quiz zu starten derückt er auf&amp;nbsp; den Button &quot;&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="1400" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-7" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1485" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Die Komponente Spielanischt.jsx wird geladen udn User drückt auf &lt;b&gt;&quot;Quiz jetzt starten&quot;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="210" x="1380" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-9" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1525" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Die erste Frage erscheint und User kann eine&amp;nbsp; &amp;nbsp;Antwort der &lt;b&gt;4 Buttons&lt;/b&gt; auslesen&amp;nbsp; und den entsprechenden Button ancklciekn&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="170" x="1440" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Wenn die Antwort also der Button falsch ist Kommt ein Popup mit Nachricht &quot;&lt;b&gt;Das ist leider die&amp;nbsp; falsche Antwort,du hast noch einen Versuch übrig!&quot;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="200" x="1260" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-22" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1355" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Der UseState de Bildes ändert von dem Frag symbol zum oten Falsch Button durch anlicken der falschen&amp;nbsp; von Frage zu UseState = Falsch geändert mit der Onlick Funktion duerhc den Eventhandler" vertex="1">
+          <mxGeometry height="90" width="210" x="1250" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-18" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1640" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-15" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Frage korrekt beantwortet?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="105" x="1472.5" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-16" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.585;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" target="qOeygPqCB-dWXqNPJDOW-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;b&gt;Nein&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="50" x="1395" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;b&gt;Ja&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="40" x="1580" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-21" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.52;entryY=-0.053;entryDx=0;entryDy=0;entryPerimeter=0;" target="qOeygPqCB-dWXqNPJDOW-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-24" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1380.0000000000002" y="1190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Der Count Zähler&amp;nbsp; des Score wird&quot;Aktueller Punktestand wird bei jedem Klick um 1 Zahl kleiner :" vertex="1">
+          <mxGeometry height="70" width="160" x="1300" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-26" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1380" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Die Korrekte Lösung wird durch eien Alert Meldung angzeigt mir der Nachricht: &quot;&amp;nbsp;Die korrekte Antwort ist+correct_answer&quot;(Event Bubbling)" vertex="1">
+          <mxGeometry height="80" width="180" x="1292.5" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-30" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524.9999999999995" y="1700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-32" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1370" y="1420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Nach 6 Runden wird&amp;nbsp; die Endpunktzahl durech die Variable count berechnet" vertex="1">
+          <mxGeometry height="60" width="120" x="1465" y="1560" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;b&gt;Endergebnis&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="1370" y="1530" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-35" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1667.5" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Wen User der korrekte Button drückt also d erscheint die Alert&amp;nbsp; Poputmessage&amp;nbsp; &quot;Richtig&quot;!" vertex="1">
+          <mxGeometry height="100" width="165" x="1585" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-37" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1700" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Der Use States der Bildes oberhalb der Fage änder vom Value Frage zu Congratulatiuosn und das Bild mit Konfettis wird angeug nichtm erh das Fragzeichen&amp;nbsp;&lt;div&gt;Wechsel von Use State= &quot;Frage&quot; zu &quot;Congratulations&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="220" x="1590" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-39" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1755" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Die Aktuelle Punktzahl ehöht sich um eine Zahlsteth 1 bei de Nachricht: &quot;Aktueller Score: 1&quot;&lt;div&gt;==&amp;gt;Laufvariable aht sich um 1 erhöt&lt;br&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="230" x="1640" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Der Frage Idney erhöht sicih bei jdem DUrhclauf der Frage um 1&amp;nbsp;" vertex="1">
+          <mxGeometry height="70" width="150" x="1720" y="1390" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-49" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1590" y="1585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Der Use State ändert sich bei jeder Frage neu also vonden Konffetis zum roten Fragezeichenmännchen zurück, Punktestand bleibt gleich" vertex="1">
+          <mxGeometry height="90" width="190" x="1730" y="1680" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Kurze Wartezeit zwischen Antwortübertragung und bsi neue Antwort erscheint durch&amp;nbsp; setTimeout von 8000 ms" vertex="1">
+          <mxGeometry height="70" width="210" x="1710" y="1510" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-50" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.443;entryY=-0.027;entryDx=0;entryDy=0;entryPerimeter=0;" target="qOeygPqCB-dWXqNPJDOW-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-51" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.406;entryY=0.058;entryDx=0;entryDy=0;entryPerimeter=0;" target="qOeygPqCB-dWXqNPJDOW-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Das Popup Mesage &quot;Korreket Antwort und der Vlaue der richtigen Antwort duerch correct_ansewr in Objekt eingetragen erscheint beim Anclickend des Button smmit der richtigen Antwort" vertex="1">
+          <mxGeometry height="80" width="270" x="1710" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-58" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1400" y="1830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-55" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="120" width="137.5" x="1462.5" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-57" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1640" y="1820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-56" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;b&gt;Quiz erneut beginnen&amp;nbsp; ?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="1455" y="1740" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-59" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="Ja" vertex="1">
+          <mxGeometry height="30" width="40" x="1400" y="1730" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-75" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1840" y="1865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User kann in der Navigaiotnsleiste die Komponenten Spielregeln oder, Kategorien, oder Imprsessum , oder Frageformualr oder Kateogriformular auswählen in&amp;nbsp; durch die einzelen Paths in der URL auf die Pages wechseln&amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="130" width="190" x="1720" y="2095" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-73" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1985" y="1960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-76" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2210" y="1862.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-65" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Spielregeln:&lt;/b&gt;&lt;div&gt;Path:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;http://localhost:5173/spielregeln&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="270" x="1840" y="1825" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-74" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qOeygPqCB-dWXqNPJDOW-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User&amp;nbsp; wählt bei Navbar&amp;nbsp; die Page &quot;Spielregeln&quot; aus udn dreückt den Button" vertex="1">
+          <mxGeometry height="60" width="120" x="1925" y="1960" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Die Spielregeln des FUssballquiz werden aufgelistet" vertex="1">
+          <mxGeometry height="60" width="120" x="1925" y="2060" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-78" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2320" y="1990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-82" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2550" y="1875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-77" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Kategorien&lt;/b&gt;&lt;div&gt;&lt;b&gt;Path:&lt;/b&gt;&amp;nbsp;&amp;nbsp;http://localhost:5173/kategorien&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="220" x="2210" y="1825" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-80" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2320" y="2100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-79" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User dreückt in Navigationsleiste auf Button &quot;Kategorien&quot;" vertex="1">
+          <mxGeometry height="60" width="120" x="2260" y="1990" as="geometry" />
+        </mxCell>
+        <mxCell id="82NVFoRLN2W2onjhO9dU-3" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2365" y="2290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-81" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Alle Kategorien wie Nationalität werden untereinander aufgeliste in der Braunen Box" vertex="1">
+          <mxGeometry height="110" width="210" x="2260" y="2100" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-85" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2670" y="2020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="82NVFoRLN2W2onjhO9dU-1" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2910" y="1890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-84" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Impressum&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;b&gt;Path:&lt;/b&gt;&amp;nbsp;&amp;nbsp;http://localhost:5173/about&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="220" x="2560" y="1840" as="geometry" />
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-89" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2695" y="2160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User drückt in Navigationsleliste auf Button &quot;Impressum und die GlobalNavgation.jsx sucht dne link =&quot;categorien&quot;" vertex="1">
+          <mxGeometry height="80" width="230" x="2580" y="2020" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-8" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2765" y="2320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-90" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Die Spielnforamtion sowie KOntaktinfromatioen des Spielentwicklers mit den Auszeichnungen und dem Button erscheint, welcher durch das ANklcien ein das Formualr für die Spierdaten(SPielrekonto) anlegen kann und sich anmelden kann&amp;nbsp;" vertex="1">
+          <mxGeometry height="110" width="230" x="2650" y="2160" as="geometry" />
+        </mxCell>
+        <mxCell id="82NVFoRLN2W2onjhO9dU-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Eien bestimmte Kategorie&amp;nbsp; gehört anhand der ID zu einer bestimmten Frage zugeordnet werden" vertex="1">
+          <mxGeometry height="110" width="200" x="2310" y="2300" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-3" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3100" y="1990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-56" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3390" y="1890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Frageliste:&lt;/b&gt;&lt;div&gt;&lt;b&gt;Endpoint:&amp;nbsp;&lt;/b&gt; &amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;http://localhost:5173/frageliste&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="360" x="2920" y="1860" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-6" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3205" y="2160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User kann eine neu Frage&amp;nbsp; in einem Formualr mit den Eingaben &quot;Name der Farge&quot; und der &quot;ID&amp;nbsp; eingeben um eine&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt; neu Frage zum Quiz hinzuzufügen in die Fragelibrary , welcher im gefällt" vertex="1">
+          <mxGeometry height="60" width="330" x="3040" y="1990" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Durch die Onclick Funktion beim Anclicken des Buttons wechselt der Text&amp;nbsp; der vom User gewählten Antwort auf &quot;Ausgewählt&quot;" vertex="1">
+          <mxGeometry height="70" width="185" x="1325" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-5" edge="1" parent="1" source="qOeygPqCB-dWXqNPJDOW-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="qOeygPqCB-dWXqNPJDOW-27" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1465" y="1590" as="sourcePoint" />
+            <mxPoint x="1370" y="1420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qOeygPqCB-dWXqNPJDOW-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Neu Frag mit Frage 2 von&amp;nbsp; wird angeugt und erneut 4 Antworten erschein" vertex="1">
+          <mxGeometry height="60" width="120" x="1320" y="1410" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-23" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3312.5" y="2330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User fügt eine Frage &quot; Was ist die Torhüterquote von Oliver Kahn&amp;nbsp; questionid:10, hinzu und&amp;nbsp; drückt&amp;nbsp; den grünen Button &quot;Hinzufügen. Die Frage darf für die Validierung nic leer sein ansosnten erscheint eien Alert Meldung" vertex="1">
+          <mxGeometry height="90" width="335" x="3145" y="2160" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-10" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2620" y="2410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-13" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2800" y="2460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-16" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3000" y="2400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User kann untercshiedliche Buttons derücken mit Entrypoints : /quiz,&amp;nbsp; /about, /kategorien" vertex="1">
+          <mxGeometry height="70" width="160" x="2720" y="2320" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Durch Oncklick&amp;nbsp; Funktion navigiert zu den Endpoints /quiz um zur SPielansicht zu wechseln falls er das Spiel starten möchte&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="220" x="2500" y="2410" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="User wählt Endtrypoint /quiz" vertex="1">
+          <mxGeometry height="30" width="170" x="2550" y="2320" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Wenn der Spieler zur Startseite wechseln&amp;nbsp; möchte drückt er den Button &quot;Quiz&quot;" vertex="1">
+          <mxGeometry height="60" width="120" x="2740" y="2460" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="User wählt Path /kategorien" vertex="1">
+          <mxGeometry height="30" width="170" x="2890" y="2320" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Wenn der Spierle alle vorhandenen Kategorien also die Kategorilist anzeige möchte drückt erd en Button &quot;Kategorien&quot;&amp;nbsp;" vertex="1">
+          <mxGeometry height="90" width="200" x="2940" y="2400" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User kann mit Get-Methode,&amp;nbsp;&lt;font&gt;&lt;font color=&quot;#ffffff&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;http://localhost:8081/&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;&lt;font&gt;questions&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;/allquestions die&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot; style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre; background-color: rgb(31, 31, 31);&quot;&gt;&lt;font&gt;Frageliste &lt;/font&gt;&lt;font&gt;laden &lt;/font&gt;&lt;font&gt;und&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot; style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre; background-color: rgb(31, 31, 31);&quot;&gt;&lt;font&gt;&lt;font&gt;es werden die Daten aus der Datenbank im &lt;/font&gt;&lt;font&gt;Browser &lt;/font&gt;&lt;font&gt;angezeigt in d&lt;/font&gt;&lt;/font&gt;&lt;font&gt;er Tabelle&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot; style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre; background-color: rgb(31, 31, 31);&quot;&gt;&lt;font style=&quot;&quot;&gt;unter dem enstpechenden Spalte&lt;/font&gt;  angezeigt mit Use Effect&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="610" x="3050" y="2320" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;b&gt;Nein&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="50" x="1635" y="1750" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-35" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1685" y="1960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Der Spieler erhält nach der letzetn Frage eine tabellarische Auswertung seiner Ergebnisse , welche die richtigen und falschen Antworten und seine Spielleistung wird durch Sterne&amp;nbsp; und einem Zitat dargestellt inkl, der benötigten Zeit,udn der&amp;nbsp; Gesamten Beurteilung des Spiels&amp;nbsp; Spiel gewonnen/verloren" vertex="1">
+          <mxGeometry height="145" width="270" x="1550" y="1825" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-43" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="EwrFo9550jZUgqJhc-tU-37" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-45" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="EwrFo9550jZUgqJhc-tU-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1740" y="2150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-47" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.313;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="EwrFo9550jZUgqJhc-tU-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1677.5" y="2120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-28" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Spieler hat Quiz gewonnen ?" vertex="1">
+          <mxGeometry height="90" width="125" x="1615" y="1970" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;b&gt;Ja&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="40" x="1570" y="1980" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Spielansicht Komponeten wechslet wieder in&amp;nbsp; Ursprungszustand und die erst Frage wird angezeigt&amp;nbsp; usw. Button angewählt etc..." vertex="1">
+          <mxGeometry height="75" width="157" x="1343" y="1825" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="5 Volle Sterne erscheinen und Git mit Jubel wird angezeigt sowie dem Button der durch das Ancklicken den Text&amp;nbsp; Du bist&amp;nbsp;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;d&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre; background-color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;er &amp;nbsp;absolute Fussballgott &amp;nbsp;und bis Europameister 202&lt;/font&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;6&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;&lt;font color=&quot;#ba0000&quot;&gt;==&amp;gt;Bedingung alle 9 Fragen wurden korekt beantwortet und der &lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;&lt;font color=&quot;#ba0000&quot;&gt;Score ist 9&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre; background-color: rgb(0, 0, 0);&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="450" x="1080" y="2180" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;b&gt;Nein&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="50" x="1665" y="2080" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-51" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1860" y="2240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-1" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1635.0000000000005" y="2430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Wenn Gesatmbilanz/Puntek stand negativ ist erscheint der Totenkopf&amp;nbsp; und der Text Spiel Verloren sowie&amp;nbsp; bei der Spielleistung Bewerting weniger als 5 Sterne bsp. 2 Sterne&amp;nbsp; mit dem Roten &quot;Falsch Schild&quot; ==" vertex="1">
+          <mxGeometry height="160" width="170" x="1550" y="2160" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User kann auf den Button &quot;Konsultieren&quot;&amp;nbsp; &amp;nbsp;nochmals die die SPielregeln&amp;nbsp; anschauen um seine Spielleistung&amp;nbsp; zu verbressern und die Spielregeln genauer anschauen und danach das Quiz erneut beginnen&lt;div&gt;&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125" width="330" x="1860" y="2225" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-57" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3665" y="2010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-64" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4060" y="1893.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;b&gt;KategoryForm:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Endpoint:&amp;nbsp;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt; &amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;font&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;http://localhost:8081&lt;/font&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;/&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;categories&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;/&lt;/span&gt;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;createcategory &lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre; color: rgb(206, 145, 120);&quot;&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72.5" width="510" x="3410" y="1847.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-58" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User kann um das Spiel komplexer zu gestalten&amp;nbsp; eine neue Kategorie anhand des Kategorienamens(category_name) hinzufügen oder eine bestimmte Kategorie löschen&lt;div&gt;==&amp;gt;Jeweiliger Button wird angeglickt&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="225" x="3605" y="2010" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-61" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3702.5" y="2330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User entfernt die Kategorie&amp;nbsp; &quot;Spieler&quot; mit der Kategorie ID &quot;20 aus der Kategorieliste Komponente&amp;nbsp;" vertex="1">
+          <mxGeometry height="75" width="170" x="3617.5" y="2167.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User ruft aus Backend die Post/DELETE Metehode auf und die&amp;nbsp; &amp;nbsp;Ressourcen werden ans Backend geschikt und danach mit der Datnbak Aatribuetn abgefüllt und eine neue Kateogrielsite mit /ohne einem spezifsichen&amp;nbsp; ELmenet bsp. &quot;Verein&quot; wurde gelöscht erscheint auf Endpoint: /&amp;nbsp;http://localhost:5173/kategorieliste" vertex="1">
+          <mxGeometry height="150" width="350" x="3660" y="2330" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-69" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4305" y="1980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-85" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4660" y="1892.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-65" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Questionform:&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;b&gt;Endpoint:&amp;nbsp;&amp;nbsp;http://localhost:5173/new-question&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Kategorieformular mit neue Frage und 4 möglichen Antworten&lt;/div&gt;" vertex="1">
+          <mxGeometry height="55" width="470" x="4070" y="1865" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-70" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4310" y="2120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-84" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="EwrFo9550jZUgqJhc-tU-65" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User gith im Eingabefeld &quot;Name der Frage&quot; den Name der Kategori ein" vertex="1">
+          <mxGeometry height="60" width="120" x="4250" y="1985" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-78" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4350" y="2260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Der User bestimmt für die Frage 4 Antwortmöglichkeiten im jeweiligen Eingabefeld&amp;nbsp;" vertex="1">
+          <mxGeometry height="75" width="220" x="4240" y="2125" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-79" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4350" y="2410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User wählt bei einer der Fragen den radio Button aus um eine &quot;korreket Antwort zu bestimmen&quot;" vertex="1">
+          <mxGeometry height="70" width="160" x="4270" y="2270" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-81" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4365" y="2530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-75" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Um die neue Frage zur Frageliste hinzuzufügen und mit der Post-Methode die Fragen ans Backend zu senden müssen die EIgnabedaten validiert werden==&amp;gt;grüner&amp;nbsp; Button &quot;Frage absenden &quot;drücken&quot;" vertex="1">
+          <mxGeometry height="80" width="250" x="4240" y="2405" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-82" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4405" y="2670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-77" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Vor dem Absesnden des HTTP Request wird User erneut im Dialgofenster&amp;nbsp; letzendlci die Möglichkeit dei Anfrage ans Backen zu verwigenr und die Frage nich hinzufügen ==&amp;gt;&quot;Abbrechen&quot; drücken&lt;div&gt;Fall der User die Frage tatsächlich abspeicher udn zur Frageliste hinzufügen möchet drückt er auf &quot;Ok&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="370" x="4220" y="2530" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-83" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Wenn der grüne Button gedrückt wrude mit den übergebene Attributen wird die Onckick Event asugeführt und die Post-Methode &quot;createCategory&quot;&amp;nbsp; übergeben und somti werden die Daten vom backen gefetcht verarbeteit in ein String und zum Browser eine List mit dem Element &quot;Alter&quot; hinzugefügt&amp;nbsp;" vertex="1">
+          <mxGeometry height="110" width="295" x="4280" y="2670" as="geometry" />
+        </mxCell>
+        <mxCell id="dat1cONZ0ICs3D1ZZhV_-4" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5020" y="1890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;KategoryForm&amp;nbsp; &amp;nbsp;Komponente&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;Endpoint:&lt;/b&gt; http://localhost:5173/new-category&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="280" x="4670" y="1850" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-90" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4785" y="2110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-89" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User möchte die Kategorie mit dem Namen &quot;Grösser hinzufügen" vertex="1">
+          <mxGeometry height="60" width="120" x="4725" y="1990" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-92" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4800" y="2220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-91" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Use gibt bei Box mit Kategoriename ins Eingabefeld&amp;nbsp; den Namen &quot;Grösse ein" vertex="1">
+          <mxGeometry height="60" width="120" x="4740" y="2110" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-94" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4835" y="2370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-93" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User gibt ebie Box bei Eigabefeld Kategorie-ID : 9 ein, da für Delete-Mehtode zwigen der Primary Key &quot;Id&quot; proeprtey verlangt wird" vertex="1">
+          <mxGeometry height="95" width="190" x="4740" y="2225" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-96" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4855" y="2500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-95" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Um die eingegebenen Daetn&amp;nbsp; zu validieren muss der Button &quot;Speichern&quot; angeklickt werden" vertex="1">
+          <mxGeometry height="75" width="150" x="4780" y="2375" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-98" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4902.5" y="2640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-97" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Vor dem Absenden erhält der User für die sichere Datenübertragung&amp;nbsp; ein Dialogfenster ob er tatsächlich die&amp;nbsp; Kategorie &quot;Grösse&quot; löschen aus der Kategorieliste entfernen möchte." vertex="1">
+          <mxGeometry height="80" width="215" x="4795" y="2500" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-103" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4900" y="2820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-99" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Falls die DELETE-Methode nicht funktioniert&amp;nbsp; weil die DELET-Methode die Daten nicht senden kann&amp;nbsp; im Backend (Spring Bot) nict funkiotneir odre die Spring-Boot Applikation nicht funktioniert erscheint eine Alert-Meldung&amp;nbsp; ==&amp;gt;NEtzwerkfehler mit Statusmeldung" vertex="1">
+          <mxGeometry height="110" width="260" x="4770" y="2640" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-105" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4950" y="2980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-101" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Wenn&amp;nbsp; der User auf Button &quot;Speichern &quot; drückt wird Fetch-Methode deleteCategory ausgeführt und nur die bestommte Id vom String ind Int Typ umgewandelt&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="220" x="4840" y="2820" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-104" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.7;entryY=-0.105;entryDx=0;entryDy=0;entryPerimeter=0;" target="EwrFo9550jZUgqJhc-tU-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EwrFo9550jZUgqJhc-tU-106" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Wenn der User&amp;nbsp; die Kategorieliste belasssen möchte und keine Ressourcen hinzufügen mcöhte&amp;nbsp; klickt er den Button &quot;Abbrechen&quot;&amp;nbsp; und der Browser navigiert zum/zu der URL des&amp;nbsp; Path&amp;nbsp;&amp;nbsp;http://localhost:5173/kategorieliste" vertex="1">
+          <mxGeometry height="90" width="300" x="4840" y="2980" as="geometry" />
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User wählt Button &quot;" vertex="1">
+          <mxGeometry height="60" width="120" x="1577.5" y="2430" as="geometry" />
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-5" edge="1" parent="1" source="0K4qVDy2vBCzU7Qw23Mn-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5140" y="1970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Home Komponente&lt;div&gt;&lt;b&gt;Endpoint: Root&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;http://localhost:5173/&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="250" x="5010" y="1860" as="geometry" />
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-4" edge="1" parent="1" source="EwrFo9550jZUgqJhc-tU-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.588;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" target="EwrFo9550jZUgqJhc-tU-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-7" edge="1" parent="1" source="0K4qVDy2vBCzU7Qw23Mn-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5150" y="2090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User möchte für den Startbildschirm eine andere Sprache asuwählen" vertex="1">
+          <mxGeometry height="60" width="120" x="5090" y="1970" as="geometry" />
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-9" edge="1" parent="1" source="0K4qVDy2vBCzU7Qw23Mn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5150" y="2220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User wählt bei ToggleBar &quot;Englisch aus&quot;" vertex="1">
+          <mxGeometry height="60" width="120" x="5090" y="2090" as="geometry" />
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-11" edge="1" parent="1" source="0K4qVDy2vBCzU7Qw23Mn-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5210" y="2330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Durch Anclicken des Feldes &quot;Englisch wird die Onclick Funktion mit der KOnstanten &quot;selectLanguage&quot; wird ausgeführt und das Root&amp;nbsp; HTML Element werchselt auf lang=en" vertex="1">
+          <mxGeometry height="70" width="220" x="5100" y="2220" as="geometry" />
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Der Textinhalt auf der Startseite welchselt bei der Begrüssung&amp;nbsp; und auf Englisch durch&amp;nbsp; debselect&amp;nbsp; Hook&amp;nbsp; &amp;nbsp;setLanguage" vertex="1">
+          <mxGeometry height="100" width="240" x="5120" y="2330" as="geometry" />
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;u&gt;Storyboard&amp;nbsp; Version 1&lt;/u&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="180" x="340" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="0K4qVDy2vBCzU7Qw23Mn-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;u&gt;Spiellogik und andere Pages&amp;nbsp;&amp;nbsp;&lt;/u&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="270" x="1350" y="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

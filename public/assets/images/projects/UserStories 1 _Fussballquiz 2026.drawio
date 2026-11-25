@@ -1,0 +1,211 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Seite-1" id="nGrp6T7ElhfyB9f6ZjUj">
+    <mxGraphModel dx="3055" dy="1269" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-2" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-3" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-37" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="3rb6_vXYV6XyX3-_eD6Q-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="upgnorUPHWpjpz-WCn6V-1" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-360" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-1" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-609.9999999999998" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="Initiative:&amp;nbsp; Interaktive Fussballspiel mit Fragen und Antworten&amp;nbsp; und Dashbard des Punktesystems" vertex="1">
+          <mxGeometry height="70" width="470" x="160" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-32" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Epik 1 &lt;/b&gt;: Grundgerüst&amp;nbsp; mit Komponenten wie Quiz, Questions und Answers&amp;nbsp; mit Navigationsleiste&amp;nbsp;" vertex="1">
+          <mxGeometry height="120" width="190" x="25" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-18" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Epik&amp;nbsp; 2&lt;/b&gt; : Quizlogik mit Datenverarbeitung der Daten ins Frontend geladen&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-54" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Story&amp;nbsp; 1:&lt;/b&gt; Erstellen der Daten objete im JSON FOrmat&amp;nbsp; üner einzelne &lt;b&gt;Keys/ID&#39;s&lt;/b&gt; gespeichert werden" vertex="1">
+          <mxGeometry height="80" width="200" x="300" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Story 2 :&lt;/b&gt; Entwicklung einer Logik, di anhand der richtigen Frage mit der ID eine bestimmte Antwort aufruft&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="180" x="560" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-39" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-41" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1060" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Epik 3 : &lt;/b&gt;Einzelne User Interfaces (UI&#39;s) entwickeln der Unterseite&amp;nbsp;&lt;b&gt;&amp;nbsp;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="770" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-45" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Story 1 &lt;/b&gt;: Anzeige der Frage durch eien Spielansicht mit Fenster das einma lädt über gesamtes Quiz" vertex="1">
+          <mxGeometry height="70" width="200" x="750" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-34" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-50" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Erstellen&amp;nbsp;einer Hauptkomponente mit&amp;nbsp; Navigationsleiste und getrennte&amp;nbsp;" vertex="1">
+          <mxGeometry height="90" width="210" x="-160" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-30" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.398;entryY=0.009;entryDx=0;entryDy=0;entryPerimeter=0;" target="3rb6_vXYV6XyX3-_eD6Q-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;b&gt;Story 1:&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="-100" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Implementierung von React Router für Pfade wie &lt;b&gt;/quiz/:id&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-47" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-45" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&amp;nbsp;Subtask 1:&amp;nbsp;&lt;/b&gt;Erstellen eines Parent Objets welche durch Navbar einzelne darunterligenden Objete sticky macht" vertex="1">
+          <mxGeometry height="80" width="170" x="-130" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;b&gt;Story 2&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="110" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Story 2 :&lt;/b&gt; Darstellung der Zusatzinformationen wie zu welcher Kategorie eine Frage zugehört&amp;nbsp;" vertex="1">
+          <mxGeometry height="90" width="160" x="1010" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-51" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="In der&amp;nbsp; Buttons.js Komonente mit functions () werden die einzelnen&amp;nbsp; &amp;nbsp;Buttons&amp;nbsp; dargestellt&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="790" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Subtask 2 :&amp;nbsp; &lt;/b&gt;Funktion Globalnavigation exportieren , die die einzel Komponenten&amp;nbsp; in der Navigationsleiste verlinkt also referenziert.&amp;nbsp;" vertex="1">
+          <mxGeometry height="90" width="170" x="-110" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Subtask 1 &lt;/b&gt;:&amp;nbsp; Erstellen einer Lokigk die anhand der&amp;nbsp; KeyPari Logi mit&amp;nbsp; einer Konstatne catId welche nur die Fragen welche zu eienr bestimmten gefilterten Frage gehören&amp;nbsp; &amp;nbsp;ausgewählt werden" vertex="1">
+          <mxGeometry height="140" width="300" x="1030" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-13" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Subtask 1 &lt;/b&gt;: Einzelne&amp;nbsp; QuestionDisplay Komponente, welche nur nur die Fragen anzeigt in der Naviagtionsleiste unter dem path&amp;nbsp; /fragen angezeigt" vertex="1">
+          <mxGeometry height="70" width="190" x="340" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="3rb6_vXYV6XyX3-_eD6Q-56" edge="1" parent="1" source="3rb6_vXYV6XyX3-_eD6Q-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.197;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" target="3rb6_vXYV6XyX3-_eD6Q-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="upgnorUPHWpjpz-WCn6V-3" edge="1" parent="1" source="upgnorUPHWpjpz-WCn6V-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-330" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="upgnorUPHWpjpz-WCn6V-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Epik 4:&amp;nbsp;&lt;/b&gt;&amp;nbsp; Auswertung der Fragen und zugehörige Antworten sowie alle Auffürhugn der Korrekten un dfalshc Antworten einzeln" vertex="1">
+          <mxGeometry height="60" width="180" x="-420" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-10" edge="1" parent="1" source="upgnorUPHWpjpz-WCn6V-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-285" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="upgnorUPHWpjpz-WCn6V-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Stor 1&lt;/b&gt; : Erstelle eine Komponente Auswertung.jsx im Unterordner /components&amp;nbsp;" vertex="1">
+          <mxGeometry height="50" width="210" x="-390" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Epik 5 :&lt;/b&gt;&lt;div&gt;Kategorie zur Kategorieliste hinzufügen und Kategorien entfernen und hinzufügen&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="220" x="-660" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-5" edge="1" parent="1" source="51Gr8u4WrO7X3mCV0yfB-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-539.9999999999998" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Story 1:&amp;nbsp;&lt;/b&gt;&lt;div&gt;Erstellen Sie eine Komponente&amp;nbsp; /KategoryForm im Unterordner /components&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="240" x="-660" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-16" edge="1" parent="1" source="51Gr8u4WrO7X3mCV0yfB-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-535" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Subtask 1:&lt;/b&gt;&lt;div&gt;Navigationskonstante erstlelen die zu der URL aus der Rest-API(Backend)&amp;nbsp; http://localhost:8081/categories die Kategorieliste&amp;nbsp; navigiert und&amp;nbsp; mithilfe von HTTP-Methoden einzelne Kategorien entfernt-Inhalt aus Body wird von JSOn-Fomrat in normale Text umgewandelt&lt;/div&gt;&lt;div&gt;-Universelle&amp;nbsp; store Change Funktion&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="430" x="-750" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-7" edge="1" parent="1" source="51Gr8u4WrO7X3mCV0yfB-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.461;entryY=-0.147;entryDx=0;entryDy=0;entryPerimeter=0;" target="51Gr8u4WrO7X3mCV0yfB-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Subtask 2:&lt;/b&gt;Erstellen sie ein Kategorieformular&amp;nbsp; mit einem&amp;nbsp; Submit Button und&amp;nbsp; einer Funktion submit die eine Kategorie hinzufügt&amp;nbsp; anhand der question und catId" vertex="1">
+          <mxGeometry height="90" width="310" x="-670" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Subtask 2:&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-17" edge="1" parent="1" source="51Gr8u4WrO7X3mCV0yfB-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-247.5" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Subtask 1&amp;nbsp;&lt;/b&gt;&amp;nbsp;Erstellen sie&amp;nbsp; ein Dashboarrd der SPielers sowie eine Progressbar der Spiellerleistung sowie eien detaillierte&amp;nbsp; &amp;nbsp;Auflistung der beantworteten ERgebnisse des Spielers pro Frage." vertex="1">
+          <mxGeometry height="100" width="195" x="-345" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-19" edge="1" parent="1" source="51Gr8u4WrO7X3mCV0yfB-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-183.5" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Subtask 2:&lt;/b&gt;&lt;div&gt;Hook Zustand&amp;nbsp; udn Hover Konstante für das Spielerfeedback darzustellen und Hover Effekt dynamisch darzustellen&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="247" x="-307" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-23" edge="1" parent="1" source="51Gr8u4WrO7X3mCV0yfB-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-110" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Subtask 3: Hook&lt;/b&gt;&amp;nbsp;Locatrion Zustan der Derfault Fragen und eine KOnstante&amp;nbsp; quizData erstellt mit den Propertys Beispielwerte setzt und eien Ausewrtung demonstriert in einer Box(Container)" vertex="1">
+          <mxGeometry height="100" width="260" x="-240" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="51Gr8u4WrO7X3mCV0yfB-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Subtask 4 :&amp;nbsp;&lt;/b&gt;&lt;div&gt;Navigationskonstante(Hook Zustand)&amp;nbsp; zwischen einzelen Komponenten welche zum Entrpyoint /new-category&amp;nbsp; routet durhc gleich gestylte Buttons mit Onclick Funktion die den Enrypoint entwerder zu: http://localhost:5173/kategorien&amp;nbsp; ode rzu Quiz navigiert&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="340" x="-260" y="1030" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

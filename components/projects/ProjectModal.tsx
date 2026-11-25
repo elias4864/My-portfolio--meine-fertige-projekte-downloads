@@ -55,7 +55,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
       project.documentationLink,
     ].filter((link): link is string => Boolean(link && link.trim()));
 
-    return Array.from(new Set(collected)).slice(0, 2);
+    return Array.from(new Set(collected));
   }, [project]);
 
   const powerpointList = useMemo(() => {
@@ -151,7 +151,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                           </motion.a>
                       )}
 
-                      {/* Links zu Projektdokumentationen (max. 2) */}
+                      {/* Links zu Projektdokumentationen */}
                       {documentationList.map((docLink, idx) => (
                           <motion.a
                               key={`${docLink}-${idx}`}
