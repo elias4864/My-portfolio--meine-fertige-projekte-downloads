@@ -23,9 +23,6 @@
     "frontendRepo": "https://github.com/Vinci4600/Anti-AI-Shield/tree/dev",
     "downloadLink": "/assets/releases/Anti-AI-Shield-dev.zip",
     "documentationLink": "",
-    "documentationLink1": "",
-    "documentationLink2": "",
-    "documentationLinks": [],
     "powerpointLink": "",
     "powerpointLink1": "",
     "powerpointLink2": "",
@@ -63,11 +60,6 @@
     "backendRepo": "https://github.com/Vinci4600/World-of-Chewing-gum/tree/dev/Backend",
     "downloadLink": "https://github.com/Vinci4600/meine-projekt-downloads/releases/download/v1.1.2/World-of-Chewing-gum-main.zip",
     "documentationLink": "/assets/releases/Dokumentation_ Idee World of Chewing gum_One Shot_Elias und Vincent.docx",
-    "documentationLink1": "/assets/releases/Dokumentation_ Idee World of Chewing gum_One Shot_Elias und Vincent.docx",
-    "documentationLink2": "",
-    "documentationLinks": [
-      "/assets/releases/Dokumentation_ Idee World of Chewing gum_One Shot_Elias und Vincent.docx"
-    ],
     "powerpointLink": "",
     "powerpointLink1": "",
     "powerpointLink2": "",
@@ -105,9 +97,6 @@
     "frontendRepo": "https://github.com/elias4864/Titocci-Metalcostruzioni-SAGL-Website-",
     "downloadLink": "/assets/releases/Titocci-Metalcostruzioni-SAGL-Website--main.zip",
     "documentationLink": "",
-    "documentationLink1": "",
-    "documentationLink2": "",
-    "documentationLinks": [],
     "powerpointLink": "",
     "powerpointLink1": "",
     "powerpointLink2": "",
@@ -139,9 +128,6 @@
     "frontendRepo": "https://github.com/elias4864/Website-Carosserie-Oerlikon",
     "downloadLink": "/assets/releases/Website-Carosserie-Oerlikon-main (1).zip",
     "documentationLink": "",
-    "documentationLink1": "",
-    "documentationLink2": "",
-    "documentationLinks": [],
     "powerpointLink": "",
     "powerpointLink1": "",
     "powerpointLink2": "",
@@ -184,11 +170,6 @@
     "backendRepo": "https://github.com/LeoKuhnZH/WISS-Praktikum-App/tree/dev/backend",
     "downloadLink": "/assets/releases/WISS-Praktikum-App-main.zip",
     "documentationLink": "/assets/releases/426 Gruppenprojekt_WISS Connect Praktikumsportal_.docx",
-    "documentationLink1": "/assets/releases/426 Gruppenprojekt_WISS Connect Praktikumsportal_.docx",
-    "documentationLink2": "",
-    "documentationLinks": [
-      "/assets/releases/426 Gruppenprojekt_WISS Connect Praktikumsportal_.docx"
-    ],
     "powerpointLink": "",
     "powerpointLink1": "",
     "powerpointLink2": "",
@@ -222,11 +203,6 @@
     "backendRepo": "https://github.com/elias4864/Purpure-Ventures-Coding-Assessment",
     "downloadLink": "/assets/releases/Purpure-Ventures-Coding-Assessment-main.zip",
     "documentationLink": "/assets/releases/426 Gruppenprojekt_WISS Connect Praktikumsportal_.docx",
-    "documentationLink1": "/assets/releases/426 Gruppenprojekt_WISS Connect Praktikumsportal_.docx",
-    "documentationLink2": "",
-    "documentationLinks": [
-      "/assets/releases/426 Gruppenprojekt_WISS Connect Praktikumsportal_.docx"
-    ],
     "powerpointLink": "",
     "powerpointLink1": "",
     "powerpointLink2": "",
@@ -266,13 +242,7 @@
     ],
     "videos": [],
     "downloadLink": "/assets/releases/My-Wiki-main.zip",
-    "documentationLink": "/assets/images/projects/LB-Projekt-Wiki JS_Dokumentenmanagment Tool_M210_Kaiser_Imhasly (2).pdf",
-    "documentationLink1": "/assets/images/projects/LB-Projekt-Wiki JS_Dokumentenmanagment Tool_M210_Kaiser_Imhasly (2).pdf",
-    "documentationLink2": "/assets/images/projects/LB-Projekt-Wiki JS_M210_Kaiser_Imhasly.pdf",
-    "documentationLinks": [
-      "/assets/images/projects/LB-Projekt-Wiki JS_Dokumentenmanagment Tool_M210_Kaiser_Imhasly (2).pdf",
-      "/assets/images/projects/LB-Projekt-Wiki JS_M210_Kaiser_Imhasly.pdf"
-    ],
+    "documentationLink": "",
     "powerpointLink": "/assets/releases/Modul 210_Präsentation_Wiki.js_Elias und Fabian.odp",
     "powerpointLink1": "/assets/images/projects/Präsentation_Wiki.js_Elias und Fabian.odp",
     "powerpointLink2": "",
@@ -315,11 +285,6 @@
     "videos": [],
     "downloadLink": "/assets/releases/MangaDB-main.zip",
     "documentationLink": "/assets/releases/Modul 210_Projektdokumentation_Wiki JS_Elias und Fabian.pdf",
-    "documentationLink1": "/assets/releases/Modul 210_Projektdokumentation_Wiki JS_Elias und Fabian.pdf",
-    "documentationLink2": "",
-    "documentationLinks": [
-      "/assets/releases/Modul 210_Projektdokumentation_Wiki JS_Elias und Fabian.pdf"
-    ],
     "powerpointLink": "/assets/images/projects/MangaDB_Praesentation.pptx",
     "powerpointLink1": "/assets/images/projects/MangaDB_Praesentation.pptx",
     "powerpointLink2": "",
@@ -348,11 +313,6 @@
     "frontendRepo": "https://github.com/elias4864/Aufgabenplanner-Mobile-App",
     "downloadLink": "/assets/releases/Aufgabenplanner-Mobile-App-main.zip",
     "documentationLink": "/assets/releases/Modul 335_Projektdokumentation_Aufgabenplanner Master Todo Mobile Native App_Elias Kaiser.pd",
-    "documentationLink1": "/assets/releases/Modul 335_Projektdokumentation_Aufgabenplanner Master Todo Mobile Native App_Elias Kaiser.pd",
-    "documentationLink2": "",
-    "documentationLinks": [
-      "/assets/releases/Modul 335_Projektdokumentation_Aufgabenplanner Master Todo Mobile Native App_Elias Kaiser.pd"
-    ],
     "powerpointLink": "",
     "powerpointLink1": "",
     "powerpointLink2": "",
@@ -387,21 +347,13 @@
     "frontendRepo": "https://github.com/elias4864/Fussballquiz-React-Projekt",
     "downloadLink": "/assets/releases/Fussballquiz-React-Projekt-main.zip",
     "documentationLink": "/assets/releases/Projektdokumentation_ Webapplikation Viteserver_Fussballquiz_Elias Kaiser (1).pdf",
-    "documentationLink1": "/assets/releases/Projektdokumentation_ Webapplikation Viteserver_Fussballquiz_Elias Kaiser (1).pdf",
-    "documentationLink2": "",
-    "documentationLinks": [
-      "/assets/releases/Projektdokumentation_ Webapplikation Viteserver_Fussballquiz_Elias Kaiser (1).pdf"
-    ],
     "powerpointLink": "",
     "powerpointLink1": "",
     "powerpointLink2": "",
     "powerpointLinks": [],
     "drawioLink": "/assets/images/projects/Infrastruktur React Komponenten Fussballqiuz_Elias.drawio",
     "drawioLinks": [
-      "/assets/images/projects/Infrastruktur React Komponenten Fussballqiuz_Elias.drawio",
-      "/assets/images/projects/Infrastruktur Viteserver  mit Routing Reactkomponenten_Fussballquiz.drawio",
-      "/assets/images/projects/Kategorieliste und Frageliste_User Stories 2_Fussballquiz.drawio",
-      "/assets/images/projects/Storyboardfussball_quiz_React Server_4B.drawio"
+      "/assets/images/projects/Infrastruktur React Komponenten Fussballqiuz_Elias.drawio"
     ],
     "backendRepo": "https://github.com/elias4864/Fussballquizapplikation",
     "images": [
@@ -430,11 +382,6 @@
     "Repo": "https://gitlab.com/docker1472640/DockerKMU",
     "downloadLink": "/assets/releases/DockerKMU-main.zip",
     "documentationLink": "/assets/releases/Dokumentation_mit_Hermes_Testkonzept_Informatik-Edugames_AG__Elias_Kaiser_Modul_169-347 (1).pdf",
-    "documentationLink1": "/assets/releases/Dokumentation_mit_Hermes_Testkonzept_Informatik-Edugames_AG__Elias_Kaiser_Modul_169-347 (1).pdf",
-    "documentationLink2": "/assets/images/projects/Dokumentation Dockerprojektmit Hermes Testkonzept_Informatik-Edugames AG _Elias Kaiser_Modul 169-347.pdf",
-    "documentationLinks": [
-      "/assets/releases/Dokumentation_mit_Hermes_Testkonzept_Informatik-Edugames_AG__Elias_Kaiser_Modul_169-347 (1).pdf"
-    ],
     "powerpointLink": "/assets/releases/Docker-Informatik_KMU_Edugames_AG_Elias_Kaiser_Modul_146-347 (1).odp",
     "powerpointLink1": "/assets/releases/Docker-Informatik_KMU_Edugames_AG_Elias_Kaiser_Modul_146-347 (1).odp",
     "powerpointLink2": "/assets/images/projects/Docker-Informatik KMU_Edugames AG_Elias Kaiser_ModulM146-347.odp",
@@ -482,17 +429,11 @@
     "frontendRepo": "https://github.com/elias4864/Manga-DB-mit-BCrypt-Hashing/tree/dev/manga-frontend",
     "downloadLink": "/assets/releases/Manga-DB-mit-BCrypt-Hashing-main.zip",
     "documentationLink": "/assets/releases/223_LB_Dokumentation.pdf",
-    "documentationLink1": "",
-    "documentationLink2": "/assets/images/projects/Modul 183_Projektdokumentation_Fullstackapplikation MangaDB mit Bcrypt Hashing des Logins_Elias und Dominik.pdf",
-    "documentationLinks": [
-      "/assets/releases/223_LB_Dokumentation.pdf",
-      "/assets/images/projects/Modul 183_Projektdokumentation_Fullstackapplikation MangaDB mit Bcrypt Hashing des Logins_Elias und Dominik.pdf"
-    ],
     "powerpointLink": "",
     "powerpointLink1": "",
     "powerpointLink2": "",
     "powerpointLinks": [],
-    "drawioLink": "",
+    "drawioLink": "/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio",
     "drawioLinks": [
       "/assets/images/projects/ANTI-AI DOCSHIELD_Workflow (1).drawio"
     ],
@@ -525,9 +466,6 @@
     "videos": [],
     "downloadLink": "/assets/releases/Glance-Home-Assistant-Dashboard--main.zip",
     "documentationLink": "",
-    "documentationLink1": "",
-    "documentationLink2": "",
-    "documentationLinks": [],
     "powerpointLink": "",
     "powerpointLink1": "",
     "powerpointLink2": "",
@@ -558,9 +496,6 @@
       "Spring Boot"
     ],
     "downloadLink": "/assets/releases/M450-Apptesting-CodeQuiz-main.zip",
-    "documentationLink": "/assets/images/projects/Abschlussarbeit_Mögliche Features für SQ7A.pdf",
-    "documentationLink1": "/assets/images/projects/Abschlussarbeit_Mögliche Features für SQ7A.pdf",
-    "documentationLink2": "/assets/releases/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
     "documentationLinks": [
       "/assets/images/projects/Abschlussarbeit_Mögliche Features für SQ7A.pdf",
       "/assets/releases/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
@@ -597,9 +532,6 @@
     "frontendRepo": "https://gitlab.com/elias4864/miniclub-website",
     "downloadLink": "/assets/MINI.png",
     "documentationLink": "",
-    "documentationLink1": "",
-    "documentationLink2": "",
-    "documentationLinks": [],
     "powerpointLink": "",
     "powerpointLink1": "",
     "powerpointLink2": "",
@@ -637,12 +569,6 @@
     ],
     "downloadLink": "/assets/releases/223-master.zip",
     "documentationLink": "/assets/images/projects/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
-    "documentationLink1": "/assets/images/projects/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
-    "documentationLink2": "/assets/images/projects/Rest-API_Funktionale und Nichtfunktionale Anforderungen_Elias und Fabian.pdf",
-    "documentationLinks": [
-      "/assets/images/projects/Sidequest 4B_Mockitotest_Elias Kaiser.pdf",
-      "/assets/images/projects/Testumgebung_ Sidequest 2A_Rest-API.pdf"
-    ],
     "powerpointLink": "",
     "powerpointLink1": "",
     "powerpointLink2": "",
@@ -681,11 +607,6 @@
     "liveLink": "https://app.visily.ai/projects/5cb68c40-2b03-47d6-bfa1-80e98050b34d/boards/2314570/presenter?play-mode=All+screens",
     "downloadLink": "/assets/downloads/MasterTodo.apk",
     "documentationLink": "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf",
-    "documentationLink1": "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf",
-    "documentationLink2": "",
-    "documentationLinks": [
-      "/assets/releases/LB-Vortrag_Elias_Leo_Vincent_Fabian.pdf"
-    ],
     "powerpointLink": "/assets/images/projects/LB-Vortrag_Elias_Leo und Vincent (1).pptx",
     "powerpointLink1": "/assets/images/projects/LB-Vortrag_Elias_Leo und Vincent (1).pptx",
     "powerpointLink2": "",
@@ -705,5 +626,38 @@
     "challenges": "Translating complex banking workflows into intuitive, user-friendly visual prototypes.",
     "futurePlans": "Develop a functional backend implementation for the prototype.",
     "type": "Design"
+  },
+
+  {
+    "title": "Codexo GmbH – Recruiting & Webauftritt",
+    "description": "A tailored web presence and recruiting showcase designed to present open roles, company culture, and application workflows clearly and responsively.",
+    "contributors": [
+      "Elias Kaiser"
+    ],
+    "features": [
+      "Clear recruiting and career presentation",
+      "Responsive layout for desktop and mobile devices",
+      "Structured showcase of company profile and contact pathways"
+    ],
+    "techStack": [
+      "HTML5",
+      "Tailwind CSS",
+      "JavaScript"
+    ],
+    "liveLink": "",
+    "frontendRepo": "https://gitlab.com/bewerbung-codexo/bewerbung-codexo-gmbh-swiss-albanian-network",
+    "downloadLink": "",
+    "documentationLink": "",
+    "powerpointLink": "",
+    "powerpointLink1": "",
+    "powerpointLink2": "",
+    "powerpointLinks": [],
+    "drawioLink": "",
+    "drawioLinks": [],
+    "images": ["/assets/images/projects/Codexo.jpg"],
+    "videos": [],
+    "challenges": "Structuring recruiting information and company branding into a clear, modern, and easily maintainable web layout.",
+    "futurePlans": "Expand interactive job filter options and integrate direct application tracking.",
+    "type": "Frontend"
   }
 ]
