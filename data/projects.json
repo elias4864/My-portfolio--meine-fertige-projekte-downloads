@@ -21,7 +21,7 @@
       "PyPDF2 / PDF-Libraries"
     ],
     "frontendRepo": "https://github.com/Vinci4600/Anti-AI-Shield/tree/dev",
-    "downloadLink": "/assets/releases/Anti-AI-Shield-dev.zip",
+    "downloadLink": "/assets/releases/Anti-AI-Shield-dev (1).zip",
     "documentationLink": "",
     "powerpointLink": "",
     "powerpointLink1": "",
@@ -631,9 +631,7 @@
   {
     "title": "Codexo GmbH – Recruiting & Webauftritt",
     "description": "A tailored web presence and recruiting showcase designed to present open roles, company culture, and application workflows clearly and responsively.",
-    "contributors": [
-      "Elias Kaiser"
-    ],
+
     "features": [
       "Clear recruiting and career presentation",
       "Responsive layout for desktop and mobile devices",
@@ -658,6 +656,42 @@
     "videos": [],
     "challenges": "Structuring recruiting information and company branding into a clear, modern, and easily maintainable web layout.",
     "futurePlans": "Expand interactive job filter options and integrate direct application tracking.",
+    "type": "Frontend"
+  },
+
+  {
+    "title": "Modul 306 – Elektroshop IT-Mini-Projekt",
+    "description": "Collaborative IT mini-project for Module 306 featuring an online electronics shop concept, structured requirements and planning, and a clean web application interface.",
+    "contributors": [
+      "Elias Kaiser",
+      "Vincent Diergardt",
+      "Andreas Peter Björg Offersen"
+    ],
+    "features": [
+      "Electronics product catalog and shop workflows",
+      "Collaborative team planning and task breakdown",
+      "Responsive frontend implementation"
+    ],
+    "techStack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "liveLink": "",
+    "frontendRepo": "",
+    "backendRepo": "",
+    "downloadLink": "",
+    "documentationLink": "/assets/images/projects/Dokumentation_Elektroshop_Vincent_Elias_Andreas.docx",
+    "powerpointLink": "",
+    "powerpointLink1": "",
+    "powerpointLink2": "",
+    "powerpointLinks": [],
+    "drawioLink": "/assets/images/projects/Organigramm.drawio",
+    "drawioLinks": [],
+    "images": ["/assets/images/projects/Elektro.png"],
+    "videos": [],
+    "challenges": "Coordinating project scope, team tasks, and shop features smoothly within the Module 306 mini-project.",
+    "futurePlans": "Extend shopping cart state management, filtering, and checkout workflows.",
     "type": "Frontend"
   }
 ]
